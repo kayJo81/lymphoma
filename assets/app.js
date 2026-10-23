@@ -320,7 +320,7 @@
           </div>
           ${t.conditions?.length ? `<p class="small">대상: ${esc(t.conditions.join(", "))}</p>` : ""}
           ${t.interventions.length ? `<p class="small">치료: ${esc(t.interventions.slice(0, 4).join(", "))}</p>` : ""}
-          ${showSites && siteNames.length ? `<p class="small sites"><strong>국내 실시 기관 ${siteNames.length}곳</strong> ${esc(siteNames.join(", "))}</p>` : ""}
+          ${showSites && (siteNames.length || t.anonSites) ? `<p class="small sites"><strong>국내 실시 기관</strong> ${esc(siteNames.join(", "))}${t.anonSites ? `${siteNames.length ? " 외 " : ""}기관명 비공개 ${t.anonSites}곳` : ""}</p>` : ""}
         </li>`;
     }
 
@@ -402,11 +402,13 @@
   // 영문 기관명을 국내 병원명으로 바꾼다. 모르는 기관은 원래 이름 그대로
   function koreanHospital(name) {
     const hit = window.KR_HOSPITALS.find(([re]) => re.test(name));
-    return hit ? hit[1] : name;
+    if (hit) return hit[1];
+    return window.KR_ANON_SITE.test(name) ? "" : name;
   }
 
   function withKoreanSites(t) {
-    return { ...t, sites: (t.sites || []).map(s => ({ ...s, ko: koreanHospital(s.name) })) };
+    const sites = (t.sites || []).map(s => ({ ...s, ko: koreanHospital(s.name) }));
+    return { ...t, sites: sites.filter(s => s.ko), anonSites: sites.filter(s => !s.ko).length };
   }
 
   // 수집 스냅샷(번역 포함)을 우선 쓰고, 없으면 ClinicalTrials.gov를 직접 조회

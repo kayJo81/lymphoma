@@ -104,17 +104,17 @@ window.KR_HOSPITALS = [
   [/boramae/i, "서울특별시 보라매병원"],
   [/seoul national univ/i, "서울대학교병원"],
   [/kangbuk/i, "강북삼성병원"],
-  [/samsung/i, "삼성서울병원"],
+  [/samsung|irwon-ro/i, "삼성서울병원"],
   [/asan/i, "서울아산병원"],
   [/wonju/i, "원주세브란스기독병원"],
   [/gangnam severance/i, "강남세브란스병원"],
   [/severance|yonsei/i, "세브란스병원"],
   [/daegu catholic/i, "대구가톨릭대학교병원"],
   [/st\.? ?vincent/i, "가톨릭대 성빈센트병원"],
-  [/yeouido|yeoido/i, "가톨릭대 여의도성모병원"],
+  [/yeouido|yeoido|youido/i, "가톨릭대 여의도성모병원"],
   [/incheon st/i, "가톨릭대 인천성모병원"],
   [/uijeongbu st/i, "가톨릭대 의정부성모병원"],
-  [/seoul st\.? ?mary|catholic/i, "가톨릭대 서울성모병원"],
+  [/seoul (st\.? ?|saint )mary|catholic/i, "가톨릭대 서울성모병원"],
   [/national cancer cent/i, "국립암센터"],
   [/korea cancer center|kirams|radiological/i, "원자력병원"],
   [/korea university.*guro|guro/i, "고려대 구로병원"],
@@ -138,8 +138,9 @@ window.KR_HOSPITALS = [
   [/chungnam/i, "충남대학교병원"],
   [/chungbuk/i, "충북대학교병원"],
   [/keimyung|dongsan/i, "계명대 동산병원"],
-  [/yeungnam/i, "영남대학교병원"],
-  [/dong-?a/i, "동아대학교병원"],
+  [/ye?yungnam/i, "영남대학교병원"],
+  [/dong[- ]?a\b/i, "동아대학교병원"],
+  [/jeju/i, "제주대학교병원"],
   [/hanyang/i, "한양대학교병원"],
   [/konkuk/i, "건국대학교병원"],
   [/soonchunhyang/i, "순천향대학교병원"],
@@ -155,6 +156,9 @@ window.KR_HOSPITALS = [
   [/dongguk/i, "동국대 일산병원"],
   [/eulji/i, "을지대학교병원"]
 ];
+
+// 제약사가 기관명을 감춘 경우("Research Site", "Local Institution - 0077" 등)
+window.KR_ANON_SITE = /research site|local institution|investigat(ive|ional) site|site number|ltd\b|novartis/i;
 
 // 국내 식약처 허가·건강보험 급여 이정표. 언론 보도 기준이며 각 항목에 출처를 단다
 window.KOREA_TIMELINE = [
