@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T03:01:43+00:00",
+ "updated": "2026-10-23T03:05:03+00:00",
  "items": [
   {
    "nct": "NCT07496229",
@@ -562,8 +562,17 @@
     "Bendamustine",
     "Granulocyte Colony-Stimulating Factor (G-CSF)"
    ],
-   "korea": false,
-   "sites": [],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Seoul National University Hospital-Oncology ( Site 0302)",
+     "city": "Seoul"
+    },
+    {
+     "name": "Samsung Medical Center ( Site 0300)",
+     "city": "Seoul"
+    }
+   ],
    "start": "2022-01-14",
    "updated": "2026-10-21",
    "title_ko": "재발성 또는 불응성 확산성 거대 B세포 림프종(rrDLBCL)(MK-2140-003) 참가자를 대상으로 표준 치료와 병용한 질로베르타맙 베도틴(MK-2140)에 대한 연구"
@@ -679,8 +688,37 @@
     "Rescue medication",
     "Methylprednisolone"
    ],
-   "korea": false,
-   "sites": [],
+   "korea": true,
+   "sites": [
+    {
+     "name": "National Cancer Center- Center for Hemotologic malignancy ( Site 3806)",
+     "city": "Goyang-si"
+    },
+    {
+     "name": "Pusan National University Hospital ( Site 3804)",
+     "city": "Busan"
+    },
+    {
+     "name": "Chungnam National University Hospital ( Site 3801)",
+     "city": "Daejeon"
+    },
+    {
+     "name": "Severance Hospital, Yonsei University Health System ( Site 3802)",
+     "city": "Seoul"
+    },
+    {
+     "name": "Asan Medical Center ( Site 3803)",
+     "city": "Seoul"
+    },
+    {
+     "name": "Samsung Medical Center ( Site 3807)",
+     "city": "Seoul"
+    },
+    {
+     "name": "St.Mary's H., Youido ( Site 3805)",
+     "city": "Seoul"
+    }
+   ],
    "start": "2025-01-27",
    "updated": "2026-10-21",
    "title_ko": "이전에 치료받지 않은 DLBCL(MK-2140-010) 참가자를 대상으로 질로베르타맙 베도틴(MK-2140)과 리툭시맙 + 시클로포스파미드, 독소루비신 및 프레드니손(R-CHP) 병용과 리툭시맙 + 시클로포스파미드, 독소루비신, 빈크리스틴 및 프레드니손(R-CHOP)을 평가하기 위한 연구"
@@ -700,8 +738,25 @@
     "R-CVP",
     "BR"
    ],
-   "korea": false,
-   "sites": [],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Research Site",
+     "city": "Busan"
+    },
+    {
+     "name": "Research Site",
+     "city": "Goyang-si"
+    },
+    {
+     "name": "Research Site",
+     "city": "Jeonnam"
+    },
+    {
+     "name": "Research Site",
+     "city": "Seoul"
+    }
+   ],
    "start": "2024-08-07",
    "updated": "2026-10-21",
    "title_ko": "이전에 치료받지 않은 여포성 림프종 환자를 대상으로 Surovatamig(AZD0486)와 Rituximab을 병용한 연구"
@@ -1897,8 +1952,29 @@
     "Enzalutamide",
     "Itraconazole"
    ],
-   "korea": false,
-   "sites": [],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Seoul National University Bundang Hospital",
+     "city": "Seongnam"
+    },
+    {
+     "name": "Seoul National University Hospital",
+     "city": "Seoul"
+    },
+    {
+     "name": "Severance Hospital, Yonsei University Health System",
+     "city": "Seoul"
+    },
+    {
+     "name": "Ewha Womans University Mokdong Hospital",
+     "city": "Seoul"
+    },
+    {
+     "name": "Chungnam national university hospital",
+     "city": "Daejeon"
+    }
+   ],
    "start": "2018-04-17",
    "updated": "2026-10-15",
    "title_ko": "재발성/불응성 SCLC, 거세 저항성 전립선암 및 여포성 림프종의 치료를 위한 Mevrometostat의 연구"
@@ -1934,8 +2010,13 @@
    "interventions": [
     "AZD4512 monotherapy"
    ],
-   "korea": false,
-   "sites": [],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Research Site",
+     "city": "Seoul"
+    }
+   ],
    "start": "2025-11-12",
    "updated": "2026-10-15",
    "title_ko": "급성 림프구성 백혈병 참가자의 AZD4512 단독요법 또는 항암제와의 병용에 대한 연구"
@@ -2059,8 +2140,13 @@
     "Prednisolone",
     "Doxorubicin Hydrochloride"
    ],
-   "korea": false,
-   "sites": [],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Samsung Medical Center ( Site 0801)",
+     "city": "Seoul"
+    }
+   ],
    "start": "2026-06-22",
    "updated": "2026-10-15",
    "title_ko": "여포성 림프종 환자를 대상으로 한 MK-1045 및 리툭시맙의 임상 시험(MK-1045-007)"
@@ -2153,8 +2239,17 @@
    "interventions": [
     "Nemtabrutinib"
    ],
-   "korea": false,
-   "sites": [],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Severance Hospital Yonsei University Health System ( Site 2201)",
+     "city": "Seoul"
+    },
+    {
+     "name": "Samsung Medical Center ( Site 2200)",
+     "city": "Seoul"
+    }
+   ],
    "start": "2021-04-05",
    "updated": "2026-10-15",
    "title_ko": "혈액암(MK-1026-003) 환자에 대한 Nemtabrutinib(MK-1026)의 효능 및 안전성"
@@ -2181,8 +2276,13 @@
     "Hydrocortisone (intrathecal)",
     "Prednisolone (intrathecal)"
    ],
-   "korea": false,
-   "sites": [],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Novartis Investigative Site",
+     "city": "Seoul"
+    }
+   ],
    "start": "2026-07-05",
    "updated": "2026-10-15",
    "title_ko": "재발/불응성(r/r) 필라델피아 양성(Ph+) 또는 ABL 등급 Ph 유사 급성 림프구성 백혈병(ALL)이 있는 소아 및 청소년에 대한 Asciminib의 안전성 및 유효성"
@@ -2201,8 +2301,17 @@
    "interventions": [
     "MK-1045"
    ],
-   "korea": false,
-   "sites": [],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Seoul National University Hospital ( Site 0800)",
+     "city": "Seoul"
+    },
+    {
+     "name": "The Catholic University of Korea, Yeouido St. Mary's Hospital ( Site 0801)",
+     "city": "Seoul"
+    }
+   ],
    "start": "2026-05-03",
    "updated": "2026-10-15",
    "title_ko": "비호지킨 림프종(MK-1045-008) 환자를 대상으로 한 MK-1045의 임상 연구"
@@ -2241,8 +2350,37 @@
     "Rituximab",
     "Venetoclax"
    ],
-   "korea": false,
-   "sites": [],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Pusan National University Hospital",
+     "city": "Seogu"
+    },
+    {
+     "name": "National Cancer Center (Korea)",
+     "city": "IlsandongGu GoyangSi"
+    },
+    {
+     "name": "Seoul National University Bundang Hospital",
+     "city": "Seongnam-si"
+    },
+    {
+     "name": "Samsung Medical Center",
+     "city": "GangnamGu"
+    },
+    {
+     "name": "The Catholic University of Korea, Seoul St Marys Hospital",
+     "city": "SeochoGu"
+    },
+    {
+     "name": "Severance Hospital Yonsei University Health System",
+     "city": "SeodaemunGu"
+    },
+    {
+     "name": "Seoul National University Hospital",
+     "city": "Seoul"
+    }
+   ],
    "start": "2025-06-11",
    "updated": "2026-10-14",
    "title_ko": "재발성 및/또는 불응성 만성 림프구성 백혈병/소림프구성 림프종(CELESTIAL-RRCLL) 환자에서 베네토클락스+리툭시맙 치료와 비교하여 Sonrotoclax+Obinutuzumab 또는 Sonrotoclax+Rituximab의 무진행 생존을 조사하기 위한 연구"
