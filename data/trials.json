@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T02:21:16+00:00",
+ "updated": "2026-10-23T02:30:02+00:00",
  "items": [
   {
    "nct": "NCT07496229",
@@ -8,12 +8,11 @@
    "sponsor": "Dizal Pharmaceuticals",
    "interventions": [
     "GW5282 combined with Golidocitinib",
-    "GW5282 combined with Golidocitinib",
-    "Conventional CHOP regimen",
-    "GW5282 combined with Golidocitinib"
+    "Conventional CHOP regimen"
    ],
    "korea": false,
-   "updated": "2026-10-22"
+   "updated": "2026-10-22",
+   "title_ko": "골리도시티닙(BEI-DOU3)과 병용한 GW5282를 사용한 T세포 림프종 치료 평가"
   },
   {
    "nct": "NCT05974202",
@@ -25,7 +24,8 @@
     "Sham H7-coil repetitive transcranial magnetic stimulation (rTMS)"
    ],
    "korea": false,
-   "updated": "2026-10-22"
+   "updated": "2026-10-22",
+   "title_ko": "코카인 사용 장애에 대한 rTMS 및 인지 행동 치료"
   },
   {
    "nct": "NCT05621291",
@@ -36,7 +36,8 @@
     "NGS testing"
    ],
    "korea": false,
-   "updated": "2026-10-22"
+   "updated": "2026-10-22",
+   "title_ko": "B 계통 급성 림프절이 있는 소아 및 청소년의 키메라 항원 수용체 T 세포(CART) 유도 완화에 따른 관리를 안내하기 위해 B 세포 회복의 차세대 시퀀싱(NGS) 테스트 및 모니터링을 평가하기 위한 다기관 연구."
   },
   {
    "nct": "NCT07572136",
@@ -49,7 +50,8 @@
     "Fludarabine"
    ],
    "korea": false,
-   "updated": "2026-10-22"
+   "updated": "2026-10-22",
+   "title_ko": "재발성 또는 불응성 CRLF2-R/TSLPR 과발현 B 세포 급성 림프구성 백혈병(B-ALL) 참가자의 항-CRLF2-R/TSLPR 키메라 항원 수용체 T 세포(TSLPR-CART)"
   },
   {
    "nct": "NCT07546760",
@@ -61,7 +63,8 @@
     "AZD9550"
    ],
    "korea": false,
-   "updated": "2026-10-22"
+   "updated": "2026-10-22",
+   "title_ko": "AZD9550 및 AZD6234의 간 장애 효과를 조사하기 위한 1상 연구"
   },
   {
    "nct": "NCT07882641",
@@ -72,7 +75,8 @@
     "BEX101 injection"
    ],
    "korea": false,
-   "updated": "2026-10-22"
+   "updated": "2026-10-22",
+   "title_ko": "B세포 비호지킨 림프종의 BEX101"
   },
   {
    "nct": "NCT06904066",
@@ -87,7 +91,8 @@
     "TruSight Oncology (TSO) 500"
    ],
    "korea": false,
-   "updated": "2026-10-22"
+   "updated": "2026-10-22",
+   "title_ko": "혈액암 환자의 참가자 특이적 신생항원에 대한 TCR을 발현하는 레트로바이러스 벡터로 형질도입된 자가 T 세포"
   },
   {
    "nct": "NCT07520006",
@@ -101,7 +106,8 @@
     "obinutuzumab"
    ],
    "korea": false,
-   "updated": "2026-10-22"
+   "updated": "2026-10-22",
+   "title_ko": "B 세포 악성 종양이 있는 성인을 대상으로 다른 제제와 결합한 NX-5948 연구"
   },
   {
    "nct": "NCT05675410",
@@ -131,7 +137,8 @@
     "Vincristine Sulfate"
    ],
    "korea": false,
-   "updated": "2026-10-22"
+   "updated": "2026-10-22",
+   "title_ko": "호지킨 림프종 치료를 위한 표준 치료법과 두 가지 약물인 브렌툭시맙 베도틴(Brentuximab Vedotin) 및 니볼루맙(Nivolumab) 사용을 비교하는 연구"
   },
   {
    "nct": "NCT06052826",
@@ -147,7 +154,8 @@
     "Questionnaire Administration"
    ],
    "korea": false,
-   "updated": "2026-10-22"
+   "updated": "2026-10-22",
+   "title_ko": "B세포 비호지킨 림프종 또는 다발성 골수종을 앓고 있는 60세 이상 환자의 CAR-T 치료 후 기능 회복을 가속화하기 위한 노인 평가 유도 중재, GOCART 연구"
   },
   {
    "nct": "NCT07428707",
@@ -158,7 +166,8 @@
     "Pirtobrutinib"
    ],
    "korea": false,
-   "updated": "2026-10-22"
+   "updated": "2026-10-22",
+   "title_ko": "1차 피르토브루티닙으로 치료한 CLL/SLL의 면역 프로파일링"
   },
   {
    "nct": "NCT06815029",
@@ -177,7 +186,8 @@
     "Resection"
    ],
    "korea": false,
-   "updated": "2026-10-22"
+   "updated": "2026-10-22",
+   "title_ko": "재발성 또는 진행성 교모세포종 또는 3등급 또는 4등급 IDH 돌연변이 성상세포종의 치료를 위한 두개내 유전자 변형 면역 세포(TGFβR2KO/IL13Rα2 CAR T 세포)"
   },
   {
    "nct": "NCT07578077",
@@ -194,7 +204,8 @@
     "Rituximab"
    ],
    "korea": false,
-   "updated": "2026-10-22"
+   "updated": "2026-10-22",
+   "title_ko": "재발성 또는 불응성 외투세포림프종 환자 치료를 위한 리툭시맙과 골카도마이드 병용요법"
   },
   {
    "nct": "NCT07711483",
@@ -210,7 +221,8 @@
     "LISOCABTAGENE MARALEUCEL"
    ],
    "korea": false,
-   "updated": "2026-10-22"
+   "updated": "2026-10-22",
+   "title_ko": "영광: 림프종 치료를 위한 Liso-Cel이 포함된 Glofit-GemOx"
   },
   {
    "nct": "NCT04269902",
@@ -227,7 +239,8 @@
     "Venetoclax"
    ],
    "korea": false,
-   "updated": "2026-10-22"
+   "updated": "2026-10-22",
+   "title_ko": "고위험 만성 림프구성 백혈병(CLL) 또는 소림프구성 백혈병(SLL) 환자에 대한 조기 치료 테스트, EVOLVE CLL/SLL 연구"
   },
   {
    "nct": "NCT07328503",
@@ -240,7 +253,8 @@
     "Fludarabine"
    ],
    "korea": false,
-   "updated": "2026-10-22"
+   "updated": "2026-10-22",
+   "title_ko": "CD22 CAR T세포는 재발성/불응성 B세포 급성림프구성백혈병을 앓는 어린이, 청소년 및 성인의 상업용 CD19 CAR T세포에 이어 관해를 연장합니다."
   },
   {
    "nct": "NCT07097363",
@@ -264,7 +278,8 @@
     "Rituximab"
    ],
    "korea": false,
-   "updated": "2026-10-21"
+   "updated": "2026-10-21",
+   "title_ko": "공격성 B세포 비호지킨 림프종 치료를 위한 용량 조절된 에토포시드, 시클로포스파미드, 빈크리스틴, 독소루비신, 프레드니손 및 리툭시맙(EPOCH-R)을 병용한 에프코리타맙"
   },
   {
    "nct": "NCT06860594",
@@ -279,7 +294,8 @@
     "Triapine"
    ],
    "korea": false,
-   "updated": "2026-10-21"
+   "updated": "2026-10-21",
+   "title_ko": "재발성 교모세포종 또는 성상세포종에 대한 일반적인 방사선 치료에 항암제인 트리아핀을 추가하는 방법 테스트"
   },
   {
    "nct": "NCT06124157",
@@ -310,7 +326,8 @@
     "Vincristine"
    ],
    "korea": false,
-   "updated": "2026-10-21"
+   "updated": "2026-10-21",
+   "title_ko": "필라델피아 염색체 양성(Ph+) 또는 ABL 등급 필라델피아 염색체 유사(Ph-Like) B세포 급성 림프구성 백혈병(B-ALL)이 있는 아동, 청소년 및 청년을 대상으로 화학요법 치료에 블리나투모맙과 다사티닙 또는 이마티닙의 병용을 테스트하는 연구"
   },
   {
    "nct": "NCT06947967",
@@ -323,7 +340,8 @@
     "Placebo"
    ],
    "korea": false,
-   "updated": "2026-10-21"
+   "updated": "2026-10-21",
+   "title_ko": "T 세포 표현형의 여포성 보조제와 함께 새로 진단된 말초 T 세포 림프종에서 CHOP와 투시디노스타트 병용"
   },
   {
    "nct": "NCT04421560",
@@ -336,7 +354,8 @@
     "Rituximab"
    ],
    "korea": false,
-   "updated": "2026-10-21"
+   "updated": "2026-10-21",
+   "title_ko": "PCNSL의 Pembrolizumab, Ibrutinib 및 Rituximab"
   },
   {
    "nct": "NCT06649812",
@@ -358,7 +377,8 @@
     "Venetoclax"
    ],
    "korea": false,
-   "updated": "2026-10-21"
+   "updated": "2026-10-21",
+   "title_ko": "재발성 및/또는 불응성 공격성 B세포 림프종 환자를 위한 병용 표적 요법(ViPOR)의 효과 테스트"
   },
   {
    "nct": "NCT05139017",
@@ -374,7 +394,8 @@
     "Granulocyte Colony-Stimulating Factor (G-CSF)"
    ],
    "korea": false,
-   "updated": "2026-10-21"
+   "updated": "2026-10-21",
+   "title_ko": "재발성 또는 불응성 확산성 거대 B세포 림프종(rrDLBCL)(MK-2140-003) 참가자를 대상으로 표준 치료와 병용한 질로베르타맙 베도틴(MK-2140)에 대한 연구"
   },
   {
    "nct": "NCT06317662",
@@ -411,7 +432,8 @@
     "Vincristine"
    ],
    "korea": false,
-   "updated": "2026-10-21"
+   "updated": "2026-10-21",
+   "title_ko": "새로 진단된 KMT2A 재배열 백혈병 또는 KMT2A 재배열되지 않은 백혈병이 있는 유아를 위한 일반적인 화학요법 치료에 항암제 베네토클락스 및/또는 항암 면역요법인 블리나투모맙을 추가하는 방법을 테스트합니다."
   },
   {
    "nct": "NCT05294731",
@@ -422,7 +444,8 @@
     "Tacabrutideg"
    ],
    "korea": false,
-   "updated": "2026-10-21"
+   "updated": "2026-10-21",
+   "title_ko": "Bruton Tyrosine Kinase 표적 단백질 분해제인 BGB-16673을 사용하여 B 세포 악성 종양이 있는 중국인 참가자 치료"
   },
   {
    "nct": "NCT06337318",
@@ -438,7 +461,8 @@
     "Rituximab and Hyaluronidase Human"
    ],
    "korea": false,
-   "updated": "2026-10-21"
+   "updated": "2026-10-21",
+   "title_ko": "종양 부담이 낮은 여포성 림프종 환자를 위한 리툭시맙과 모수네투주맙 약물 치료 비교"
   },
   {
    "nct": "NCT06717347",
@@ -458,7 +482,8 @@
     "Methylprednisolone"
    ],
    "korea": false,
-   "updated": "2026-10-21"
+   "updated": "2026-10-21",
+   "title_ko": "이전에 치료받지 않은 DLBCL(MK-2140-010) 참가자에서 질로베르타맙 베도틴(MK-2140)과 리툭시맙 + 시클로포스파미드, 독소루비신, 프레드니손(R-CHP) 병용과 리툭시맙 + 시클로포스파미드, 독소루비신, 빈크리스틴, 프레드니손(R-CHOP)을 평가하기 위한 연구"
   },
   {
    "nct": "NCT06549595",
@@ -472,7 +497,8 @@
     "BR"
    ],
    "korea": false,
-   "updated": "2026-10-21"
+   "updated": "2026-10-21",
+   "title_ko": "이전에 치료받지 않은 여포성 림프종 환자를 대상으로 Surovatamig(AZD0486)와 Rituximab을 병용한 연구"
   },
   {
    "nct": "NCT07388563",
@@ -484,7 +510,8 @@
     "abatacept"
    ],
    "korea": false,
-   "updated": "2026-10-20"
+   "updated": "2026-10-20",
+   "title_ko": "재발성 또는 불응성 T세포 림프종에서의 아자시티딘 및 아바타셉트"
   },
   {
    "nct": "NCT07356154",
@@ -496,7 +523,8 @@
     "Mezigdomide"
    ],
    "korea": false,
-   "updated": "2026-10-20"
+   "updated": "2026-10-20",
+   "title_ko": "백혈병 환자를 대상으로 한 Revumenib과 Mezigdomide에 대한 연구"
   },
   {
    "nct": "NCT03970096",
@@ -521,7 +549,8 @@
     "Biospecimen Collection"
    ],
    "korea": false,
-   "updated": "2026-10-20"
+   "updated": "2026-10-20",
+   "title_ko": "급성 백혈병 또는 골수이형성증후군(MDS)이 있는 기증자 조혈모세포 이식 환자를 위한 이식편 대 숙주 질환 감소 전략"
   },
   {
    "nct": "NCT07104032",
@@ -534,7 +563,8 @@
     "Temozolomide"
    ],
    "korea": false,
-   "updated": "2026-10-20"
+   "updated": "2026-10-20",
+   "title_ko": "IGNITE: 재발성/불응성 원발성 중추신경계 림프종(PCNSL)에 대한 티라브루티닙 대 리툭시맙 및 테모졸로미드에 대한 연구"
   },
   {
    "nct": "NCT07021989",
@@ -552,7 +582,8 @@
     "Fluorodeoxyglucose (FDG) Positron Emission Tomography (PET)/Computerized tomography (CT)"
    ],
    "korea": false,
-   "updated": "2026-10-20"
+   "updated": "2026-10-20",
+   "title_ko": "재발성/불응성 호지킨 림프종에 대한 ctDNA 유도 치료"
   },
   {
    "nct": "NCT07883135",
@@ -567,7 +598,8 @@
     "Obinutuzumab"
    ],
    "korea": false,
-   "updated": "2026-10-20"
+   "updated": "2026-10-20",
+   "title_ko": "공격성 B세포 림프종에서 CAR-T 전 이중특이성 항체 기반 유지/가교 치료"
   },
   {
    "nct": "NCT07884474",
@@ -586,7 +618,8 @@
     "Survey and Questionnaire Assessment"
    ],
    "korea": false,
-   "updated": "2026-10-20"
+   "updated": "2026-10-20",
+   "title_ko": "원격 타액 수집의 타당성 및 수용성"
   },
   {
    "nct": "NCT07297914",
@@ -603,7 +636,8 @@
     "αβ T-cells depletion"
    ],
    "korea": false,
-   "updated": "2026-10-20"
+   "updated": "2026-10-20",
+   "title_ko": "소아 ALL의 조혈모세포 관리 최적화, 개선 및 통합을 위한 프레임워크"
   },
   {
    "nct": "NCT06080191",
@@ -614,7 +648,8 @@
     "CD19-CAR_Lenti_ALLO"
    ],
    "korea": false,
-   "updated": "2026-10-20"
+   "updated": "2026-10-20",
+   "title_ko": "소아 재발성/불응성 B-ALL을 위한 동종 2세대 CD19-CAR T 세포"
   },
   {
    "nct": "NCT06395441",
@@ -627,7 +662,8 @@
     "Questionnaire Administration"
    ],
    "korea": false,
-   "updated": "2026-10-20"
+   "updated": "2026-10-20",
+   "title_ko": "암 관련 피로 감소를 위한 위스콘신 인삼"
   },
   {
    "nct": "NCT07630545",
@@ -639,7 +675,8 @@
     "Placebo"
    ],
    "korea": false,
-   "updated": "2026-10-20"
+   "updated": "2026-10-20",
+   "title_ko": "건강한 지원자와 파킨슨병(PD) 환자를 대상으로 한 1상 연구."
   },
   {
    "nct": "NCT07332507",
@@ -653,7 +690,8 @@
     "Teclistamab"
    ],
    "korea": false,
-   "updated": "2026-10-20"
+   "updated": "2026-10-20",
+   "title_ko": "재발성 형질모세포 림프종에 대한 Teclistamab의 효과 테스트"
   },
   {
    "nct": "NCT06421155",
@@ -664,7 +702,8 @@
     "MRF with neurocognative studies"
    ],
    "korea": false,
-   "updated": "2026-10-20"
+   "updated": "2026-10-20",
+   "title_ko": "급성 백혈병이 있는 어린이, 청소년 및 청년의 뇌 MRF"
   },
   {
    "nct": "NCT06834373",
@@ -683,7 +722,8 @@
     "Rituximab"
    ],
    "korea": false,
-   "updated": "2026-10-20"
+   "updated": "2026-10-20",
+   "title_ko": "CAR T세포 치료 전 재발성 또는 불응성 공격성 B세포 비호지킨 림프종에 대한 가교 요법으로서의 골카도마이드 및 리툭시맙"
   },
   {
    "nct": "NCT03150693",
@@ -708,7 +748,8 @@
     "Laboratory Biomarker Analysis"
    ],
    "korea": false,
-   "updated": "2026-10-19"
+   "updated": "2026-10-19",
+   "title_ko": "새로 진단된 B형 급성 림프구성 백혈병을 앓는 젊은 성인 치료를 위한 이노투주맙 오조가마이신 및 최전선 화학요법"
   },
   {
    "nct": "NCT03394365",
@@ -719,7 +760,8 @@
     "tabelecleucel"
    ],
    "korea": false,
-   "updated": "2026-10-19"
+   "updated": "2026-10-19",
+   "title_ko": "Rituximab 또는 Rituximab 및 화학요법에 실패한 후 엡스타인-바 바이러스 관련 이식 후 림프구 증식성 질환이 있는 참가자를 위한 Tabelecleucel의 3상 연구"
   },
   {
    "nct": "NCT07293403",
@@ -736,7 +778,8 @@
     "Survey Administration"
    ],
    "korea": false,
-   "updated": "2026-10-19"
+   "updated": "2026-10-19",
+   "title_ko": "말초 T 세포 림프종 치료를 위한 Duvelisib 유지 관리"
   },
   {
    "nct": "NCT06575296",
@@ -754,7 +797,8 @@
     "Revumenib"
    ],
    "korea": false,
-   "updated": "2026-10-19"
+   "updated": "2026-10-19",
+   "title_ko": "동종 줄기세포 이식 후 환자의 급성 백혈병 치료를 위한 레부메닙"
   },
   {
    "nct": "NCT07570173",
@@ -773,7 +817,8 @@
     "Tyenne"
    ],
    "korea": false,
-   "updated": "2026-10-19"
+   "updated": "2026-10-19",
+   "title_ko": "B세포 급성 림프구성 백혈병(MK-1045-005) 환자를 대상으로 한 MK-1045의 임상 시험"
   },
   {
    "nct": "NCT05303519",
@@ -785,7 +830,8 @@
     "Placebo"
    ],
    "korea": false,
-   "updated": "2026-10-19"
+   "updated": "2026-10-19",
+   "title_ko": "SIGMA(IDH1 돌연변이 신경교종 유지 관리의 사푸시데닙)"
   },
   {
    "nct": "NCT05327894",
@@ -793,11 +839,11 @@
    "phase": "Phase 3",
    "sponsor": "Princess Maxima Center for Pediatric Oncology",
    "interventions": [
-    "Blinatumomab",
     "Blinatumomab"
    ],
    "korea": false,
-   "updated": "2026-10-19"
+   "updated": "2026-10-19",
+   "title_ko": "KMT2A 재배열 ALL 또는 혼합 표현형 급성 백혈병이 있는 1세 미만 유아를 위한 Interfant-21 치료 프로토콜"
   },
   {
    "nct": "NCT03739814",
@@ -814,7 +860,8 @@
     "Ponatinib"
    ],
    "korea": false,
-   "updated": "2026-10-19"
+   "updated": "2026-10-19",
+   "title_ko": "새로 진단된, 재발성 또는 불응성 CD22 양성 B 계통 급성 림프구성 백혈병 환자 치료에 포나티닙을 병용하거나 병용하지 않는 이노투주맙 오조가미신 및 블리나투모맙"
   },
   {
    "nct": "NCT06364423",
@@ -828,7 +875,8 @@
     "Rituximab"
    ],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "백혈병을 위한 항-CD19 키메라 항원 수용체 T세포 면역요법"
   },
   {
    "nct": "NCT05442515",
@@ -841,7 +889,8 @@
     "fludarabine"
    ],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "재발성 또는 불응성 B 세포 악성종양이 있는 소아 및 청소년의 CD19/CD22 바이시스트론 키메라 항원 수용체(CAR) T 세포"
   },
   {
    "nct": "NCT05237986",
@@ -850,7 +899,8 @@
    "sponsor": "National Cancer Institute (NCI)",
    "interventions": [],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "CAR T세포 치료를 받는 재발성/불응성 혈액암을 앓고 있는 어린이 및 청소년의 신경독성의 인지 후유증"
   },
   {
    "nct": "NCT04902443",
@@ -862,7 +912,8 @@
     "Nivolumab"
    ],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "HIV 유무에 관계없이 바이러스 관련 악성 종양이 있는 사람의 포말리도마이드 및 니볼루맙"
   },
   {
    "nct": "NCT01676805",
@@ -871,7 +922,8 @@
    "sponsor": "National Cancer Institute (NCI)",
    "interventions": [],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "림프암 연구를 위한 조직 수집"
   },
   {
    "nct": "NCT00900198",
@@ -882,7 +934,8 @@
     "Biopsy"
    ],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "암 연구를 위한 조직 샘플 수집"
   },
   {
    "nct": "NCT02682667",
@@ -891,7 +944,8 @@
    "sponsor": "National Cancer Institute (NCI)",
    "interventions": [],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "면역종양학 센터의 면역치료 프로토콜을 위한 생체표본 조달"
   },
   {
    "nct": "NCT03258567",
@@ -902,7 +956,8 @@
     "Nivolumab"
    ],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "엡스타인-바 바이러스(EBV) 양성 림프증식성 질환 및 EBV 양성 비호지킨 림프종에 대한 니볼루맙"
   },
   {
    "nct": "NCT05907759",
@@ -913,7 +968,8 @@
     "Daratumumab SC"
    ],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "재발성/불응성 원발성 삼출성 림프종, 형질모세포 림프종 및 다심성 캐슬만병에 대한 다라투무맙"
   },
   {
    "nct": "NCT05745285",
@@ -924,7 +980,8 @@
     "LLS Program"
    ],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "백혈병 및 림프종 학회(LLS) 서비스가 결과 및 치료에 미치는 영향"
   },
   {
    "nct": "NCT07133997",
@@ -945,7 +1002,8 @@
     "Vincristine"
    ],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "재발성 또는 불응성 CD19 양성 B세포 급성 림프구성 백혈병 치료를 위한 재조합 에르위니아 아스파라기나제 및 베네토클락스와 블리나투모맙의 병용"
   },
   {
    "nct": "NCT06788964",
@@ -957,7 +1015,8 @@
     "Rituximab"
    ],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "거대 B세포 림프종(CORAL) 환자의 표준 치료 CAR-T 치료 전 가교 요법으로서의 론카툭시맙 테시린 및 리툭시맙"
   },
   {
    "nct": "NCT07878351",
@@ -968,7 +1027,8 @@
     "Standard-of-care first-line immunochemotherapy containing an anti-CD20 monoclonal antibody and an anthracycline, such as R-CHOP, Pola-R-CHP, or DA-EPOCH-R."
    ],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "대형 B세포 림프종에 대한 전향적 ctDNA 테스트"
   },
   {
    "nct": "NCT03269578",
@@ -977,7 +1037,8 @@
    "sponsor": "National Cancer Institute (NCI)",
    "interventions": [],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "발달 치료 클리닉을 위한 샘플 수집 및 추적"
   },
   {
    "nct": "NCT02390752",
@@ -988,7 +1049,8 @@
     "TURALIO(R)"
    ],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "난치성 백혈병 및 신경섬유종증 1형(NF1) 관련 망상신경섬유종(PN) 및 건활막거대세포종양을 비롯한 난치성 고형종양이 있는 소아 및 청소년을 대상으로 한 TURALIO(R)(Pexidartinib, PLX3397)의 1상 시험..."
   },
   {
    "nct": "NCT03190928",
@@ -997,7 +1059,8 @@
    "sponsor": "National Cancer Institute (NCI)",
    "interventions": [],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "여포성 림프종의 클론성 진화"
   },
   {
    "nct": "NCT01441089",
@@ -1006,7 +1069,8 @@
    "sponsor": "National Cancer Institute (NCI)",
    "interventions": [],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "유전자 분석을 위한 암, 기타 종양 또는 종양 소인 증후군 환자의 혈액 수집"
   },
   {
    "nct": "NCT04968288",
@@ -1015,7 +1079,8 @@
    "sponsor": "National Cancer Institute (NCI)",
    "interventions": [],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "KSHV 관련 다심성 캐슬만병의 자연사"
   },
   {
    "nct": "NCT01087333",
@@ -1024,7 +1089,8 @@
    "sponsor": "National Cancer Institute (NCI)",
    "interventions": [],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "털세포 및 기타 백혈병 연구와 암 치료를 위한 재조합 면역독소 개발을 위한 인간 시료 수집"
   },
   {
    "nct": "NCT07593482",
@@ -1037,7 +1103,8 @@
     "Fludarabine"
    ],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "키메라 항원 수용체 T세포 면역요법(CAR-T)의 림프구 고갈에 대한 벤다무스틴 대 Fludarabine/Cyclophosphamide: 무작위 시험."
   },
   {
    "nct": "NCT07877610",
@@ -1048,7 +1115,8 @@
     "CARCIK CD123/33 infusion"
    ],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "소아 및 성인의 난치성/재발성 AML 및 BPDCN을 위한 CARCIK CD123/33"
   },
   {
    "nct": "NCT04002947",
@@ -1062,7 +1130,8 @@
     "Acalabrutinib"
    ],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "치료받지 않은 미만성 거대 B세포 림프종 환자를 위한 DA-EPOCH-R 또는 R-CHOP 병용 아칼라브루티닙"
   },
   {
    "nct": "NCT00923507",
@@ -1071,7 +1140,8 @@
    "sponsor": "National Heart, Lung, and Blood Institute (NHLBI)",
    "interventions": [],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "단클론 B 세포 림프구증가증(MBL), 만성 림프구성 백혈병/소림프구성 림프종(CLL/SLL), 림프형질구성 림프종(LPL)/월덴스트롬 마크로글로불린혈증(WM) 및 비장변연부 림프종(SMZL)에 대한 자연사 연구"
   },
   {
    "nct": "NCT03223610",
@@ -1086,7 +1156,8 @@
     "Revlimid (lenalidomide)"
    ],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "재발성/불응성 B세포 림프종에 대한 베네토클락스, 이브루티닙, 프레드니손, 오비누투주맙 및 레블리미드(ViPOR)"
   },
   {
    "nct": "NCT07012980",
@@ -1099,7 +1170,8 @@
     "Zanubrutinib"
    ],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "1차 노인 DLBCL에 Glofitamab, Polatuzumab Vedotin 및 Zanubrutinib 사용"
   },
   {
    "nct": "NCT07159620",
@@ -1114,7 +1186,8 @@
     "Dexamethasone"
    ],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "새로 진단된 ETP-ALL 유사 환자에서 베네토클락스와 아자시티딘, 키다마이드, 빈데신 및 덱사메타손 병용"
   },
   {
    "nct": "NCT00006518",
@@ -1123,7 +1196,8 @@
    "sponsor": "National Cancer Institute (NCI)",
    "interventions": [],
    "korea": false,
-   "updated": "2026-10-16"
+   "updated": "2026-10-16",
+   "title_ko": "HIV 감염, KSHV 감염, 바이러스 관련 전악성 병변 및 암 참가자의 표본 수집"
   },
   {
    "nct": "NCT07532525",
@@ -1135,7 +1209,8 @@
     "Pomalidomide"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "재발성 또는 불응성 CD19+ B세포 백혈병 또는 림프종 치료를 위한 CAR T세포 치료 후 포말리도마이드"
   },
   {
    "nct": "NCT06796998",
@@ -1146,7 +1221,8 @@
     "Epcoritamab"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "새로 진단된 변연부 림프종(MZL) 환자의 에코리타맙"
   },
   {
    "nct": "NCT07731789",
@@ -1164,7 +1240,8 @@
     "Survey Administration"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "새로 진단된 여포성 림프종 치료를 위한 타파시타맙과 리툭시맙"
   },
   {
    "nct": "NCT06919939",
@@ -1176,7 +1253,8 @@
     "Loncastuximab Tesirine"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "재발성/불응성 거대 B세포 림프종에서 론카스툭시맙 테시린과 병용하는 엡코리타맙"
   },
   {
    "nct": "NCT03460977",
@@ -1189,7 +1267,8 @@
     "Itraconazole"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "재발성/불응성 SCLC, 거세 저항성 전립선암 및 여포성 림프종의 치료를 위한 Mevrometostat의 연구"
   },
   {
    "nct": "NCT07864701",
@@ -1200,7 +1279,8 @@
     "JMBI-001 Tablets"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "MYC 양성 진행성 암 환자를 대상으로 한 JMBI-001 연구"
   },
   {
    "nct": "NCT07109219",
@@ -1211,7 +1291,8 @@
     "AZD4512 monotherapy"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "급성 림프구성 백혈병 참가자의 AZD4512 단독요법 또는 항암제와의 병용에 대한 연구"
   },
   {
    "nct": "NCT06528301",
@@ -1223,7 +1304,8 @@
     "rapamycin"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "재발성/불응성 CD19+ B세포 악성종양에서 라파마이신 유무에 따른 UB-VV111에 대한 1상 연구"
   },
   {
    "nct": "NCT05633615",
@@ -1244,7 +1326,8 @@
     "Tisagenlecleucel"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "재발성/불응성 미만성 거대 B세포 림프종 환자에서 CAR T세포 치료 후 약물 치료 테스트"
   },
   {
    "nct": "NCT07424833",
@@ -1255,7 +1338,8 @@
     "APG-3288"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "재발성/불응성 혈액암에서의 APG-3288 연구"
   },
   {
    "nct": "NCT07557056",
@@ -1272,7 +1356,8 @@
     "Venetoclax"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "만성 림프구성 백혈병 또는 소림프구성 림프종 환자 치료를 위한 넴타브루티닙 및 베네토클락스"
   },
   {
    "nct": "NCT07634471",
@@ -1291,7 +1376,8 @@
     "Doxorubicin Hydrochloride"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "여포성 림프종 환자를 대상으로 한 MK-1045 및 리툭시맙의 임상 시험(MK-1045-007)"
   },
   {
    "nct": "NCT06569680",
@@ -1302,7 +1388,8 @@
     "Mosunetuzumab"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "새로 진단된 림프절외 변연부 림프종 환자의 모수네투주맙"
   },
   {
    "nct": "NCT04301076",
@@ -1324,7 +1411,8 @@
     "Vincristine Sulfate"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "성인 T세포 백혈병-림프종(ATLL)에 대한 일반적인 병용 화학요법(\"EPOCH\")에 항암제인 레날리도마이드의 추가 테스트"
   },
   {
    "nct": "NCT05947851",
@@ -1337,7 +1425,8 @@
     "Rituximab"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "2차 치료(2L) + 재발성/불응성(R/R) 만성 림프구성 백혈병/소림프구성 림프종(CLL/SLL)에서 Nemtabrutinib + Venetoclax 대 Venetoclax + Rituximab(VR)에 대한 연구(MK-1026-010/BELLWAVE-010)."
   },
   {
    "nct": "NCT04728893",
@@ -1348,7 +1437,8 @@
     "Nemtabrutinib"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "혈액암(MK-1026-003) 환자에 대한 Nemtabrutinib(MK-1026)의 효능 및 안전성"
   },
   {
    "nct": "NCT07387926",
@@ -1367,7 +1457,8 @@
     "Prednisolone (intrathecal)"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "재발/불응성(r/r) 필라델피아 양성(Ph+) 또는 ABL 등급 Ph 유사 급성 림프구성 백혈병(ALL)이 있는 소아 및 청소년에 대한 Asciminib의 안전성 및 유효성"
   },
   {
    "nct": "NCT07519772",
@@ -1378,7 +1469,8 @@
     "MK-1045"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "비호지킨 림프종(MK-1045-008) 환자를 대상으로 한 MK-1045의 임상 연구"
   },
   {
    "nct": "NCT05735704",
@@ -1389,7 +1481,8 @@
     "Blood sampling for HemaChip screening/diagnostic testing"
    ],
    "korea": false,
-   "updated": "2026-10-15"
+   "updated": "2026-10-15",
+   "title_ko": "혈액암의 조기 발견 및 스크리닝 - SANGUINE"
   },
   {
    "nct": "NCT06943872",
@@ -1403,7 +1496,8 @@
     "Venetoclax"
    ],
    "korea": false,
-   "updated": "2026-10-14"
+   "updated": "2026-10-14",
+   "title_ko": "재발성 및/또는 불응성 만성 림프구성 백혈병/소림프구성 림프종(CELESTIAL-RRCLL) 환자에서 베네토클락스+리툭시맙 치료와 비교하여 Sonrotoclax+Obinutuzumab 또는 Sonrotoclax+Rituximab의 무진행 생존을 조사하기 위한 연구"
   },
   {
    "nct": "NCT06675123",
@@ -1421,7 +1515,8 @@
     "Positron Emission Tomography"
    ],
    "korea": false,
-   "updated": "2026-10-14"
+   "updated": "2026-10-14",
+   "title_ko": "재발성 또는 불응성 맨틀세포림프종 환자 치료를 위한 BTK 억제제와 파크리티닙의 병용요법"
   },
   {
    "nct": "NCT05909059",
@@ -1433,7 +1528,8 @@
     "Cyclophosphamide"
    ],
    "korea": false,
-   "updated": "2026-10-14"
+   "updated": "2026-10-14",
+   "title_ko": "신장 기능 장애 환자의 CAR T 세포 치료"
   },
   {
    "nct": "NCT07341191",
@@ -1446,7 +1542,8 @@
     "CAR-T Cell Therapy"
    ],
    "korea": false,
-   "updated": "2026-10-14"
+   "updated": "2026-10-14",
+   "title_ko": "표준 치료 CAR-T 세포 치료를 위해 계획된 재발성/불응성 맨틀 세포 림프종 환자에 대한 Sonrotoclax와 Zanubrutinib"
   }
  ]
 }
