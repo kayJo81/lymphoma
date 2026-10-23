@@ -4,6 +4,7 @@
   const EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/";
   const CTGOV = "https://clinicaltrials.gov/api/v2/studies";
   const PAGE_SIZE = 20;
+  const TRANSLATE = "https://translate.googleapis.com/translate_a/single";
 
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
@@ -22,6 +23,56 @@
     const res = await fetch(url);
     if (!res.ok) throw new Error(res.status + " " + url);
     return res.json();
+  }
+
+  // ---------- 번역 ----------
+  // 영문 제목·초록을 한국어로 번역해 원문과 함께 보여준다. 수집 데이터는 title_ko를 미리 담고 있고,
+  // 실시간 검색 결과는 브라우저에서 Google 번역으로 번역한다.
+  const trCache = new Map();
+  let trOn = true;
+  try { trOn = localStorage.getItem("tr") !== "off"; } catch {}
+
+  async function translateText(text) {
+    if (trCache.has(text)) return trCache.get(text);
+    const params = new URLSearchParams({ client: "gtx", sl: "en", tl: "ko", dt: "t", q: text });
+    const data = await getJSON(TRANSLATE + "?" + params);
+    const ko = data[0].map(seg => seg[0] || "").join("").trim();
+    trCache.set(text, ko);
+    return ko;
+  }
+
+  // 번역문 칸(.ko)과 원문 칸(.orig)을 함께 출력한다
+  function bilingual(text, ko) {
+    return `<span class="ko"${ko ? "" : " hidden"}>${esc(ko || "")}</span><span class="orig" data-src="${esc(text)}">${esc(text)}</span>`;
+  }
+
+  // root 안에서 아직 번역되지 않은 칸을 채운다. 동시에 4개씩 요청
+  async function translateIn(root) {
+    if (!trOn) return;
+    const queue = $$(".ko[hidden]", root).filter(el => !el.dataset.tried);
+    let failed = false;
+    async function worker() {
+      while (queue.length) {
+        const el = queue.shift();
+        el.dataset.tried = "1";
+        try {
+          const ko = await translateText(el.nextElementSibling.dataset.src);
+          if (ko) { el.textContent = ko; el.hidden = false; }
+        } catch { failed = true; }
+      }
+    }
+    await Promise.all([worker(), worker(), worker(), worker()]);
+    return !failed;
+  }
+
+  function setTranslation(on) {
+    trOn = on;
+    try { localStorage.setItem("tr", on ? "on" : "off"); } catch {}
+    document.body.classList.toggle("tr-on", on);
+    const btn = $("#tr-toggle");
+    btn.setAttribute("aria-pressed", String(on));
+    btn.textContent = on ? "한국어 번역 켜짐" : "한국어 번역 꺼짐";
+    if (on) translateIn(document);
   }
 
   // ---------- 라우팅 ----------
@@ -93,11 +144,17 @@
   async function fetchAbstract(pmid) {
     const res = await fetch(EUTILS + "efetch.fcgi?db=pubmed&rettype=abstract&retmode=xml&id=" + pmid);
     const xml = new DOMParser().parseFromString(await res.text(), "text/xml");
-    const parts = $$("AbstractText", xml).map(n => {
+    const nodes = $$("AbstractText", xml);
+    if (!nodes.length) return "<p class='muted'>초록이 제공되지 않습니다.</p>";
+    const full = nodes.map(n => n.textContent).join("\n\n");
+    const gt = "https://translate.google.com/?sl=en&tl=ko&op=translate&text=" + encodeURIComponent(full.slice(0, 4500));
+    return nodes.map(n => {
       const label = n.getAttribute("Label");
-      return (label ? `<strong>${esc(label)}</strong> ` : "") + esc(n.textContent);
-    });
-    return parts.length ? parts.map(p => `<p>${p}</p>`).join("") : "<p class='muted'>초록이 제공되지 않습니다.</p>";
+      return `<p>${label ? `<strong>${esc(label)}</strong> ` : ""}${bilingual(n.textContent)}</p>`;
+    }).join("") + `<div class="abs-tools">
+        <button type="button" class="linkish" data-abs-toggle>원문 보기</button>
+        <a href="${esc(gt)}" target="_blank" rel="noopener">Google 번역에서 열기</a>
+      </div>`;
   }
 
   function paperItem(p) {
@@ -106,7 +163,7 @@
       .map(t => `<span class="badge">${esc(t)}</span>`).join("");
     return `
       <li class="item paper" data-pmid="${esc(p.pmid)}">
-        <button class="paper-title" aria-expanded="false">${esc(p.title)}</button>
+        <button class="paper-title" aria-expanded="false">${bilingual(p.title, p.title_ko)}</button>
         <div class="meta">${badges}<span>${esc(p.journal)}</span><span>${esc(p.date)}</span><span>${esc(authors)}</span></div>
         <div class="abstract" hidden></div>
         <div class="links">
@@ -118,6 +175,13 @@
 
   function bindAbstracts(list) {
     list.addEventListener("click", async e => {
+      const toggle = e.target.closest("[data-abs-toggle]");
+      if (toggle) {
+        const box = toggle.closest(".abstract");
+        const showOrig = box.classList.toggle("show-orig");
+        toggle.textContent = showOrig ? "번역 보기" : "원문 보기";
+        return;
+      }
       const btn = e.target.closest(".paper-title");
       if (!btn) return;
       const li = btn.closest(".paper");
@@ -130,6 +194,7 @@
         try {
           box.innerHTML = await fetchAbstract(li.dataset.pmid);
           box.dataset.loaded = "1";
+          translateIn(box);
         } catch {
           box.innerHTML = "<p class='muted'>초록을 불러오지 못했습니다. PubMed 링크를 이용하세요.</p>";
         }
@@ -152,7 +217,8 @@
     bindAbstracts(list);
 
     const buildTerm = () => {
-      const parts = [`(${$("#paper-type").value})`];
+      const type = $("#paper-type").value;
+      const parts = [type === "lymphoma" ? "(lymphoma[tiab] OR lymphoma[mh])" : `(${type})`];
       if ($("#paper-topic").value) parts.push($("#paper-topic").value);
       const q = $("#paper-q").value.trim();
       if (q) parts.push(`(${q})`);
@@ -169,6 +235,7 @@
         const { count, items } = await pubmedSearch(term, days, offset);
         total = count; offset += items.length;
         list.insertAdjacentHTML("beforeend", items.map(paperItem).join(""));
+        translateIn(list);
         status.textContent = total ? `총 ${total.toLocaleString()}건 중 ${offset}건 표시` : "검색 결과가 없습니다.";
         more.hidden = offset >= total;
       } catch (err) {
@@ -192,10 +259,11 @@
     const ul = $("#home-papers");
     bindAbstracts(ul);
     let items;
-    try { items = (await pubmedSearch("lymphoma", 14)).items; }
+    try { items = (await pubmedSearch("lymphoma[tiab] OR lymphoma[mh]", 14)).items; }
     catch { try { items = await snapshotPapers(); } catch { items = []; } }
     ul.innerHTML = items.length ? items.slice(0, 5).map(paperItem).join("")
       : "<li class='muted'>논문을 불러오지 못했습니다.</li>";
+    translateIn(ul);
   }
 
   // ---------- 뉴스·임상 ----------
@@ -208,21 +276,22 @@
 
     function renderNews() {
       const q = search.value.trim(), l = lang.value;
-      const rows = news.filter(n => (l === "all" || n.lang === l) && matches(n.title + " " + (n.source || ""), q));
+      const rows = news.filter(n => (l === "all" || n.lang === l) && matches(`${n.title} ${n.title_ko || ""} ${n.source || ""}`, q));
       list.innerHTML = rows.length ? rows.map(n => `
         <li class="item">
-          <a class="title" href="${esc(n.link)}" target="_blank" rel="noopener">${esc(n.title)}</a>
+          <a class="title" href="${esc(n.link)}" target="_blank" rel="noopener">${n.lang === "ko" ? esc(n.title) : bilingual(n.title, n.title_ko)}</a>
           <div class="meta"><span class="badge">${esc(n.topic || "뉴스")}</span><span>${esc(n.source || "")}</span><span>${fmtDate(n.date)}</span></div>
         </li>`).join("")
         : `<li class="muted">${news.length ? "조건에 맞는 뉴스가 없습니다." : "수집된 뉴스가 아직 없습니다. GitHub Actions의 데이터 갱신 작업이 실행되면 표시됩니다."}</li>`;
+      translateIn(list);
     }
 
     function renderTrials() {
       const q = search.value.trim();
-      const rows = trials.filter(t => (!korea.checked || t.korea) && matches(`${t.title} ${t.interventions.join(" ")} ${t.sponsor}`, q));
+      const rows = trials.filter(t => (!korea.checked || t.korea) && matches(`${t.title} ${t.title_ko || ""} ${t.interventions.join(" ")} ${t.sponsor}`, q));
       tUl.innerHTML = rows.length ? rows.map(t => `
         <li class="item">
-          <a class="title" href="https://clinicaltrials.gov/study/${esc(t.nct)}" target="_blank" rel="noopener">${esc(t.title)}</a>
+          <a class="title" href="https://clinicaltrials.gov/study/${esc(t.nct)}" target="_blank" rel="noopener">${bilingual(t.title, t.title_ko)}</a>
           <div class="meta">
             ${t.phase ? `<span class="badge">${esc(t.phase)}</span>` : ""}
             <span>${esc(t.nct)}</span><span>${esc(t.sponsor)}</span>
@@ -232,6 +301,7 @@
           ${t.interventions.length ? `<p class="small">치료: ${esc(t.interventions.slice(0, 4).join(", "))}</p>` : ""}
         </li>`).join("")
         : "<li class='muted'>조건에 맞는 임상시험이 없습니다.</li>";
+      translateIn(tUl);
     }
 
     $$(".tab").forEach(tab => tab.addEventListener("click", () => {
@@ -262,7 +332,7 @@
       title: p.identificationModule?.briefTitle,
       phase: (p.designModule?.phases || []).filter(x => x !== "NA").join("/").replace(/PHASE/g, "Phase "),
       sponsor: p.sponsorCollaboratorsModule?.leadSponsor?.name || "",
-      interventions: (p.armsInterventionsModule?.interventions || []).map(i => i.name),
+      interventions: [...new Set((p.armsInterventionsModule?.interventions || []).map(i => i.name))],
       korea: countries.includes("Korea, Republic of"),
       updated: p.statusModule?.lastUpdatePostDateStruct?.date || ""
     };
@@ -282,5 +352,7 @@
     }
   }
 
+  $("#tr-toggle").addEventListener("click", () => setTranslation(!trOn));
+  setTranslation(trOn);
   route();
 })();

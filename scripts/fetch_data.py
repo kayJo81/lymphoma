@@ -26,6 +26,10 @@ NEWS_QUERIES = [
     ("lymphoma CAR-T OR bispecific", "en", "신약"),
 ]
 
+# 제목·초록·MeSH에 림프종이 있는 논문만
+PUBMED_TERM = "lymphoma[tiab] OR lymphoma[mh]"
+TRANSLATE = "https://translate.googleapis.com/translate_a/single"
+
 
 def fetch(url, retries=3):
     for attempt in range(retries):
@@ -41,6 +45,30 @@ def fetch(url, retries=3):
 
 def iso(dt):
     return dt.astimezone(timezone.utc).isoformat(timespec="seconds")
+
+
+def translate(texts, target="ko"):
+    """영문 문자열 목록을 한국어로 번역한다. 실패한 항목은 빈 문자열."""
+    out = []
+    for text in texts:
+        q = urllib.parse.urlencode({"client": "gtx", "sl": "en", "tl": target, "dt": "t", "q": text})
+        try:
+            data = json.loads(fetch(f"{TRANSLATE}?{q}", retries=2))
+            out.append("".join(seg[0] for seg in data[0] if seg[0]).strip())
+        except Exception as e:  # noqa: BLE001
+            print(f"translate failed: {e}", file=sys.stderr)
+            out.append("")
+        time.sleep(0.15)
+    return out
+
+
+def add_korean(items, field="title"):
+    """lang이 ko가 아닌 항목에 title_ko를 붙인다."""
+    targets = [it for it in items if it.get("lang", "en") != "ko"]
+    for it, ko in zip(targets, translate([it[field] for it in targets])):
+        if ko:
+            it[f"{field}_ko"] = ko
+    return items
 
 
 def collect_news():
@@ -71,12 +99,12 @@ def collect_news():
             items.append({"title": title, "link": it.findtext("link"), "source": source,
                           "date": date, "lang": lang, "topic": topic})
     items.sort(key=lambda x: x["date"], reverse=True)
-    return items[:150]
+    return add_korean(items[:150])
 
 
 def collect_papers():
     base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
-    q = urllib.parse.urlencode({"db": "pubmed", "term": "lymphoma", "retmode": "json",
+    q = urllib.parse.urlencode({"db": "pubmed", "term": PUBMED_TERM, "retmode": "json",
                                 "sort": "pub_date", "retmax": 60, "datetype": "edat", "reldate": 30})
     ids = json.loads(fetch(base + "esearch.fcgi?" + q))["esearchresult"]["idlist"]
     if not ids:
@@ -92,7 +120,7 @@ def collect_papers():
                     "journal": r.get("fulljournalname") or r.get("source", ""),
                     "date": r.get("pubdate", ""), "authors": [a["name"] for a in r.get("authors", [])],
                     "doi": doi, "types": r.get("pubtype", [])})
-    return out
+    return add_korean(out)
 
 
 def collect_trials():
@@ -109,11 +137,12 @@ def collect_trials():
             "title": p.get("identificationModule", {}).get("briefTitle"),
             "phase": "/".join(phases).replace("PHASE", "Phase "),
             "sponsor": p.get("sponsorCollaboratorsModule", {}).get("leadSponsor", {}).get("name", ""),
-            "interventions": [i.get("name") for i in p.get("armsInterventionsModule", {}).get("interventions", [])],
+            "interventions": list(dict.fromkeys(
+                i.get("name") for i in p.get("armsInterventionsModule", {}).get("interventions", []))),
             "korea": "Korea, Republic of" in countries,
             "updated": p.get("statusModule", {}).get("lastUpdatePostDateStruct", {}).get("date", ""),
         })
-    return out
+    return add_korean(out)
 
 
 def save(name, items):
