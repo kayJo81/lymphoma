@@ -123,26 +123,64 @@ def collect_papers():
     return add_korean(out)
 
 
+CTGOV = "https://clinicaltrials.gov/api/v2/studies"
+KOREA = "Korea, Republic of"
+STATUS_KO = {"RECRUITING": "모집 중", "NOT_YET_RECRUITING": "모집 예정", "ENROLLING_BY_INVITATION": "초청 모집",
+             "ACTIVE_NOT_RECRUITING": "진행 중(모집 종료)"}
+
+
+def parse_study(s):
+    p = s.get("protocolSection", {})
+    locations = p.get("contactsLocationsModule", {}).get("locations", [])
+    phases = [x for x in p.get("designModule", {}).get("phases", []) if x != "NA"]
+    status = p.get("statusModule", {}).get("overallStatus", "")
+    # 국내 실시 기관(같은 기관이 여러 번 나올 수 있어 중복 제거)
+    sites = list(dict.fromkeys(
+        f"{loc.get('facility', '').strip()}|{loc.get('city', '').strip()}"
+        for loc in locations if loc.get("country") == KOREA and loc.get("facility")))
+    return {
+        "nct": p.get("identificationModule", {}).get("nctId"),
+        "title": p.get("identificationModule", {}).get("briefTitle"),
+        "phase": "/".join(phases).replace("PHASE", "Phase "),
+        "status": STATUS_KO.get(status, status),
+        "sponsor": p.get("sponsorCollaboratorsModule", {}).get("leadSponsor", {}).get("name", ""),
+        "conditions": p.get("conditionsModule", {}).get("conditions", [])[:4],
+        "interventions": list(dict.fromkeys(
+            i.get("name") for i in p.get("armsInterventionsModule", {}).get("interventions", []))),
+        "korea": any(loc.get("country") == KOREA for loc in locations),
+        "sites": [{"name": n, "city": c} for n, c in (x.split("|", 1) for x in sites)],
+        "start": p.get("statusModule", {}).get("startDateStruct", {}).get("date", ""),
+        "updated": p.get("statusModule", {}).get("lastUpdatePostDateStruct", {}).get("date", ""),
+    }
+
+
+def query_trials(params, limit):
+    """ClinicalTrials.gov API v2를 페이지 단위로 조회한다."""
+    out, token = [], None
+    while len(out) < limit:
+        q = dict(params, format="json", pageSize=min(1000, limit - len(out)))
+        if token:
+            q["pageToken"] = token
+        data = json.loads(fetch(CTGOV + "?" + urllib.parse.urlencode(q)))
+        out += [parse_study(s) for s in data.get("studies", [])]
+        token = data.get("nextPageToken")
+        if not token:
+            break
+    return out
+
+
 def collect_trials():
-    q = urllib.parse.urlencode({"query.cond": "lymphoma", "filter.overallStatus": "RECRUITING",
-                                "sort": "LastUpdatePostDate:desc", "pageSize": 100, "format": "json"})
-    studies = json.loads(fetch("https://clinicaltrials.gov/api/v2/studies?" + q)).get("studies", [])
-    out = []
-    for s in studies:
-        p = s.get("protocolSection", {})
-        countries = [loc.get("country") for loc in p.get("contactsLocationsModule", {}).get("locations", [])]
-        phases = [x for x in p.get("designModule", {}).get("phases", []) if x != "NA"]
-        out.append({
-            "nct": p.get("identificationModule", {}).get("nctId"),
-            "title": p.get("identificationModule", {}).get("briefTitle"),
-            "phase": "/".join(phases).replace("PHASE", "Phase "),
-            "sponsor": p.get("sponsorCollaboratorsModule", {}).get("leadSponsor", {}).get("name", ""),
-            "interventions": list(dict.fromkeys(
-                i.get("name") for i in p.get("armsInterventionsModule", {}).get("interventions", []))),
-            "korea": "Korea, Republic of" in countries,
-            "updated": p.get("statusModule", {}).get("lastUpdatePostDateStruct", {}).get("date", ""),
-        })
-    return add_korean(out)
+    """전 세계에서 최근 갱신된 모집 중 림프종 임상시험"""
+    return add_korean(query_trials({"query.cond": "lymphoma", "filter.overallStatus": "RECRUITING",
+                                    "sort": "LastUpdatePostDate:desc"}, 100))
+
+
+def collect_trials_kr():
+    """국내 기관이 참여하는 모집 중·모집 예정 림프종 임상시험"""
+    items = query_trials({"query.cond": "lymphoma", "query.locn": "Korea",
+                          "filter.overallStatus": "RECRUITING,NOT_YET_RECRUITING",
+                          "sort": "LastUpdatePostDate:desc"}, 1000)
+    return add_korean([t for t in items if t["korea"]])
 
 
 def save(name, items):
@@ -156,7 +194,8 @@ def save(name, items):
 
 def main():
     DATA.mkdir(exist_ok=True)
-    for name, fn in (("news", collect_news), ("papers", collect_papers), ("trials", collect_trials)):
+    for name, fn in (("news", collect_news), ("papers", collect_papers), ("trials", collect_trials),
+                     ("trials_kr", collect_trials_kr)):
         try:
             save(name, fn())
         except Exception as e:  # noqa: BLE001

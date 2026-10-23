@@ -284,9 +284,10 @@
 
   // ---------- 뉴스·임상 ----------
   function initNews() {
-    let news = [], trials = [];
-    const list = $("#news-list"), tUl = $("#trials-ul");
-    const search = $("#news-search"), lang = $("#news-lang"), korea = $("#trials-korea");
+    let news = [], trials = [], krTrials = [];
+    const list = $("#news-list"), tUl = $("#trials-ul"), krUl = $("#kr-ul");
+    const search = $("#news-search"), lang = $("#news-lang");
+    const hosp = $("#kr-hospital"), phase = $("#kr-phase"), status = $("#kr-status");
 
     const matches = (text, q) => !q || text.toLowerCase().includes(q.toLowerCase());
 
@@ -302,33 +303,59 @@
       translateIn(list);
     }
 
-    function renderTrials() {
-      const q = search.value.trim();
-      const rows = trials.filter(t => (!korea.checked || t.korea) && matches(`${t.title} ${t.title_ko || ""} ${t.interventions.join(" ")} ${t.sponsor}`, q));
-      tUl.innerHTML = rows.length ? rows.map(t => `
+    const trialText = t => `${t.title} ${t.title_ko || ""} ${t.interventions.join(" ")} ${t.sponsor} ${(t.conditions || []).join(" ")} ${(t.sites || []).map(s => s.ko).join(" ")}`;
+
+    function trialItem(t, showSites) {
+      const sites = t.sites || [];
+      const siteNames = [...new Set(sites.map(s => s.ko))];
+      return `
         <li class="item">
           <a class="title" href="https://clinicaltrials.gov/study/${esc(t.nct)}" target="_blank" rel="noopener">${bilingual(t.title, t.title_ko)}</a>
           <div class="meta">
+            ${t.status ? `<span class="badge ${t.status === "모집 중" ? "kr" : ""}">${esc(t.status)}</span>` : ""}
             ${t.phase ? `<span class="badge">${esc(t.phase)}</span>` : ""}
             <span>${esc(t.nct)}</span><span>${esc(t.sponsor)}</span>
-            ${t.korea ? '<span class="badge kr">국내 기관</span>' : ""}
+            ${!showSites && t.korea ? '<span class="badge kr">국내 기관</span>' : ""}
             <span>업데이트 ${esc(t.updated)}</span>
           </div>
+          ${t.conditions?.length ? `<p class="small">대상: ${esc(t.conditions.join(", "))}</p>` : ""}
           ${t.interventions.length ? `<p class="small">치료: ${esc(t.interventions.slice(0, 4).join(", "))}</p>` : ""}
-        </li>`).join("")
+          ${showSites && siteNames.length ? `<p class="small sites"><strong>국내 실시 기관 ${siteNames.length}곳</strong> ${esc(siteNames.join(", "))}</p>` : ""}
+        </li>`;
+    }
+
+    function renderTrials() {
+      const q = search.value.trim();
+      const rows = trials.filter(t => matches(trialText(t), q));
+      tUl.innerHTML = rows.length ? rows.map(t => trialItem(t, false)).join("")
         : "<li class='muted'>조건에 맞는 임상시험이 없습니다.</li>";
       translateIn(tUl);
+    }
+
+    function renderKr() {
+      const q = search.value.trim();
+      const rows = krTrials.filter(t =>
+        (!hosp.value || t.sites.some(s => s.ko === hosp.value)) &&
+        (!phase.value || t.phase.includes(phase.value)) &&
+        (!status.value || t.status === status.value) &&
+        matches(trialText(t), q));
+      $("#kr-summary").textContent = krTrials.length
+        ? `국내 기관이 참여하는 림프종 임상시험 ${krTrials.length}건 중 ${rows.length}건` : "";
+      krUl.innerHTML = rows.length ? rows.map(t => trialItem(t, true)).join("")
+        : `<li class='muted'>${krTrials.length ? "조건에 맞는 임상시험이 없습니다." : "국내 임상시험 데이터가 아직 없습니다. 데이터 갱신 후 표시됩니다."}</li>`;
+      translateIn(krUl);
     }
 
     $$(".tab").forEach(tab => tab.addEventListener("click", () => {
       $$(".tab").forEach(t => t.classList.toggle("active", t === tab));
       list.hidden = tab.dataset.tab !== "news-list";
       $("#trials-list").hidden = tab.dataset.tab !== "trials-list";
+      $("#trials-kr").hidden = tab.dataset.tab !== "trials-kr";
       lang.hidden = tab.dataset.tab !== "news-list";
     }));
-    search.addEventListener("input", () => { renderNews(); renderTrials(); });
+    search.addEventListener("input", () => { renderNews(); renderTrials(); renderKr(); });
     lang.addEventListener("change", renderNews);
-    korea.addEventListener("change", renderTrials);
+    [hosp, phase, status].forEach(el => el.addEventListener("change", renderKr));
 
     list.innerHTML = "<li class='muted'>불러오는 중…</li>";
     getJSON("data/news.json").then(d => {
@@ -338,20 +365,62 @@
 
     tUl.innerHTML = "<li class='muted'>불러오는 중…</li>";
     loadTrials().then(t => { trials = t; }).catch(() => {}).finally(renderTrials);
+
+    krUl.innerHTML = "<li class='muted'>불러오는 중…</li>";
+    loadKrTrials().then(t => {
+      krTrials = t.map(withKoreanSites);
+      // 참여 임상 수가 많은 병원부터
+      const counts = {};
+      krTrials.forEach(tr => new Set(tr.sites.map(s => s.ko)).forEach(n => { counts[n] = (counts[n] || 0) + 1; }));
+      hosp.insertAdjacentHTML("beforeend", Object.entries(counts).sort((a, b) => b[1] - a[1])
+        .map(([n, c]) => `<option value="${esc(n)}">${esc(n)} (${c})</option>`).join(""));
+    }).catch(() => {}).finally(renderKr);
   }
+
+  const KOREA = "Korea, Republic of";
+  const STATUS_KO = { RECRUITING: "모집 중", NOT_YET_RECRUITING: "모집 예정" };
 
   function parseStudy(s) {
     const p = s.protocolSection || {};
-    const countries = (p.contactsLocationsModule?.locations || []).map(l => l.country);
+    const locations = p.contactsLocationsModule?.locations || [];
+    const status = p.statusModule?.overallStatus || "";
     return {
       nct: p.identificationModule?.nctId,
       title: p.identificationModule?.briefTitle,
       phase: (p.designModule?.phases || []).filter(x => x !== "NA").join("/").replace(/PHASE/g, "Phase "),
+      status: STATUS_KO[status] || status,
       sponsor: p.sponsorCollaboratorsModule?.leadSponsor?.name || "",
+      conditions: (p.conditionsModule?.conditions || []).slice(0, 4),
       interventions: [...new Set((p.armsInterventionsModule?.interventions || []).map(i => i.name))],
-      korea: countries.includes("Korea, Republic of"),
+      korea: locations.some(l => l.country === KOREA),
+      sites: locations.filter(l => l.country === KOREA && l.facility).map(l => ({ name: l.facility, city: l.city || "" })),
       updated: p.statusModule?.lastUpdatePostDateStruct?.date || ""
     };
+  }
+
+  // 영문 기관명을 국내 병원명으로 바꾼다. 모르는 기관은 원래 이름 그대로
+  function koreanHospital(name) {
+    const hit = window.KR_HOSPITALS.find(([re]) => re.test(name));
+    return hit ? hit[1] : name;
+  }
+
+  function withKoreanSites(t) {
+    return { ...t, sites: (t.sites || []).map(s => ({ ...s, ko: koreanHospital(s.name) })) };
+  }
+
+  // 수집 스냅샷(번역 포함)을 우선 쓰고, 없으면 ClinicalTrials.gov를 직접 조회
+  async function loadKrTrials() {
+    try {
+      const items = (await getJSON("data/trials_kr.json")).items || [];
+      if (items.length) return items;
+    } catch {}
+    const params = new URLSearchParams({
+      "query.cond": "lymphoma", "query.locn": "Korea",
+      "filter.overallStatus": "RECRUITING,NOT_YET_RECRUITING",
+      sort: "LastUpdatePostDate:desc", pageSize: 1000, format: "json"
+    });
+    const d = await getJSON(CTGOV + "?" + params);
+    return (d.studies || []).map(parseStudy).filter(t => t.korea);
   }
 
   // ClinicalTrials.gov 실시간 조회, 실패 시 스냅샷
