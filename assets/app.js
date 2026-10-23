@@ -121,7 +121,7 @@
   // ---------- PubMed ----------
   async function pubmedSearch(term, days, retstart = 0) {
     const params = new URLSearchParams({
-      db: "pubmed", term, retmode: "json", sort: "pub_date",
+      db: "pubmed", term, retmode: "json",
       retmax: PAGE_SIZE, retstart, datetype: "edat", reldate: days
     });
     const s = await getJSON(EUTILS + "esearch.fcgi?" + params);
@@ -133,7 +133,8 @@
       pmid: r.uid,
       title: r.title,
       journal: r.fulljournalname || r.source,
-      date: r.pubdate,
+      // 인쇄본 발행 예정일(pubdate)은 미래일 수 있어 온라인 게재일을 우선
+      date: r.epubdate || r.pubdate,
       authors: (r.authors || []).map(a => a.name),
       doi: (r.articleids || []).find(a => a.idtype === "doi")?.value || "",
       types: r.pubtype || []

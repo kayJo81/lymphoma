@@ -105,7 +105,7 @@ def collect_news():
 def collect_papers():
     base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
     q = urllib.parse.urlencode({"db": "pubmed", "term": PUBMED_TERM, "retmode": "json",
-                                "sort": "pub_date", "retmax": 60, "datetype": "edat", "reldate": 30})
+                                "retmax": 60, "datetype": "edat", "reldate": 30})
     ids = json.loads(fetch(base + "esearch.fcgi?" + q))["esearchresult"]["idlist"]
     if not ids:
         return []
@@ -118,7 +118,7 @@ def collect_papers():
         doi = next((a["value"] for a in r.get("articleids", []) if a.get("idtype") == "doi"), "")
         out.append({"pmid": pmid, "title": r.get("title", ""),
                     "journal": r.get("fulljournalname") or r.get("source", ""),
-                    "date": r.get("pubdate", ""), "authors": [a["name"] for a in r.get("authors", [])],
+                    "date": r.get("epubdate") or r.get("pubdate", ""), "authors": [a["name"] for a in r.get("authors", [])],
                     "doi": doi, "types": r.get("pubtype", [])})
     return add_korean(out)
 
