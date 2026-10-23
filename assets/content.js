@@ -97,3 +97,20 @@ window.DRUG_TIMELINE = [
   { date: "2024.05", drug: "리소캅타진 마라류셀 적응증 확대", note: "재발/불응성 여포성 림프종 및 외투세포 림프종" },
   { date: "2024.06", drug: "엡코리타맙 적응증 확대", note: "재발/불응성 여포성 림프종" }
 ];
+
+// 국내 식약처 허가·건강보험 급여 이정표. 언론 보도 기준이며 각 항목에 출처를 단다
+window.KOREA_TIMELINE = [
+  { date: "2020.10", kind: "허가", drug: "폴라이비 (폴라투주맙 베도틴)", note: "재발/불응성 DLBCL, 벤다무스틴·리툭시맙 병용", src: "https://www.dailypharm.com/user/news/57733" },
+  { date: "2021.03", kind: "허가", drug: "킴리아 (티사젠렉류셀)", note: "국내 첫 CAR-T, 첨단바이오의약품 1호. 재발/불응성 DLBCL 및 25세 이하 B세포 급성 림프구성 백혈병", src: "https://www.dailypharm.com/user/news/53755" },
+  { date: "2022.04", kind: "급여", drug: "킴리아", note: "건강보험 적용, 위험분담계약 방식", src: "https://www.dailypharm.com/user/news/41456" },
+  { date: "2022.11", kind: "허가", drug: "폴라이비 1차 치료 확대 (Pola-R-CHP)", note: "치료 경험이 없는 DLBCL 1차 치료", src: "https://dailypharm.com/user/news/33832" },
+  { date: "2023.11", kind: "허가", drug: "룬수미오 (모수네투주맙)", note: "2차 이상 치료 후 재발/불응성 여포성 림프종. 글로벌 혁신제품 신속심사(GIFT) 1호", src: "https://dailypharm.com/user/news/22978" },
+  { date: "2023.12", kind: "허가", drug: "컬럼비 (글로피타맙)", note: "2차 이상 치료 후 재발/불응성 DLBCL, 정맥주사 이중특이항체", src: "https://www.dailypharm.com/user/news/21838" },
+  { date: "2024.06", kind: "허가", drug: "엡킨리 (엡코리타맙)", note: "2차 이상 치료 후 재발/불응성 DLBCL, 피하주사 이중특이항체(조건부 허가)", src: "https://www.doctorsnews.co.kr/news/articleView.html?idxno=155201" },
+  { date: "2024.08", kind: "허가", drug: "제이퍼카 (피르토브루티닙)", note: "BTK 억제제 포함 2차 이상 치료 후 재발/불응성 외투세포 림프종(조건부 허가)", src: "https://www.dailypharm.com/user/news/14182" },
+  { date: "2025.08", kind: "허가", drug: "예스카타 (악시캅타젠 실로류셀)", note: "재발/불응성 거대 B세포 림프종 CAR-T, 국내 세 번째 CAR-T", src: "https://dailypharm.com/user/news/3149" },
+  { date: "2025.10", kind: "급여", drug: "제이퍼카", note: "건강보험 급여 등재", src: "https://dailypharm.com/user/news/338692" },
+  { date: "2026.04", kind: "허가", drug: "림카토 (안발캅타젠 오토류셀)", note: "국산 첫 CAR-T(큐로셀). 2차 이상 치료 후 재발/불응성 DLBCL·원발성 종격동 거대 B세포 림프종", src: "https://dailypharm.com/user/news/338031" },
+  { date: "2026.04", kind: "급여", drug: "엡킨리", note: "2차 이상 치료 후 재발/불응성 DLBCL 급여 적용", src: "https://kormedi.com/2838764/" },
+  { date: "2026.07", kind: "허가", drug: "엡킨리 적응증 확대", note: "재발/불응성 여포성 림프종: 레날리도마이드·리툭시맙 병용 및 2차 이상 치료 후 단독요법", src: "https://kormedi.com/2838764/" }
+];

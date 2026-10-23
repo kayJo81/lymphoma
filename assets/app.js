@@ -114,8 +114,23 @@
     }));
     render("all");
 
-    $("#drug-timeline").innerHTML = window.DRUG_TIMELINE.map(d => `
-      <li><span class="tl-date">${esc(d.date)}</span><div><strong>${esc(d.drug)}</strong><p>${esc(d.note)}</p></div></li>`).join("");
+    const NOTES = {
+      kr: "식약처 품목허가와 건강보험 급여 적용 시점입니다. 급여 기준(대상 환자 조건)은 건강보험심사평가원 고시를 확인하세요.",
+      us: "미국 FDA 허가 기준입니다. 국내 허가·급여 여부와 시점은 다를 수 있습니다."
+    };
+    const renderTimeline = which => {
+      const rows = which === "kr" ? window.KOREA_TIMELINE : window.DRUG_TIMELINE;
+      $("#timeline-note").textContent = NOTES[which];
+      $("#drug-timeline").innerHTML = rows.map(d => `
+        <li class="${d.kind === "급여" ? "tl-reimb" : ""}"><span class="tl-date">${esc(d.date)}</span><div>
+          ${d.kind ? `<span class="badge ${d.kind === "급여" ? "kr" : ""}">${esc(d.kind)}</span> ` : ""}<strong>${esc(d.drug)}</strong>
+          <p>${esc(d.note)}${d.src ? ` <a href="${esc(d.src)}" target="_blank" rel="noopener">출처</a>` : ""}</p></div></li>`).join("");
+    };
+    $$("[data-timeline]").forEach(b => b.addEventListener("click", () => {
+      $$("[data-timeline]").forEach(x => x.classList.toggle("active", x === b));
+      renderTimeline(b.dataset.timeline);
+    }));
+    renderTimeline("kr");
   }
 
   // ---------- PubMed ----------
