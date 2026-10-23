@@ -1,0 +1,99 @@
+// 질병 정보 정적 콘텐츠: 아형 카드와 신약 허가 타임라인
+window.LYMPHOMA_TYPES = [
+  {
+    group: "hl", name: "고전적 호지킨 림프종", en: "Classic Hodgkin lymphoma (cHL)", pace: "치료 반응 좋음",
+    desc: "리드-스턴버그 세포(CD30+, CD15+)가 특징. 20~30대와 노년층에 많고 종격동 침범이 흔합니다.",
+    tx: "ABVD 또는 BV-AVD, 병기에 따라 방사선. 재발 시 브렌툭시맙 베도틴, PD-1 억제제, 자가이식."
+  },
+  {
+    group: "hl", name: "결절성 림프구우세 림프종", en: "Nodular lymphocyte-predominant (NLPHL / NLPBL)", pace: "무통성",
+    desc: "CD20 양성 LP세포가 특징. WHO 5판은 호지킨, ICC는 B세포 림프종(NLPBL)으로 분류합니다.",
+    tx: "국소 병기는 방사선 단독, 진행 병기는 리툭시맙 기반 치료."
+  },
+  {
+    group: "b", name: "미만성 거대 B세포 림프종", en: "Diffuse large B-cell lymphoma (DLBCL)", pace: "공격형",
+    desc: "가장 흔한 비호지킨 림프종(약 30~40%). 세포기원(GCB/ABC)과 MYC·BCL2 재배열 여부에 따라 예후가 다릅니다.",
+    tx: "R-CHOP 또는 Pola-R-CHP 6주기. 재발 시 CAR-T, 이중특이항체, 자가이식."
+  },
+  {
+    group: "b", name: "고등급 B세포 림프종", en: "High-grade B-cell lymphoma (MYC/BCL2 재배열)", pace: "공격형",
+    desc: "MYC와 BCL2 재배열이 함께 있는 '더블히트' 림프종 등. 중추신경계 재발 위험이 높습니다.",
+    tx: "DA-EPOCH-R 등 강화 요법이 흔히 사용되며 임상시험 참여가 권장됩니다."
+  },
+  {
+    group: "b", name: "여포성 림프종", en: "Follicular lymphoma (FL)", pace: "무통성",
+    desc: "두 번째로 흔한 B세포 림프종. t(14;18) BCL2 재배열이 특징이며 서서히 진행하나 재발이 반복됩니다.",
+    tx: "무증상 시 관찰, 치료 필요 시 BR·R-CHOP·오비누투주맙. 재발 시 이중특이항체, CAR-T."
+  },
+  {
+    group: "b", name: "외투세포 림프종", en: "Mantle cell lymphoma (MCL)", pace: "대개 공격형",
+    desc: "t(11;14)와 사이클린 D1 과발현이 특징. 고령 남성에 많고 위장관·골수 침범이 흔합니다.",
+    tx: "젊은 환자는 고용량 시타라빈 포함 요법 후 자가이식, 고령은 BR. BTK 억제제가 핵심 약제."
+  },
+  {
+    group: "b", name: "변연부 림프종 (MALT 포함)", en: "Marginal zone lymphoma (MZL)", pace: "무통성",
+    desc: "위, 침샘, 안구 부속기 등 림프절 외 점막에서 흔히 발생. 위 MALT 림프종은 헬리코박터 감염과 관련됩니다.",
+    tx: "위 MALT는 헬리코박터 제균 치료가 1차. 국소 병변은 방사선, 진행 시 리툭시맙 기반 치료."
+  },
+  {
+    group: "b", name: "만성 림프구성 백혈병 / 소림프구성 림프종", en: "CLL / SLL", pace: "무통성",
+    desc: "같은 질환이 혈액에 주로 있으면 CLL, 림프절에 주로 있으면 SLL. 서구에 흔하고 국내에선 드뭅니다.",
+    tx: "BTK 억제제 지속 투여 또는 베네토클락스+오비누투주맙 기간 한정 치료."
+  },
+  {
+    group: "b", name: "버킷 림프종", en: "Burkitt lymphoma", pace: "매우 공격형",
+    desc: "MYC 재배열이 특징이며 증식 속도가 매우 빠릅니다. 소아·청년층에 상대적으로 많습니다.",
+    tx: "고강도 단기 항암(CODOX-M/IVAC, DA-EPOCH-R 등)과 중추신경계 예방. 완치율이 높습니다."
+  },
+  {
+    group: "b", name: "원발성 중추신경계 림프종", en: "Primary CNS lymphoma (PCNSL)", pace: "공격형",
+    desc: "뇌, 척수, 눈, 뇌척수액에만 발생하는 거대 B세포 림프종.",
+    tx: "고용량 메토트렉세이트 기반 유도 항암 후 자가이식 또는 방사선 공고 요법."
+  },
+  {
+    group: "b", name: "원발성 종격동 거대 B세포 림프종", en: "Primary mediastinal LBCL (PMBL)", pace: "공격형",
+    desc: "젊은 여성에 많은 종격동 종괴. 호지킨 림프종과 생물학적 특성을 일부 공유합니다.",
+    tx: "DA-EPOCH-R 또는 R-CHOP(±방사선). 재발 시 PD-1 억제제가 효과적."
+  },
+  {
+    group: "tnk", name: "말초 T세포 림프종, 비특이형", en: "PTCL, NOS", pace: "공격형",
+    desc: "다른 T세포 아형으로 분류되지 않는 가장 흔한 말초 T세포 림프종.",
+    tx: "CHOP 또는 CHOEP, 반응 시 자가이식 공고를 고려합니다."
+  },
+  {
+    group: "tnk", name: "역형성 대세포 림프종", en: "Anaplastic large cell lymphoma (ALCL)", pace: "공격형",
+    desc: "CD30이 강하게 발현. ALK 양성형은 젊은 층에 많고 예후가 상대적으로 좋습니다.",
+    tx: "BV-CHP(브렌툭시맙 베도틴+CHP)가 표준 1차 치료."
+  },
+  {
+    group: "tnk", name: "혈관면역모세포성 T세포 림프종", en: "Angioimmunoblastic TCL (AITL / nTFHL-AI)", pace: "공격형",
+    desc: "여포보조 T세포 기원. 전신 림프절 비대, 피부 발진, 자가면역 현상이 동반되기 쉽습니다.",
+    tx: "CHOP 계열 항암, 반응 시 자가이식 고려."
+  },
+  {
+    group: "tnk", name: "림프절외 NK/T세포 림프종", en: "Extranodal NK/T-cell lymphoma (ENKTL)", pace: "공격형",
+    desc: "EBV와 관련되며 주로 비강·코인두에 발생. 동아시아(국내 포함)에서 상대적으로 흔합니다.",
+    tx: "국소 병기는 방사선과 L-아스파라기나제 포함 항암 병용, 진행 병기는 SMILE·P-GemOx 등."
+  },
+  {
+    group: "tnk", name: "균상식육종 / 세자리 증후군", en: "Mycosis fungoides / Sézary syndrome", pace: "대개 무통성",
+    desc: "피부에 발생하는 T세포 림프종. 반점→판→종양 순으로 수년에 걸쳐 진행하는 경우가 많습니다.",
+    tx: "피부 표적 치료(스테로이드, 광선치료), 진행 시 모가물리주맙·브렌툭시맙 베도틴 등 전신 치료."
+  }
+];
+
+// 미국 FDA 허가 기준 주요 이정표. 연·월 단위로 표기
+window.DRUG_TIMELINE = [
+  { date: "2017.10", drug: "악시캅타진 실로류셀 (Yescarta)", note: "재발/불응성 거대 B세포 림프종 최초의 CAR-T 허가" },
+  { date: "2018.03", drug: "브렌툭시맙 베도틴 + AVD", note: "진행 병기 고전적 호지킨 림프종 1차 치료" },
+  { date: "2019.06", drug: "폴라투주맙 베도틴 (Polivy)", note: "재발/불응성 DLBCL, 벤다무스틴·리툭시맙 병용" },
+  { date: "2021.02", drug: "리소캅타진 마라류셀 (Breyanzi)", note: "재발/불응성 거대 B세포 림프종 CAR-T" },
+  { date: "2022.04", drug: "악시캅타진 실로류셀 2차 치료", note: "1차 치료 후 12개월 이내 재발한 LBCL에서 2차 치료로 확대" },
+  { date: "2022.12", drug: "모수네투주맙 (Lunsumio)", note: "재발/불응성 여포성 림프종, 최초의 CD20×CD3 이중특이항체" },
+  { date: "2023.01", drug: "피르토브루티닙 (Jaypirca)", note: "BTK 억제제 치료 후 재발한 외투세포 림프종, 비공유결합형 BTK 억제제" },
+  { date: "2023.04", drug: "Pola-R-CHP", note: "미만성 거대 B세포 림프종 1차 치료" },
+  { date: "2023.05", drug: "엡코리타맙 (Epkinly)", note: "재발/불응성 DLBCL, 피하주사 이중특이항체" },
+  { date: "2023.06", drug: "글로피타맙 (Columvi)", note: "재발/불응성 DLBCL, 기간 한정 이중특이항체" },
+  { date: "2024.05", drug: "리소캅타진 마라류셀 적응증 확대", note: "재발/불응성 여포성 림프종 및 외투세포 림프종" },
+  { date: "2024.06", drug: "엡코리타맙 적응증 확대", note: "재발/불응성 여포성 림프종" }
+];
