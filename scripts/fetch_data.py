@@ -124,7 +124,13 @@ def collect_papers():
 
 
 CTGOV = "https://clinicaltrials.gov/api/v2/studies"
-KOREA = "Korea, Republic of"
+
+
+def is_korea(country):
+    # ClinicalTrials.gov는 "South Korea"로 표기한다(예전 "Korea, Republic of"). 북한은 제외
+    c = (country or "").lower()
+    return "korea" in c and "democratic" not in c and "north" not in c
+
 STATUS_KO = {"RECRUITING": "모집 중", "NOT_YET_RECRUITING": "모집 예정", "ENROLLING_BY_INVITATION": "초청 모집",
              "ACTIVE_NOT_RECRUITING": "진행 중(모집 종료)"}
 
@@ -137,7 +143,7 @@ def parse_study(s):
     # 국내 실시 기관(같은 기관이 여러 번 나올 수 있어 중복 제거)
     sites = list(dict.fromkeys(
         f"{loc.get('facility', '').strip()}|{loc.get('city', '').strip()}"
-        for loc in locations if loc.get("country") == KOREA and loc.get("facility")))
+        for loc in locations if is_korea(loc.get("country")) and loc.get("facility")))
     return {
         "nct": p.get("identificationModule", {}).get("nctId"),
         "title": p.get("identificationModule", {}).get("briefTitle"),
@@ -147,7 +153,7 @@ def parse_study(s):
         "conditions": p.get("conditionsModule", {}).get("conditions", [])[:4],
         "interventions": list(dict.fromkeys(
             i.get("name") for i in p.get("armsInterventionsModule", {}).get("interventions", []))),
-        "korea": any(loc.get("country") == KOREA for loc in locations),
+        "korea": any(is_korea(loc.get("country")) for loc in locations),
         "sites": [{"name": n, "city": c} for n, c in (x.split("|", 1) for x in sites)],
         "start": p.get("statusModule", {}).get("startDateStruct", {}).get("date", ""),
         "updated": p.get("statusModule", {}).get("lastUpdatePostDateStruct", {}).get("date", ""),
@@ -180,7 +186,9 @@ def collect_trials_kr():
     items = query_trials({"query.cond": "lymphoma", "query.locn": "Korea",
                           "filter.overallStatus": "RECRUITING,NOT_YET_RECRUITING",
                           "sort": "LastUpdatePostDate:desc"}, 1000)
-    return add_korean([t for t in items if t["korea"]])
+    korean = [t for t in items if t["korea"]]
+    print(f"trials_kr: 조회 {len(items)}건 중 국내 기관 {len(korean)}건")
+    return add_korean(korean)
 
 
 def save(name, items):

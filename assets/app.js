@@ -377,7 +377,8 @@
     }).catch(() => {}).finally(renderKr);
   }
 
-  const KOREA = "Korea, Republic of";
+  // ClinicalTrials.gov는 "South Korea"로 표기한다(예전 "Korea, Republic of"). 북한은 제외
+  const isKorea = c => /korea/i.test(c || "") && !/democratic|north/i.test(c);
   const STATUS_KO = { RECRUITING: "모집 중", NOT_YET_RECRUITING: "모집 예정" };
 
   function parseStudy(s) {
@@ -392,8 +393,8 @@
       sponsor: p.sponsorCollaboratorsModule?.leadSponsor?.name || "",
       conditions: (p.conditionsModule?.conditions || []).slice(0, 4),
       interventions: [...new Set((p.armsInterventionsModule?.interventions || []).map(i => i.name))],
-      korea: locations.some(l => l.country === KOREA),
-      sites: locations.filter(l => l.country === KOREA && l.facility).map(l => ({ name: l.facility, city: l.city || "" })),
+      korea: locations.some(l => isKorea(l.country)),
+      sites: locations.filter(l => isKorea(l.country) && l.facility).map(l => ({ name: l.facility, city: l.city || "" })),
       updated: p.statusModule?.lastUpdatePostDateStruct?.date || ""
     };
   }
