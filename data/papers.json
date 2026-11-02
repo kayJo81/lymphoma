@@ -1,6 +1,240 @@
 {
- "updated": "2026-11-01T00:11:15+00:00",
+ "updated": "2026-11-02T00:47:05+00:00",
  "items": [
+  {
+   "pmid": "42967344",
+   "title": "Intraoperative artificial intelligence for brain tumor surgery: from tissue diagnosis to real-time surgical guidance.",
+   "journal": "Neurosurgical focus",
+   "date": "2026 Nov 1",
+   "authors": [
+    "Goff NK",
+    "Markert JE",
+    "Park M",
+    "Springer A",
+    "Chen AM",
+    "Orringer DA"
+   ],
+   "doi": "10.3171/2026.8.FOCUS26439",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "42967050",
+   "title": "Jejunal B-Cell Non-Hodgkin Lymphoma Presenting with a Long Stenosing Lesion in an Adolescent: A Case Report.",
+   "journal": "Cancer management and research",
+   "date": "2026 Oct 27",
+   "authors": [
+    "Deeb AS",
+    "Nasra AB",
+    "Alkaraa J",
+    "Alashkar M",
+    "Wassouf AAA"
+   ],
+   "doi": "10.2147/CMAR.S657567",
+   "types": [
+    "Case Reports",
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "42967032",
+   "title": "Recurrent Hypoglycemia and Hypercalcemia As Presenting Features of CD30-Positive Peripheral T-cell Lymphoma, Not Otherwise Specified.",
+   "journal": "Cureus",
+   "date": "2026 Oct 1",
+   "authors": [
+    "Izadian Bidgoli A",
+    "Gomez Usatorres A",
+    "Gomez Usatorres HA",
+    "Gomez Veliz A",
+    "Noriega-Toledo D"
+   ],
+   "doi": "10.7759/cureus.117300",
+   "types": [
+    "Case Reports",
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "42966323",
+   "title": "Calmodulin kinase-like vesicle-associated protein (CAMKV) autoimmune encephalitis: Neurological & oncological accompaniments, treatments & outcomes.",
+   "journal": "Translational oncology",
+   "date": "2026 Oct 31",
+   "authors": [
+    "Anissian D",
+    "Gilligan M",
+    "Lesnick CE",
+    "Guo Y",
+    "Yang B",
+    "Vargas P",
+    "Carlson AK",
+    "Hogge CJ",
+    "Mindorf S",
+    "Zekeridou A",
+    "Dubey D",
+    "McKeon A"
+   ],
+   "doi": "10.1016/j.tranon.2026.103090",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "42966284",
+   "title": "vBcl-2 modulates ER stress-related proteins to maintain cellular homeostasis for human herpesvirus 8 replication.",
+   "journal": "Biochemical and biophysical research communications",
+   "date": "2026 Oct 27",
+   "authors": [
+    "Liu JL",
+    "Huang ZL",
+    "Shyu HW",
+    "Chou MC",
+    "Huang MH",
+    "Wang YF"
+   ],
+   "doi": "10.1016/j.bbrc.2026.154813",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "42965891",
+   "title": "Morphological Characteristics and Diagnostic Challenges of Primary Thyroid Lymphoma in Fine-Needle Aspiration Cytology.",
+   "journal": "Diagnostic cytopathology",
+   "date": "2026 Oct 31",
+   "authors": [
+    "Cui W",
+    "Ma S",
+    "Hu P",
+    "Xu H"
+   ],
+   "doi": "10.1002/dc.70227",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "42965389",
+   "title": "A novel rare splice variant of the human voltage-dependent proton channel hH(V)1.",
+   "journal": "The FEBS journal",
+   "date": "2026 Oct 31",
+   "authors": [
+    "Chaves G",
+    "Herold KC",
+    "Derst C",
+    "Jardin C",
+    "Mahorivska I",
+    "Jäger CS",
+    "Franzen A",
+    "Musset B"
+   ],
+   "doi": "10.1111/febs.70782",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "42965253",
+   "title": "Occult Primary Pulmonary Adenocarcinoma Presenting With Multistation Nodal Disease: A Case Report.",
+   "journal": "Cureus",
+   "date": "2026 Sep 30",
+   "authors": [
+    "Slimani O",
+    "Samba S",
+    "Bentourqi M",
+    "BenSghier A",
+    "Berhili S",
+    "Moukhlissi M",
+    "Mezouar L"
+   ],
+   "doi": "10.7759/cureus.117246",
+   "types": [
+    "Case Reports",
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "42965234",
+   "title": "Anaplastic Large Cell Lymphoma of the Brain Mimicking an Extra-Axial Frontal Tumor: A Case Report.",
+   "journal": "Cureus",
+   "date": "2026 Sep 30",
+   "authors": [
+    "Vishwakarma SV",
+    "Rajbhar R",
+    "Sahu S"
+   ],
+   "doi": "10.7759/cureus.117242",
+   "types": [
+    "Case Reports",
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "42965153",
+   "title": "A temporal coupling hypothesis for chemoresistance in canine DLBCL and osteosarcoma: stress signalling and microRNA regulation.",
+   "journal": "Veterinary and animal science",
+   "date": "2026 Oct 23",
+   "authors": [
+    "Akbari-Ardabili S"
+   ],
+   "doi": "10.1016/j.vas.2026.100916",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "42964512",
+   "title": "Burden, patterns, and challenges of HIV-associated malignancies in Nigeria: a narrative review.",
+   "journal": "Frontiers in oncology",
+   "date": "2026 Oct 16",
+   "authors": [
+    "Silas O",
+    "Nyam C",
+    "Tsok Y",
+    "Eshioramine M",
+    "Nnaegbuna N",
+    "Golit W",
+    "Okunowo A",
+    "Osuagwu C",
+    "Offor J",
+    "Achusi I",
+    "Beneye T",
+    "Isikhuemen M",
+    "Ekanem V",
+    "Ekpe L",
+    "Odusolu P",
+    "Akinjo A",
+    "TAGCReC",
+    "Rasheed F",
+    "Ayoade F",
+    "Audu B",
+    "Saad A",
+    "Omotoso A",
+    "George S"
+   ],
+   "doi": "10.3389/fonc.2026.1959750",
+   "types": [
+    "Journal Article",
+    "Review"
+   ]
+  },
+  {
+   "pmid": "42964454",
+   "title": "Therapy-related T-lymphoblastic lymphoma following acute myeloid leukemia remission with IDH2 mutation persistence.",
+   "journal": "Leukemia research reports",
+   "date": "2026 Oct 16",
+   "authors": [
+    "Cho JJ",
+    "Wang HY",
+    "Lin GY",
+    "Mangan JK"
+   ],
+   "doi": "10.1016/j.lrr.2026.100618",
+   "types": [
+    "Case Reports",
+    "Journal Article"
+   ]
+  },
   {
    "pmid": "42964123",
    "title": "Incidentally Detected Persistent Helicobacter heilmannii Gastritis in a Korean Woman With a Normal Endoscopic Examination: Successful Eradication After Salvage Therapy.",
@@ -1069,238 +1303,6 @@
    "types": [
     "Journal Article",
     "Review"
-   ]
-  },
-  {
-   "pmid": "42957407",
-   "title": "Interpreting Fluorodeoxyglucose PET/Computed Tomography: Challenges and Strategies for Diagnostic Precision.",
-   "journal": "Radiologic clinics of North America",
-   "date": "2026 Sep 8",
-   "authors": [
-    "Patel D",
-    "Hasani N",
-    "Mohseny A",
-    "Gifani M",
-    "Farhadi F",
-    "Ghesani M"
-   ],
-   "doi": "10.1016/j.rcl.2026.07.007",
-   "types": [
-    "Journal Article",
-    "Review"
-   ]
-  },
-  {
-   "pmid": "42957219",
-   "title": "FoxP3+ Regulatory T-Cells in Canine Cutaneous Lymphoma and Their Role in Immune Modulation.",
-   "journal": "In vivo (Athens, Greece)",
-   "date": "2026 Nov-Dec",
-   "authors": [
-    "Semolin LMS",
-    "Anai LA",
-    "Jark PC",
-    "Munhoz TD",
-    "Cruvinel GG",
-    "Bitencourt RC",
-    "DA Rosa Sobreira MF",
-    "Camplesi AC",
-    "Leitão JR",
-    "Santana AE",
-    "Alves CEF"
-   ],
-   "doi": "10.21873/invivo.14500",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "42956758",
-   "title": "Improved survival after allo-HCT in Hodgkin lymphoma: true progress or time-dependent confounding?",
-   "journal": "The Lancet. Haematology",
-   "date": "2026 Nov",
-   "authors": [
-    "Li Q",
-    "Wang B",
-    "Wang S"
-   ],
-   "doi": "10.1016/S2352-3026(26)00251-6",
-   "types": [
-    "Letter"
-   ]
-  },
-  {
-   "pmid": "42956757",
-   "title": "Improved survival after allo-HCT in Hodgkin lymphoma: true progress or time-dependent confounding? - Authors' reply.",
-   "journal": "The Lancet. Haematology",
-   "date": "2026 Nov",
-   "authors": [
-    "Bazarbachi A",
-    "Fekom M",
-    "Sureda A"
-   ],
-   "doi": "10.1016/S2352-3026(26)00255-3",
-   "types": [
-    "Letter"
-   ]
-  },
-  {
-   "pmid": "42956310",
-   "title": "MCL1 may not mediate chemoresistance in cancer cells.",
-   "journal": "Cancer research communications",
-   "date": "2026 Oct 29",
-   "authors": [
-    "Emhoff KA",
-    "Chung K",
-    "Zhang D",
-    "Willard B",
-    "Chan T",
-    "Jha BK",
-    "Stauffer SR",
-    "Coker JA",
-    "Melenhorst JJ"
-   ],
-   "doi": "10.1158/2767-9764.CRC-25-0520",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "42955527",
-   "title": "Translating Translation: Lessons from Zotatifin's Clinical Development and the Case for Trials in Lymphoma.",
-   "journal": "Current oncology reports",
-   "date": "2026 Oct 28",
-   "authors": [
-    "Manara P",
-    "Schatz JH"
-   ],
-   "doi": "10.1007/s11912-026-01848-6",
-   "types": [
-    "Journal Article",
-    "Review"
-   ]
-  },
-  {
-   "pmid": "42955341",
-   "title": "Real-world outcomes of glofitamab monotherapy in heavily pretreated patients with relapsed/refractory diffuse large B-cell lymphoma: A multicenter Korean cohort.",
-   "journal": "Annals of hematology",
-   "date": "2026 Aug 1",
-   "authors": [
-    "Kim C",
-    "Koh Y",
-    "Jeon Y",
-    "Choi YS",
-    "Kim SJ",
-    "Kim WS",
-    "Yoon SE"
-   ],
-   "doi": "10.1007/s00277-026-07212-9",
-   "types": [
-    "Journal Article",
-    "Multicenter Study"
-   ]
-  },
-  {
-   "pmid": "42955301",
-   "title": "Trigonelline attenuates thioacetamide-induced nephrotoxicity through modulation of KIM-1/NGAL expression, and suppression of oxidative stress, renal apoptosis, inflammation, and fibrosis.",
-   "journal": "Naunyn-Schmiedeberg's archives of pharmacology",
-   "date": "2026 Oct 29",
-   "authors": [
-    "Singh AP",
-    "Asati A",
-    "Singh SK",
-    "Goswami Y",
-    "Rajput S",
-    "Kalsi AS",
-    "Kumar P",
-    "Kanwal A",
-    "Bhatti JS",
-    "Navik U"
-   ],
-   "doi": "10.1007/s00210-026-06041-x",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "42954862",
-   "title": "Lorlatinib-Containing Therapy for MYCN-Amplified, ALK-Mutated Neuroblastoma With Bulky Leptomeningeal Relapse: A Case Report.",
-   "journal": "Pediatric blood & cancer",
-   "date": "2026 Oct 29",
-   "authors": [
-    "Kim J",
-    "Kim M",
-    "Jung N",
-    "Kim SE",
-    "Kim JY",
-    "Chu MA",
-    "Kwon JE",
-    "Kim YH",
-    "Lee SM",
-    "Park KS",
-    "Lee JE",
-    "Shim YJ"
-   ],
-   "doi": "10.1002/1545-5017.70790",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "42954666",
-   "title": "Efficacy, Safety, and Impact of Combined Extended-Release Tramadol Hydrochloride and Acetaminophen on Inflammatory Mediators in Malignant Lymphoma-Associated Pain.",
-   "journal": "The Annals of pharmacotherapy",
-   "date": "2026 Oct 29",
-   "authors": [
-    "Qi X",
-    "Zhu L",
-    "Li J",
-    "Li Y"
-   ],
-   "doi": "10.1177/10600280261496561",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "42954232",
-   "title": "Serum ferritin predicts response to tocilizumab in glucocorticoid-resistant adult-onset Still's disease: a prospective real-world cohort study.",
-   "journal": "Clinical and experimental rheumatology",
-   "date": "2026 Oct 22",
-   "authors": [
-    "Ma D",
-    "Yao H",
-    "Zhang X",
-    "Wang Y",
-    "Shao M",
-    "Zhu H",
-    "Gan Y",
-    "Sun X",
-    "Yang Y",
-    "An Y",
-    "Jia Y"
-   ],
-   "doi": "10.55563/clinexprheumatol/8ic5kp",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "42954192",
-   "title": "Longitudinal changes in gut microbial evenness and dominance during anti-CD20-containing chemoimmunotherapy with concurrent trimethoprim-sulfamethoxazole prophylaxis in patients with B-cell lymphoma.",
-   "journal": "Immunological medicine",
-   "date": "2026 Oct 29",
-   "authors": [
-    "Ito S",
-    "Otake S",
-    "Nakagawa M",
-    "Takahashi H",
-    "Miura K",
-    "Nakamura H",
-    "Komine-Aizawa S"
-   ],
-   "doi": "10.1080/25785826.2026.2753278",
-   "types": [
-    "Journal Article"
    ]
   }
  ]
