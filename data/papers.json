@@ -1,6 +1,66 @@
 {
- "updated": "2026-11-07T00:58:50+00:00",
+ "updated": "2026-11-08T00:37:10+00:00",
  "items": [
+  {
+   "pmid": "42994959",
+   "title": "An inhibitor of the mitochondrial respiratory chain exerts synergistic anti-tumour effects when combined with alkylating agents.",
+   "journal": "British journal of pharmacology",
+   "date": "2026 Nov 6",
+   "authors": [
+    "Takaki EO",
+    "Hidoh Y",
+    "Obuchi Y",
+    "Nagai Y",
+    "Nishikori S",
+    "Kuniyoshi Y",
+    "Sawai Y",
+    "Ohi N"
+   ],
+   "doi": "10.1111/bph.70719",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "42994743",
+   "title": "From Bench to Bedside Faster: How CAR-NK is Transforming Cancer Research.",
+   "journal": "Critical reviews in oncology/hematology",
+   "date": "2026 Nov 6",
+   "authors": [
+    "Singh S",
+    "Rathod B",
+    "Puri S"
+   ],
+   "doi": "10.1016/j.critrevonc.2026.105689",
+   "types": [
+    "Journal Article",
+    "Review"
+   ]
+  },
+  {
+   "pmid": "42994625",
+   "title": "Cardiovascular risk stratification in patients undergoing liposomal anthracycline: Association with cardiovascular outcomes and overall survival.",
+   "journal": "International journal of cardiology",
+   "date": "2026 Nov 6",
+   "authors": [
+    "Camilli M",
+    "Torre I",
+    "Viscovo M",
+    "Maiolo E",
+    "Ballacci F",
+    "Leo L",
+    "Lamendola P",
+    "De Stefano V",
+    "Burzotta F",
+    "Hohaus S",
+    "Lombardo A",
+    "Minotti G"
+   ],
+   "doi": "10.1016/j.ijcard.2026.135043",
+   "types": [
+    "Journal Article"
+   ]
+  },
   {
    "pmid": "42993246",
    "title": "Clinical outcomes of T-cell acute lymphoblastic leukemia versus T-cell lymphoblastic lymphoma after allogeneic hematopoietic stem cell transplantation.",
@@ -1171,87 +1231,6 @@
     "Journal Article",
     "Multicenter Study",
     "Validation Study"
-   ]
-  },
-  {
-   "pmid": "42983593",
-   "title": "Final Analysis of the BRUIN Phase 1/2 Study Assessing the Safety and Efficacy of Pirtobrutinib Monotherapy in Patients With MCL.",
-   "journal": "American journal of hematology",
-   "date": "2026 Nov 4",
-   "authors": [
-    "Wang ML",
-    "Cohen JB",
-    "Shah NN",
-    "Jurczak W",
-    "Zinzani PL",
-    "Cheah CY",
-    "Ujjani CS",
-    "Koh Y",
-    "Kim WS",
-    "Nasta SD",
-    "Flinn I",
-    "Tessoulin B",
-    "Ma S",
-    "Alencar AJ",
-    "Lewis DJ",
-    "Woyach JA",
-    "Maddocks KJ",
-    "Patel K",
-    "Wang Y",
-    "Rhodes JM",
-    "Tam CS",
-    "Seymour JF",
-    "Nagai H",
-    "Vose JM",
-    "Fakhri B",
-    "Hoffmann MS",
-    "Hernandez-Ilizaliturri F",
-    "Zelenetz AD",
-    "Kumar A",
-    "Munir T",
-    "Tsai DE",
-    "Abada P",
-    "Balbas M",
-    "Li J",
-    "Wang D",
-    "Roeker LE",
-    "Eyre TA"
-   ],
-   "doi": "10.1002/ajh.70533",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "42983327",
-   "title": "Synchronous B-lymphoblastic leukemia/lymphoma and subcutaneous panniculitis-like T-cell lymphoma in an 11-year-old pediatric patient.",
-   "journal": "BMC pediatrics",
-   "date": "2026 Aug 6",
-   "authors": [
-    "Limchantra P",
-    "Temsangsukmanee J",
-    "Hongeng S",
-    "Suknuntha K"
-   ],
-   "doi": "10.1186/s12887-026-07270-y",
-   "types": [
-    "Journal Article",
-    "Case Reports"
-   ]
-  },
-  {
-   "pmid": "42983326",
-   "title": "Mucormycosis in adult hematopoietic stem cell transplant recipients during the antifungal prophylaxis era: a single-center retrospective case series.",
-   "journal": "BMC infectious diseases",
-   "date": "2026 Aug 7",
-   "authors": [
-    "Shiari A",
-    "Pennington K",
-    "Yadav H"
-   ],
-   "doi": "10.1186/s12879-026-14191-9",
-   "types": [
-    "Journal Article"
    ]
   }
  ]
