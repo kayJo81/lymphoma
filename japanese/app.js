@@ -119,7 +119,7 @@
       if (pct >= 60 && onPass) onPass();
     };
     rec.onerror = (e) => {
-      outEl.innerHTML = `<span class="muted">${e.error === "not-allowed" ? "마이크 권한을 허용해 주세요." : e.error === "no-speech" ? "소리가 들리지 않았어요." : "인식 오류: " + esc(e.error)}</span>`;
+      outEl.innerHTML = `<span class="muted">${e.error === "not-allowed" || e.error === "service-not-allowed" ? "마이크를 사용할 수 없어요. 브라우저에서 마이크 권한을 허용했는지 확인해 주세요." : e.error === "no-speech" ? "소리가 들리지 않았어요." : "인식 오류: " + esc(e.error)}</span>`;
     };
     rec.onend = () => btn.classList.remove("mic-on");
     try { rec.start(); } catch (e) { btn.classList.remove("mic-on"); }
@@ -170,16 +170,17 @@
       </div>
       <h2>학습하기</h2>
       <div class="grid">
-        <a class="card link-card" href="#kana"><div class="ico">あ</div><h3>문자</h3><p>히라가나·가타카나 표와 퀴즈</p></a>
-        <a class="card link-card" href="#vocab"><div class="ico">📚</div><h3>단어</h3><p>주제별 ${allWords.length}개 단어, 플래시카드</p></a>
-        <a class="card link-card" href="#talk"><div class="ico">💬</div><h3>회화</h3><p>상황별 대화 ${DIALOGS.length}편 롤플레이</p></a>
-        <a class="card link-card" href="#grammar"><div class="ico">✏️</div><h3>문법</h3><p>꼭 필요한 기초 문형 ${GRAMMAR.length}가지</p></a>
+        <a class="card link-card" href="#kana"><div class="ico jp">あ</div><h3>문자</h3><p>히라가나·가타카나 표와 퀴즈</p></a>
+        <a class="card link-card" href="#vocab"><div class="ico jp">語</div><h3>단어</h3><p>주제별 ${allWords.length}개 단어, 플래시카드</p></a>
+        <a class="card link-card" href="#talk"><div class="ico jp">話</div><h3>회화</h3><p>상황별 대화 ${DIALOGS.length}편 롤플레이</p></a>
+        <a class="card link-card" href="#grammar"><div class="ico jp">文</div><h3>문법</h3><p>꼭 필요한 기초 문형 ${GRAMMAR.length}가지</p></a>
       </div>
       <p style="margin-top:28px"><button class="btn small" id="reset">학습 기록 초기화</button></p>`;
     $("#today-play").onclick = () => speak(line.jp);
     $("#today-mic").onclick = (e) => listen(e.currentTarget, line, $("#today-out"));
-    $("#reset").onclick = () => {
-      if (!confirm("모든 학습 기록을 지울까요?")) return;
+    let armed = false;
+    $("#reset").onclick = (e) => {
+      if (!armed) { armed = true; e.currentTarget.textContent = "정말 지울까요? 한 번 더 누르면 초기화돼요"; return; }
       S.kana = {}; S.known = {}; S.dialogs = {}; S.days = [today()]; save(); viewHome();
     };
   }
@@ -353,7 +354,7 @@
         <h1>회화</h1>
         <p class="lead">상황을 골라 대화를 듣고, 롤플레이에서 '나'의 대사를 직접 골라 보거나 말해 보세요.</p>
         <div class="grid">${DIALOGS.map((x) => `
-          <a class="card link-card" href="#talk/${x.id}">
+          <a class="card link-card" href="#talk-${x.id}">
             <div class="ico">${x.icon}</div><h3>${esc(x.title)}</h3>
             <p>${x.lines.length}문장 · <span class="pill">${x.level}</span> ${S.dialogs[x.id] ? `<span class="pill ok">완료</span>` : ""}</p>
           </a>`).join("")}</div>`;
@@ -365,8 +366,8 @@
       <p><a href="#talk" class="muted">← 회화 목록</a></p>
       <h1>${d.icon} ${esc(d.title)}</h1>
       <div class="tabs">
-        <button data-go="#talk/${d.id}" class="${isRp ? "" : "on"}">📖 대화 보기</button>
-        <button data-go="#talk/${d.id}/rp" class="${isRp ? "on" : ""}">🎭 롤플레이</button>
+        <button data-go="#talk-${d.id}" class="${isRp ? "" : "on"}">📖 대화 보기</button>
+        <button data-go="#talk-${d.id}-rp" class="${isRp ? "on" : ""}">🎭 롤플레이</button>
       </div>
       <div class="toggles">
         <label><input type="checkbox" data-pref="r" ${P.r ? "checked" : ""}> 읽는 법</label>
@@ -391,7 +392,7 @@
       chat.innerHTML = d.lines.map((l, i) => bubble(l, d, i)).join("");
       $("#playall").onclick = () => {
         let i = 0;
-        const next = () => { if (i >= d.lines.length || !location.hash.startsWith(`#talk/${d.id}`)) return; const l = d.lines[i++]; speak(l.jp, () => setTimeout(next, 350)); };
+        const next = () => { if (i >= d.lines.length || !location.hash.startsWith(`#talk-${d.id}`)) return; const l = d.lines[i++]; speak(l.jp, () => setTimeout(next, 350)); };
         next();
       };
       return;
@@ -401,7 +402,7 @@
     rp = { d, idx: 0, token: Symbol() };
     const extra = $("#talk-extra");
     const myToken = rp.token;
-    const alive = () => rp && rp.token === myToken && location.hash === `#talk/${d.id}/rp`;
+    const alive = () => rp && rp.token === myToken && location.hash === `#talk-${d.id}-rp`;
     const step = () => {
       if (!alive()) return;
       chat.innerHTML = d.lines.slice(0, rp.idx).map((l, i) => bubble(l, d, i)).join("");
@@ -475,7 +476,7 @@
 
   // ---------- 라우터 ----------
   function route() {
-    const [name, arg, arg2] = (location.hash.slice(1) || "home").split("/");
+    const [name, arg, arg2] = (location.hash.slice(1) || "home").split("-");
     app.onclick = null;
     document.querySelectorAll(".nav a").forEach((a) => a.classList.toggle("active", a.dataset.route === name));
     stopSpeak();
