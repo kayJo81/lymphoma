@@ -48,7 +48,7 @@
   // ---------- 저장소 ----------
   const KEY = "nihongo-step-v1";
   const today = () => new Date().toLocaleDateString("sv-SE"); // YYYY-MM-DD
-  let S = { kana: {}, known: {}, dialogs: {}, days: [], prefs: { r: true, ro: false, ko: true } };
+  let S = { kana: {}, known: {}, dialogs: {}, listen: {}, days: [], prefs: { r: true, ro: false, ko: true } };
   try { const raw = localStorage.getItem(KEY); if (raw) S = Object.assign(S, JSON.parse(raw)); } catch (e) { /* 저장소 사용 불가 */ }
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { /* 무시 */ } };
   if (!S.days.includes(today())) { S.days.push(today()); S.days = S.days.slice(-400); save(); }
@@ -297,6 +297,7 @@
     const km = KANA_ROWS.basic.filter((k) => k && isMastered("k", k[1])).length;
     const kw = allWords.filter((w) => S.known[w.jp]).length;
     const dd = DIALOGS.filter((d) => S.dialogs[d.id]).length;
+    const ld = LISTENING.filter((x) => S.listen[x.id]).length;
     const dayIdx = Math.floor(Date.now() / 86400000);
     const line = allLines[dayIdx % allLines.length];
     const stat = (num, total, lbl) => `<div class="card stat"><div class="num">${num}<span class="muted small"> / ${total}</span></div><div class="lbl">${lbl}</div><div class="bar"><i style="width:${Math.round((num / total) * 100)}%"></i></div></div>`;
@@ -311,6 +312,7 @@
         ${stat(km, basicCount, "가타카나 익힘")}
         ${stat(kw, allWords.length, "아는 단어")}
         ${stat(dd, DIALOGS.length, "회화 완료")}
+        ${stat(ld, LISTENING.length, "듣기 완료")}
       </div>
       <h2>오늘의 문장</h2>
       <div class="card today">
@@ -331,6 +333,7 @@
         <a class="card link-card" href="#kana"><div class="ico jp">あ</div><h3>문자</h3><p>히라가나·가타카나 표와 퀴즈</p></a>
         <a class="card link-card" href="#vocab"><div class="ico jp">語</div><h3>단어</h3><p>주제별 ${allWords.length}개 단어, 플래시카드</p></a>
         <a class="card link-card" href="#talk"><div class="ico jp">話</div><h3>회화</h3><p>상황별 대화 ${DIALOGS.length}편 롤플레이</p></a>
+        <a class="card link-card" href="#listen"><div class="ico jp">聞</div><h3>듣기</h3><p>길 안내·안내방송 ${LISTENING.length}편 듣고 맞히기</p></a>
         <a class="card link-card" href="#grammar"><div class="ico jp">文</div><h3>문법</h3><p>꼭 필요한 기초 문형 ${GRAMMAR.length}가지</p></a>
       </div>
       <p style="margin-top:28px"><button class="btn small" id="reset">학습 기록 초기화</button></p>`;
@@ -339,7 +342,7 @@
     let armed = false;
     $("#reset").onclick = (e) => {
       if (!armed) { armed = true; e.currentTarget.textContent = "정말 지울까요? 한 번 더 누르면 초기화돼요"; return; }
-      S.kana = {}; S.known = {}; S.dialogs = {}; S.days = [today()]; save(); viewHome();
+      S.kana = {}; S.known = {}; S.dialogs = {}; S.listen = {}; S.days = [today()]; save(); viewHome();
     };
   }
 
@@ -611,6 +614,215 @@
     step();
   }
 
+  // ---------- 화면: 듣기 ----------
+  const chipOf = (c) => { const [jp, r] = c.split("|"); return { jp, r: r || jp }; };
+  const chipHtml = (c, cls, attr) => `<button class="chip ${cls}" ${attr}><span class="jp">${esc(c.jp)}</span>${c.r !== c.jp ? `<small class="jp">${esc(c.r)}</small>` : ""}</button>`;
+  const LS = { id: null, tab: "pick" };
+
+  function playSeq(lines, statusEl) {
+    let i = 0;
+    const next = () => {
+      if (!statusEl.isConnected) return;
+      if (i >= lines.length) { statusEl.textContent = "끝까지 들었어요."; return; }
+      statusEl.textContent = `재생 중… ${i + 1} / ${lines.length}`;
+      const l = lines[i++];
+      speak(l.say || l.jp, () => setTimeout(next, 500));
+    };
+    next();
+  }
+
+  function viewListen(id) {
+    stopSpeak();
+    const it = LISTENING.find((x) => x.id === id);
+    if (!it) {
+      app.innerHTML = `
+        <h1>듣기</h1>
+        <p class="lead">글자 없이 소리만 듣고 알아듣는 연습이에요. 들린 단어 찾기 → 순서대로 배열 → 내용 확인 순서로 해 보세요.</p>
+        <div class="grid">${LISTENING.map((x) => `
+          <a class="card link-card" href="#listen-${x.id}">
+            <div class="ico">${x.icon}</div><h3>${esc(x.title)}</h3>
+            <p>${x.lines.length}문장 · <span class="pill">${x.level}</span> ${S.listen[x.id] ? `<span class="pill ok">완료 ${S.listen[x.id].score}점</span>` : ""}</p>
+          </a>`).join("")}</div>`;
+      return;
+    }
+    if (LS.id !== id) Object.assign(LS, { id, tab: "pick", picked: new Set(), checked: false, pool: null, idx: 0, ord: null, answers: [] });
+    const tabs = [["pick", "① 들린 단어 찾기"], ["order", "② 순서대로 배열"], ["quiz", "③ 내용 확인"], ["script", "④ 스크립트"]];
+    app.innerHTML = `
+      <p><a href="#listen" class="muted">← 듣기 목록</a></p>
+      <h1>${it.icon} ${esc(it.title)}</h1>
+      <p class="lead">${esc(it.desc)}</p>
+      <div class="row" style="margin-bottom:16px">
+        <button class="btn primary" id="lplay">▶ 전체 듣기</button>
+        <span id="lstat" class="muted small">상단의 '느리게'를 켜면 천천히 들을 수 있어요.</span>
+      </div>
+      <div class="tabs" id="ltabs">${tabs.map(([v, l]) => `<button data-v="${v}" class="${v === LS.tab ? "on" : ""}">${l}</button>`).join("")}</div>
+      <div id="lbody"></div>`;
+    $("#lplay").onclick = () => playSeq(it.lines, $("#lstat"));
+    $("#ltabs").onclick = (e) => {
+      const b = e.target.closest("button"); if (!b) return;
+      LS.tab = b.dataset.v; viewListen(id);
+      if (LS.tab === "order") speak(it.lines[LS.idx].say || it.lines[LS.idx].jp);
+    };
+    const body = $("#lbody");
+    ({ pick: listenPick, order: listenOrder, quiz: listenQuiz, script: listenScript })[LS.tab](body, it);
+  }
+
+  function listenPick(body, it) {
+    if (!LS.pool) LS.pool = shuffle([...it.keys.map((c) => ({ ...chipOf(c), key: true })), ...it.fakes.map((c) => ({ ...chipOf(c), key: false }))]);
+    const P = LS.pool;
+    let hit = 0, wrong = 0;
+    const chips = P.map((c, i) => {
+      const sel = LS.picked.has(i);
+      let cls = sel ? "sel" : "";
+      if (LS.checked) {
+        if (c.key && sel) { cls = "hit"; hit++; }
+        else if (c.key) cls = "miss";
+        else if (sel) { cls = "bad"; wrong++; }
+        else cls = "dim";
+      }
+      return chipHtml(c, cls, `data-i="${i}" ${LS.checked ? "disabled" : ""}`);
+    }).join("");
+    const total = it.keys.length;
+    body.innerHTML = `
+      <div class="card">
+        <p style="margin-top:0">'전체 듣기'를 누르고 <b>들린 단어를 모두</b> 고르세요. 들리지 않은 단어도 섞여 있어요. 몇 번이든 다시 들어도 돼요.</p>
+        <div class="chips">${chips}</div>
+        ${LS.checked ? `
+          <div class="result">
+            <b>찾은 단어 ${hit} / ${total}</b>${wrong ? ` · 잘못 고른 단어 ${wrong}개` : ""}
+            <div class="small muted" style="margin-top:4px"><span class="legend hit">초록</span> 맞힘 · <span class="legend miss">점선</span> 놓친 단어 · <span class="legend bad">빨강</span> 나오지 않은 단어</div>
+            ${hit === total && !wrong ? `<div style="margin-top:6px">🎉 완벽해요! 다음은 순서대로 배열해 볼까요?</div>` : `<div style="margin-top:6px">놓친 단어를 떠올리며 한 번 더 들어 보세요.</div>`}
+          </div>
+          <div class="row" style="margin-top:12px"><button class="btn" id="pagain">다시 하기</button><button class="btn primary" id="pnext">② 순서대로 배열 ▶</button></div>`
+        : `<div class="row" style="margin-top:12px"><button class="btn primary" id="pcheck" ${LS.picked.size ? "" : "disabled"}>확인</button><span class="muted small">${LS.picked.size}개 선택</span></div>`}
+      </div>`;
+    body.querySelector(".chips").onclick = (e) => {
+      const b = e.target.closest("[data-i]"); if (!b || LS.checked) return;
+      const i = +b.dataset.i; LS.picked.has(i) ? LS.picked.delete(i) : LS.picked.add(i);
+      listenPick(body, it);
+    };
+    const ck = $("#pcheck"); if (ck) ck.onclick = () => { LS.checked = true; listenPick(body, it); };
+    const ag = $("#pagain"); if (ag) ag.onclick = () => { LS.checked = false; LS.picked = new Set(); LS.pool = null; listenPick(body, it); };
+    const nx = $("#pnext"); if (nx) nx.onclick = () => { LS.tab = "order"; viewListen(it.id); speak(it.lines[LS.idx].say || it.lines[LS.idx].jp); };
+  }
+
+  function listenOrder(body, it) {
+    const line = it.lines[LS.idx];
+    const parts = line.w.map(chipOf);
+    if (!LS.ord) {
+      let pool = parts.map((_, i) => i);
+      if (pool.length > 1) do { pool = shuffle(pool); } while (pool.every((v, i) => v === i));
+      LS.ord = { pool, ans: [], checked: false };
+    }
+    const O = LS.ord;
+    const ok = O.checked && O.ans.every((v, i) => parts[v].jp === parts[i].jp);
+    const say = line.say || line.jp;
+    body.innerHTML = `
+      <div class="card">
+        <div class="row" style="justify-content:space-between">
+          <b>문장 ${LS.idx + 1} / ${it.lines.length}</b>
+          <div class="row"><button class="btn small" id="oplay">🔊 듣기</button><button class="btn small" id="oslow">🐢 천천히</button></div>
+        </div>
+        <p class="muted small">들은 순서대로 아래 어구를 눌러 문장을 완성하세요. 올린 어구를 다시 누르면 내려가요.</p>
+        <div class="answer ${O.checked ? (ok ? "good" : "nogood") : ""}">${O.ans.length
+          ? O.ans.map((v, i) => chipHtml(parts[v], O.checked && !ok && parts[v].jp !== parts[i].jp ? "bad" : O.checked && ok ? "hit" : "", `data-a="${i}"`)).join("")
+          : `<span class="muted small">여기에 순서대로 쌓여요</span>`}</div>
+        <div class="chips" style="margin-top:10px">${O.pool.map((v) => chipHtml(parts[v], "", `data-p="${v}"`)).join("")}</div>
+        ${ok ? `
+          <div class="result good-box">
+            <div class="jp" style="font-size:18px">${esc(line.jp)}</div>
+            <div class="muted small jp">${esc(plain(line.r))}</div>
+            <div>${esc(line.ko)}</div>
+          </div>
+          <div class="row" style="margin-top:12px">${LS.idx + 1 < it.lines.length
+            ? `<button class="btn primary" id="onext">다음 문장 ▶</button>`
+            : `<span>🎉 모든 문장을 맞혔어요!</span><button class="btn primary" id="oquiz">③ 내용 확인 ▶</button>`}</div>`
+        : `
+          ${O.checked ? `<p class="small" style="color:var(--bad)">빨간 어구의 위치가 달라요. 다시 듣고 고쳐 보세요.</p>` : ""}
+          <div class="row" style="margin-top:12px">
+            <button class="btn primary" id="ocheck" ${O.pool.length ? "disabled" : ""}>확인</button>
+            <button class="btn" id="oreset">처음부터</button>
+            <button class="btn" id="ohint">💡 힌트 (뜻 보기)</button>
+          </div>
+          <div id="ohintbox" class="muted small" style="margin-top:8px"></div>`}
+      </div>`;
+    const rerender = () => listenOrder(body, it);
+    $("#oplay").onclick = () => speak(say);
+    $("#oslow").onclick = () => { const was = S.prefs.slow; S.prefs.slow = true; speak(say); S.prefs.slow = was; };
+    body.querySelector(".chips").onclick = (e) => {
+      const b = e.target.closest("[data-p]"); if (!b || ok) return;
+      const v = +b.dataset.p; O.pool.splice(O.pool.indexOf(v), 1); O.ans.push(v); O.checked = false; rerender();
+    };
+    body.querySelector(".answer").onclick = (e) => {
+      const b = e.target.closest("[data-a]"); if (!b || ok) return;
+      const [v] = O.ans.splice(+b.dataset.a, 1); O.pool.push(v); O.checked = false; rerender();
+    };
+    const ck = $("#ocheck"); if (ck) ck.onclick = () => { O.checked = true; rerender(); if (O.ans.every((v, i) => parts[v].jp === parts[i].jp)) speak(say); };
+    const rs = $("#oreset"); if (rs) rs.onclick = () => { O.pool = O.pool.concat(O.ans); O.ans = []; O.checked = false; rerender(); };
+    const hn = $("#ohint"); if (hn) hn.onclick = () => { $("#ohintbox").textContent = "뜻: " + line.ko; };
+    const nx = $("#onext"); if (nx) nx.onclick = () => { LS.idx++; LS.ord = null; rerender(); speak(it.lines[LS.idx].say || it.lines[LS.idx].jp); };
+    const qz = $("#oquiz"); if (qz) qz.onclick = () => { LS.tab = "quiz"; viewListen(it.id); };
+  }
+
+  function listenQuiz(body, it) {
+    const A = LS.answers;
+    const done = it.quiz.every((_, i) => A[i] !== undefined);
+    const right = it.quiz.filter((q, i) => A[i] === q.a).length;
+    body.innerHTML = `
+      <div class="card">
+        <p style="margin-top:0">'전체 듣기'로 다시 들으면서 답해 보세요.</p>
+        ${it.quiz.map((q, qi) => `
+          <div class="lq">
+            <div><b>Q${qi + 1}.</b> ${esc(q.q)}</div>
+            <div class="row" style="margin-top:6px">${q.o.map((o, oi) => {
+              const ans = A[qi] !== undefined;
+              const cls = !ans ? "" : oi === q.a ? "right" : oi === A[qi] ? "wrong" : "";
+              return `<button class="opt ${cls}" data-q="${qi}" data-o="${oi}" ${ans ? "disabled" : ""}>${esc(o)}</button>`;
+            }).join("")}</div>
+          </div>`).join("")}
+        ${done ? `
+          <div class="result"><b>${right} / ${it.quiz.length} 정답</b> ${right === it.quiz.length ? "🎉 다 알아들었어요!" : "· 틀린 문제는 스크립트에서 확인해 보세요."}</div>
+          <div class="row" style="margin-top:12px"><button class="btn" id="qagain">다시 풀기</button><button class="btn primary" id="qscript">④ 스크립트 보기 ▶</button></div>` : ""}
+      </div>`;
+    body.onclick = (e) => {
+      const b = e.target.closest("[data-q]"); if (!b) return;
+      A[+b.dataset.q] = +b.dataset.o;
+      if (it.quiz.every((_, i) => A[i] !== undefined)) {
+        const sc = Math.round((it.quiz.filter((q, i) => A[i] === q.a).length / it.quiz.length) * 100);
+        S.listen[it.id] = { score: Math.max(sc, (S.listen[it.id] || {}).score || 0) }; save();
+      }
+      listenQuiz(body, it);
+    };
+    const ag = $("#qagain"); if (ag) ag.onclick = (e) => { e.stopPropagation(); LS.answers = []; listenQuiz(body, it); };
+    const sc = $("#qscript"); if (sc) sc.onclick = (e) => { e.stopPropagation(); LS.tab = "script"; viewListen(it.id); };
+  }
+
+  function listenScript(body, it) {
+    body.innerHTML = `
+      <div class="card">
+        <p style="margin-top:0" class="muted small">원문을 보면서 들어 보고, 🎤로 따라 말해 보세요.</p>
+        ${it.lines.map((l, i) => `
+          <div class="ex">
+            <div class="row" style="flex-direction:column;gap:2px">
+              <button class="icon-btn" data-sp="${i}" aria-label="듣기">🔊</button>
+              <button class="icon-btn" data-mi="${i}" aria-label="따라 말하기">🎤</button>
+            </div>
+            <div style="min-width:0">
+              <div class="e-jp">${esc(l.jp)}</div>
+              <div class="e-r jp">${esc(plain(l.r))}</div>
+              <div class="e-r">${esc(romaji(l.r))}</div>
+              <div class="e-ko">${esc(l.ko)}</div>
+              <div class="mic-result" data-mo="${i}"></div>
+            </div>
+          </div>`).join("")}
+      </div>`;
+    body.onclick = (e) => {
+      const p = e.target.closest("[data-sp]"); if (p) return speak(it.lines[p.dataset.sp].say || it.lines[p.dataset.sp].jp);
+      const m = e.target.closest("[data-mi]");
+      if (m) { const i = m.dataset.mi; listen(m, it.lines[i], body.querySelector(`[data-mo="${i}"]`)); }
+    };
+  }
+
   // ---------- 화면: 문법 ----------
   function viewGrammar() {
     app.innerHTML = `
@@ -640,7 +852,7 @@
     if (session) session.stop();
     document.querySelectorAll(".nav a").forEach((a) => a.classList.toggle("active", a.dataset.route === name));
     stopSpeak();
-    ({ home: viewHome, kana: viewKana, vocab: viewVocab, talk: () => viewTalk(arg, arg2), grammar: viewGrammar }[name] || viewHome)();
+    ({ home: viewHome, kana: viewKana, vocab: viewVocab, talk: () => viewTalk(arg, arg2), listen: () => viewListen(arg), grammar: viewGrammar }[name] || viewHome)();
     window.scrollTo(0, 0);
   }
   window.addEventListener("hashchange", route);
