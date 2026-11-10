@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>니혼고 스텝</title>
+  <meta name="description" content="히라가나·가타카나, 단어, 상황별 회화 롤플레이, 기초 문법을 음성과 함께 익히는 일본어 학습 사이트">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&family=Noto+Sans+KR:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">日</span>니혼고 스텝</a>
+      <nav class="nav" aria-label="주요 메뉴">
+        <a href="#home" data-route="home">홈</a>
+        <a href="#kana" data-route="kana">문자</a>
+        <a href="#vocab" data-route="vocab">단어</a>
+        <a href="#talk" data-route="talk">회화</a>
+        <a href="#grammar" data-route="grammar">문법</a>
+      </nav>
+      <label class="slow" title="일본어 음성을 천천히 재생">
+        <input type="checkbox" id="slow"> 느리게
+      </label>
+    </div>
+  </header>
+
+  <main class="wrap" id="app" aria-live="polite"></main>
+
+  <footer class="wrap foot">
+    음성은 브라우저 내장 일본어 TTS를 사용합니다. 말하기 연습은 Chrome·Edge·Safari에서 동작합니다. 학습 기록은 이 브라우저에만 저장됩니다.
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
