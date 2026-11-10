@@ -106,6 +106,23 @@
       d.onState(({ state, reason }) => session && session.state && session.state(state, reason));
     }).catch(() => {});
   } catch (e) { /* Artifact 밖에서는 없음 */ }
+  // 마이크를 못 쓸 때 원인별 안내
+  const PUBLIC_URL = "https://kayjo81.github.io/lymphoma/japanese/";
+  const inClaude = !!window.claude;                       // Claude 앱·Artifact 안
+  const inApp = /KAKAOTALK|NAVER|Instagram|FBAN|FBAV|Line\/|DaumApps|everytimeApp/i.test(navigator.userAgent);
+  const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  function micHelp(errName) {
+    const tag = errName ? ` <span class="small">(${esc(errName)})</span>` : "";
+    if (inClaude) return `Claude 앱 화면 안에서는 마이크를 쓸 수 없어요. <a href="${PUBLIC_URL}" target="_blank" rel="noopener">공개 주소</a>를 Safari나 Chrome에서 열어 주세요.` + tag;
+    if (inApp) return "카카오톡·네이버 같은 앱 안의 브라우저에서는 마이크가 막혀 있어요. 오른쪽 위(또는 아래) 메뉴에서 <b>'다른 브라우저로 열기'</b>를 눌러 Safari나 Chrome으로 열어 주세요." + tag;
+    if (errName === "") return "이 브라우저는 음성 인식과 녹음을 지원하지 않아요. Safari나 Chrome 최신 버전에서 열어 주세요.";
+    if (errName === "NotFoundError" || errName === "OverconstrainedError") return "이 기기에서 마이크를 찾지 못했어요. 이어폰 마이크나 블루투스 연결을 확인해 주세요." + tag;
+    if (errName === "NotReadableError" || errName === "AbortError") return "다른 앱(통화, 녹음, 화상회의 등)이 마이크를 쓰고 있어요. 그 앱을 닫고 다시 시도해 주세요." + tag;
+    if (errName === "SecurityError" || errName === "TypeError" || !window.isSecureContext) return `이 주소에서는 마이크를 쓸 수 없어요. <a href="${PUBLIC_URL}" target="_blank" rel="noopener">공개 주소(https)</a>로 열어 주세요.` + tag;
+    return (isIOS
+      ? "마이크가 차단돼 있어요. 주소창의 <b>aA</b> → 웹 사이트 설정 → 마이크를 '허용'으로 바꾸거나, 설정 앱 → Safari → 마이크에서 허용해 주세요."
+      : "마이크가 차단돼 있어요. 주소창 왼쪽의 🔒(사이트 설정) → 마이크를 '허용'으로 바꾼 뒤 다시 눌러 주세요.") + tag;
+  }
   const canRecord = () => !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && window.MediaRecorder);
   const engine = () => (dict ? "dict" : SR && !srBroken ? "sr" : canRecord() ? "rec" : null);
 
@@ -137,7 +154,7 @@
     if (session) { const same = session.btn === btn; session.stop(); if (same) return; }
     stopSpeak();
     const eng = engine();
-    if (!eng) { outEl.innerHTML = note("이 브라우저에서는 마이크를 쓸 수 없어요. Chrome이나 Safari에서 열어 주세요."); return; }
+    if (!eng) { outEl.innerHTML = note(micHelp("")); return; }
     ({ dict: listenDict, sr: listenSR, rec: listenRec })[eng](btn, line, outEl, onPass);
   }
 
@@ -201,7 +218,8 @@
           ? note("이 브라우저에서는 음성 인식이 안 돼서 <b>녹음 비교 모드</b>로 바꿨어요. 🎤를 다시 눌러 녹음해 보세요.")
           : note("이 브라우저에서는 음성 인식을 쓸 수 없어요.");
       } else if (e.error === "not-allowed") {
-        outEl.innerHTML = note("마이크가 차단돼 있어요. 주소창의 🔒(사이트 설정)에서 마이크를 허용해 주세요.");
+        if (inClaude && canRecord()) { srBroken = true; outEl.innerHTML = note("음성 인식이 막혀 있어 녹음 비교 모드로 바꿨어요. 🎤를 다시 눌러 보세요."); }
+        else outEl.innerHTML = note(micHelp("not-allowed"));
       } else if (e.error === "no-speech") {
         outEl.innerHTML = note("소리가 들리지 않았어요. 🎤를 누르고 바로 말해 보세요.");
       } else if (e.error !== "aborted") {
@@ -261,9 +279,7 @@
       maxT = setTimeout(() => s.stop(), Math.max(6000, line.jp.length * 450));
     }).catch((err) => {
       cleanup();
-      outEl.innerHTML = note(err && err.name === "NotAllowedError"
-        ? "마이크가 차단돼 있어요. 브라우저 설정에서 이 사이트의 마이크를 허용해 주세요."
-        : "마이크를 찾지 못했어요. 마이크가 연결돼 있는지 확인해 주세요.");
+      outEl.innerHTML = note(micHelp(err && err.name));
     });
   }
 
