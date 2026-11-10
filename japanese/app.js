@@ -89,8 +89,26 @@
   }
   const stopSpeak = () => { speakId++; if ("speechSynthesis" in window) speechSynthesis.cancel(); };
 
-  // ---------- 음성 인식 (말하기 연습) ----------
+  // ---------- 따라 말하기 (음성 인식 / 받아쓰기 / 녹음 비교) ----------
+  // 사용 가능한 방식을 순서대로 고릅니다.
+  //  1) dict: Claude Artifact의 받아쓰기 기능 (Artifact로 열었을 때)
+  //  2) sr:   브라우저 음성 인식 (Chrome·Edge·Safari)
+  //  3) rec:  마이크 녹음 후 원어민 음성과 비교 듣기 (그 밖의 브라우저)
   const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  let dict = null, srBroken = false, session = null;
+  try {
+    const p = window.claude && window.claude.use && window.claude.use("dictation");
+    if (p && p.then) p.then((d) => {
+      if (!d) return;
+      dict = d;
+      d.onPartial(({ text }) => session && session.partial && session.partial(text));
+      d.onFinal(({ text }) => session && session.final && session.final(text));
+      d.onState(({ state, reason }) => session && session.state && session.state(state, reason));
+    }).catch(() => {});
+  } catch (e) { /* Artifact 밖에서는 없음 */ }
+  const canRecord = () => !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && window.MediaRecorder);
+  const engine = () => (dict ? "dict" : SR && !srBroken ? "sr" : canRecord() ? "rec" : null);
+
   const normJa = (s) => toHira(plain(s)).replace(/[\s。、，,．.！!？?「」・ー〜~]/g, "");
   function similarity(a, b) {
     a = normJa(a); b = normJa(b);
@@ -102,27 +120,151 @@
         dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
     return 1 - dp[a.length][b.length] / Math.max(a.length, b.length);
   }
+  const note = (t) => `<span class="muted">${t}</span>`;
+  const live = (t) => `<span class="muted">듣는 중: </span><span class="jp">${esc(t)}</span>`;
+
+  function showScore(outEl, alts, line, onPass) {
+    let best = { t: alts[0], s: 0 };
+    alts.forEach((t) => { const s = Math.max(similarity(t, line.jp), similarity(t, line.r)); if (s >= best.s) best = { t, s }; });
+    const pct = Math.round(best.s * 100);
+    const msg = pct >= 85 ? "완벽해요! 🎉" : pct >= 60 ? "좋아요! 👍" : "🔊로 다시 듣고 한 번 더 해볼까요?";
+    outEl.innerHTML = `<span class="jp">「${esc(best.t)}」</span> → <b>${pct}점</b> ${msg}`;
+    if (pct >= 60 && onPass) onPass();
+  }
+
+  // 버튼 하나로 시작/끝. 같은 버튼을 다시 누르면 멈추고 결과를 봅니다.
   function listen(btn, line, outEl, onPass) {
-    if (!SR) { outEl.innerHTML = `<span class="muted">이 브라우저는 음성 인식을 지원하지 않아요. Chrome이나 Safari를 사용해 보세요.</span>`; return; }
+    if (session) { const same = session.btn === btn; session.stop(); if (same) return; }
     stopSpeak();
-    const rec = new SR();
-    rec.lang = "ja-JP"; rec.interimResults = false; rec.maxAlternatives = 3;
+    const eng = engine();
+    if (!eng) { outEl.innerHTML = note("이 브라우저에서는 마이크를 쓸 수 없어요. Chrome이나 Safari에서 열어 주세요."); return; }
+    ({ dict: listenDict, sr: listenSR, rec: listenRec })[eng](btn, line, outEl, onPass);
+  }
+
+  const DICT_MSG = {
+    not_granted: "받아쓰기 권한이 꺼져 있어요. 페이지의 권한 메뉴에서 켤 수 있어요.",
+    dismissed: "권한 요청이 닫혔어요. 🎤를 다시 누르면 다시 물어봐요.",
+    unavailable: "이 환경에서는 일본어 받아쓰기를 쓸 수 없어요.",
+    rate_limited: "잠시 후 다시 시도해 주세요.",
+    upstream_error: "마이크나 음성 인식에 문제가 생겼어요. 다시 시도해 주세요.",
+  };
+  function listenDict(btn, line, outEl, onPass) {
+    const s = { btn, text: "", done: false, err: false };
+    session = s;
+    let quiet, hardStop;
+    const finish = () => {
+      if (s.done) return; s.done = true;
+      clearTimeout(quiet); clearTimeout(hardStop);
+      btn.classList.remove("mic-on");
+      if (session === s) session = null;
+      const t = s.text.trim();
+      if (t) showScore(outEl, [t], line, onPass);
+      else if (!s.err) outEl.innerHTML = note("소리가 들리지 않았어요. 🎤를 눌러 다시 말해 보세요.");
+    };
+    const fail = (code) => {
+      s.err = true;
+      outEl.innerHTML = note(DICT_MSG[code] || DICT_MSG.upstream_error);
+      if (code === "unavailable" || code === "not_granted") dict = null; // 다음엔 다른 방식 시도
+      finish();
+    };
+    s.partial = (t) => { if (t) { clearTimeout(quiet); outEl.innerHTML = live(s.text + t); } };
+    s.final = (t) => { s.text += t; outEl.innerHTML = live(s.text); clearTimeout(quiet); quiet = setTimeout(() => dict && dict.stop(), 1400); };
+    s.state = (st, reason) => {
+      if (st === "listening") outEl.innerHTML = note("듣고 있어요… 따라 말해 보세요. (다시 누르면 끝)");
+      if (st === "idle") { if (reason && reason !== "stopped" && reason !== "viewer_stopped" && reason !== "hidden") fail(reason); else finish(); }
+    };
+    s.stop = () => { dict ? dict.stop().catch(() => {}) : finish(); };
     btn.classList.add("mic-on");
-    outEl.innerHTML = `<span class="muted">듣고 있어요… 문장을 말해 보세요.</span>`;
+    outEl.innerHTML = note("마이크 준비 중…");
+    hardStop = setTimeout(() => dict && dict.stop(), 15000);
+    dict.start({ language: "ja" }).catch((e) => { if (e && e.code !== "stopped") fail(e.code); else finish(); });
+  }
+
+  const SR_FATAL = ["service-not-allowed", "network", "audio-capture", "language-not-supported", "bad-grammar"];
+  function listenSR(btn, line, outEl, onPass) {
+    let rec;
+    try { rec = new SR(); } catch (e) { srBroken = true; return listen(btn, line, outEl, onPass); }
+    rec.lang = "ja-JP"; rec.interimResults = true; rec.maxAlternatives = 3; rec.continuous = false;
+    const s = { btn, stop: () => { try { rec.stop(); } catch (e) { /* 이미 멈춤 */ } } };
+    session = s;
+    let finals = null, errored = false;
     rec.onresult = (e) => {
-      const alts = [...e.results[0]].map((a) => a.transcript);
-      let best = { t: alts[0], s: 0 };
-      alts.forEach((t) => { const s = Math.max(similarity(t, line.jp), similarity(t, line.r)); if (s > best.s) best = { t, s }; });
-      const pct = Math.round(best.s * 100);
-      const msg = pct >= 85 ? "완벽해요! 🎉" : pct >= 60 ? "좋아요! 👍" : "다시 한 번 해볼까요?";
-      outEl.innerHTML = `<span class="jp">「${esc(best.t)}」</span> → <b>${pct}점</b> ${msg}`;
-      if (pct >= 60 && onPass) onPass();
+      let interim = "";
+      for (const r of e.results) { if (r.isFinal) finals = [...r].map((a) => a.transcript); else interim += r[0].transcript; }
+      if (!finals && interim) outEl.innerHTML = live(interim);
     };
     rec.onerror = (e) => {
-      outEl.innerHTML = `<span class="muted">${e.error === "not-allowed" || e.error === "service-not-allowed" ? "마이크를 사용할 수 없어요. 브라우저에서 마이크 권한을 허용했는지 확인해 주세요." : e.error === "no-speech" ? "소리가 들리지 않았어요." : "인식 오류: " + esc(e.error)}</span>`;
+      errored = true;
+      if (SR_FATAL.includes(e.error)) {
+        srBroken = true;
+        outEl.innerHTML = canRecord()
+          ? note("이 브라우저에서는 음성 인식이 안 돼서 <b>녹음 비교 모드</b>로 바꿨어요. 🎤를 다시 눌러 녹음해 보세요.")
+          : note("이 브라우저에서는 음성 인식을 쓸 수 없어요.");
+      } else if (e.error === "not-allowed") {
+        outEl.innerHTML = note("마이크가 차단돼 있어요. 주소창의 🔒(사이트 설정)에서 마이크를 허용해 주세요.");
+      } else if (e.error === "no-speech") {
+        outEl.innerHTML = note("소리가 들리지 않았어요. 🎤를 누르고 바로 말해 보세요.");
+      } else if (e.error !== "aborted") {
+        outEl.innerHTML = note("인식 오류가 났어요. 다시 시도해 주세요.");
+      }
     };
-    rec.onend = () => btn.classList.remove("mic-on");
-    try { rec.start(); } catch (e) { btn.classList.remove("mic-on"); }
+    rec.onend = () => {
+      btn.classList.remove("mic-on");
+      if (session === s) session = null;
+      if (finals) showScore(outEl, finals, line, onPass);
+      else if (!errored) outEl.innerHTML = note("소리가 들리지 않았어요. 🎤를 누르고 바로 말해 보세요.");
+    };
+    btn.classList.add("mic-on");
+    outEl.innerHTML = note("듣고 있어요… 따라 말해 보세요.");
+    try { rec.start(); } catch (e) { btn.classList.remove("mic-on"); session = null; srBroken = true; listen(btn, line, outEl, onPass); }
+  }
+
+  function listenRec(btn, line, outEl, onPass) {
+    const s = { btn, stopped: false };
+    session = s;
+    let mr = null, stream = null, maxT;
+    const chunks = [];
+    const cleanup = () => {
+      clearTimeout(maxT);
+      if (stream) stream.getTracks().forEach((t) => t.stop());
+      btn.classList.remove("mic-on");
+      if (session === s) session = null;
+    };
+    s.stop = () => { s.stopped = true; if (mr && mr.state !== "inactive") mr.stop(); else cleanup(); };
+    btn.classList.add("mic-on");
+    outEl.innerHTML = note("마이크 준비 중…");
+    navigator.mediaDevices.getUserMedia({ audio: true }).then((st) => {
+      stream = st;
+      if (s.stopped) return cleanup();
+      mr = new MediaRecorder(st);
+      mr.ondataavailable = (e) => { if (e.data && e.data.size) chunks.push(e.data); };
+      mr.onstop = () => {
+        cleanup();
+        if (!chunks.length) { outEl.innerHTML = note("녹음된 소리가 없어요. 다시 시도해 주세요."); return; }
+        const audio = new Audio(URL.createObjectURL(new Blob(chunks, { type: mr.mimeType || "audio/webm" })));
+        outEl.innerHTML = `
+          <div class="muted small">녹음 비교 모드 · 두 소리를 번갈아 들어 보세요</div>
+          <div class="row" style="margin-top:4px">
+            <button class="btn small" data-cmp="model">🔊 원어민</button>
+            <button class="btn small" data-cmp="mine">▶ 내 목소리</button>
+            ${onPass ? `<button class="btn small primary" data-cmp="next">다음 ▶</button>` : ""}
+          </div>`;
+        const playMine = () => { stopSpeak(); audio.currentTime = 0; audio.play().catch(() => {}); };
+        outEl.querySelector('[data-cmp="model"]').onclick = (e) => { e.stopPropagation(); audio.pause(); speak(line.jp); };
+        outEl.querySelector('[data-cmp="mine"]').onclick = (e) => { e.stopPropagation(); playMine(); };
+        const nx = outEl.querySelector('[data-cmp="next"]');
+        if (nx) nx.onclick = (e) => { e.stopPropagation(); audio.pause(); onPass(); };
+        speak(line.jp, () => setTimeout(playMine, 300)); // 원어민 → 내 목소리 순서로 자동 재생
+      };
+      mr.start();
+      outEl.innerHTML = note("녹음 중… 다 말했으면 🎤를 다시 누르세요.");
+      maxT = setTimeout(() => s.stop(), Math.max(6000, line.jp.length * 450));
+    }).catch((err) => {
+      cleanup();
+      outEl.innerHTML = note(err && err.name === "NotAllowedError"
+        ? "마이크가 차단돼 있어요. 브라우저 설정에서 이 사이트의 마이크를 허용해 주세요."
+        : "마이크를 찾지 못했어요. 마이크가 연결돼 있는지 확인해 주세요.");
+    });
   }
 
   // ---------- 데이터 준비 ----------
@@ -375,6 +517,7 @@
         <label><input type="checkbox" data-pref="ko" ${P.ko ? "checked" : ""}> 번역</label>
         ${isRp ? "" : `<button class="btn small" id="playall">▶ 전체 듣기</button>`}
       </div>
+      <p class="muted small" style="margin:-6px 0 14px">🔊로 듣고 🎤를 눌러 따라 말해 보세요. 다 말하면 자동으로 채점돼요.</p>
       <div class="chat" id="chat"></div>
       <div id="talk-extra"></div>`;
     app.querySelectorAll("[data-go]").forEach((b) => b.onclick = () => { location.hash = b.dataset.go; });
@@ -478,6 +621,7 @@
   function route() {
     const [name, arg, arg2] = (location.hash.slice(1) || "home").split("-");
     app.onclick = null;
+    if (session) session.stop();
     document.querySelectorAll(".nav a").forEach((a) => a.classList.toggle("active", a.dataset.route === name));
     stopSpeak();
     ({ home: viewHome, kana: viewKana, vocab: viewVocab, talk: () => viewTalk(arg, arg2), grammar: viewGrammar }[name] || viewHome)();
