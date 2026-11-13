@@ -1,6 +1,742 @@
 {
- "updated": "2026-11-12T02:19:46+00:00",
+ "updated": "2026-11-13T01:30:06+00:00",
  "items": [
+  {
+   "pmid": "43019503",
+   "title": "Second Cancer Risk in Female Survivors of Hodgkin Lymphoma: A National Cohort Analysis Across Treatment Eras.",
+   "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "date": "2026 Nov 12",
+   "authors": [
+    "Macklin-Doherty A",
+    "Cunningham D",
+    "Chau I",
+    "Bates A",
+    "Benstead K",
+    "Bower M",
+    "Brunt M",
+    "Fields P",
+    "Follows G",
+    "Fox CP",
+    "Frew J",
+    "Gribben JG",
+    "Hoskin P",
+    "Irwin C",
+    "Lowry L",
+    "Radford J",
+    "Syndikus I",
+    "Zarkar A",
+    "Thomas E",
+    "Berrington de Gonzalez A",
+    "Jones ME",
+    "Swerdlow AJ"
+   ],
+   "doi": "10.1200/JCO-26-00418",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "호지킨 림프종 여성 생존자의 두 번째 암 위험: 치료 시대에 걸친 전국 코호트 분석."
+  },
+  {
+   "pmid": "43019500",
+   "title": "Access Inequities and System Capacity for Lymphoma Care in Latin America: Results From the Grupo de Estudio Latinoamericano de Linfoproliferativos Consortium.",
+   "journal": "JCO global oncology",
+   "date": "2026 Nov 12",
+   "authors": [
+    "Colunga-Pedraza PR",
+    "De Las Fuentes-Cepeda A",
+    "Vaquera Alfaro HA",
+    "Campos-Gonzalez LC",
+    "Ordóñez Ayala AG",
+    "Córdova Lucio CE",
+    "Korin L",
+    "Perini GF",
+    "Villela Martínez LM",
+    "Gómez-Almaguer D",
+    "Idrobo H",
+    "Rangel-Patiño J",
+    "Candelaria M",
+    "Castro D",
+    "Beltran B",
+    "Valvert F",
+    "Oliver AC",
+    "Peña C",
+    "Torres Viera MA",
+    "von Glasenapp A",
+    "Quiroz A",
+    "Jimenez RR",
+    "Roa M",
+    "Terán RB",
+    "Malpica L"
+   ],
+   "doi": "10.1200/GO-26-00266",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "라틴 아메리카의 림프종 치료에 대한 접근성 불평등 및 시스템 용량: Grupo de Estudio Latinoamericano de Linfoproliferativos Consortium의 결과."
+  },
+  {
+   "pmid": "43018997",
+   "title": "Et tu, CD70? When friend turns foe for follicular lymphoma.",
+   "journal": "Blood",
+   "date": "2026 Nov 12",
+   "authors": [
+    "Roddie C",
+    "Rampotas A"
+   ],
+   "doi": "10.1182/blood.2026035585",
+   "types": [
+    "Editorial",
+    "Comment"
+   ],
+   "title_ko": "그럼, CD70? 친구가 여포성 림프종 때문에 적으로 변할 때."
+  },
+  {
+   "pmid": "43018875",
+   "title": "Interpreting survival and recurrence after resection of anaplastic lymphoma kinase-rearranged non-small cell lung cancer.",
+   "journal": "General thoracic and cardiovascular surgery",
+   "date": "2026 Nov 12",
+   "authors": [
+    "Rahman M",
+    "Asif N"
+   ],
+   "doi": "10.1007/s11748-026-02436-y",
+   "types": [
+    "Letter",
+    "Comment"
+   ],
+   "title_ko": "역형성 림프종 키나제 재배열 비소세포폐암의 절제 후 생존 및 재발의 해석."
+  },
+  {
+   "pmid": "43018745",
+   "title": "Progressive multifocal leukoencephalopathy associated with obinutuzumab-bendamustine: combination therapy with mirtazapine and immunoglobulin.",
+   "journal": "Immunological medicine",
+   "date": "2026 Nov 12",
+   "authors": [
+    "Takenobu Y",
+    "Nakamichi K",
+    "Yukawa K",
+    "Inoue M",
+    "Hatano K",
+    "Hama Y",
+    "Mochida K",
+    "Toyama M",
+    "Miyahara J",
+    "Yamakawa K",
+    "Inoue M"
+   ],
+   "doi": "10.1080/25785826.2026.2760587",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "오비누투주맙-벤다무스틴과 관련된 진행성 다초점 백질뇌병증: 미르타자핀과 면역글로불린의 병용 요법."
+  },
+  {
+   "pmid": "43018631",
+   "title": "Discovery of 7-Aminofuro[2,3-c]pyridine-Based Irreversible Inhibitors of TGFβ-Activated Kinase 1 (TAK1) with In Vivo Antitumor Activity.",
+   "journal": "Journal of medicinal chemistry",
+   "date": "2026 Nov 12",
+   "authors": [
+    "Zuo Y",
+    "Fu T",
+    "Chen X",
+    "He F",
+    "Chen X",
+    "Wortmann L",
+    "Schulze VK",
+    "Heinrich TK",
+    "Suelzle D",
+    "Nussbaum FV",
+    "Pan Z"
+   ],
+   "doi": "10.1021/acs.jmedchem.6c01364",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "생체 내 항종양 활성을 갖는 TGFβ 활성화 키나제 1(TAK1)의 7-아미노푸로[2,3-c]피리딘 기반 비가역적 억제제의 발견."
+  },
+  {
+   "pmid": "43018551",
+   "title": "Discovery of Tricyclic Oxazinoquinolinone-Based BCL6 PROTAC Degraders with Potent Activity Against Diffuse Large B-Cell Lymphoma.",
+   "journal": "Journal of medicinal chemistry",
+   "date": "2026 Nov 12",
+   "authors": [
+    "Chen X",
+    "Xu R",
+    "Wang X",
+    "Wu H",
+    "Wang N",
+    "Huang X",
+    "Kang W",
+    "You Q",
+    "Guo X",
+    "Jiang Z"
+   ],
+   "doi": "10.1021/acs.jmedchem.6c02040",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "미만성 대형 B세포 림프종에 대해 강력한 활성을 갖는 삼환식 옥사지노퀴놀리논 기반 BCL6 PROTAC 분해제의 발견."
+  },
+  {
+   "pmid": "43018252",
+   "title": "Electroacupuncture inhibits the nuclear factor kappa B signaling pathway and alleviates knee synovial membrane inflammation and chondrocyte apoptosis in a rat model of knee osteoarthritis.",
+   "journal": "Acupuncture in medicine : journal of the British Medical Acupuncture Society",
+   "date": "2026 Nov 12",
+   "authors": [
+    "Lu M",
+    "Meng DH",
+    "Li T",
+    "Luan GR",
+    "Luo SY",
+    "Liu CB",
+    "She ZY",
+    "Wu X",
+    "Xia S",
+    "Jiang T",
+    "Yang YH"
+   ],
+   "doi": "10.1177/09645284261496295",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "전기 침술은 핵 인자 카파 B 신호 전달 경로를 억제하고 무릎 골관절염의 쥐 모델에서 무릎 윤활막 염증과 연골 세포 세포 사멸을 완화합니다."
+  },
+  {
+   "pmid": "43017919",
+   "title": "How I diagnose myeloid or lymphoid neoplasms with tyrosine kinase gene fusions.",
+   "journal": "American journal of clinical pathology",
+   "date": "2026 Nov 4",
+   "authors": [
+    "Jen WY",
+    "Loghavi S"
+   ],
+   "doi": "10.1093/ajcp/aqag119",
+   "types": [
+    "Journal Article",
+    "Review"
+   ],
+   "title_ko": "티로신 키나제 유전자 융합으로 골수성 또는 림프성 신생물을 진단하는 방법."
+  },
+  {
+   "pmid": "43017607",
+   "title": "Sequential Bilateral Optic Neuropathy Associated With IgM-Secreting B-cell Non-Hodgkin Lymphoma.",
+   "journal": "Cureus",
+   "date": "2026 Oct 12",
+   "authors": [
+    "Kang MJ",
+    "Rivas AL",
+    "Kumar J",
+    "Janda P",
+    "Vickers A"
+   ],
+   "doi": "10.7759/cureus.117814",
+   "types": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "title_ko": "IgM 분비 B세포 비호지킨 림프종과 관련된 순차적 양측 시신경병증"
+  },
+  {
+   "pmid": "43017553",
+   "title": "Case Report: Delayed epirubicin extravasation-induced ulceration in a dog managed without surgical intervention using adjunctive hyperbaric gaseous cryotherapy.",
+   "journal": "Frontiers in veterinary science",
+   "date": "2026 Oct 28",
+   "authors": [
+    "Kim CG",
+    "Park JH",
+    "Jeong SW"
+   ],
+   "doi": "10.3389/fvets.2026.1939525",
+   "types": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "title_ko": "증례 보고: 개에서 지연된 에피루비신 혈관 외 유출로 인한 궤양이 외과적 개입 없이 보조 고압가스 냉동 요법을 사용하여 관리되었습니다."
+  },
+  {
+   "pmid": "43017492",
+   "title": "Primary pulmonary MALT lymphoma with probable isolated light chain deposition disease: Case report and literature review.",
+   "journal": "Radiology case reports",
+   "date": "2026 Nov 5",
+   "authors": [
+    "Elghoul R",
+    "Weingartz L",
+    "Hayat F",
+    "Evans J",
+    "Selis J"
+   ],
+   "doi": "10.1016/j.radcr.2026.10.048",
+   "types": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "title_ko": "고립된 경쇄 침착 질환이 있을 가능성이 있는 원발성 폐 MALT 림프종: 증례 보고 및 문헌 검토."
+  },
+  {
+   "pmid": "43017321",
+   "title": "Kikuchi-Fujimoto disease mimicking lymphoma and tuberculosis in an endemic region: a case report.",
+   "journal": "Annals of medicine and surgery (2012)",
+   "date": "2026 Sep 30",
+   "authors": [
+    "Basnet A",
+    "Khanal A",
+    "Karmacharya S",
+    "Bista S",
+    "Mandal SK"
+   ],
+   "doi": "10.1097/MS9.0000000000005627",
+   "types": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "title_ko": "풍토병 지역에서 림프종과 결핵을 모방한 키쿠치-후지모토병: 증례 보고."
+  },
+  {
+   "pmid": "43017245",
+   "title": "T-lymphoblastic Leukemia/lymphoma presenting as pericardial tamponade: a case report and literature review.",
+   "journal": "Oxford medical case reports",
+   "date": "2026 Nov 2",
+   "authors": [
+    "Rhabneh L",
+    "Alkhanafsa M",
+    "Ababneh R",
+    "Qaddour S",
+    "Wafi J",
+    "Algorani E",
+    "Alzughayyar T",
+    "Mohammad H",
+    "Telfah H"
+   ],
+   "doi": "10.1093/omcr/omag065",
+   "types": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "title_ko": "심낭 압전으로 나타나는 T-림프구성 백혈병/림프종: 증례 보고 및 문헌 검토."
+  },
+  {
+   "pmid": "43016952",
+   "title": "Context-dependent immunoregulation by BAFF: reconciling its pro-tumorigenic, anti-tumor, and autoimmune roles through a multi-factorial lens.",
+   "journal": "Frontiers in immunology",
+   "date": "2026 Oct 28",
+   "authors": [
+    "Shang J",
+    "Jin M",
+    "Jiang K",
+    "Liu W",
+    "Li J",
+    "Chen X"
+   ],
+   "doi": "10.3389/fimmu.2026.1975879",
+   "types": [
+    "Journal Article",
+    "Review"
+   ],
+   "title_ko": "BAFF에 의한 상황 의존적 면역 조절: 다인자 렌즈를 통해 전종양 형성, 항종양 및 자가면역 역할을 조정합니다."
+  },
+  {
+   "pmid": "43016696",
+   "title": "Case Report: Cytomegalovirus retinitis in an HIV-negative patient with splenic mantle cell lymphoma treated with bendamustine-rituximab.",
+   "journal": "Frontiers in immunology",
+   "date": "2026 Oct 28",
+   "authors": [
+    "Tsai YH",
+    "Lin HC",
+    "Yang WC",
+    "Lin TJ",
+    "Tsai JJ"
+   ],
+   "doi": "10.3389/fimmu.2026.1979881",
+   "types": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "title_ko": "증례 보고: 벤다무스틴-리툭시맙으로 치료한 비장 외투 세포 림프종을 앓고 있는 HIV 음성 환자의 거대세포 바이러스 망막염."
+  },
+  {
+   "pmid": "43016691",
+   "title": "Successful salvage therapy with glofitamab followed by selinexor maintenance in an elderly patient with primary refractory diffuse large b-cell lymphoma harboring TP53 and CD58 mutations: a case report and literature review.",
+   "journal": "Frontiers in oncology",
+   "date": "2026 Oct 28",
+   "authors": [
+    "Zhang Y",
+    "Liu H",
+    "Li L",
+    "Wang C",
+    "Cao J",
+    "Zeng P",
+    "Yue L",
+    "Wu C"
+   ],
+   "doi": "10.3389/fonc.2026.1908174",
+   "types": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "title_ko": "TP53 및 CD58 돌연변이가 있는 원발성 난치성 미만성 거대 B세포 림프종을 앓고 있는 노인 환자에서 글로피타맙을 사용한 성공적인 구제 요법에 이어 셀리넥서 유지 관리: 증례 보고 및 문헌 검토."
+  },
+  {
+   "pmid": "43016387",
+   "title": "Transcriptional landscape of nodular lymphocyte-predominant Hodgkin lymphoma and T-cell/histiocyte-rich large B-cell lymphoma: tumor microenvironment and checkpoint genes.",
+   "journal": "Haematologica",
+   "date": "2026 Nov 12",
+   "authors": [
+    "Kalashnikov I",
+    "Russell V",
+    "Kositsky R",
+    "Biral LPA",
+    "Kovanen P",
+    "Dunkel J",
+    "Karjalainen-Lindsberg ML",
+    "Pasanen A",
+    "Thakkar D",
+    "Koff JL",
+    "Jaye D",
+    "Ondrejka S",
+    "Hsi ED",
+    "Mason EF",
+    "Juskevicius R",
+    "Love C",
+    "Shingleton JR",
+    "Thacker E",
+    "Happ L",
+    "Parker C",
+    "Dave T",
+    "Pedersen MØ",
+    "Czader M",
+    "Zhou J",
+    "O'Malley D",
+    "Xu M",
+    "Evans A",
+    "Cheng CL",
+    "McKinney M",
+    "McCall CM",
+    "Tse E",
+    "Yeung RA",
+    "Natkunam Y",
+    "Louissaint A Jr",
+    "Chapman J",
+    "Amador C",
+    "Chadburn A",
+    "Fedoriw Y",
+    "Behdad A",
+    "Galvez C",
+    "Sojitra P",
+    "Evens A",
+    "Naresh KN",
+    "Dave SS",
+    "Leppä S"
+   ],
+   "doi": "10.3324/haematol.2026.301728",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "결절성 림프구 우세형 호지킨 림프종과 T세포/조직구 풍부 거대 B세포 림프종의 전사 환경: 종양 미세환경 및 체크포인트 유전자."
+  },
+  {
+   "pmid": "43016303",
+   "title": "Design, synthesis, and mechanistic elucidation of lawsone derivatives as novel inducers of ROS-associated mitochondrial apoptosis in breast cancer.",
+   "journal": "Future medicinal chemistry",
+   "date": "2026 Nov 12",
+   "authors": [
+    "Hassan AY",
+    "Abou-Amra ES",
+    "El Saeed HS",
+    "El-Sebaey SA",
+    "El Rabeeb SI"
+   ],
+   "doi": "10.1080/17568919.2026.2761364",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "유방암에서 ROS 관련 미토콘드리아 세포사멸의 새로운 유도제로서 로손 유도체의 설계, 합성 및 기계적 설명."
+  },
+  {
+   "pmid": "43016126",
+   "title": "(Elastography) E-BI-RADS: A Novel Classification System for Breast Elastography to Enable Safe Biopsy De-escalation.",
+   "journal": "Investigative radiology",
+   "date": "2026 Nov 12",
+   "authors": [
+    "Barr RG",
+    "Pfob A",
+    "Bauman P",
+    "Chang K",
+    "Mamone C",
+    "Golatta M"
+   ],
+   "doi": "10.1097/RLI.0000000000001318",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "(탄성 검사) E-BI-RADS: 안전한 생검 축소를 가능하게 하는 유방 탄성 검사에 대한 새로운 분류 시스템입니다."
+  },
+  {
+   "pmid": "43015997",
+   "title": "Targeting CCR7 Attenuates Aggressive Phenotypes in Diffuse Large B-Cell Lymphoma by Suppressing Wnt/β-Catenin Signaling.",
+   "journal": "Cancer medicine",
+   "date": "2026 Nov",
+   "authors": [
+    "Huang K",
+    "Li J",
+    "Pan Y",
+    "Chen J",
+    "Jiang S",
+    "Yao Y",
+    "Liu Z",
+    "Chen D",
+    "Zhang Y",
+    "Wang H",
+    "Wan Y",
+    "Zhang Q",
+    "An F",
+    "Tao Q",
+    "Zhai Z",
+    "Wang J"
+   ],
+   "doi": "10.1002/cam4.72437",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "CCR7을 표적으로 삼는 것은 Wnt/β-Catenin 신호 전달을 억제함으로써 미만성 거대 B세포 림프종의 공격적인 표현형을 약화시킵니다."
+  },
+  {
+   "pmid": "43015987",
+   "title": "Outcomes for Patients With Primary Gastrointestinal Follicular Lymphoma: Results From a Multicenter Analysis.",
+   "journal": "Cancer medicine",
+   "date": "2026 Nov",
+   "authors": [
+    "St-Pierre F",
+    "Chen R",
+    "Mi X",
+    "Alrifai T",
+    "Alhamad K",
+    "McCall B",
+    "Annunzio K",
+    "Doukas PG",
+    "Schoen A",
+    "Fu L",
+    "Au C",
+    "Otto N",
+    "Rojek A",
+    "Ma Y",
+    "Kline J",
+    "Cohen JB",
+    "Matasar MJ",
+    "Epperla N",
+    "Ollila TA",
+    "Fitzgerald L",
+    "Danilov AV",
+    "Shouse G",
+    "Trabolsi A",
+    "Alderuccio JP",
+    "Lossos IS",
+    "Kim SH",
+    "Karmali R"
+   ],
+   "doi": "10.1002/cam4.72472",
+   "types": [
+    "Journal Article",
+    "Multicenter Study"
+   ],
+   "title_ko": "원발성 위장 여포성 림프종 환자에 대한 결과: 다기관 분석 결과."
+  },
+  {
+   "pmid": "43015911",
+   "title": "Dismantling the immune-metabolic barrier in TP53-mutant hematologic malignancies.",
+   "journal": "Experimental hematology & oncology",
+   "date": "2026 Nov 11",
+   "authors": [
+    "Su J",
+    "Zeng Y",
+    "Liu Y",
+    "Liu S",
+    "Ou K",
+    "Peng B",
+    "Li S",
+    "Li Y",
+    "Tu S"
+   ],
+   "doi": "10.1186/s40164-026-00857-2",
+   "types": [
+    "Journal Article",
+    "Review"
+   ],
+   "title_ko": "TP53 돌연변이 혈액학적 악성종양에서 면역 대사 장벽을 해체합니다."
+  },
+  {
+   "pmid": "43015420",
+   "title": "AI-assisted [(18)F]FDG PET/CT quantification: a time-saving approach in large B-cell lymphoma?",
+   "journal": "EJNMMI physics",
+   "date": "2026 Aug 16",
+   "authors": [
+    "Micheletti V",
+    "Marchal É",
+    "Gambiez M",
+    "Dercle L",
+    "Meyer ME",
+    "Palard-Novello X",
+    "Girard A"
+   ],
+   "doi": "10.1186/s40658-026-00923-y",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "AI 지원 [(18)F]FDG PET/CT 정량화: 거대 B세포 림프종에 대한 시간 절약형 접근법?"
+  },
+  {
+   "pmid": "43015220",
+   "title": "How Many Lines of Therapy Do Patients With Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma Receive in Routine Clinical Practice in the United States? Real World Evidence From the Targeted Therapy Era.",
+   "journal": "Clinical lymphoma, myeloma & leukemia",
+   "date": "2026 Oct 14",
+   "authors": [
+    "Stephens DM",
+    "Levy MY",
+    "Bhandari NR",
+    "Sugihara T",
+    "Feng B",
+    "Ahn IE",
+    "Graff T",
+    "Winfree KB",
+    "Fakhri B",
+    "Lampson EE",
+    "Soltanifar M",
+    "Flinn I",
+    "Abhyankar S",
+    "Abada P",
+    "Parikh SA"
+   ],
+   "doi": "10.1016/j.clml.2026.10.010",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "미국에서 만성 림프구성 백혈병/소림프구성 림프종 환자는 일상적인 임상 실습에서 몇 라인의 치료를 받습니까? 표적 치료 시대의 실제 증거."
+  },
+  {
+   "pmid": "43014944",
+   "title": "Sulfoxaflor provokes progressive myocardial injury by disrupting HIF-1α/VEGFA signaling, redox balance, and inflammation: A comprehensive biochemical, echocardiographic, and histopathological approach.",
+   "journal": "Journal of environmental sciences (China)",
+   "date": "2026 Jan 20",
+   "authors": [
+    "Dong Y",
+    "Jamil S",
+    "Safadi ME",
+    "Akbar A",
+    "Hayat MF",
+    "Al-Emam A",
+    "Hassan HM"
+   ],
+   "doi": "10.1016/j.jes.2026.01.037",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "Sulfoxaflor는 HIF-1α/VEGFA 신호 전달, 산화환원 균형 및 염증을 방해하여 진행성 심근 손상을 유발합니다. 포괄적인 생화학적, 심초음파 및 조직병리학적 접근 방식입니다."
+  },
+  {
+   "pmid": "43014829",
+   "title": "Incidentally detected thrombocytopenia and risk of haematological disease and death in the general population: prospective cohort study.",
+   "journal": "BMJ medicine",
+   "date": "2026 Nov 11",
+   "authors": [
+    "Juhl AR",
+    "Glenthøj A",
+    "Nordestgaard BG",
+    "Petersen JB",
+    "Dahl M",
+    "Ellervik C",
+    "Bojesen SE",
+    "Helby J"
+   ],
+   "doi": "10.1136/bmjmed-2025-002240",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "일반 인구에서 우연히 발견된 혈소판 감소증과 혈액 질환 및 사망 위험: 전향적 코호트 연구."
+  },
+  {
+   "pmid": "43014663",
+   "title": "Differences in Gene-Expression Profiles of Primary Cutaneous CD4(+) Small/Medium T-Cell Lymphoproliferative Disorder and Nodal TFH cell lymphoma, angioimmunoblastic-type.",
+   "journal": "The Journal of investigative dermatology",
+   "date": "2026 Nov 11",
+   "authors": [
+    "Díaz-Alejo JF",
+    "Rodríguez M",
+    "Rebollo-González M",
+    "Delgado MM",
+    "Manso R",
+    "Morillo D",
+    "Díaz de la Pinta FJ",
+    "Herencia C",
+    "Pajares R",
+    "Morales-Gallego M",
+    "Torre-Castro J",
+    "Rodríguez-Pinilla SM"
+   ],
+   "doi": "10.1016/j.jid.2026.10.041",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "원발성 피부 CD4(+) 소/중형 T세포 림프구 증식성 질환 및 결절성 TFH 세포 림프종, 혈관면역모세포형의 유전자 발현 프로파일의 차이."
+  },
+  {
+   "pmid": "43014544",
+   "title": "Thiotepa/Busulfan/Cyclophosphamide versus Busulfan/Thiotepa Conditioning For Autologous Stem Cell Transplantation in CNS Lymphoma: A Single-Center Comparative and Descriptive Experience.",
+   "journal": "Transplantation and cellular therapy",
+   "date": "2026 Nov 11",
+   "authors": [
+    "Khouderchah C",
+    "Iovino L",
+    "Venur VA",
+    "Holmberg LA"
+   ],
+   "doi": "10.1016/j.jtct.2026.11.004",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "CNS 림프종의 자가 줄기 세포 이식을 위한 Thiotepa/Busulfan/Cyclophosphamide 대 Busulfan/Thiotepa 컨디셔닝: 단일 센터 비교 및 ​​설명 경험."
+  },
+  {
+   "pmid": "43014195",
+   "title": "Integrative transcriptomic and in silico analysis identifies novel long non-coding RNAs associated with BCL6 and SPARC in diffuse large B-cell lymphoma.",
+   "journal": "Computational biology and chemistry",
+   "date": "2026 Nov 5",
+   "authors": [
+    "Arun SM",
+    "Roy U",
+    "Desai S",
+    "Choudhary B",
+    "Raghavan SC",
+    "Devaki NS"
+   ],
+   "doi": "10.1016/j.compbiolchem.2026.109539",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "통합 전사체 및 in silico 분석을 통해 미만성 거대 B세포 림프종에서 BCL6 및 SPARC와 연관된 새로운 긴 비코딩 RNA를 식별합니다."
+  },
+  {
+   "pmid": "43014043",
+   "title": "Multiple and central nervous system extranodal involvement predict poor prognosis in R/R DLBCL following CD19 CAR-T therapy.",
+   "journal": "Leukemia research",
+   "date": "2026 Nov 7",
+   "authors": [
+    "Liu J",
+    "Zhao M",
+    "Liu X",
+    "Zhang J",
+    "Zhang X",
+    "An Y",
+    "Guo S",
+    "Li M",
+    "Liu L",
+    "Wang X",
+    "Zhao M"
+   ],
+   "doi": "10.1016/j.leukres.2026.108367",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "다발성 및 중추신경계 림프절외 침범은 CD19 CAR-T 치료 후 R/R DLBCL의 불량한 예후를 예측합니다."
+  },
   {
    "pmid": "43013712",
    "title": "Elevated UHRF1 predicts unfavorable clinical outcomes in adult T-cell leukemia/lymphoma: Clinicopathological analysis and preliminary in vitro observations.",
@@ -17,7 +753,8 @@
    "doi": "10.1371/journal.pone.0362674",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "상승된 UHRF1은 성인 T세포 백혈병/림프종에서 불리한 임상 결과를 예측합니다: 임상병리학적 분석 및 예비 시험관 내 관찰."
   },
   {
    "pmid": "43013547",
@@ -40,7 +777,8 @@
    "doi": "10.1073/pnas.2624410123",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "배 중심 B 세포 및 형질세포 분화에서 글루코코르티코이드 수용체의 생리학적 및 약리학적 역할."
   },
   {
    "pmid": "43013347",
@@ -87,7 +825,8 @@
    "doi": "10.1158/2767-9764.CRC-26-0077",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "원발성 종격동 거대 B세포 림프종 게놈 프로파일링은 흉선 B세포 동일성과 빈번한 비정상적인 체세포 과다돌연변이를 보여줍니다."
   },
   {
    "pmid": "43013276",
@@ -105,7 +844,8 @@
    "doi": "10.1080/13548506.2026.2759976",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "악성 림프종 아동의 화학요법 중 심리적 탄력성과 의료 놀이 치료의 연관성: 성향 점수 가중 후향적 코호트 연구."
   },
   {
    "pmid": "43013107",
@@ -124,7 +864,8 @@
    "doi": "10.1007/s10495-026-02477-x",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "Carrimycin은 TCF3-BCR 신호 전달 축을 억제하고 Burkitt 림프종에서 산화성 DNA 손상을 유도합니다."
   },
   {
    "pmid": "43012856",
@@ -139,7 +880,8 @@
     "Journal Article",
     "Review",
     "English Abstract"
-   ]
+   ],
+   "title_ko": "[HIV 감염자의 중추신경계 관련]."
   },
   {
    "pmid": "43012796",
@@ -167,7 +909,8 @@
    "types": [
     "Journal Article",
     "Case Reports"
-   ]
+   ],
+   "title_ko": "류마티스 관절염과 유육종증 환자에서 일측성 림프부종으로 나타난 혈관내 거대 B세포 림프종: 증례 보고."
   },
   {
    "pmid": "43012787",
@@ -183,7 +926,8 @@
    "doi": "10.1097/MD.0000000000051347",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "호지킨 림프종으로 진단된 환자의 HALP 점수의 예후 가치."
   },
   {
    "pmid": "43012167",
@@ -201,7 +945,8 @@
    "doi": "10.1002/bmc.70653",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "체외 성분-생체 내 전달 성분-효능 목표를 기반으로 테트라세라 아시아티카 정제를 사용한 알코올성 간 질환 치료를 위한 물질 기반 및 Q-마커 탐색."
   },
   {
    "pmid": "43011688",
@@ -218,7 +963,8 @@
    "doi": "10.12890/2026_007477",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "IV기 악성종양을 모방한 바르토넬라 헨셀라에로 인한 육아종성 간염."
   },
   {
    "pmid": "43011476",
@@ -251,7 +997,8 @@
     "Multicenter Study",
     "Randomized Controlled Trial",
     "Clinical Trial, Phase III"
-   ]
+   ],
+   "title_ko": "진행성 역형성 림프종 키나아제 억제제 무경험 ALK 양성 비소세포폐암에서의 Dirozalkib 대 Crizotinib: 다기관, 무작위 3상 임상시험."
   },
   {
    "pmid": "43011227",
@@ -267,7 +1014,8 @@
    "doi": "10.1155/crom/7092035",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "운동실조-모세혈관확장증을 앓는 소아 환자에서 안와 주위 봉와직염으로 가장한 안와 미만성 대형 B세포 림프종: 증례 보고."
   },
   {
    "pmid": "43011095",
@@ -287,8 +1035,10 @@
    ],
    "doi": "10.3389/fimmu.2026.1967450",
    "types": [
-    "Journal Article"
-   ]
+    "Journal Article",
+    "Research Support, N.I.H., Extramural"
+   ],
+   "title_ko": "PBMC 이식된 NSG-SGM3-IL15-DKO(S15-DKO) 면역결핍 마우스 모델에서 인간 면역 세포의 다양성이 향상되었습니다."
   },
   {
    "pmid": "43011050",
@@ -303,7 +1053,8 @@
    "doi": "10.3389/fimmu.2026.1978141",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "PET/CT를 넘어서: 여포성 림프종에서 순환 종양 DNA의 진화하는 역할."
   },
   {
    "pmid": "43010886",
@@ -324,7 +1075,8 @@
    "doi": "10.3389/fonc.2026.1905087",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "이차성 장내 미만성 거대 B세포 림프종의 임상적 특성 및 예후 분석: 10년간의 다기관 후향적 연구."
   },
   {
    "pmid": "43010876",
@@ -347,7 +1099,8 @@
    "doi": "10.1093/nar/gkag1155",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "전사 인자 BCL11B의 이분 DNA 결합 도메인은 클러스터링된 짧은 DNA 서열 모티프와 결합합니다."
   },
   {
    "pmid": "43010841",
@@ -367,7 +1120,8 @@
    "doi": "10.5414/NP301768",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "후두엽 종괴로 나타나는 원발성 중추신경계 ALK 음성 역형성 대세포 림프종: 증례 보고 및 문헌 고찰."
   },
   {
    "pmid": "43010748",
@@ -391,7 +1145,8 @@
     "Journal Article",
     "Multicenter Study",
     "English Abstract"
-   ]
+   ],
+   "title_ko": "[재발성/불응성 미만성 거대 B세포 림프종 치료에서 R-GDP 요법과 결합된 미톡산트론 염산염 리포솜: 단일군, 다기관, 탐색적 임상 연구]."
   },
   {
    "pmid": "43010742",
@@ -410,7 +1165,8 @@
     "Journal Article",
     "Review",
     "English Abstract"
-   ]
+   ],
+   "title_ko": "[유방암에서 아로마타제 억제제로 인한 관절통의 정밀 관리의 발전]."
   },
   {
    "pmid": "43010142",
@@ -439,7 +1195,8 @@
    "doi": "10.1111/his.70314",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "MALToma와 유사한 발현을 보이는 맨틀 세포 림프종의 임상적, 조직병리학적 및 분자적 특성 분석."
   },
   {
    "pmid": "43009990",
@@ -461,7 +1218,8 @@
    "doi": "10.1186/s12967-026-08814-7",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "CAR-T 세포 치료를 받는 B 세포 림프종 환자의 장내 미생물 역학에 대한 종방향 메타게놈 프로파일링."
   },
   {
    "pmid": "43009831",
@@ -479,7 +1237,8 @@
    "doi": "10.1186/s12885-026-16756-y",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "CDK4/6 억제제로 치료한 HR+/HER2 - 전이성 유방암에서 유리 T3/T4 비율의 잠재적 예후 가치."
   },
   {
    "pmid": "43009757",
@@ -503,7 +1262,8 @@
    "doi": "10.1186/s12865-026-00885-x",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "면역원성 세포 사멸 관련 시그니처는 세포증식증을 DLBCL의 면역억제 및 치료 취약성과 연관시킵니다."
   },
   {
    "pmid": "43009438",
@@ -520,7 +1280,8 @@
    "types": [
     "Journal Article",
     "Review"
-   ]
+   ],
+   "title_ko": "BDNF/TrkB/CREB 경로를 통한 인지 장애에 대한 천연 화합물의 효과: 검토."
   },
   {
    "pmid": "43009291",
@@ -538,7 +1299,8 @@
    "types": [
     "Case Reports",
     "Journal Article"
-   ]
+   ],
+   "title_ko": "중추신경계 관련 만성 림프구성 백혈병/소림프구성 림프종 치료를 위해 베네토클락스와 결합된 자누브루티닙: 희귀 사례 보고."
   },
   {
    "pmid": "43009285",
@@ -559,7 +1321,8 @@
    "doi": "10.1101/gr.281868.126",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "암에서 독소루비신 돌연변이 시그니처의 유도."
   },
   {
    "pmid": "43009177",
@@ -581,7 +1344,8 @@
    "doi": "10.1111/apm.70284",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "면역조직화학 마커 및 사후 간격 추정: 자가 조직에서 Caspase-8, Annexin A1, Bcl-2 및 NF-κB의 면역 발현에 대한 개념 증명 연구."
   },
   {
    "pmid": "43009022",
@@ -602,7 +1366,8 @@
    "doi": "10.1016/j.jtct.2026.11.019",
    "types": [
     "Journal Article"
-   ]
+   ],
+   "title_ko": "키메라 항원 수용체 T 세포 치료의 패혈증: 혈액 악성 종양으로 인한 입원 시 임상 결과 및 의료 자원 활용에 대한 6년간의 전국 분석."
   },
   {
    "pmid": "43008921",
@@ -627,697 +1392,8 @@
    "doi": "10.1016/j.envres.2026.126123",
    "types": [
     "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43008835",
-   "title": "The Presence of Targetable Mutations in Non-Small Cell Lung Cancer with Malignant Pleural Disease Is Not Associated with Improved Survival.",
-   "journal": "Respiratory medicine",
-   "date": "2026 Nov 10",
-   "authors": [
-    "Gilbert CR",
-    "Wilshire CL",
-    "Gorden JA"
    ],
-   "doi": "10.1016/j.rmed.2026.109273",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43008795",
-   "title": "Orelabrutinib plus R-CHOP in patients with newly diagnosed non-GCB double-expressor DLBCL: A single-arm, phase II study.",
-   "journal": "British journal of haematology",
-   "date": "2026 Nov 10",
-   "authors": [
-    "Yang Y",
-    "Zhao Y",
-    "Wu W",
-    "Zheng G",
-    "He D",
-    "Yang L",
-    "Li Y",
-    "Zi F",
-    "Zhou F",
-    "Wu C",
-    "He J",
-    "Cai Z"
-   ],
-   "doi": "10.1111/bjh.70944",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43008725",
-   "title": "Response to venetoclax-containing regimens in patients with relapsed/refractory (R/R) T-cell acute lymphoblastic leukaemia (T-ALL) and lymphoblastic lymphoma (T-LBL).",
-   "journal": "British journal of haematology",
-   "date": "2026 Nov 10",
-   "authors": [
-    "Thomas M",
-    "Ravichandran A",
-    "Dworkin E",
-    "Saygin C",
-    "DuVall A",
-    "Stock W",
-    "Patel AA"
-   ],
-   "doi": "10.1111/bjh.70960",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43008531",
-   "title": "Pregnancy and classic Hodgkin lymphoma: real world outcomes from a single center in Egypt.",
-   "journal": "Current problems in cancer",
-   "date": "2026 Nov 10",
-   "authors": [
-    "El-Ashwah S",
-    "Elashwah S",
-    "Najah MS",
-    "Saleh GA",
-    "Ibrahim EM",
-    "Shaaban Y"
-   ],
-   "doi": "10.1016/j.currproblcancer.2026.101350",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43008348",
-   "title": "CD74 links MHC class II risk to tumor immune microenvironment remodeling across the Sjögren-to-lymphoma axis.",
-   "journal": "Translational oncology",
-   "date": "2026 Nov 10",
-   "authors": [
-    "Liu S",
-    "Li M",
-    "Wang Y",
-    "Xia X",
-    "Wang P",
-    "Ni Z",
-    "Li Q",
-    "Teng Q",
-    "Han W",
-    "Liu J",
-    "Wang X",
-    "Yu S",
-    "Zhang H",
-    "Meng X",
-    "Zhong F",
-    "Wang H"
-   ],
-   "doi": "10.1016/j.tranon.2026.103103",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43008309",
-   "title": "CD19-CD28 costimulatory bispecific antibody plus glofitamab in R/R B-NHL: a phase 1 dose-escalation study.",
-   "journal": "Blood advances",
-   "date": "2026 Nov 10",
-   "authors": [
-    "Dickinson MJ",
-    "Korfi K",
-    "Hutchings M",
-    "Morschhauser F",
-    "Carlo-Stella C",
-    "Falchi L",
-    "Caimi PF",
-    "Dimier N",
-    "Smith L",
-    "Whayman M",
-    "Sam J",
-    "Keelara A",
-    "Jamois C",
-    "Wilson S",
-    "Jiang Z",
-    "Gallien J",
-    "Martinez-Quetglas I",
-    "Hinton H",
-    "Prieto Gonzalez-Albo I",
-    "Michielin F",
-    "Lechner K",
-    "Gritti G"
-   ],
-   "doi": "10.1182/bloodadvances.2026020917",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43008236",
-   "title": "Is Circulating Tumor DNA Ready for Clinical Use in Large B-cell Lymphoma?",
-   "journal": "Blood",
-   "date": "2026 Nov 10",
-   "authors": [
-    "Merryman RW",
-    "Roschewski M"
-   ],
-   "doi": "10.1182/blood.2026033073",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43007726",
-   "title": "HIV-resistant CD19/HIV-targeted dual CAR T cells control HIV replication and B cell lymphoma concurrently in humanized mice.",
-   "journal": "The Journal of clinical investigation",
-   "date": "2026 Nov 10",
-   "authors": [
-    "Liu N",
-    "Nardo D",
-    "Bhardwaj V",
-    "Glover J",
-    "Shukla D",
-    "Riley JL"
-   ],
-   "doi": "10.1172/JCI211637",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43007590",
-   "title": "Beyond the plateau: defining cure and charting the next decade in follicular lymphoma: redefining cure in follicular lymphoma.",
-   "journal": "Medical oncology (Northwood, London, England)",
-   "date": "2026 Nov 10",
-   "authors": [
-    "Ke Q",
-    "Zhou S"
-   ],
-   "doi": "10.1007/s12032-026-03449-6",
-   "types": [
-    "Journal Article",
-    "Review",
-    "Letter"
-   ]
-  },
-  {
-   "pmid": "43007455",
-   "title": "Physiological prehabilitation for patients undergoing cellular therapy in multiple myeloma and lymphoma: a systematic review.",
-   "journal": "Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer",
-   "date": "2026 Nov 10",
-   "authors": [
-    "Barredo JMS",
-    "Lim CC",
-    "Loy Y",
-    "Ooi M",
-    "Zeng Y"
-   ],
-   "doi": "10.1007/s00520-026-11427-x",
-   "types": [
-    "Journal Article",
-    "Systematic Review",
-    "Review"
-   ]
-  },
-  {
-   "pmid": "43007408",
-   "title": "Analysis of MYC, BCL2 and BCL6 rearrangements in oral plasmablastic lymphomas.",
-   "journal": "Virchows Archiv : an international journal of pathology",
-   "date": "2026 Nov 10",
-   "authors": [
-    "Legarrea JMA",
-    "Martins-Chaves RR",
-    "Drumond VZ",
-    "Magno LAV",
-    "de Cáceres CVBL",
-    "Pontes HAR",
-    "de Carvalho WRS",
-    "Burbano RMR",
-    "Vargas PA",
-    "Santos-Silva AR",
-    "Lopes MA",
-    "de Andrade BAB",
-    "Magalhães M",
-    "Gomez RS",
-    "Mesquita RA",
-    "Fonseca FP"
-   ],
-   "doi": "10.1007/s00428-026-04767-w",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43006917",
-   "title": "Pretreatment cognitive screening, treatment tolerability, and early mortality in older adults with advanced cancer initiating systemic therapy.",
-   "journal": "Journal of the National Cancer Institute",
-   "date": "2026 Nov 10",
-   "authors": [
-    "Mohamed M",
-    "Magnuson A",
-    "Chen Y",
-    "Janelsins M",
-    "Alieldin R",
-    "Tylock R",
-    "Wells M",
-    "Loh KP",
-    "Mustian K",
-    "Kamen C",
-    "Peppone L",
-    "Williams AM",
-    "Lin PJ",
-    "Altman BJ",
-    "Li CS",
-    "Ramsdale E",
-    "Mohile S"
-   ],
-   "doi": "10.1093/jnci/djag417",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43006049",
-   "title": "Patella lymphoma: rare presentation of primary bone lymphoma: a case report.",
-   "journal": "International journal of surgery case reports",
-   "date": "2026 Oct 22",
-   "authors": [
-    "Alkhonain LA",
-    "Alhamdan A",
-    "Alkhalifah RI"
-   ],
-   "doi": "10.1097/RC9.0000000000001154",
-   "types": [
-    "Case Reports",
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43006029",
-   "title": "Primary colonic lymphoma as an uncommon cause of large bowel obstruction: a case report.",
-   "journal": "International journal of surgery case reports",
-   "date": "2026 Oct 6",
-   "authors": [
-    "Kostara K",
-    "Velazquez B",
-    "Walkow S",
-    "Battagliola T",
-    "Moszczynski Z"
-   ],
-   "doi": "10.1097/RC9.0000000000001081",
-   "types": [
-    "Case Reports",
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43005584",
-   "title": "Expert recommendations on the management of major and minor toxicities associated with the use of lorlatinib in Latin America.",
-   "journal": "Frontiers in oncology",
-   "date": "2026 Oct 26",
-   "authors": [
-    "Corrales L",
-    "de Carvalho Calabrich AF",
-    "Perfetti AA",
-    "Mas López LA",
-    "Quilodran Peredo J",
-    "Garcia Montes LV",
-    "Cardona Zorrilla AF",
-    "Mejía Espinosa SA",
-    "Ramos-Pérez M",
-    "Pupareli CS",
-    "Harada G"
-   ],
-   "doi": "10.3389/fonc.2026.1740218",
-   "types": [
-    "Journal Article",
-    "Review"
-   ]
-  },
-  {
-   "pmid": "43005528",
-   "title": "CT referrals and cancer detection in patients referred by general practitioners with non-specific symptoms and signs of cancer: A retrospective study.",
-   "journal": "Acta radiologica open",
-   "date": "2026 Sep 22",
-   "authors": [
-    "Ohana NL",
-    "Axelsen J",
-    "Wilkinson MS",
-    "Graumann O",
-    "Sivesgaard K",
-    "Buus TW",
-    "Vedsted P",
-    "Midtgaard A",
-    "Greve SB",
-    "Larsen SKA"
-   ],
-   "doi": "10.1177/20584601261491165",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43005383",
-   "title": "Statistical cure, dynamic survivorship, and landmark-updated risk assessment in T-lymphoblastic lymphoma: A multicenter cohort study with population-based corroboration.",
-   "journal": "Chinese journal of cancer research = Chung-kuo yen cheng yen chiu",
-   "date": "2026 Oct 30",
-   "authors": [
-    "Chai J",
-    "Sun Y",
-    "Lei X",
-    "Zhao L",
-    "Chen J",
-    "An N",
-    "Zhang W",
-    "Wang Y",
-    "Ping L",
-    "Song Y",
-    "Yu H"
-   ],
-   "doi": "10.21147/j.issn.1000-9604.2026.05.06",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43005369",
-   "title": "Effects of high-intensity treadmill training on intestinal permeability and myocardial autophagy in rats.",
-   "journal": "Journal of exercise rehabilitation",
-   "date": "2026 Oct 27",
-   "authors": [
-    "Jin S",
-    "Sim YJ"
-   ],
-   "doi": "10.12965/jer.2652826.413",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43005248",
-   "title": "Development of Cloned B Cell Populations as Immunotherapeutic Agents Against MYC Carcinogenic Proteins.",
-   "journal": "Advanced pharmaceutical bulletin",
-   "date": "2026 Jun 27",
-   "authors": [
-    "Joshi S",
-    "Talele C",
-    "Chakraborthy G",
-    "Lalan M",
-    "Mali S"
-   ],
-   "doi": "10.34172/apb.46527",
-   "types": [
-    "Journal Article",
-    "Review"
-   ]
-  },
-  {
-   "pmid": "43005061",
-   "title": "Lymphedema as an initial manifestation of paraneoplastic rheumatic syndromes: a case series of six patients.",
-   "journal": "Frontiers in oncology",
-   "date": "2026 Oct 26",
-   "authors": [
-    "Zhang GH",
-    "Zhang LL",
-    "Jiang MN",
-    "Wang WX",
-    "Zhong KL",
-    "Wang YH"
-   ],
-   "doi": "10.3389/fonc.2026.1964817",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43004708",
-   "title": "Diagnostic performance of 18F-fluorodeoxyglucose PET/computed tomography in primary tumor localization and its impact on management in patients with metastases of unknown origin: a cross-sectional study.",
-   "journal": "Nuclear medicine communications",
-   "date": "2026 Nov 10",
-   "authors": [
-    "Mahmoud HA",
-    "Ibrahim EMA",
-    "Mekkawy MA",
-    "Mahmoud NM"
-   ],
-   "doi": "10.1097/MNM.0000000000002267",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43004305",
-   "title": "Construction and validation of a differential diagnosis model for multiple myeloma and lymphoma based on XGBoost machine learning: an explaining analysis study of SHAP.",
-   "journal": "BMC medical informatics and decision making",
-   "date": "2026 Aug 12",
-   "authors": [
-    "Su J",
-    "Qi S",
-    "Peng T",
-    "Chen Z",
-    "Zhao Y",
-    "Liang P",
-    "Chen Z",
-    "Xia Z",
-    "Yang H"
-   ],
-   "doi": "10.1186/s12911-026-03752-2",
-   "types": [
-    "Journal Article",
-    "Validation Study",
-    "Research Support, Non-U.S. Gov't"
-   ]
-  },
-  {
-   "pmid": "43004283",
-   "title": "Dynamic prognostic stratification and survival prediction in elderly patients with diffuse large B-cell lymphoma: a real-world evidence study.",
-   "journal": "BMC cancer",
-   "date": "2026 Aug 12",
-   "authors": [
-    "Jin Y",
-    "Zhou X",
-    "Chen X"
-   ],
-   "doi": "10.1186/s12885-026-16726-4",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43004205",
-   "title": "Real-world evidence study of brentuximab vedotin retreatment in patients with cutaneous T-cell lymphoma in Europe.",
-   "journal": "Leukemia & lymphoma",
-   "date": "2026 Nov 9",
-   "authors": [
-    "Mitteldorf C",
-    "de Masson A",
-    "Beylot-Barry M",
-    "Gutierrez A",
-    "Muniesa C",
-    "Gonzalez Barca E",
-    "Dippel E",
-    "Wobser M",
-    "Zomas A",
-    "Stache V",
-    "Assaf C"
-   ],
-   "doi": "10.1080/10428194.2026.2715822",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43004067",
-   "title": "Feasibility of Simulated Low-Dose CT with Deep Learning Denoising for Lymphoma PET/CT Imaging: A Clinical Study on Lesion Detection, Staging, and Therapy Response.",
-   "journal": "Journal of imaging informatics in medicine",
-   "date": "2026 Nov 9",
-   "authors": [
-    "He Y",
-    "Peng H",
-    "Li Z",
-    "Zou W",
-    "Xiang F",
-    "Li Y",
-    "Liu X",
-    "Dong Y",
-    "Chi D",
-    "Yang W",
-    "Liao M"
-   ],
-   "doi": "10.1007/s10278-026-02474-1",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43003888",
-   "title": "Metabolic tumor volume trajectory during bridging and association with outcomes after CAR T infusion in large B-cell lymphoma.",
-   "journal": "Bone marrow transplantation",
-   "date": "2026 Nov 9",
-   "authors": [
-    "Gong IY",
-    "Mirshahvalad SA",
-    "Almutairi E",
-    "Aminilari M",
-    "Jeeva M",
-    "Marinoni M",
-    "Azab M",
-    "Prica A",
-    "Rodin D",
-    "Bhella S",
-    "Aoki T",
-    "Chen C",
-    "Kridel R",
-    "Kukreti V",
-    "Vijenthira A",
-    "Yang C",
-    "Said BI",
-    "Wells W",
-    "Metser U",
-    "Crump M",
-    "Hodgson D",
-    "Veit-Haibach P",
-    "Kuruvilla J"
-   ],
-   "doi": "10.1038/s41409-026-03058-x",
-   "types": [
-    "Letter"
-   ]
-  },
-  {
-   "pmid": "43003695",
-   "title": "Venetoclax Elicits Nephrotoxicity Through TLR4/MyD88-Mediated Innate Immune Activation and IFN-γ Signaling.",
-   "journal": "Journal of applied toxicology : JAT",
-   "date": "2026 Nov 9",
-   "authors": [
-    "Akbar A",
-    "Jamil S",
-    "Alkhoshaiban AS",
-    "Alsaleem MA",
-    "Hassan HM",
-    "Aljohani A",
-    "Alsharif KF",
-    "Alzahrani KJ"
-   ],
-   "doi": "10.1002/jat.70504",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43002569",
-   "title": "Intense 18F-FDG Uptake in Isolated Splenic Rosai-Dorfman Disease.",
-   "journal": "Clinical nuclear medicine",
-   "date": "2026 Nov 9",
-   "authors": [
-    "Lu P",
-    "Chen F",
-    "Xin L",
-    "Yao L",
-    "Dai Z"
-   ],
-   "doi": "10.1097/RLU.0000000000006773",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43002421",
-   "title": "Preclinical characterization of the potent and selective MALT1 inhibitor safimaltib in B-cell lymphoma models.",
-   "journal": "Blood cancer discovery",
-   "date": "2026 Nov 9",
-   "authors": [
-    "Philippar U",
-    "Fontan L",
-    "Xia M",
-    "Vloemans N",
-    "Bekkers M",
-    "Gaudiano M",
-    "Irrechukwu O",
-    "van den Biggelaar D",
-    "Perova T",
-    "Guimerans-Lorenzo I",
-    "Wnuk-Lipinska K",
-    "Cornelissen I",
-    "van Heerden M",
-    "van der Leede BJ",
-    "Amssoms K",
-    "Xu R",
-    "Grant J",
-    "Trella E",
-    "Abraham Y",
-    "Kimpe K",
-    "Medaer B",
-    "Greway A",
-    "Snoeys J",
-    "Jacobs F",
-    "D Cummings M",
-    "Sun W",
-    "Thuring JW",
-    "Wu T",
-    "Gaj S",
-    "Verbist B",
-    "Connolly PJ",
-    "Austin N",
-    "Balasubramanian S",
-    "Kinyamu-Akunda J",
-    "Packman K",
-    "Edwards JP",
-    "Elsayed Y",
-    "Fourneau N",
-    "Morschhauser F",
-    "Gerecitano JF",
-    "Bussolari J",
-    "Melnick AM",
-    "Attar RM"
-   ],
-   "doi": "10.1158/2643-3230.BCD-26-0182",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43002332",
-   "title": "Real-world outcomes of CHASE therapy as salvage or bridging treatment for relapsed or refractory non-Hodgkin lymphoma.",
-   "journal": "Blood research",
-   "date": "2026 Nov 9",
-   "authors": [
-    "Tominaga R",
-    "Umino K",
-    "Honda T",
-    "Saito Y",
-    "Honda S",
-    "Yokoyama D",
-    "Noguchi A",
-    "Furuki S",
-    "Koyama S",
-    "Murahashi R",
-    "Nakashima H",
-    "Hyodo K",
-    "Toda Y",
-    "Minakata D",
-    "Ashizawa M",
-    "Yamamoto C",
-    "Hatano K",
-    "Sato K",
-    "Ohmine K",
-    "Fujiwara SI",
-    "Kanda Y"
-   ],
-   "doi": "10.1007/s44313-026-00189-4",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43002147",
-   "title": "Ocular Findings as the First Clue to Fulminant Natural Killer/T-Cell Lymphoma.",
-   "journal": "Ophthalmology",
-   "date": "2026 Nov 9",
-   "authors": [
-    "Wang X",
-    "Wang Y",
-    "Dou H"
-   ],
-   "doi": "10.1016/j.ophtha.2026.10.015",
-   "types": [
-    "Journal Article"
-   ]
+   "title_ko": "림프성 악성 종양 및 농업 노출: AGRICAN 전향적 코호트에서 하위 유형별 위험을 평가합니다."
   }
  ]
 }
