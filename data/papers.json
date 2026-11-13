@@ -1,6 +1,131 @@
 {
- "updated": "2026-11-13T01:49:26+00:00",
+ "updated": "2026-11-13T06:35:05+00:00",
  "items": [
+  {
+   "pmid": "43020432",
+   "title": "Pediatric-type Follicular Lymphoma Shows Unique Immunogenetic Features With Lack of Acquired N-glycosylation Sites.",
+   "journal": "Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc",
+   "date": "2026 Nov 12",
+   "authors": [
+    "Frauenfeld L",
+    "Steinhilber J",
+    "Otto F",
+    "Baskaran P",
+    "Abdollahi N",
+    "Giudicelli V",
+    "Nahnsen S",
+    "Salaverria I",
+    "Campo E",
+    "Jaffe ES",
+    "Quintanilla-Martínez L",
+    "Fend F",
+    "Bonzheim I"
+   ],
+   "doi": "10.1016/j.modpat.2026.101115",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "소아형 여포성 림프종은 획득된 N-글리코실화 부위가 부족하여 독특한 면역발생적 특징을 나타냅니다."
+  },
+  {
+   "pmid": "43020330",
+   "title": "Severe graft-versus-host disease and limited durable response with mogamulizumab for post-transplant relapse of adult T-cell leukemia/lymphoma.",
+   "journal": "Transplantation and cellular therapy",
+   "date": "2026 Nov 12",
+   "authors": [
+    "Fujita S",
+    "Ito A",
+    "Akahoshi Y",
+    "Shibano I",
+    "Nakanishi Y",
+    "Suzuki H",
+    "Ishikawa R",
+    "Usui A",
+    "Hirakawa T",
+    "Takeda W",
+    "Watanabe M",
+    "Fukuda T"
+   ],
+   "doi": "10.1016/j.jtct.2026.11.015",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "성인 T세포 백혈병/림프종의 이식 후 재발에 대한 모가물리주맙의 심각한 이식편대숙주병 및 제한된 지속 반응."
+  },
+  {
+   "pmid": "43020234",
+   "title": "Forensic Dermatology of Tattoos: Part 3B. Benign Skin Lesions and Cancers with Tattoos in a Forensic Setting.",
+   "journal": "Clinics in dermatology",
+   "date": "2026 Nov 12",
+   "authors": [
+    "Cohen PR"
+   ],
+   "doi": "10.1016/j.clindermatol.2026.11.002",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "문신의 법의학 피부과: 파트 3B. 법의학 환경에서 문신이 있는 양성 피부 병변 및 암."
+  },
+  {
+   "pmid": "43020058",
+   "title": "LILRB1 as a novel therapeutic target for CAR-T therapy in diffuse large B cell lymphoma.",
+   "journal": "Molecular therapy : the journal of the American Society of Gene Therapy",
+   "date": "2026 Sep 1",
+   "authors": [
+    "Zhu Y",
+    "Hodges A",
+    "Dubuque R",
+    "Jiang J",
+    "Peng Z",
+    "Zheng J",
+    "Liu Y",
+    "Xu Y",
+    "Li Y",
+    "Mai J",
+    "Davis J",
+    "Anthony Tang CH",
+    "Andrew Hu CC",
+    "Thomas-Tikhonenko A",
+    "Kiran Pingali SR",
+    "Zu Y",
+    "Singh KV",
+    "Arias CA",
+    "Safe S",
+    "Yong L",
+    "Chen SH",
+    "Pan PY"
+   ],
+   "doi": "10.1016/j.ymthe.2026.07.057",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "미만성 거대 B 세포 림프종의 CAR-T 치료를 위한 새로운 치료 표적으로 LILRB1."
+  },
+  {
+   "pmid": "43019634",
+   "title": "Influence of psychobiological predictors on the outcome of patients after allogeneic hematopoietic stem cell transplantation.",
+   "journal": "Hematology, transfusion and cell therapy",
+   "date": "2026 Nov 12",
+   "authors": [
+    "Lishewski P",
+    "Schäfer JA",
+    "Sohlbach K",
+    "Mack E",
+    "Wollmer E",
+    "Dohse M",
+    "Salzmann S",
+    "von Blanckenburg P",
+    "Beilharz L",
+    "Rief W",
+    "Neubauer A",
+    "Trenker-Burchert C"
+   ],
+   "doi": "10.1016/j.htct.2026.108570",
+   "types": [
+    "Journal Article"
+   ],
+   "title_ko": "동종 조혈모세포 이식 후 환자의 결과에 대한 정신생물학적 예측변수의 영향."
+  },
   {
    "pmid": "43019503",
    "title": "Second Cancer Risk in Female Survivors of Hodgkin Lymphoma: A National Cohort Analysis Across Treatment Eras.",
@@ -175,7 +300,7 @@
    "types": [
     "Journal Article"
    ],
-   "title_ko": "미만성 대형 B세포 림프종에 대해 강력한 활성을 갖는 삼환식 옥사지노퀴놀리논 기반 BCL6 PROTAC 분해제의 발견."
+   "title_ko": "미만성 거대 B세포 림프종에 대해 강력한 활성을 갖는 삼환식 옥사지노퀴놀리논 기반 BCL6 PROTAC 분해제의 발견."
   },
   {
    "pmid": "43018252",
@@ -251,7 +376,7 @@
     "Case Reports",
     "Journal Article"
    ],
-   "title_ko": "증례 보고: 개에서 지연된 에피루비신 혈관 외 유출로 인한 궤양이 외과적 개입 없이 보조 고압가스 냉동 요법을 사용하여 관리되었습니다."
+   "title_ko": "증례 보고: 개에서 지연된 에피루비신 혈관 외 유출로 인한 궤양이 외과적 개입 없이 보조 고압 기체 냉동 요법을 사용하여 관리되었습니다."
   },
   {
    "pmid": "43017492",
@@ -1282,118 +1407,6 @@
     "Review"
    ],
    "title_ko": "BDNF/TrkB/CREB 경로를 통한 인지 장애에 대한 천연 화합물의 효과: 검토."
-  },
-  {
-   "pmid": "43009291",
-   "title": "Zanubrutinib Combined With Venetoclax for the Treatment of Central Nervous System-Involved Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma: A Rare Case Report.",
-   "journal": "Cancer reports (Hoboken, N.J.)",
-   "date": "2026 Nov",
-   "authors": [
-    "Xie W",
-    "Yin Y",
-    "Wang J",
-    "Cui G",
-    "Zhang L"
-   ],
-   "doi": "10.1002/cnr2.70733",
-   "types": [
-    "Case Reports",
-    "Journal Article"
-   ],
-   "title_ko": "중추신경계 관련 만성 림프구성 백혈병/소림프구성 림프종 치료를 위해 베네토클락스와 결합된 자누브루티닙: 희귀 사례 보고."
-  },
-  {
-   "pmid": "43009285",
-   "title": "Derivation of doxorubicin mutational signatures in cancer.",
-   "journal": "Genome research",
-   "date": "2026 Nov 10",
-   "authors": [
-    "Skinner KT",
-    "Lee BP",
-    "Woods CW",
-    "Yoon JS",
-    "Ho SC",
-    "Boot A",
-    "Yu W",
-    "Rozen SG",
-    "Hong AL"
-   ],
-   "doi": "10.1101/gr.281868.126",
-   "types": [
-    "Journal Article"
-   ],
-   "title_ko": "암에서 독소루비신 돌연변이 시그니처의 유도."
-  },
-  {
-   "pmid": "43009177",
-   "title": "Immunohistochemical Markers and Post-Mortem Interval Estimation: A Proof-Of-Concept Study on Immunoexpression of Caspase-8, Annexin A1, Bcl-2, and NF-κB in Autoptic Tissues.",
-   "journal": "APMIS : acta pathologica, microbiologica, et immunologica Scandinavica",
-   "date": "2026 Nov",
-   "authors": [
-    "Pigaiani N",
-    "Gobbo S",
-    "Cirielli V",
-    "Oliviero B",
-    "Garavello M",
-    "Ambrosi E",
-    "Ausania F",
-    "Ammendola S",
-    "Bortolotti F",
-    "Brunelli M"
-   ],
-   "doi": "10.1111/apm.70284",
-   "types": [
-    "Journal Article"
-   ],
-   "title_ko": "면역조직화학 마커 및 사후 간격 추정: 자가 조직에서 Caspase-8, Annexin A1, Bcl-2 및 NF-κB의 면역 발현에 대한 개념 증명 연구."
-  },
-  {
-   "pmid": "43009022",
-   "title": "Sepsis in Chimeric Antigen Receptor T-Cell Therapy: A Six-Year Nationwide Analysis of Clinical Outcomes and Healthcare Resource Utilization in Hospitalizations for Hematologic Malignancies.",
-   "journal": "Transplantation and cellular therapy",
-   "date": "2026 Nov 10",
-   "authors": [
-    "Mohammad A",
-    "Gundakaram S",
-    "Gebremedhen AI",
-    "Becerra BJ",
-    "Rehman MEU",
-    "Souleymane M",
-    "Roy S",
-    "Teka ST",
-    "Lynch D"
-   ],
-   "doi": "10.1016/j.jtct.2026.11.019",
-   "types": [
-    "Journal Article"
-   ],
-   "title_ko": "키메라 항원 수용체 T 세포 치료의 패혈증: 혈액 악성 종양으로 인한 입원 시 임상 결과 및 의료 자원 활용에 대한 6년간의 전국 분석."
-  },
-  {
-   "pmid": "43008921",
-   "title": "Lymphoid malignancies and agricultural exposures: Assessing subtype-specific risks in the AGRICAN prospective cohort.",
-   "journal": "Environmental research",
-   "date": "2026 Nov 10",
-   "authors": [
-    "S T",
-    "A B",
-    "Ac G",
-    "S A",
-    "R D",
-    "M R",
-    "M B",
-    "S P",
-    "D M",
-    "Agrican-Group",
-    "A M",
-    "I B",
-    "P L"
-   ],
-   "doi": "10.1016/j.envres.2026.126123",
-   "types": [
-    "Journal Article"
-   ],
-   "title_ko": "림프성 악성 종양 및 농업 노출: AGRICAN 전향적 코호트에서 하위 유형별 위험을 평가합니다."
   }
  ]
 }
