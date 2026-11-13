@@ -332,7 +332,7 @@
       <div class="grid">
         <a class="card link-card" href="#kana"><div class="ico jp">あ</div><h3>문자</h3><p>히라가나·가타카나 표와 퀴즈</p></a>
         <a class="card link-card" href="#vocab"><div class="ico jp">語</div><h3>단어</h3><p>주제별 ${allWords.length}개 단어, 플래시카드</p></a>
-        <a class="card link-card" href="#talk"><div class="ico jp">話</div><h3>회화</h3><p>상황별 대화 ${DIALOGS.length}편 롤플레이</p></a>
+        <a class="card link-card" href="#talk"><div class="ico jp">話</div><h3>회화</h3><p>여행 상황별 대화 ${DIALOGS.length}편 롤플레이</p></a>
         <a class="card link-card" href="#listen"><div class="ico jp">聞</div><h3>듣기</h3><p>길 안내·안내방송 ${LISTENING.length}편 듣고 맞히기</p></a>
         <a class="card link-card" href="#grammar"><div class="ico jp">文</div><h3>문법</h3><p>꼭 필요한 기초 문형 ${GRAMMAR.length}가지</p></a>
       </div>
@@ -513,7 +513,7 @@
     if (!d) {
       app.innerHTML = `
         <h1>회화</h1>
-        <p class="lead">상황을 골라 대화를 듣고, 롤플레이에서 '나'의 대사를 직접 골라 보거나 말해 보세요.</p>
+        <p class="lead">공항부터 숙소·식당·쇼핑·관광, 문제가 생겼을 때까지 여행 순서대로 정리했어요. 상황을 골라 대화를 듣고, 롤플레이에서 '나'의 대사를 직접 골라 보거나 말해 보세요.</p>
         <div class="grid">${DIALOGS.map((x) => `
           <a class="card link-card" href="#talk-${x.id}">
             <div class="ico">${x.icon}</div><h3>${esc(x.title)}</h3>
