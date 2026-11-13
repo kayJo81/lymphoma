@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T01:29:03+00:00",
+ "updated": "2026-11-13T01:49:14+00:00",
  "items": [
   {
    "title": "ASH 2026: Sylvester Researchers Contribute to Almost 100 Poster Presentations at Annual Meeting | Newswise",
@@ -192,15 +192,6 @@
    "date": "2026-11-10T19:30:00+00:00",
    "lang": "ko",
    "topic": "치료"
-  },
-  {
-   "title": "Optimizing Treatment for Relapsed/Refractory Follicular Lymphoma",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZkFxVGtmWWFxdUgzWXJKaU9XTUVQNGJ0QVBVZ3lyNmc0QURhUk9qcktXaWtUUkpucldiLUlzRVR4T3NybEhval9aSDdkMHFBeVRLZWVfbjZjLVpRV0dKdnpXY0ZWNVlYMXNmUU9SOFRGX3FROVpORDl3Y2UzNTU2M2lrcUVsZ200RWRPY3RZQllDQVdlX0RUM2stT3Y0dnpnODM0Wjg3Y0N0bTc1eEE?oc=5",
-   "source": "The ASCO Post",
-   "date": "2026-11-10T17:12:54+00:00",
-   "lang": "en",
-   "topic": "신약",
-   "title_ko": "재발성/불응성 여포성 림프종 치료 최적화"
   },
   {
    "title": "Infections Cause Half of Non-Relapse Deaths Following CAR T-Cell Therapy",
@@ -412,12 +403,20 @@
    "topic": "치료"
   },
   {
+   "title": "브루킨사 병용요법 FDA 우선심사…외투세포림프종 1차 치료 신청",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4yUXRVeDFGVTRoLVRKaVpqWEhHZ2xzeXc4d0lFUC1aWTFieWg0X2NkclFHVGRIMG5sMnJyNkx6TkhwenVYR0RBM1RVOVk1RnVDZTlTM1BNZ0d2cVJrRktaOXgxOEpyUU9URXFN?oc=5",
+   "source": "https://www.diarypoint.com/",
+   "date": "2026-11-06T06:04:00+00:00",
+   "lang": "ko",
+   "topic": "치료"
+  },
+  {
    "title": "지씨셀, ‘CD5 CAR-NK’ T세포 림프종 1a상 반응률 52.9%·완전관해 29.4%",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5SRGhVT3Q2V2ZJbnFaM3BkRW9uZnJfSGRBWjZ0cGFpUVB2ZjREMFU0d2ZiNUt5YXVBMTVuM2ZFM29nbmVTQjZ4dmZpVFQ1OHVna1QzRGF1eU43LUl2aVVha2RLTUhZdWEwdlRXddIBcEFVX3lxTE5UZnFjNWthVERiT3BnenhxbjdvUkZORnZleVE0ZGV6NTNCUnZLSHNfZTRTb2lhNzNvazEyMUdHLVRsTGZ3WlJFSDREdkE5SkpaNFU1dTBSdkxCcGV5Z2xxWVpudWR2YXM0LXJubHVrYWo?oc=5",
    "source": "더바이오",
    "date": "2026-11-05T22:45:00+00:00",
    "lang": "ko",
-   "topic": "치료"
+   "topic": "임상"
   },
   {
    "title": "FDA Grants Priority Review to Zanubrutinib Plus Rituximab for Previously Untreated MCL",
@@ -514,14 +513,6 @@
    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1YU014SzFKSjNNU3dia2hQRXFqbURSYWtsSmRtOWl4QTRfM0tRemNxWkxiMWFMSEdNeE14RWRUMjdsTTdqUlJYR2hUd0p6ZDBlbWfSAVNBVV95cUxOb0NjX1BiZ0lGWWQ0ZUJwZ1VIRm5jVzhCX044R3Z2cHpjWXpUcmFXUUtXYzM3QlMzZFJRSF81UzVMc3BnNUUtQnRFblZGdDhKV043Zw?oc=5",
    "source": "서울경제",
    "date": "2026-11-05T01:36:07+00:00",
-   "lang": "ko",
-   "topic": "임상"
-  },
-  {
-   "title": "GC셀, 'CD5 CAR-NK' 림프종 1상 \"전체데이터 발표\"",
-   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE01RDNLVXVsTkV5UGdyX0dCVlc0RzIzanpwTklURHRaRHpFaFB0ekR1Z0tPN2JJSHFialFqSUdjMmR6SnE1cDdfc01jM2tHRmRtQTQ5TGVWRQ?oc=5",
-   "source": "바이오스펙테이터",
-   "date": "2026-11-05T00:54:00+00:00",
    "lang": "ko",
    "topic": "치료"
   },
@@ -728,12 +719,30 @@
    "topic": "치료"
   },
   {
+   "title": "Chronic lymphocytic leukemia: recent advances and emerging therapeutic strategies",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ydHl3VEdaT2x6a0xaVFVaSVlfNERaOWhCUzhqS0tQNExsZW81ZVJEbUJXNU9FMjgyUUIzRmNBRHNReU1LeDVLbWdUYVc4WWF0dUtmNWhhcDVKMTNlMVVJM3NQRGpmNllYX0ZnVA?oc=5",
+   "source": "Springer Nature Link",
+   "date": "2026-11-03T08:00:00+00:00",
+   "lang": "en",
+   "topic": "임상",
+   "title_ko": "만성 림프구성 백혈병: 최근 발전과 새로운 치료 전략"
+  },
+  {
    "title": "[주목! 이 사람] 첨단재생의료 1호, 이달 첫 투여",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9DcFg0YWlKanZQYmpXdHNBX0ZEOGZYcnpKZWFTMFFPOG5Lb01MZEdaSU5hSjFSSXAwN1ZsTlBBTXBSam01anM5cnJvQWVwTWpIQm9WZnlYaEZTc3ROUkNobnEtTWhKS1VYZkHSAW5BVV95cUxOLVNTcXN2ZjNMa29yb3FNbXBSZ2hnLXpNcFNsZ1AwTXl1bUJJdXN2enY4Uk5jc2FWcUdjSzgydkV2ekpVWGJRa253M3lWeTljamlPbDdnYkZtYmk3eHpjejJwNnIzck1DMlpkbUp5QQ?oc=5",
    "source": "더메디컬",
    "date": "2026-11-03T04:53:12+00:00",
    "lang": "ko",
    "topic": "치료"
+  },
+  {
+   "title": "Optimizing Treatment for Relapsed/Refractory Follicular Lymphoma",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbjkxWVo4Tms0V1BvVjA5TFFKZ3FoaE54aVpmYTk5OFluMHUxS1BmOHVIRzlYRG03WVlFaXhRRVdGVzF4UFN0N0MxRGk3NnFFSFVoZDBfbkFxcmpWWWdYdEFWV09YaVNiN0VuOW1BZTN0SkJnWllvYzVOeHdrV0FEdDhid1BnRFR4SldMVE9nTlA2S3NhR0gzVGdiSlJsLWlXRTFWWXRWRQ?oc=5",
+   "source": "The ASCO Post",
+   "date": "2026-11-02T16:57:04+00:00",
+   "lang": "en",
+   "topic": "신약",
+   "title_ko": "재발성/불응성 여포성 림프종 치료 최적화"
   },
   {
    "title": "큐로셀, ‘CAR-T’ 2차치료 적응증 확대 \"3상 IND 신청\"",
@@ -1249,14 +1258,6 @@
    "title": "엡코리타맙, 림프종 첫 치료서 질병 진행·사망 위험 51% 낮춰",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE95TUVURFNob3NuX3Zzb2JxNXU2c054WVVFOEpLUGZoOVUzR3B1QVBlTGEzWHl5dk81ZUpWcVdCcXVTNlJQeVpIaXI0Z2JjT1ljdHNCWVJyRmxTeHhmMDE5bnY0X3NNUlh6WkhZTTVOOA?oc=5",
    "source": "뉴스더보이스헬스케어",
-   "date": "2026-10-14T07:00:00+00:00",
-   "lang": "ko",
-   "topic": "치료"
-  },
-  {
-   "title": "미만성 거대 B세포 림프종 표준치료 바뀌나…효과적 새 치료 옵션 확인",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1mMDhZWlppWVUtRWUydWRMcDNWQnl2SW9JMFlHY1BZWVcwRGdadFVGT2J5TDN4VWo3QU95OUV6WUk5OGVhczk3THJiMG9ES3R0VndYTlQyMEpwZk85cFpFcDAzdXloMTVreTIyX05rRjlJZ9IBdkFVX3lxTE5FaUVvMnNWUkJxRnpDTElZUHpLTkhjUWVJVXZQYTBKNDBjQWxUX0FwcHRmNVVIcGxNZVAwdGFCbjdEZnAyOS1HRDRaOXVoZU1pMTQ0V2pKdHRCNEVUSDRZcy1GdVlyNWxaOHRtb25fZTJLbXRsY3c?oc=5",
-   "source": "코리아헬스로그",
    "date": "2026-10-14T07:00:00+00:00",
    "lang": "ko",
    "topic": "치료"
