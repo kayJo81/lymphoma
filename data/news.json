@@ -1,15 +1,6 @@
 {
- "updated": "2026-11-15T01:01:39+00:00",
+ "updated": "2026-11-16T01:01:56+00:00",
  "items": [
-  {
-   "title": "Glofitamab (Columvi): Mechanism of Action, Dosing, Clinical Uses, Trials, and Side Effects",
-   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5CWElXSkZ2V3hYVlp5YlF0dDZOQ21IcDBUN1Vpclg4LTk3amlqam1Sa3A0TkxSWGNqQUNtNTZQNzVrT0tRTEJDUzNBZ1NBb3o1aXpVVjVhenRSOWNlWEhV?oc=5",
-   "source": "Oncodaily",
-   "date": "2026-11-14T20:01:30+00:00",
-   "lang": "en",
-   "topic": "신약",
-   "title_ko": "Glofitamab(Columvi): 작용 메커니즘, 투여량, 임상적 사용, 시험 및 부작용"
-  },
   {
    "title": "중국, CAR-T 항암 치료제 첫 국가 의료보험 편입 보도…고가 치료 접근성 확대 기대",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE16eFBza1M2UGVad29Ea2k4cmdBc2w2aFBuZmp3RUZLeFZhOVRIUFcwMHhtSTJ4dlRJUXBZbEFsQ3RDNS1rUW9iTzBvNGdOWEhlRXJNcENFb25pTGpXRGthUjhOR1R4NldoeWp6UA?oc=5",
@@ -19,31 +10,12 @@
    "topic": "치료"
   },
   {
-   "title": "Prizlon-cel Earns FDA RMAT and Fast Track Designations in Relapsed LBCL",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQcGpQNzdack1sckpiVmV5WDNLZmxfUkNmOGI0Q3planhvZ1Y4Q2Z4RGRZMFljVm1ielU4NGpvekhWLWozRlBFMnZwbzZ3cGFXOW1jWGp5Tng1a1lhVElkYkFXcURJOVpqNTFqOVJ3cDhSaENxZE4yVzZhTE5BcE9NR3VHLUVLNVd2NGhlaG9iQTl2RWZtUE9uOHQ1UEVOWGVjNDQ2VGxKeTlrdw?oc=5",
-   "source": "CancerNetwork",
-   "date": "2026-11-13T23:12:23+00:00",
-   "lang": "en",
-   "topic": "신약",
-   "title_ko": "Prizlon-cel, 재발성 LBCL에 대해 FDA RMAT 및 패스트트랙 지정 획득"
-  },
-  {
    "title": "Phase I/II GO40554 trial: First-line Mosun + Pola in older patients with DLBCL",
    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxON3MtRW1sUzRhb3ZaZUc2MjVwbjJnbWpOWk9La0xpdlpMYkE1QWxiNnhDYmZ5NFdja3cwQWV2cUh1Y1ZFd2RHWmE1WVk0Y2trbnJsZVJFUnRlQmRZTXZ4elpqUFY2cEd4TnhxTTQ5R0M2a3V3SFlKYV9ucEZZRmozSjkwUGpRY3pTaGpyUml6UUg5aDZib0JHUFFXYnZCWXdHVFpoRzA0ZF9PdFR0RDZqU0dXQWZla3ptR1E?oc=5",
    "source": "Lymphoma Hub",
    "date": "2026-11-13T21:01:09+00:00",
    "lang": "en",
-   "topic": "임상",
-   "title_ko": "I/II상 GO40554 시험: 노인 DLBCL 환자의 1차 Mosun + Pola"
-  },
-  {
-   "title": "FDA Approves Perioperative Durvalumab/Enfortumab Vedotin in MIBC",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVkRXYUsybTNRalYyUlBxRkV5MGhBMnBWQ1lJM282dVQwb2JiMl84c3JPOHo4SVlRY0J3RDMtRlROT2diQUNUUmk1ZjVrX1ZIRmExcVNOLXdtQktUTDhBXzZIWVRDcWVPTXQycmdBbU9udU1hTVBsVTgzNXFDLUxETTFJWEp1UDRHMTVneDdBM25TZUl5bXhLelhNNjlMamZQ?oc=5",
-   "source": "CancerNetwork",
-   "date": "2026-11-13T19:08:46+00:00",
-   "lang": "en",
-   "topic": "임상",
-   "title_ko": "FDA, MIBC에서 수술 전후 Durvalumab/Enfortumab Vedotin 승인"
+   "topic": "임상"
   },
   {
    "title": "CAR T Cells Tied to Longer Remission, More Care Days in FL",
@@ -51,8 +23,7 @@
    "source": "Medscape",
    "date": "2026-11-13T12:09:38+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "CAR T 세포는 플로리다에서 더 긴 관해와 더 많은 치료 일수를 제공합니다"
+   "topic": "신약"
   },
   {
    "title": "Bridging to CD19 CAR T-cell therapy for large B-cell lymphoma: An analysis of 1,134 patients by the EBMT Lymphoma Working Party and the GoCART Coalition",
@@ -60,12 +31,11 @@
    "source": "Nature",
    "date": "2026-11-13T11:29:40+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "거대 B세포 림프종에 대한 CD19 CAR T세포 치료법의 연계: EBMT 림프종 실무진과 GoCART 연합이 1,134명의 환자를 분석한 결과"
+   "topic": "신약"
   },
   {
    "title": "“암 사라졌다고 끝 아냐”…내 면역세포로 림프종 재발 막는다[메디컬 인사이드]",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBFaW5FUmtCN0RObS11MFQxaEh6OUFhWEJPbEtRLURwVUFPM1VDR2ZqbmZxaTVfRTV0M1VUYmhQd3R4MWFkd2dUcHI5SW9iRW5oN24w0gFTQVVfeXFMUEVpbkVSa0I3RE5tLXUwVDFoSHo5QWFYQk9sS1EtRHBVQU8zVUNHZmpuZnFpNV9FNXQzVVRiaFB3dHgxYWR3Z1RwcjlJb2JFbmg3bjA?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1QYnRVa2N2OHlJRndwTG5zaHZyWnRleXd1S2dDakhmNnEwMENYTzFWNEp2TlBFdFZlU3Y1RmhxRjRYOXpjSEw2WFA3M1hXcVlQbmfSAVNBVV95cUxQRWluRVJrQjdETm0tdTBUMWhIejlBYVhCT2xLUS1EcFVBTzNVQ0dmam5mcWk1X0U1dDNVVGJoUHd0eDFhZHdnVHByOUlvYkVuaDduMA?oc=5",
    "source": "서울경제",
    "date": "2026-11-13T09:03:51+00:00",
    "lang": "ko",
@@ -77,8 +47,7 @@
    "source": "Oncodaily",
    "date": "2026-11-13T05:26:04+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "Mosunetuzumab (Lunsumio, Lunsumio Velo): 작용 메커니즘, 용량, 임상 용도, 시험 및 부작용"
+   "topic": "신약"
   },
   {
    "title": "노보메디슨, IPO 앞두고 임상 탄력…\"내년 신약 품목허가 신청 목표\" - 머니투데이",
@@ -89,22 +58,12 @@
    "topic": "신약"
   },
   {
-   "title": "ASH 2026: Sylvester Researchers Contribute to Almost 100 Poster Presentations at Annual Meeting | Newswise",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNM3lKcVdGdzRqZ21HRExPTHk3Vk5BVTZSVWRkUUdaNlFtdGpnUGpjNV9PRzhnTFFkV1Ywcko1WENkcHR0NWw1UUhBam9kUUx5SEtBaFNxQkdBQnRfc3JNYjQ4TWFJa01XOXBWS1ZnV1JlRkszaXljZXFoRzk3cGZLRm5Hckd4WjZWRGFJbmE1QWhNc1Jid1lwbWZscG1NZEhIOFBQaGJ2ZlZKVEI1WXVOZjlXdHZaMkczNFJfSTZPM1pKWi01TFNr0gHHAUFVX3lxTE0zeUpxV0Z3NGpnbUdETE9MeTdWTkFVNlJVZGRRR1o2UW10amdQamM1X09HOGdMUWRXVjBySjVYQ2RwdHQ1bDVRSEFqb2RRTHlIS0FoU3FCR0FCdF9zck1iNDhNYUlrTVc5cFZLVmdXUmVGSzNpeWNlcWhHOTdwZktGbkdyR3haNlZEYUluYTVBaE1zUmJ3WXBtZmxwbU1kSEg4UFBoYnZmVkpUQjVZdU5mOVd0dloyRzM0Ul9JNk8zWkpaLTVMU2s?oc=5",
-   "source": "Newswise",
-   "date": "2026-11-12T22:15:00+00:00",
-   "lang": "en",
-   "topic": "임상",
-   "title_ko": "ASH 2026: 실베스터 연구원들이 연례 회의에서 거의 100개에 달하는 포스터 발표에 기여 | 뉴스와이즈"
-  },
-  {
    "title": "FDA Grants RMAT and Fast Track Status to Prizlon-Cel in R/R LBCL",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSE1jMUYwMEVFdmpTak9BYnVES2ZIcTF1Yy1JS0tOeWNWcE5RRkJMd19tU3pZd2pNTTZSTzJZVEZCWjh2aWE0Qk9EeVh3U3FveldYVjhwXy04XzB2bXB0bzZKV0lSbmNnVkc3TlhqdTRkM1FrRGNyX2U2U2ppV1luWnA1YlhBbDA0UFQwc3R2aWZuQXJqX1JRTUpwVktiLXNaMjNFQmZqVGREaHZ6cGloTFBwSmpCQjg?oc=5",
    "source": "Targeted Onc",
    "date": "2026-11-12T20:50:28+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "FDA, R/R LBCL의 Prizlon-Cel에 RMAT 및 패스트트랙 지위 부여"
+   "topic": "신약"
   },
   {
    "title": "Global Phase 3 Trial Show Nivolumab Plus HBI-8000 Improved Progression-Free Survival in Advanced Melanoma",
@@ -112,8 +71,7 @@
    "source": "HMP Global Learning Network",
    "date": "2026-11-12T17:47:22+00:00",
    "lang": "en",
-   "topic": "임상",
-   "title_ko": "글로벌 3상 시험에서 Nivolumab Plus HBI-8000으로 진행성 흑색종의 무진행 생존율 개선"
+   "topic": "임상"
   },
   {
    "title": "FDA Clears Ready-to-Use Flow Cytometry Tests for Leukemia and Lymphoma",
@@ -121,8 +79,7 @@
    "source": "Clinical Lab Products",
    "date": "2026-11-12T14:44:34+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "FDA, 백혈병 및 림프종에 대한 즉시 사용 가능한 유세포 분석 테스트 승인"
+   "topic": "신약"
   },
   {
    "title": "백혈병환우회, 예스카타 DLBCL 2차 급여 기준 설정 '환영'",
@@ -178,8 +135,7 @@
    "source": "MedPage Today",
    "date": "2026-11-11T17:42:14+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "미만성 거대 B세포 림프종에서 CAR-T 실패 후, 다음 단계는 무엇입니까?"
+   "topic": "신약"
   },
   {
    "title": "위암·유방암·림프종 치료제 건강보험 급여기준 설정…환자 치료 접근성 확대 기대",
@@ -195,8 +151,7 @@
    "source": "BioSpectrum India",
    "date": "2026-11-11T15:18:34+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "워터스, 백혈병 및 림프종에 대한 즉시 사용 가능한 유세포 분석 임상 테스트에 대한 미국 FDA 510(k) 승인 획득"
+   "topic": "신약"
   },
   {
    "title": "예스카타, 림프종 2차 치료 급여 첫 관문 통과 … 리포락셀·테빔브라도 급여기준 설정",
@@ -239,31 +194,12 @@
    "topic": "치료"
   },
   {
-   "title": "FDA Approves Pimicotinib for Symptomatic Tenosynovial Giant Cell Tumor",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOGszbWUyUFNYQ1F3QmpwU3ZTZElkT2hZZXFGbnZ1aDFHWThmUENxbFhZMUI1VFJlQy1NeXdJWlVSYnpFYUxHRzE4YVpxQW5HdklaMkNnWTJ0SnVjeU5FRGFER1BFNmU2em41ZFZMaWZjSDZSWmd0OTZOUlE5enZDWm5aSTdOc1NwN05aVGpCaE91Y29iME1hYktmVDVIeW9DR2pZOEtVY3lET1NFbDNET0hYbDNETHV6cU9GMmx2aEJGRDN2c2NTYg?oc=5",
-   "source": "HMP Global Learning Network",
-   "date": "2026-11-10T18:35:47+00:00",
+   "title": "Liso-Cel in 3L Follicular Lymphoma: Has the Debate Ended?",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTkJ1UUZIQWh6NEVxX0lpN2FhUEY2ZF9oRXREYm1HbXFobE12MTY3Nzd2SVdCaTRkVnBncGdWeXlYX2lzaDR4Mmh5UHBJX3JHbk0zRXJGQ0hfVzhXVFg1VGFjcW9vMlgybHlqaGxVX05rYjVBc1pTVUNHUVpNWlI0bEQ0QWhJVjJhWGlSUllyVDJqTHhYckZlNVhybzB0R2hZckpQQzNrNm9zSWs?oc=5",
+   "source": "Medscape",
+   "date": "2026-11-10T15:45:04+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "FDA, 증상성 건활막 거대세포종양에 대해 피미코티닙 승인"
-  },
-  {
-   "title": "Prizlon-Cel Nets FDA RMAT and Fast Track Designations in R/R LBCL",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONWlST19MYktnSXZBMDBDSUhzWEZuOVBvZ0NkS3lKam1YMHV2cEpPa1VmVVNuZ3VXSW1zVGZhdTJpUUtrNHRpSVdZUlctWXd6TncxOGJvSlZFVGg1UDZzaG1ja1c0WHllY1lZazlIM2pYT2lhdGRKSzk3bmwzbTFUczVWM29UZTVkNGtIRDJHZUFSUkhkUFlibDJR?oc=5",
-   "source": "OncLive",
-   "date": "2026-11-10T16:36:40+00:00",
-   "lang": "en",
-   "topic": "신약",
-   "title_ko": "Prizlon-Cel, R/R LBCL에서 FDA RMAT 및 패스트트랙 지정 획득"
-  },
-  {
-   "title": "Waters Receives FDA 510(k) Clearances for OneFlow Lymphoma Tests",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdi1sRzg4TnNVWUNfM2FrbmV5TXBOMnBvckFPXzBOTVpjMmFWNFllM0tpYnRFeTV0UC1hZ0ZZaGZTWnAzc2dnSGtLMjhoZXI1NkYxdnRZZTVXaGNvWWlWRTN4Y3hreWdCZHVJWHJscE55V25wRzZzSVdINXNCRFFCYkt0RGJzWlQ0eG43MmJsVmNjSHZHWWhsY1NGcmduek5Tdk0xaTgwRWx1R1hNb05OMDM2cGMybFE?oc=5",
-   "source": "GenomeWeb",
-   "date": "2026-11-10T15:28:00+00:00",
-   "lang": "en",
-   "topic": "신약",
-   "title_ko": "Waters, OneFlow 림프종 테스트에 대해 FDA 510(k) 승인 획득"
+   "topic": "신약"
   },
   {
    "title": "Waters receives FDA clearance for lymphoma diagnostic tests",
@@ -271,17 +207,7 @@
    "source": "Investing.com",
    "date": "2026-11-10T15:09:19+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "워터스, 림프종 진단 테스트에 대해 FDA 승인 획득"
-  },
-  {
-   "title": "Zamto-Cel Shows Promise in Patients With Lymphoma Who Are Ineligible for Transplantation",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPLVF5SUEyc1ZFWVlhbW85QTRCZlhxUDRXRXVCejJHTFVuSktLYWt6bU5hMDAtaVU3VDBCbk9NSjBkUFVubmk4b2xkNlR6aXh5UDdpRVNoVWRiX1JGRDhoYUl0SldCbGdmTklubHZ2Z29Hb0dyQk9zY2pVMDJPbUNFQndqeWZIbnpwcUtpZWNJSkxRdGlkOS1Ub25PdnI2MzBPejdUbU50RVF1c2V6cmc?oc=5",
-   "source": "Medscape",
-   "date": "2026-11-10T14:52:24+00:00",
-   "lang": "en",
-   "topic": "신약",
-   "title_ko": "Zamto-Cel은 이식에 적합하지 않은 림프종 환자에게 가능성을 보여줍니다."
+   "topic": "신약"
   },
   {
    "title": "AbelZeta Receives FDA RMAT and Fast Track Designations for Prizlon-cel in Relapsed or Refractory Large B-Cell Lymphoma",
@@ -289,8 +215,7 @@
    "source": "PR Newswire",
    "date": "2026-11-10T13:30:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "AbelZeta, 재발성 또는 불응성 거대 B세포 림프종에 대한 Prizlon-cel에 대해 FDA RMAT 및 패스트트랙 지정 획득"
+   "topic": "신약"
   },
   {
    "title": "Waters Achieves FDA 510(k) Clearance for Ready-to-Use Flow Cytometry Clinical Tests for Leukemia and Lymphoma",
@@ -298,8 +223,7 @@
    "source": "PR Newswire",
    "date": "2026-11-10T13:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "워터스, 백혈병 및 림프종에 대한 즉시 사용 가능한 유세포 분석 임상 테스트에 대한 FDA 510(k) 승인 획득"
+   "topic": "신약"
   },
   {
    "title": "FDA clears blood cancer tests that cut 95% of manual lab steps",
@@ -307,8 +231,7 @@
    "source": "Stock Titan",
    "date": "2026-11-10T13:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "FDA는 수동 실험실 단계를 95% 단축하는 혈액암 테스트를 승인했습니다."
+   "topic": "신약"
   },
   {
    "title": "Optimizing Treatment for Relapsed/Refractory Follicular Lymphoma",
@@ -316,16 +239,7 @@
    "source": "The ASCO Post",
    "date": "2026-11-10T08:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "재발성/불응성 여포성 림프종 치료 최적화"
-  },
-  {
-   "title": "[로슈] 혈액암 치료제 ‘가싸이바’, 루푸스 신염으로 영역 넓힌다",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBtd083ZEhkbTZPeFNSaGxVd29rR3phZ0plTE9MRDVhai0tNXctTnhWUkttSllNSjJEVExLanBKRzI0ZFRFNEliMy1JR3RhNjhRdTBqU3lfUHBYSzNlcmwwUTkxN1VlYzRGVU5wTzZYZw?oc=5",
-   "source": "뉴스더보이스헬스케어",
-   "date": "2026-11-10T00:18:20+00:00",
-   "lang": "ko",
-   "topic": "치료"
+   "topic": "신약"
   },
   {
    "title": "항암치료에도 재발 잦은 희귀 림프종⋯ 내년 1월 첫 투여",
@@ -336,22 +250,12 @@
    "topic": "치료"
   },
   {
-   "title": "Camp Lejeune Lawsuit News and Updates",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9mLUJGYnNQQURET3VITVh6akdsNnkwd2lMUnQyeTY0TlloSExabVhhVVFLNFhVZW9YTXJYQXhRa2xmbVFVdlJZbkxiR2VDcldQVXNSRTJBZExIQXN0OTM0TkdfSDJiTkNsSjhPb1VlSlh2a2lUZjJrTzV0RzEyV2c?oc=5",
-   "source": "Lawsuit Information Center",
-   "date": "2026-11-09T16:09:43+00:00",
-   "lang": "en",
-   "topic": "임상",
-   "title_ko": "Camp Lejeune 소송 뉴스 및 업데이트"
-  },
-  {
    "title": "Can a domestic CAR-T trial bridge the gap for lymphoma patients awaiting Yescarta?",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBxU0cwZXlqRngtLTRwRjNGNnlFX1J1MDBvUjhMaFdxRjBnS3hUUUFPUVZsOTZFbDhBUnVpajhsSVRHa3B0dTJDbk5pM0dTNGhjMmM3NUVWTG9OT20taVJMaklCNlgyMFdFaFMwMU9B0gFyQVVfeXFMTmo1eG1UQkRrN1M4ZWZJN1JuYnRYR2ZVX0ZrbE5JSkI0cGlUclNGZVhiS3ktYXdmNXVtRkdLS2NsbHJQd19neWlWM3BwWXlNWFg1b3dIaGVOZ255YlBYNzh3WXZlX0VFbVk4bFFteV9IcGdB?oc=5",
    "source": "Korea Biomedical Review",
    "date": "2026-11-09T07:14:30+00:00",
    "lang": "en",
-   "topic": "임상",
-   "title_ko": "국내 CAR-T 임상시험이 예스카타를 기다리는 림프종 환자들의 격차를 메울 수 있을까?"
+   "topic": "임상"
   },
   {
    "title": "'예스카타' 기다리는 림프종 환자들…'림카토'로 치료 공백 메울까",
@@ -367,16 +271,15 @@
    "source": "Bioengineer.org",
    "date": "2026-11-09T03:06:32+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "이중특이성 항체 구제 후 동종 이식은 재발된 고등급 B세포 림프종에 대한 가능성을 보여줍니다"
+   "topic": "신약"
   },
   {
-   "title": "백혈병혈액암환우회 \"예스카타 2차 치료 급여기준 설정해야\"",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1RVzU2LXZ0MDUzUWFoM09aRG5kM2luUXJ3Z0E3VEo2dHZiWnJfLUNVYkhleWJncEtfN1dvM0NLTDJHT0djZG5EUTFTSlRhVThtYzZ2YnJ2RUJEMGVtVEQ2OVdGN2RKTlVfclk0?oc=5",
-   "source": "메디칼업저버",
-   "date": "2026-11-08T23:28:03+00:00",
-   "lang": "ko",
-   "topic": "치료"
+   "title": "CAR T-cell therapy in lymphoma: review maps which biomarkers matter and when",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRENNT3FlZG1jYkMySjVnVlg1MURGWWgyU1ZNdENQWmIxLXNkaURBNXNKZGMxclNySG9fT3NNUDBYbUN3OTMwQTdGWENNbjE5Z2JmdUMwYmY0cWVMUjdZcV83XzNwSmJyYTRZTUxrNGxyRnhNTVF2VnYxTF9qNXpDSU1JSVM1c1U0OVk5aHp1M3NWNDNHdHRoSDUxOUNzVFNjTmc?oc=5",
+   "source": "Bioengineer.org",
+   "date": "2026-11-08T19:19:11+00:00",
+   "lang": "en",
+   "topic": "신약"
   },
   {
    "title": "남아공, 재발·불응성 림프종에 '기성품형 면역세포 치료제' 임상시험",
@@ -392,8 +295,7 @@
    "source": "OncLive",
    "date": "2026-11-06T22:36:05+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "소아 난치성 버킷 림프종에 대한 Polatuzumab Vedotin/Glofitamab 및 CD19 CAR T 세포 치료에 대한 Lee 박사"
+   "topic": "신약"
   },
   {
    "title": "FDA Grants Brukinsa Priority Review After Chemo-Free Regimen Beats Standard Care in Mantle Cell Lymphoma",
@@ -401,17 +303,7 @@
    "source": "Tech Times",
    "date": "2026-11-06T19:57:02+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "맨틀 세포 림프종에 대한 무화학요법이 표준 치료를 능가한 후 FDA, Brukinsa에 우선 검토 허용"
-  },
-  {
-   "title": "Brukinsa plus rituximab could offer a chemotherapy-free first-line option for mantle cell lymphoma, but FDA approval is still pending",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWUF5SURNWkx2aWczcjlreS1hV3Mtc2U3LWl3UVk2RW9ORmIydlo1ei1ONFNaQ3JwSlBvVGFLMndBclF4RXA2MlJqWV9xU2pQZjFRVUdENFB0ZkFXRUlZNm1VaEM5QVc4TTIyd1lyLVVFZ0hLM25mMmtoeVdiNVctXy1Qd1F4QVhFNHdud0V3?oc=5",
-   "source": "Medical Daily",
-   "date": "2026-11-06T15:58:54+00:00",
-   "lang": "en",
-   "topic": "신약",
-   "title_ko": "브루킨사와 리툭시맙은 외투세포 림프종에 대한 화학요법이 필요 없는 1차 옵션을 제공할 수 있지만 FDA 승인은 아직 보류 중입니다."
+   "topic": "신약"
   },
   {
    "title": "Lyell Immunopharma Targets Mid-2027 Pivotal Data for Lymphoma CAR-T Therapy",
@@ -419,8 +311,7 @@
    "source": "TradingView",
    "date": "2026-11-06T08:14:44+00:00",
    "lang": "en",
-   "topic": "임상",
-   "title_ko": "Lyell Immunopharma는 림프종 CAR-T 치료를 위한 2027년 중반의 중추적 데이터를 목표로 하고 있습니다."
+   "topic": "임상"
   },
   {
    "title": "메나리니 그룹과 리부 테라퓨틱스, 선행치료를 많이 받은 재발성, 불응성 공격성 B세포 비호지킨림프종 대상 다폴서팁(MEN1703, SEL24) JASPIS-01의 임상 2상 첫 데이터를 2026 ASH 연례 학술대회서 발표",
@@ -429,6 +320,14 @@
    "date": "2026-11-06T08:00:00+00:00",
    "lang": "ko",
    "topic": "치료"
+  },
+  {
+   "title": "Brukinsa plus rituximab could offer a chemotherapy-free first-line option for mantle cell lymphoma, but FDA approval is still pending",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWUF5SURNWkx2aWczcjlreS1hV3Mtc2U3LWl3UVk2RW9ORmIydlo1ei1ONFNaQ3JwSlBvVGFLMndBclF4RXA2MlJqWV9xU2pQZjFRVUdENFB0ZkFXRUlZNm1VaEM5QVc4TTIyd1lyLVVFZ0hLM25mMmtoeVdiNVctXy1Qd1F4QVhFNHdud0V3?oc=5",
+   "source": "Medical Daily",
+   "date": "2026-11-06T08:00:00+00:00",
+   "lang": "en",
+   "topic": "신약"
   },
   {
    "title": "미국 FDA, 비원 메디슨스의 브루킨사 병용요법에 외투세포림프종 1차 치료 우선심사 지정",
@@ -447,22 +346,12 @@
    "topic": "임상"
   },
   {
-   "title": "Researchers Report New Ivonescimab Data as FDA Decision Nears",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdXBrQWlqTmFQNklJTllhM0ltcnFJRmlSV0FaNDFCeGVCNElqNllXNFZWZU9IeExycWxfSnJRODlTSFZrUWdGQzVhcXVsb2w0TEVNX1dHcHVsUl8zM2dZbXlNV0tzM0FiQ2U5SXR6UzQtb2J1X3V5Sm9SMVNNQy03LV9OdU5wX1NTMmt5Z0NzQ3Z3UER6aHJabC1xYWtHOTJwOGc?oc=5",
-   "source": "Cancer Health",
-   "date": "2026-11-05T21:47:28+00:00",
-   "lang": "en",
-   "topic": "임상",
-   "title_ko": "FDA 결정이 가까워짐에 따라 연구자들은 새로운 Ivonescimab 데이터를 보고합니다."
-  },
-  {
    "title": "Everolimus, Not Tacrolimus, Let CAR T Cells Erase Relapsed Lymphoma in a Transplant Patient",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdHB5UFBSc3o1OTdQeHNjNXJvS25ISGZNMjk4dUlBeWhuUmt5WXVWVEtsLUliWEFNMzBsMnpjZ1VpanpwNVNoYldPdnIzU0JVTXJWTWdXWl9FMFNaRmE5QjJodGFsZFplZVFuMjh3eHY5T2Z0aU5Oc1FQTE05bVEyUTRGZ0pSZEdCV2x1cmV3ZTVydlJfWU1LT0FwYzNmZVI3bFhZNGo5cjlad0szTnVPYkhjWWc?oc=5",
    "source": "Bioengineer.org",
    "date": "2026-11-05T21:08:22+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "타크로리무스가 아닌 에베로리무스, CAR T 세포로 이식 환자의 재발성 림프종 제거"
+   "topic": "신약"
   },
   {
    "title": "Verismo's novel KIR-CAR T therapy shows 80% response rate with no CRS or ICANS in early lymphoma trial",
@@ -470,8 +359,7 @@
    "source": "AllSci",
    "date": "2026-11-05T17:51:01+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "베리스모의 새로운 KIR-CAR T 치료제, 초기 림프종 임상에서 CRS, ICANS 없이 80% 반응률 보여"
+   "topic": "신약"
   },
   {
    "title": "FDA Grants Priority Review to Zanubrutinib Regimen in Frontline MCL",
@@ -479,8 +367,7 @@
    "source": "CancerNetwork",
    "date": "2026-11-05T14:43:59+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "FDA, 일선 MCL에서 자누브루티닙 요법에 대한 우선 검토 부여"
+   "topic": "신약"
   },
   {
    "title": "비원메디슨 ‘브루킨사’ 병용요법, 초치료 외투세포 림프종 FDA 우선심사 지정",
@@ -499,13 +386,36 @@
    "topic": "신약"
   },
   {
+   "title": "지씨셀, T세포 림프종 CAR-NK 치료제 임상 결과 발표",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1DZm8zWHQ3UFpzRGJMYWEzRUkxSDdwNWJieHlzSFNWdHRsNW1FM0F0RXB4WWRGOTZNVWF3eWRMLUU3QmJ1Um12d3A4dTlrcGliYVZaTlNXWFdObUVPNWF5YVI3MEotdXNOblE?oc=5",
+   "source": "천지일보",
+   "date": "2026-11-05T08:00:00+00:00",
+   "lang": "ko",
+   "topic": "신약"
+  },
+  {
+   "title": "지씨셀, CD5 CAR-NK 치료제 임상 1a상 완료…T세포 림프종서 초기 효과 확인",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE50bHQ5eC1iRGY2SEktNHhTal85dHdfWkhsQ2czZXlWQ3oxNlMwN3ZITTBPTlJrNkR5bWZqdWpaZDlVa3pYM3lJTFpDdVhZN0xDbzFRaXNlaXdUZW15cnY2VWdRMzI?oc=5",
+   "source": "매일일보",
+   "date": "2026-11-05T08:00:00+00:00",
+   "lang": "ko",
+   "topic": "임상"
+  },
+  {
+   "title": "항암치료에도 재발·악화한 림프종⋯새 면역세포 치료에 환자 77% 암 흔적 사라져",
+   "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5nSmd1NTFBSEs0NWJqc3d6ZU55UTFaUUFkNHNwVDkwMDE2elhCRVFEMUV6cTBRV0V0X1FBS2ppalJwQQ?oc=5",
+   "source": "코메디닷컴",
+   "date": "2026-11-05T08:00:00+00:00",
+   "lang": "ko",
+   "topic": "치료"
+  },
+  {
    "title": "FDA Grants Priority Review to Zanubrutinib Plus Rituximab for Previously Untreated MCL",
    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNeTR4el8yWjJDNDYxdjI1elR5a2Vuc0lsRXpBVlNoM3BydjgwZmtlQWxRUGI1eVVyeFd4amlsMlB6VThzNUZEMUUxeklGZk0zcHlzMVZ5TGt6WG5PYlVCdW5jcXJMMDhfQW5LNmthRWE1XzRpQWF2VU5QTTlLcXc3eHV1Z29LZjF4bF9FOG1CQUMxVlhrWFJvM2FSLWVZQ0t6TzdPR1dYQkdaYmJ3M0Jfc0NzQ0JQRTRpOUl0MFMxVFFMYXc4RmVVWkJTVHp5ZkNKenZqTA?oc=5",
    "source": "Pharmacy Times",
    "date": "2026-11-05T08:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "FDA, 이전에 치료받지 않은 MCL에 대해 Zanubrutinib + Rituximab에 대한 우선 검토 부여"
+   "topic": "신약"
   },
   {
    "title": "ENERGIZE Trial Demonstrates No EFS Benefit With Perioperative Nivolumab Plus Chemotherapy in Muscle-Invasive Bladder Cancer",
@@ -513,8 +423,7 @@
    "source": "HMP Global Learning Network",
    "date": "2026-11-05T08:00:00+00:00",
    "lang": "en",
-   "topic": "임상",
-   "title_ko": "ENERGIZE 임상시험에서는 근육 침윤성 방광암에서 수술 전후 Nivolumab과 화학요법을 함께 사용하면 EFS 혜택이 없음을 보여줍니다."
+   "topic": "임상"
   },
   {
    "title": "“T세포 림프종 세부 분류, 치료 성적 좌우, 정밀 진단 중요성 커져”",
@@ -533,19 +442,19 @@
    "topic": "임상"
   },
   {
-   "title": "지씨셀, T세포 림프종 CAR-NK 치료제 임상 결과 발표",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1DZm8zWHQ3UFpzRGJMYWEzRUkxSDdwNWJieHlzSFNWdHRsNW1FM0F0RXB4WWRGOTZNVWF3eWRMLUU3QmJ1Um12d3A4dTlrcGliYVZaTlNXWFdObUVPNWF5YVI3MEotdXNOblE?oc=5",
-   "source": "천지일보",
-   "date": "2026-11-05T04:17:54+00:00",
-   "lang": "ko",
-   "topic": "신약"
-  },
-  {
    "title": "지씨셀, CAR-NK 치료제 임상 1a상 전체 데이터 발표",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBGMTNyR01XNXoyZUNJaTR1bUxJWWU1Y0dkQWx6S2QySkxUblh0Uk85OUVyOGRmQ2t1MVd5QjRPR3hlVGRzZ2lGYmlxWDJSTl9VSV91TFZFVk5kbWVNX3Vfckk5QzhMYkFsRmlJdnBiSkVaUQ?oc=5",
    "source": "의협신문",
    "date": "2026-11-05T01:39:44+00:00",
    "lang": "ko",
+   "topic": "신약"
+  },
+  {
+   "title": "Curocell's Rimqarto shows 53.5% 3-year survival in lymphoma patients, ASH 2026 data show",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5pQnQ0TFhDaER3U1p3OE5MeUltcFRKRnZrZE9SSkx1bGpXX0xuVW1semZuTEpIejFLQmtwXzR3dE85WVF5bzMxcVNiZmw5RXBrLVBtWkZua3kzLV9MRDFXUmlpa29FQk9CV0hsdFNn0gFyQVVfeXFMTXdxaDRNbURqNTc2R2Q4a2dZQ1g0OHVHY2hyTU8yT1VVSEVCSl82N1ZIMmMtdWt0SE5ERU9ZYzM0X1cwSGJkSk15NU5wOGN3SVJoOGVTbXhUaHRWUjlQOVN6Tko3bDd3VW1feF9XUlI1aGt3?oc=5",
+   "source": "Korea Biomedical Review",
+   "date": "2026-11-05T01:37:07+00:00",
+   "lang": "en",
    "topic": "신약"
   },
   {
@@ -557,28 +466,12 @@
    "topic": "임상"
   },
   {
-   "title": "큐로셀, CAR-T '림카토' 3년 장기추적 결과 \"ASH 발표\"",
-   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE4xa0d1dUV1d0g5bFdiaENHeVIzRGZMSUVuc3phMndVTmdid2tOM00wOWE2aVJMWFRxLUNwVmVhODlPeGJvOU5UWnBBLUlXUzJBbDdDazJhZw?oc=5",
-   "source": "바이오스펙테이터",
-   "date": "2026-11-05T00:18:00+00:00",
-   "lang": "ko",
-   "topic": "치료"
-  },
-  {
    "title": "지씨셀 CAR-NK 치료제, 임상 1a상서 용량제한독성 없었다",
    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE96Mzd5elAzMXFlbmlPSWtxdmFhUFNnYlVZT3VGbzV2Qjl3RnVMYzZLNEdRWE5TOHdhTk13WDFoYklpcXR5YXZQVlFreTFmZU5rWkZzZ2tLdlg5M2gzN1liTFY5QkRWcFhpTHRF?oc=5",
    "source": "히트뉴스",
    "date": "2026-11-05T00:16:00+00:00",
    "lang": "ko",
    "topic": "임상"
-  },
-  {
-   "title": "항암치료에도 재발·악화한 림프종⋯새 면역세포 치료에 환자 77% 암 흔적 사라져",
-   "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5nSmd1NTFBSEs0NWJqc3d6ZU55UTFaUUFkNHNwVDkwMDE2elhCRVFEMUV6cTBRV0V0X1FBS2ppalJwQQ?oc=5",
-   "source": "코메디닷컴",
-   "date": "2026-11-04T23:44:00+00:00",
-   "lang": "ko",
-   "topic": "치료"
   },
   {
    "title": "지씨셀, CD5 CAR-NK 치료제 ‘GCC2005’ ASH 2026서 임상 1a상 전체 데이터 발표",
@@ -610,8 +503,7 @@
    "source": "Dealroom",
    "date": "2026-11-04T17:34:37+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "Lyell, 림프종 CAR-T를 FDA에 제출하기 위해 8천만 달러 모금"
+   "topic": "신약"
   },
   {
    "title": "Genmab to Present Results from Comprehensive Epcoritamab Development Program Highlighting Potential Across B-Cell Malignancies at the 2026 American Society of Hematology (ASH) Annual Meeting",
@@ -619,8 +511,7 @@
    "source": "GlobeNewswire",
    "date": "2026-11-04T14:00:00+00:00",
    "lang": "en",
-   "topic": "임상",
-   "title_ko": "Genmab, 2026년 미국혈액학회(ASH) 연례회의에서 B세포 악성종양 전반에 걸친 잠재력을 강조하는 포괄적인 Epcoritamab 개발 프로그램 결과 발표"
+   "topic": "임상"
   },
   {
    "title": "한국혈액암협회, 가수 김정민과 재발·불응성 림프종환자 응원…‘다음, 나음’ 캠페인 전개",
@@ -636,8 +527,7 @@
    "source": "Oncodaily",
    "date": "2026-11-04T08:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "비원메디슨스의 자누브루티닙 복합제, 1차 외투세포 림프종에 대한 FDA 우선 심사 획득"
+   "topic": "신약"
   },
   {
    "title": "Zanubrutinib Plus Rituximab Receives FDA Priority Review in Frontline MCL",
@@ -645,17 +535,15 @@
    "source": "Targeted Onc",
    "date": "2026-11-04T08:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "Zanubrutinib + Rituximab, 최전선 MCL에서 FDA 우선 검토 획득"
+   "topic": "신약"
   },
   {
-   "title": "U.S. FDA Grants Priority Review to BeOne Medicines’ BRUKINSA Combination in First-Line Mantle Cell Lymphoma",
-   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOUnhrSHJ0REwzelRKc3VCRFUwLUI5YXpST3lVa0NJczhVYVY3TlRqa0ZTcGVFeG00dVdBY2hGdXZkRHkyRi1KQi1vMHpFcm1IRURFeWhQaUk5YjZ3QW96VW52dVpSQjE5aG5lV2tlcDRsbVA0Q254V2ZsZmpibXFRbDhseVVWWXVjOEd4MkR6cGlqSENZM0RJc0Y2Sk96UnlrSWl1YUZQeWNoQWt1YnhSUjZTUlB1RWJlNFpiVUNNcFktem5XY1NDNUxYellOUi11Zk50blJNVVN1WnFEdFcwdWhHeVVtVWhKSml3YXd6NlBnVDZ5c3c?oc=5",
-   "source": "Business Wire",
+   "title": "A cancer drug combo cut progression or death risk 43% against standard care. FDA gave its application priority review.",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRFpqNWw1ZlNNdlQ3c05CeEwySnA1SjZXdVJkbzI5LVF6QnFvZ0N3T25fYU5BQnNuRHViYUozY0FjOUstcHB1bERtNHBsay1BYW9OaTBxdkpOUTRlVEY4a2l0d2tsNVNmTThqTk1UVFYyaUV0c0hRXzctajhFcnZXejE2VWczcU92RmZLUDh1ZzFRMDkzWWhQdjE0SmVyUGZWNEZmQnVPdEtQc0wzSDhjSlplVQ?oc=5",
+   "source": "Stock Titan",
    "date": "2026-11-04T08:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "미국 FDA, 비원메디슨스의 브루킨사 병용제 1차 외투세포림프종 치료에 우선심사 승인"
+   "topic": "신약"
   },
   {
    "title": "Perioperative ivonescimab with or without chemotherapy in resectable non-small cell lung cancer: a phase 2 trial",
@@ -663,8 +551,7 @@
    "source": "Nature",
    "date": "2026-11-04T08:00:00+00:00",
    "lang": "en",
-   "topic": "임상",
-   "title_ko": "절제 가능한 비소세포폐암에서 화학요법 유무에 관계없이 수술 전후 ivonescimab: 2상 시험"
+   "topic": "임상"
   },
   {
    "title": "Yan Leyfman։ Comparing CAR-T and Bispecific Antibodies in Relapsed/Refractory Follicular Lymphoma",
@@ -672,8 +559,7 @@
    "source": "Oncodaily",
    "date": "2026-11-04T08:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "얀 레이프만 재발성/불응성 여포성 림프종에서 CAR-T와 이중특이적 항체 비교"
+   "topic": "신약"
   },
   {
    "title": "South Korea's HLB Innovation US Subsidiary's CAR-T Shows Response in 4 of 5 Relapsed Lymphoma Patients… Oral Presentation at ASH",
@@ -681,8 +567,7 @@
    "source": "BigGo Finance",
    "date": "2026-11-04T08:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "한국 HLB 혁신 美법인 CAR-T, 재발성 림프종 환자 5명 중 4명 반응…ASH에서 구두발표"
+   "topic": "신약"
   },
   {
    "title": "Phase II PROSPECT trial: Tirabrutinib monotherapy in R/R PCNSL",
@@ -690,14 +575,29 @@
    "source": "Lymphoma Hub",
    "date": "2026-11-03T21:00:20+00:00",
    "lang": "en",
-   "topic": "임상",
-   "title_ko": "제2상 PROSPECT 시험: R/R PCNSL의 티라브루티닙 단독요법"
+   "topic": "임상"
   },
   {
    "title": "재발·불응 림프종, CAR-T 치료 기회 넓어졌지만…2차 급여는 과제",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE95TUdFWkdGY1hiTTFGc1lEX1I3TGdlWFJ4dGZHb29xMnJMcU9VdmVHS3ViSkJYTFhkc1c2U2pSTEJVdjNJaGtVRDNGbEFIRVlMdEI1bklja1diUjd0V1oxcGlEWQ?oc=5",
    "source": "쿠키메디",
    "date": "2026-11-03T21:00:10+00:00",
+   "lang": "ko",
+   "topic": "치료"
+  },
+  {
+   "title": "닛폰신야쿠, 림프종 치료제 '진론타' 日 독점 판매",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE54Y1hWRGNJUmtlZThNUU9IcDlzVWlSSGJuZ0FyU1laVWdTeTNQNWFuQ3h2Yjh1LWQ0aUtqSnlReU84Q09xdzNHV2RnM2d4cWlZc1kyMEdENE5qanFpR0lNYmluSVgxcjJGUFE?oc=5",
+   "source": "의학신문",
+   "date": "2026-11-03T08:00:00+00:00",
+   "lang": "ko",
+   "topic": "신약"
+  },
+  {
+   "title": "[주목! 이 사람] 첨단재생의료 1호, 이달 첫 투여",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9DcFg0YWlKanZQYmpXdHNBX0ZEOGZYcnpKZWFTMFFPOG5Lb01MZEdaSU5hSjFSSXAwN1ZsTlBBTXBSam01anM5cnJvQWVwTWpIQm9WZnlYaEZTc3ROUkNobnEtTWhKS1VYZkHSAW5BVV95cUxOLVNTcXN2ZjNMa29yb3FNbXBSZ2hnLXpNcFNsZ1AwTXl1bUJJdXN2enY4Uk5jc2FWcUdjSzgydkV2ekpVWGJRa253M3lWeTljamlPbDdnYkZtYmk3eHpjejJwNnIzck1DMlpkbUp5QQ?oc=5",
+   "source": "더메디컬",
+   "date": "2026-11-03T08:00:00+00:00",
    "lang": "ko",
    "topic": "치료"
   },
@@ -710,12 +610,20 @@
    "topic": "치료"
   },
   {
-   "title": "[주목! 이 사람] 첨단재생의료 1호, 이달 첫 투여",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9DcFg0YWlKanZQYmpXdHNBX0ZEOGZYcnpKZWFTMFFPOG5Lb01MZEdaSU5hSjFSSXAwN1ZsTlBBTXBSam01anM5cnJvQWVwTWpIQm9WZnlYaEZTc3ROUkNobnEtTWhKS1VYZkHSAW5BVV95cUxOLVNTcXN2ZjNMa29yb3FNbXBSZ2hnLXpNcFNsZ1AwTXl1bUJJdXN2enY4Uk5jc2FWcUdjSzgydkV2ekpVWGJRa253M3lWeTljamlPbDdnYkZtYmk3eHpjejJwNnIzck1DMlpkbUp5QQ?oc=5",
-   "source": "더메디컬",
-   "date": "2026-11-03T04:53:12+00:00",
+   "title": "\"질병 패러다임 바꾸는 CAR-T, 한국서도 보험 적용 확대돼야\"",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5oUU0zS0dLalRWaDVfdWtMNTBBWWZXR3VlSFM0SXk3Z2xqOXQ3M1dmTUM5TkRxdzNtUS1odkdxa1VOdkNvaUJhZjlIclgzNXU1aExQX0czOVBoUQ?oc=5",
+   "source": "한국경제",
+   "date": "2026-11-03T08:00:00+00:00",
    "lang": "ko",
    "topic": "치료"
+  },
+  {
+   "title": "U.S. FDA Grants Priority Review to BeOne Medicines’ BRUKINSA Combination in First-Line Mantle Cell Lymphoma",
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOUnhrSHJ0REwzelRKc3VCRFUwLUI5YXpST3lVa0NJczhVYVY3TlRqa0ZTcGVFeG00dVdBY2hGdXZkRHkyRi1KQi1vMHpFcm1IRURFeWhQaUk5YjZ3QW96VW52dVpSQjE5aG5lV2tlcDRsbVA0Q254V2ZsZmpibXFRbDhseVVWWXVjOEd4MkR6cGlqSENZM0RJc0Y2Sk96UnlrSWl1YUZQeWNoQWt1YnhSUjZTUlB1RWJlNFpiVUNNcFktem5XY1NDNUxYellOUi11Zk50blJNVVN1WnFEdFcwdWhHeVVtVWhKSml3YXd6NlBnVDZ5c3c?oc=5",
+   "source": "Business Wire",
+   "date": "2026-11-03T08:00:00+00:00",
+   "lang": "en",
+   "topic": "임상"
   },
   {
    "title": "큐로셀, ‘CAR-T’ 2차치료 적응증 확대 \"3상 IND 신청\"",
@@ -763,14 +671,21 @@
    "source": "Oncodaily",
    "date": "2026-10-31T07:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "Mazyar Shadman: 대형 B세포 림프종의 CAR T세포 치료 접근 격차 해소"
+   "topic": "신약"
   },
   {
    "title": "큐로셀, '림카토' 2차 치료로 확대 추진…임상 3상 신청",
    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5uczk1a2hTQ25jUC10WWc0VnNlZnlaUU1lMlJrVm9BamhyeG9jaUY2dXZScjBkTm4wX0l3dU9QNjhuZjNvLWh0czVmLXlJeUpQdlJ5Umc1SGRiSHplejZTOWRpbms?oc=5",
    "source": "서울경제TV",
    "date": "2026-10-30T07:39:15+00:00",
+   "lang": "ko",
+   "topic": "치료"
+  },
+  {
+   "title": "큐로셀, ‘림카토’ 2차 치료 확대 추진…임상 3상 신청",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE53SWFqX2hRdGVzdkpfZ0dUSVBfeDU5RFdkMk9Mc05kMnhaMTFFWmEzOXptQkRwMTVrZzR0bDNtdlphSFA4ZkptTUpOWWlIUDhWeG5Sd3p6YTFfaHBwV0VneFpTVUVrYkdhM1M3MUFwUQ?oc=5",
+   "source": "뉴스더보이스헬스케어",
+   "date": "2026-10-30T07:06:30+00:00",
    "lang": "ko",
    "topic": "치료"
   },
@@ -791,6 +706,14 @@
    "topic": "치료"
   },
   {
+   "title": "종양 유전자 변이·면역활성, T세포 림프종 치료 반응 예측 단서",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1kRk1md0x4TFhQSExDOHQwU21ralJjWmZpdjk4VjhRWFU0LVRqY0t6X1JvZERJVFFfUWhsRmRBeUJUaDVqTUFRcjN1NGcwcmo1M01PR3FXRmxncWNhM2g5em9TbXoyT0FWeHdIbw?oc=5",
+   "source": "메디컬투데이",
+   "date": "2026-10-30T07:00:00+00:00",
+   "lang": "ko",
+   "topic": "치료"
+  },
+  {
    "title": "큐로셀, CAR-T '림카토' DLBCL 2차 치료 임상 3상 IND 신청",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1LZThKYjU5Wjg2MmdKQjVjOHNLcXF2YTFoZ2Z1WGhEdm9GaGpXeWdETVFYQlRtOW8wT2QxQWZ6VkVPRktMXy1KVE5iSW9QcWZBZGk1Nk40QnpXTkpKQ0tlbmZ2a0xhRWVIbHQzUw?oc=5",
    "source": "팜뉴스",
@@ -804,8 +727,7 @@
    "source": "Fierce Biotech",
    "date": "2026-10-30T07:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "길리어드, 2건의 CAR-T 세포치료 임상시험 부분 임상 보류 발표"
+   "topic": "신약"
   },
   {
    "title": "Follicular Lymphoma Clinical Trial Pipeline Gains Momentum: 45+ Companies Lead the Charge in Pioneering New Treatments | DelveInsight",
@@ -813,8 +735,7 @@
    "source": "StreetInsider",
    "date": "2026-10-29T23:55:41+00:00",
    "lang": "en",
-   "topic": "임상",
-   "title_ko": "여포성 림프종 임상 시험 파이프라인이 추진력을 얻습니다: 45개 이상의 회사가 새로운 치료법 개척에 앞장서 | 델브인사이트"
+   "topic": "임상"
   },
   {
    "title": "지씨셀, 림프종 국제학술행사서 'GCC2005' 임상 1a상 중간 결과 발표",
@@ -838,8 +759,7 @@
    "source": "Lymphoma Hub",
    "date": "2026-10-29T07:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "마스터클래스 | R/R LBCL에 대한 직렬 CAR T 세포 치료법: 이론적 근거, 임상 증거 및 향후 방향"
+   "topic": "신약"
   },
   {
    "title": "지씨셀, 국제 림프종 심포지엄서 GCC2005 임상 중간결과 공개",
@@ -874,14 +794,6 @@
    "topic": "임상"
   },
   {
-   "title": "지씨셀, GCC2005 임상 1상 중간 결과 국제 학술행사서 발표",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1vSkI3SF9jVjlvNjliNDQxYmFJcXg3c1BfbXVnVkhITmhVUHd6aGY1V05KTnpQekhGTjdRNEgxbHQ5RkxoTmpPdjgxVTVfWWc1V1RQdk1QZGlOV2NWRlVzNThhbEFSd05oV3VhdQ?oc=5",
-   "source": "바이오타임즈",
-   "date": "2026-10-28T07:00:00+00:00",
-   "lang": "ko",
-   "topic": "임상"
-  },
-  {
    "title": "지씨셀, 림프종 심포지엄서 'GCC2005' 1a상 중간 결과 발표",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ncTFGellVckxYdmd1SUt1RkJHZmpEWGtvMThMT2lEQjN4U2h5U3d0TlFKb25zVGZNTFctX3htWWxPNDZtLV96ekVLS1lhTXFCLXJFbm00VVI0UXp5cVRRbU5BdnVVNTNJcTFHRw?oc=5",
    "source": "팜뉴스",
@@ -901,6 +813,22 @@
    "title": "지씨셀, 림프종 국제학술행사서 'GCC2005' 임상 1a상 중간결과 발표",
    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE50TFBSc3lGS1Q4Y1RZLV9YLWFGelNBWkZGY29WTkJqR3g3QVhWWkZ4TW9pUTVXSFI4alNrOWFncFVobFkzdlhrOXYxUThCMTNQc3hOTUM3YU5FSTRjc2c0S0ROME0xZ3Z6TUU4dDJTd1VtOHh1SVJ3d25NUdIBgAFBVV95cUxNaEc4LVY5MXpQb1k5M0JJSzNOVUhhRUJVMERLM1MtV1NVbUNfU1NpaTlXX2RSN2NaX2JrOWFKbnBSUjgwclRBYUI5N1ZCNG42dEhqX0NqanJ4el9pSlVtR2xDRjZ3QXRDYXhLLWhjcjN2bFZuaVhwNnVNUHExdTZ1cw?oc=5",
    "source": "뉴데일리",
+   "date": "2026-10-28T07:00:00+00:00",
+   "lang": "ko",
+   "topic": "임상"
+  },
+  {
+   "title": "지씨셀, GCC2005 임상 1상 중간 결과 국제 학술행사서 발표",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1vSkI3SF9jVjlvNjliNDQxYmFJcXg3c1BfbXVnVkhITmhVUHd6aGY1V05KTnpQekhGTjdRNEgxbHQ5RkxoTmpPdjgxVTVfWWc1V1RQdk1QZGlOV2NWRlVzNThhbEFSd05oV3VhdQ?oc=5",
+   "source": "바이오타임즈",
+   "date": "2026-10-28T07:00:00+00:00",
+   "lang": "ko",
+   "topic": "임상"
+  },
+  {
+   "title": "지씨셀, 림프종 국제학회서 'GCC2005' 임상 발표",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE84T21SaG9uS1N5aDdnRTZXNGRoYUh1Mk9LLU1EeFVGU2NBMmtfeWRuOW9NV3dZR1BFRmRhcFhaaE5uQTlhcGRQV2FRcjVhSEdLNlRfZmI0TFliNHJUR0dmOHlRa0s3SzVSVEJtaTR3?oc=5",
+   "source": "중소기업신문",
    "date": "2026-10-28T07:00:00+00:00",
    "lang": "ko",
    "topic": "임상"
@@ -930,6 +858,14 @@
    "topic": "임상"
   },
   {
+   "title": "지씨셀, GCC2005 임상 중간결과 국제 학술행사서 발표",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE00UXRJb2d2ekJlUmtnTUR3TURfNU5oT0dXQnpmWkhraF9Dd3hDOVlDX2hhQ05fMlRpZWd4SFZsQ1Fja1ZuQmppVk51MFhkbVdoaXRlaU95alJDdjhtU1BnRG14bHBmUQ?oc=5",
+   "source": "PRESS9",
+   "date": "2026-10-28T07:00:00+00:00",
+   "lang": "ko",
+   "topic": "임상"
+  },
+  {
    "title": "지씨셀, 림프종연구회서 'GCC2005' 1a상 중간 결과 발표",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1OdTFzaTJnUUtKR0tOcWNpaE41LVlaVlN2ekg4SmZtc0NlZTRELVllQnBNSnBZRnpBNk51cnV2NElSQkJjRmJ0NXJ1MWtob3NBaDg2Q1J6cHFYZGNSbXMyUzAtbUc0cHdnVG1PUTh5WdIBc0FVX3lxTE1Pb0ZqNFZTdU45d05yRVcwYVpjcENlR05uQ1RzTTFwYWlYTVZqZlZEelFacnBiVE54RVN1dmFtZEJDd25FOUpERXJSSEwwbUVHZG91WWxlSDJfTGhJZTNQNGpFRldkajNBU3BBZlhpbTVzWWc?oc=5",
    "source": "데일리한국",
@@ -938,35 +874,18 @@
    "topic": "임상"
   },
   {
-   "title": "지씨셀 'GCC2005' 림프종연구회 20주 국제 학술행사서 발표",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBxWHA2OUwwRjZEbERYSXdrZnRzaFhrRXVWTnZwVGllWTdBUGZoVVI1OV9mREFIVEtVZEN2bnRRTFlaeWNtS2cxQl9fMzFyVnJ2SUVRYWFXbjFZZWM?oc=5",
-   "source": "사이언스엠디뉴스",
-   "date": "2026-10-28T07:00:00+00:00",
-   "lang": "ko",
-   "topic": "치료"
-  },
-  {
    "title": "Safety and efficacy of port use for CAR T-cell infusion in large B-cell lymphoma | Blood Cancer Journal",
    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1PUEZSZjJjcVV4Ylc1MU9DTVp3VnBEZFJpbTduN084cmtiNjQtS2diUl9FMUJ4aHJRVG9FTGJGMS1qMW8yZWNvQ0VvdXZnNTEwajdYZ0U3cHJxdnBCMDBR?oc=5",
    "source": "Nature",
    "date": "2026-10-28T07:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "거대 B세포 림프종에서 CAR T세포 주입을 위한 포트 사용의 안전성 및 유효성 | 혈액암 저널"
+   "topic": "신약"
   },
   {
    "title": "지씨셀 'GCC2005', 림프종연구회 국제 학술행사서 발표",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAzaGl2TlJPWmpGbGZ6bDFyUjRKVVE3TEVUbmFDX1BEWW5IZzNHX0tzQTlpcEJFdkt3MmdvMG1mWHVfRjhQdlQ1NUc1V0hKSWNBUTBRMHJaTlVpcWp6OEF4a0RjTGJ1TjBLaDZrOTBR?oc=5",
    "source": "메드월드뉴스",
    "date": "2026-10-28T03:02:08+00:00",
-   "lang": "ko",
-   "topic": "임상"
-  },
-  {
-   "title": "지씨셀, GCC2005 임상 중간결과 국제 학술행사서 발표",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE00UXRJb2d2ekJlUmtnTUR3TURfNU5oT0dXQnpmWkhraF9Dd3hDOVlDX2hhQ05fMlRpZWd4SFZsQ1Fja1ZuQmppVk51MFhkbVdoaXRlaU95alJDdjhtU1BnRG14bHBmUQ?oc=5",
-   "source": "PRESS9",
-   "date": "2026-10-28T01:46:06+00:00",
    "lang": "ko",
    "topic": "임상"
   },
@@ -984,17 +903,7 @@
    "source": "Lymphoma Hub",
    "date": "2026-10-27T07:00:00+00:00",
    "lang": "en",
-   "topic": "임상",
-   "title_ko": "제3상 SYMPATICO 시험: 비모세포양 MCL에 대한 Ibrutinib + 베네토클락스"
-  },
-  {
-   "title": "AI Tool Reads Biopsy Images to Predict Mantle Cell Lymphoma Outcomes",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSnMzelByZS1UZm1aazFPdWY4ZF9yZVFjVkZZRFVRV1hEZ2o5OFVGSE9jREdpaHhlbUlDQU5vdFRCWXBTRUtkc3RRc2ZQbUhVS2ZxcGxtOUR6aUpHQlhUSU1qWlVlLVNrZlM1bjN0Q1B5SkMzMWd2aE4xSjBCRDJiUThIa2RjOUMxYmFiODRpRUN5ZEVCZlE?oc=5",
-   "source": "The American Journal of Managed Care",
-   "date": "2026-10-27T07:00:00+00:00",
-   "lang": "en",
-   "topic": "임상",
-   "title_ko": "AI 도구는 생검 이미지를 판독하여 맨틀 세포 림프종 결과를 예측합니다."
+   "topic": "임상"
   },
   {
    "title": "CAR T-cell Therapy Market Growth Report [2026-2034]",
@@ -1002,26 +911,7 @@
    "source": "Fortune Business Insights",
    "date": "2026-10-26T07:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "CAR T 세포 치료 시장 성장 보고서 [2026-2034]"
-  },
-  {
-   "title": "The Results of Phase III OptiTROP-Lung06 Study of Sacituzumab Tirumotecan (sac-TMT) Presented as an ESMO Oral Presentation and Simultaneously Published in The New England Journal of Medicine",
-   "link": "https://news.google.com/rss/articles/CBMizAJBVV95cUxPajBPU0VNNURNZW4wTTFMb1VOUi16VHVJdHREblVUd0syUDN0MkJsdmhfeXNJbExjYWlzMHhSa1ZNMF9UenBUeWxPcmtzZkVrZXFIZWgtVmtFaENOWW1xWFJ1R1FzbDdCMUF6TUd0cFBrZFpna1l5VFNTdG1fX0RvNHJ4dmdJQnVCTjNOUmZ2MC1TQnlrU0U3dW5QLWRKZFFoZkxMZHhyZFgybldBeUo5cmNza1pWRllPQURpdFNhZE15S3FhbF84SGhvMVBnNWxUUVI3dC1LQzA4TU0tTHJDVHg0NENDM1QtVWZyZkxYcnlQS0xBdmo4OTVRRUNHSkdaWHU0aGN3OFJaTm5NRGItYzdFcnFidWJsbEgtV083dVVVNThXMWp3T0FiLTRLemx0TzZyQzF1bXEzVzlxbDd6NXZCOTMyd2RkNFo5Qw?oc=5",
-   "source": "BioSpace",
-   "date": "2026-10-26T07:00:00+00:00",
-   "lang": "en",
-   "topic": "임상",
-   "title_ko": "Sacituzumab Tirumotecan(sac-TMT)의 3상 OptiTROP-Lung06 연구 결과가 ESMO 구두 발표로 발표되고 The New England Journal of Medicine에 동시에 게재되었습니다."
-  },
-  {
-   "title": "CAR T cells shrink lymphoma everywhere, but survival depends on location",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPME42M0tqdlFQNU0yRGhxUUJ3SjN0RFFWcmZKR1FlU0ctYjBSRzc2d0dITHktdV9QM0ZKWGJCYVVleWFfbzlLQ1dsUDFfS29waE85NFhoWXZlQnFkdlBCOER5OUZ6X2twdkNXQzZBd2pTVFZOeFFRT0wzMXRrT2VMM0dJcWxXeWVvVmZhc016bEEzb1NaY01na1ZuaXk?oc=5",
-   "source": "Bioengineer.org",
-   "date": "2026-10-25T17:58:41+00:00",
-   "lang": "en",
-   "topic": "신약",
-   "title_ko": "CAR T 세포는 모든 곳에서 림프종을 축소하지만 생존율은 위치에 따라 다릅니다."
+   "topic": "신약"
   },
   {
    "title": "Evolving Strategies in Relapsed/Refractory Diffuse Large B-Cell Lymphoma",
@@ -1029,8 +919,7 @@
    "source": "The ASCO Post",
    "date": "2026-10-25T07:00:00+00:00",
    "lang": "en",
-   "topic": "임상",
-   "title_ko": "재발성/불응성 미만성 거대 B세포 림프종의 전략 발전"
+   "topic": "임상"
   },
   {
    "title": "Michael Green: Targeting CAR T-Cell Exhaustion After Lymphoma Progression",
@@ -1038,8 +927,15 @@
    "source": "Oncodaily",
    "date": "2026-10-25T07:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "Michael Green: 림프종 진행 후 CAR T 세포 고갈을 표적으로 삼음"
+   "topic": "신약"
+  },
+  {
+   "title": "CAR T cells shrink lymphoma everywhere, but survival depends on location",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPME42M0tqdlFQNU0yRGhxUUJ3SjN0RFFWcmZKR1FlU0ctYjBSRzc2d0dITHktdV9QM0ZKWGJCYVVleWFfbzlLQ1dsUDFfS29waE85NFhoWXZlQnFkdlBCOER5OUZ6X2twdkNXQzZBd2pTVFZOeFFRT0wzMXRrT2VMM0dJcWxXeWVvVmZhc016bEEzb1NaY01na1ZuaXk?oc=5",
+   "source": "Bioengineer.org",
+   "date": "2026-10-25T07:00:00+00:00",
+   "lang": "en",
+   "topic": "신약"
   },
   {
    "title": "Junshi Biosciences Announces Completion of First Patient Dosing in the Phase 3 Clinical Trial of JS203 in Combination with Chemotherapy for the Treatment of Diffuse Large B-cell Lymphoma",
@@ -1047,8 +943,7 @@
    "source": "The Manila Times",
    "date": "2026-10-24T07:00:00+00:00",
    "lang": "en",
-   "topic": "임상",
-   "title_ko": "준시 바이오사이언스, 미만성 거대 B세포 림프종 치료를 위한 화학요법과 병용한 JS203의 3상 임상시험에서 첫 번째 환자 투여가 완료되었다고 발표"
+   "topic": "임상"
   },
   {
    "title": "[현장] 환자에서 뽑은 피가 다시 치료제로…‘첨생법 치료 1호’ 전 과정 동행 취재",
@@ -1064,8 +959,7 @@
    "source": "Nature",
    "date": "2026-10-23T07:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "림프종 환자에 대한 다기관, 다중 시험 코호트 분석에서 CAR T 세포 치료에 대한 반응 결정 요인"
+   "topic": "신약"
   },
   {
    "title": "Follicular Lymphoma: EHA 2026 Guidelines Move Chemotherapy-Free Combinations to First Relapse",
@@ -1073,8 +967,7 @@
    "source": "Oncodaily",
    "date": "2026-10-23T07:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "여포성 림프종: EHA 2026 지침은 화학요법을 사용하지 않는 병용요법을 첫 번째 재발로 전환합니다"
+   "topic": "신약"
   },
   {
    "title": "[숏폼] CAR-T 치료의 역설…재발해야 열리는 치료 기회",
@@ -1090,8 +983,7 @@
    "source": "UT MD Anderson",
    "date": "2026-10-22T07:00:00+00:00",
    "lang": "en",
-   "topic": "임상",
-   "title_ko": "맞춤형 암 백신 임상 시험에 감사하는 흑색종 생존자"
+   "topic": "임상"
   },
   {
    "title": "Final MINT Study Results Strengthen Real-World Evidence for Mogamulizumab in Mycosis Fungoides and Sézary Syndrome",
@@ -1099,8 +991,7 @@
    "source": "The ASCO Post",
    "date": "2026-10-22T07:00:00+00:00",
    "lang": "en",
-   "topic": "임상",
-   "title_ko": "최종 MINT 연구 결과는 균상 식육종 및 세자리 증후군에 대한 모가물리주맙의 실제 증거를 강화합니다"
+   "topic": "임상"
   },
   {
    "title": "Off-the-Shelf CAR T-Cell Therapy Advances in Early Lymphoma Testing",
@@ -1108,17 +999,7 @@
    "source": "The American Journal of Managed Care",
    "date": "2026-10-22T07:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "기성품 CAR T세포 치료법으로 초기 림프종 검사 발전"
-  },
-  {
-   "title": "A Deep Dive Into Double-Hit Lymphoma",
-   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9WZVhqZk1vWjhXT2JpN0t3TUpVamRCOWt3d2dBeVNyMG1fUHRUTTdpbmhsaHRWR3FBZW9WdWNWRWlGbk1iUjQ2S0doWGk1ZVljZVJBdWF6Ymo5MEdNYVRWTA?oc=5",
-   "source": "MedPage Today",
-   "date": "2026-10-21T07:00:00+00:00",
-   "lang": "en",
-   "topic": "임상",
-   "title_ko": "더블 히트 림프종에 대한 심층 분석"
+   "topic": "신약"
   },
   {
    "title": "Michael Dickinson: Accelerated Glofitamab Bridging to CAR-T in High-Risk Relapsed/Refractory Lymphoma",
@@ -1126,8 +1007,7 @@
    "source": "Oncodaily",
    "date": "2026-10-21T07:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "Michael Dickinson: 고위험 재발성/불응성 림프종에서 CAR-T에 대한 가속화된 Glofitamab 연결"
+   "topic": "신약"
   },
   {
    "title": "보령, 차세대 항암신약 개발 가속... '보스몰리십' 임상 2상 환자 모집 완료",
@@ -1138,22 +1018,12 @@
    "topic": "신약"
   },
   {
-   "title": "Frontline Mosunetuzumab in Follicular and Marginal Zone Lymphoma: A Response-Adapted Approach",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5vMUt5MF83bV96b3NaZXlLVTZCa19XT0U0N1lxTHZORWZYRGtEWHdYLXlOU08wdC1ZaXJneVRIUkY1LTUyV0kxWWtNOUFsaGl1UUMtaU4tUjZLM2x6ZmNKQWZMczVvN1pNa2MzdjlGSlA?oc=5",
-   "source": "Oncodaily",
-   "date": "2026-10-20T07:00:00+00:00",
-   "lang": "en",
-   "topic": "임상",
-   "title_ko": "여포성 및 변연부 림프종에 대한 최전선 모수네투주맙: 반응 기반 접근법"
-  },
-  {
    "title": "Trispecific CAR T Cells Demonstrate Safety, Early Activity in B-Cell Lymphoma",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdHptNVVndzNHX1lIYzJWU3dIUTN6bktOU1JfZUl6V3JNNEtpLUJfaHVzYW9vZ3cxXzF0NFMtdTd4MVIwcE44S1drOGRtclZYeC1OdjlVM01ScTdCVTBxYWlrZHBIbC1sSmNIcnQ4Wml2c0dFaHhHclRDaEhVdFF6ZFRDSXh3TEZKdTd6d3JHUG1MNjJtenEtRzVtaERPVnVkeHpBODFUb243TFZ2YXZWQg?oc=5",
    "source": "CancerNetwork",
    "date": "2026-10-20T07:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "삼중특이성 CAR T 세포, B세포 림프종에서 안전성과 초기 활성 입증"
+   "topic": "신약"
   },
   {
    "title": "First-in-human trial of trispecific CAR T cells yields durable responses in relapsed lymphoma",
@@ -1161,8 +1031,15 @@
    "source": "Oncology Central",
    "date": "2026-10-20T07:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "삼중 특이성 CAR T 세포에 대한 최초의 인간 실험에서 재발성 림프종에 대한 지속적인 반응을 나타냄"
+   "topic": "신약"
+  },
+  {
+   "title": "Frontline Mosunetuzumab in Follicular and Marginal Zone Lymphoma: A Response-Adapted Approach",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5vMUt5MF83bV96b3NaZXlLVTZCa19XT0U0N1lxTHZORWZYRGtEWHdYLXlOU08wdC1ZaXJneVRIUkY1LTUyV0kxWWtNOUFsaGl1UUMtaU4tUjZLM2x6ZmNKQWZMczVvN1pNa2MzdjlGSlA?oc=5",
+   "source": "Oncodaily",
+   "date": "2026-10-20T07:00:00+00:00",
+   "lang": "en",
+   "topic": "신약"
   },
   {
    "title": "BostonGene and Medical University of South Carolina Announce Strategic Collaboration to Advance CAR-T Therapy Insights for Lymphoma and Leukemia",
@@ -1170,8 +1047,7 @@
    "source": "BioSpace",
    "date": "2026-10-20T07:00:00+00:00",
    "lang": "en",
-   "topic": "신약",
-   "title_ko": "보스턴진(BostonGene)과 사우스캐롤라이나 의과대학, 림프종과 백혈병에 대한 CAR-T 치료 통찰력을 발전시키기 위한 전략적 협력 발표"
+   "topic": "신약"
   },
   {
    "title": "보령, 차세대 항암신약 2상 환자 모집 완료…2028년 조건부 허가 추진",
@@ -1185,14 +1061,6 @@
    "title": "보령, 차세대 혈액암 신약 임상 2상 완료…독성 한계 넘을지가 변수",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBCclZmbzh6TnpqRjUyVWVZUnZaandua3FLNWpsRjVnZEt5djI2Y0EtYlZaYkpmS09mTWc2V1dKZVFyR2FmS2xZOVdCS1FPUHdOTjRCNTFMaVZqRnFmUldOR20yRzh3MjhwTjZjMg?oc=5",
    "source": "바이오타임즈",
-   "date": "2026-10-19T07:00:00+00:00",
-   "lang": "ko",
-   "topic": "신약"
-  },
-  {
-   "title": "보령 혈액암 신약 임상 환자 모집 끝…3년 넘게 암 사라진 환자도",
-   "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9leGVyb0lwSTl6ZldwUXp2XzM4a04wNFpTMHpqWDhQWEViNEM1TThfUlp2MWVFWnRFMW5ObWN6WDVqdw?oc=5",
-   "source": "코메디닷컴",
    "date": "2026-10-19T07:00:00+00:00",
    "lang": "ko",
    "topic": "신약"
@@ -1219,8 +1087,7 @@
    "source": "Nature",
    "date": "2026-10-19T07:00:00+00:00",
    "lang": "en",
-   "topic": "임상",
-   "title_ko": "재발성 또는 불응성 미만성 거대 B세포 림프종에 대한 이푸피노스타트의 효능 및 안전성: 다기관, 단일군 제2상 연구"
+   "topic": "임상"
   },
   {
    "title": "ESMO 2026: 5 top studies",
@@ -1228,17 +1095,7 @@
    "source": "UT MD Anderson",
    "date": "2026-10-19T07:00:00+00:00",
    "lang": "en",
-   "topic": "임상",
-   "title_ko": "ESMO 2026: 5가지 주요 연구"
-  },
-  {
-   "title": "Legend Biotech Receives FDA IND Clearance for LB2501, a CD19/CD20 In Vivo CAR-T Therapy",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5PdmpndU1kOGxnQ2hXaHFYZTRBRWdKUl96ZHI2TW1BY2didUYxVEpMeUd1M29RbGJyOGtiRVNGUlpLc3YzTkYtc2prNE96TE5idmNOYkFsekotaVgtTzRxNk0zeU8?oc=5",
-   "source": "Oncodaily",
-   "date": "2026-10-16T07:00:00+00:00",
-   "lang": "en",
-   "topic": "신약",
-   "title_ko": "Legend Biotech, CD19/CD20 In Vivo CAR-T 치료제인 LB2501에 대해 FDA IND 승인 획득"
+   "topic": "임상"
   }
  ]
 }
