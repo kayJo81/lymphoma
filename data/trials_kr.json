@@ -1,6 +1,39 @@
 {
- "updated": "2026-11-16T01:09:21+00:00",
+ "updated": "2026-11-17T04:00:31+00:00",
  "items": [
+  {
+   "nct": "NCT06806033",
+   "title": "Evaluate Optimization of CRS Profile for Glofit Monotherapy and Glofit+GemOx in R/R Aggressive B-NHL",
+   "phase": "Phase 2",
+   "status": "모집 중",
+   "sponsor": "Hoffmann-La Roche",
+   "conditions": [
+    "Relapsed or Refractory Aggressive B-Cell Non-Hodgkins Lymphoma"
+   ],
+   "interventions": [
+    "Obinutuzumab",
+    "Glofitamab",
+    "Gemcitabine",
+    "Oxaliplatin"
+   ],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Seoul National University Bundang Hospital",
+     "city": "Seongnam-si"
+    },
+    {
+     "name": "Seoul National University Hospital",
+     "city": "Seoul"
+    },
+    {
+     "name": "Asan Medical Center",
+     "city": "Seoul"
+    }
+   ],
+   "start": "2025-03-05",
+   "updated": "2026-11-16"
+  },
   {
    "nct": "NCT07109219",
    "title": "Study of AZD4512 Monotherapy or in Combination With Anticancer Agents in Participants With Acute Lymphoblastic Leukemia",
@@ -52,6 +85,31 @@
    "updated": "2026-11-13"
   },
   {
+   "nct": "NCT02332668",
+   "title": "A Study of Pembrolizumab (MK-3475) in Pediatric Participants With an Advanced Solid Tumor or Lymphoma (MK-3475-051/KEYNOTE-051)",
+   "phase": "Phase 1/Phase 2",
+   "status": "모집 중",
+   "sponsor": "Merck Sharp & Dohme LLC",
+   "conditions": [
+    "Melanoma",
+    "Lymphoma",
+    "Solid Tumor",
+    "Classical Hodgkin Lymphoma"
+   ],
+   "interventions": [
+    "Pembrolizumab"
+   ],
+   "korea": true,
+   "sites": [
+    {
+     "name": "MSD Korea LTD",
+     "city": "Seoul"
+    }
+   ],
+   "start": "2015-03-19",
+   "updated": "2026-11-13"
+  },
+  {
    "nct": "NCT03460977",
    "title": "A Study of Mevrometostat for Treatment of Relapsed/Refractory SCLC, Castration Resistant Prostate Cancer, and Follicular Lymphoma",
    "phase": "Phase 1",
@@ -91,6 +149,36 @@
     }
    ],
    "start": "2018-04-17",
+   "updated": "2026-11-13"
+  },
+  {
+   "nct": "NCT07634471",
+   "title": "A Clinical Trial of MK-1045 and Rituximab in People With Follicular Lymphoma (MK-1045-007)",
+   "phase": "Phase 2/Phase 3",
+   "status": "모집 중",
+   "sponsor": "Merck Sharp & Dohme LLC",
+   "conditions": [
+    "Follicular Lymphoma"
+   ],
+   "interventions": [
+    "MK-1045",
+    "Rituximab",
+    "Rituximab biosimilar",
+    "Bendamustine",
+    "Cyclophosphamide",
+    "Vincristine",
+    "Prednisone",
+    "Prednisolone",
+    "Doxorubicin Hydrochloride"
+   ],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Samsung Medical Center ( Site 0801)",
+     "city": "Seoul"
+    }
+   ],
+   "start": "2026-06-22",
    "updated": "2026-11-13"
   },
   {
@@ -149,61 +237,6 @@
    "updated": "2026-11-13"
   },
   {
-   "nct": "NCT02332668",
-   "title": "A Study of Pembrolizumab (MK-3475) in Pediatric Participants With an Advanced Solid Tumor or Lymphoma (MK-3475-051/KEYNOTE-051)",
-   "phase": "Phase 1/Phase 2",
-   "status": "모집 중",
-   "sponsor": "Merck Sharp & Dohme LLC",
-   "conditions": [
-    "Melanoma",
-    "Lymphoma",
-    "Solid Tumor",
-    "Classical Hodgkin Lymphoma"
-   ],
-   "interventions": [
-    "Pembrolizumab"
-   ],
-   "korea": true,
-   "sites": [
-    {
-     "name": "MSD Korea LTD",
-     "city": "Seoul"
-    }
-   ],
-   "start": "2015-03-19",
-   "updated": "2026-11-13"
-  },
-  {
-   "nct": "NCT07634471",
-   "title": "A Clinical Trial of MK-1045 and Rituximab in People With Follicular Lymphoma (MK-1045-007)",
-   "phase": "Phase 2/Phase 3",
-   "status": "모집 중",
-   "sponsor": "Merck Sharp & Dohme LLC",
-   "conditions": [
-    "Follicular Lymphoma"
-   ],
-   "interventions": [
-    "MK-1045",
-    "Rituximab",
-    "Rituximab biosimilar",
-    "Bendamustine",
-    "Cyclophosphamide",
-    "Vincristine",
-    "Prednisone",
-    "Prednisolone",
-    "Doxorubicin Hydrochloride"
-   ],
-   "korea": true,
-   "sites": [
-    {
-     "name": "Samsung Medical Center ( Site 0801)",
-     "city": "Seoul"
-    }
-   ],
-   "start": "2026-06-22",
-   "updated": "2026-11-13"
-  },
-  {
    "nct": "NCT07387926",
    "title": "Safety and Efficacy of Asciminib in Pediatrics and Young Adults With Relapse/Refractory (r/r) Philadelphia Positive (Ph+) or ABL-class Ph-like Acute Lymphoblastic Leukemia (ALL)",
    "phase": "Phase 1/Phase 2",
@@ -233,114 +266,6 @@
     }
    ],
    "start": "2026-07-05",
-   "updated": "2026-11-12"
-  },
-  {
-   "nct": "NCT06846671",
-   "title": "A Study of Tacabrutideg (BGB-16673) Compared to Investigator's Choice in Participants With Chronic Lymphocytic Leukemia or Small Lymphocytic Lymphoma Previously Exposed to Both Bruton Tyrosine Kinase (BTK) and B-cell Leukemia/Lymphoma 2 Protein (BCL2) Inhibitors",
-   "phase": "Phase 3",
-   "status": "모집 중",
-   "sponsor": "BeOne Medicines",
-   "conditions": [
-    "CLL",
-    "Chronic Lymphocytic Leukemia",
-    "SLL"
-   ],
-   "interventions": [
-    "Tacabrutideg",
-    "Bendamustine",
-    "Idelalisib",
-    "Rituximab",
-    "Venetoclax"
-   ],
-   "korea": true,
-   "sites": [
-    {
-     "name": "Dong A University Hospital",
-     "city": "Seogu"
-    },
-    {
-     "name": "Kyungpook National University Hospital",
-     "city": "Junggu"
-    },
-    {
-     "name": "National Cancer Center (Korea)",
-     "city": "IlsandongGu GoyangSi"
-    },
-    {
-     "name": "Chonnam National University Hwasun Hospital",
-     "city": "HwasunGun"
-    },
-    {
-     "name": "Samsung Medical Center",
-     "city": "GangnamGu"
-    },
-    {
-     "name": "The Catholic University of Korea, Seoul St Marys Hospital",
-     "city": "SeochoGu"
-    },
-    {
-     "name": "Seoul National University Hospital",
-     "city": "Seoul"
-    }
-   ],
-   "start": "2025-04-10",
-   "updated": "2026-11-12"
-  },
-  {
-   "nct": "NCT06091254",
-   "title": "A Trial to Learn if Odronextamab is Safe and Well-Tolerated and How Well it Works Compared to Rituximab Combined With Different Types of Chemotherapy for Adult Participants With Previously Untreated Follicular Lymphoma",
-   "phase": "Phase 3",
-   "status": "모집 중",
-   "sponsor": "Regeneron Pharmaceuticals",
-   "conditions": [
-    "Follicular Lymphoma (FL)"
-   ],
-   "interventions": [
-    "Odronextamab",
-    "Rituximab",
-    "Cyclophosphamide",
-    "Doxorubicin",
-    "Vincristine",
-    "Prednisone/prednisolone",
-    "Bendamustine"
-   ],
-   "korea": true,
-   "sites": [
-    {
-     "name": "Center for Hematologic Malignancy",
-     "city": "Goyang-si"
-    },
-    {
-     "name": "St. Vincents Hospital - The Catholic University of Korea",
-     "city": "Suwon"
-    },
-    {
-     "name": "Ajou University Hospital",
-     "city": "Suwon"
-    },
-    {
-     "name": "Jeonbuk National University Hospital",
-     "city": "Jeonju"
-    },
-    {
-     "name": "Dong-A University Hospital",
-     "city": "Busan"
-    },
-    {
-     "name": "Pusan National University Hospital",
-     "city": "Busan"
-    },
-    {
-     "name": "Kyungpook National University Chilgok Hospital",
-     "city": "Daegu"
-    },
-    {
-     "name": "Seoul St. Mary's Hospital",
-     "city": "Seoul"
-    }
-   ],
-   "start": "2023-12-12",
    "updated": "2026-11-12"
   },
   {
@@ -417,37 +342,112 @@
    "updated": "2026-11-12"
   },
   {
-   "nct": "NCT06806033",
-   "title": "Evaluate Optimization of CRS Profile for Glofit Monotherapy and Glofit+GemOx in R/R Aggressive B-NHL",
-   "phase": "Phase 2",
+   "nct": "NCT06091254",
+   "title": "A Trial to Learn if Odronextamab is Safe and Well-Tolerated and How Well it Works Compared to Rituximab Combined With Different Types of Chemotherapy for Adult Participants With Previously Untreated Follicular Lymphoma",
+   "phase": "Phase 3",
    "status": "모집 중",
-   "sponsor": "Hoffmann-La Roche",
+   "sponsor": "Regeneron Pharmaceuticals",
    "conditions": [
-    "Relapsed or Refractory Aggressive B-Cell Non-Hodgkins Lymphoma"
+    "Follicular Lymphoma (FL)"
    ],
    "interventions": [
-    "Obinutuzumab",
-    "Glofitamab",
-    "Gemcitabine",
-    "Oxaliplatin"
+    "Odronextamab",
+    "Rituximab",
+    "Cyclophosphamide",
+    "Doxorubicin",
+    "Vincristine",
+    "Prednisone/prednisolone",
+    "Bendamustine"
    ],
    "korea": true,
    "sites": [
     {
-     "name": "Seoul National University Bundang Hospital",
-     "city": "Seongnam-si"
+     "name": "Center for Hematologic Malignancy",
+     "city": "Goyang-si"
+    },
+    {
+     "name": "St. Vincents Hospital - The Catholic University of Korea",
+     "city": "Suwon"
+    },
+    {
+     "name": "Ajou University Hospital",
+     "city": "Suwon"
+    },
+    {
+     "name": "Jeonbuk National University Hospital",
+     "city": "Jeonju"
+    },
+    {
+     "name": "Dong-A University Hospital",
+     "city": "Busan"
+    },
+    {
+     "name": "Pusan National University Hospital",
+     "city": "Busan"
+    },
+    {
+     "name": "Kyungpook National University Chilgok Hospital",
+     "city": "Daegu"
+    },
+    {
+     "name": "Seoul St. Mary's Hospital",
+     "city": "Seoul"
+    }
+   ],
+   "start": "2023-12-12",
+   "updated": "2026-11-12"
+  },
+  {
+   "nct": "NCT06846671",
+   "title": "A Study of Tacabrutideg (BGB-16673) Compared to Investigator's Choice in Participants With Chronic Lymphocytic Leukemia or Small Lymphocytic Lymphoma Previously Exposed to Both Bruton Tyrosine Kinase (BTK) and B-cell Leukemia/Lymphoma 2 Protein (BCL2) Inhibitors",
+   "phase": "Phase 3",
+   "status": "모집 중",
+   "sponsor": "BeOne Medicines",
+   "conditions": [
+    "CLL",
+    "Chronic Lymphocytic Leukemia",
+    "SLL"
+   ],
+   "interventions": [
+    "Tacabrutideg",
+    "Bendamustine",
+    "Idelalisib",
+    "Rituximab",
+    "Venetoclax"
+   ],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Dong A University Hospital",
+     "city": "Seogu"
+    },
+    {
+     "name": "Kyungpook National University Hospital",
+     "city": "Junggu"
+    },
+    {
+     "name": "National Cancer Center (Korea)",
+     "city": "IlsandongGu GoyangSi"
+    },
+    {
+     "name": "Chonnam National University Hwasun Hospital",
+     "city": "HwasunGun"
+    },
+    {
+     "name": "Samsung Medical Center",
+     "city": "GangnamGu"
+    },
+    {
+     "name": "The Catholic University of Korea, Seoul St Marys Hospital",
+     "city": "SeochoGu"
     },
     {
      "name": "Seoul National University Hospital",
      "city": "Seoul"
-    },
-    {
-     "name": "Asan Medical Center",
-     "city": "Seoul"
     }
    ],
-   "start": "2025-03-05",
-   "updated": "2026-11-10"
+   "start": "2025-04-10",
+   "updated": "2026-11-12"
   },
   {
    "nct": "NCT05384626",
@@ -521,6 +521,38 @@
    "updated": "2026-11-05"
   },
   {
+   "nct": "NCT05533775",
+   "title": "A Study to Evaluate Glofitamab Monotherapy and Glofitamab + Chemoimmunotherapy in Pediatric and Young Adult Participants With Relapsed/Refractory Mature B-Cell Non-Hodgkin Lymphoma",
+   "phase": "Phase 1/Phase 2",
+   "status": "모집 중",
+   "sponsor": "Hoffmann-La Roche",
+   "conditions": [
+    "Mature B-Cell Non-Hodgkin Lymphoma"
+   ],
+   "interventions": [
+    "Obinutuzumab",
+    "Glofitamab",
+    "Rituximab",
+    "Ifosfamide",
+    "Carboplatin",
+    "Etoposide",
+    "Tocilizumab"
+   ],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Seoul National University Hospital- Pediatric Site",
+     "city": "Seoul"
+    },
+    {
+     "name": "Asan Medical Center",
+     "city": "Seoul"
+    }
+   ],
+   "start": "2022-11-16",
+   "updated": "2026-11-05"
+  },
+  {
    "nct": "NCT06084936",
    "title": "A Study to Evaluate Glofitamab as a Single Agent vs. Investigator's Choice in Participants With Relapsed/Refractory Mantle Cell Lymphoma",
    "phase": "Phase 3",
@@ -564,27 +596,67 @@
    "updated": "2026-11-05"
   },
   {
-   "nct": "NCT05533775",
-   "title": "A Study to Evaluate Glofitamab Monotherapy and Glofitamab + Chemoimmunotherapy in Pediatric and Young Adult Participants With Relapsed/Refractory Mature B-Cell Non-Hodgkin Lymphoma",
-   "phase": "Phase 1/Phase 2",
+   "nct": "NCT06588478",
+   "title": "A Study Evaluating the Efficacy and Safety of Pirtobrutinib in Participants With Relapsed or Refractory Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma",
+   "phase": "Phase 2",
    "status": "모집 중",
-   "sponsor": "Hoffmann-La Roche",
+   "sponsor": "Loxo Oncology, Inc.",
    "conditions": [
-    "Mature B-Cell Non-Hodgkin Lymphoma"
+    "Chronic Lymphocytic Leukemia",
+    "Small Lymphocytic Lymphoma"
    ],
    "interventions": [
-    "Obinutuzumab",
-    "Glofitamab",
-    "Rituximab",
-    "Ifosfamide",
-    "Carboplatin",
-    "Etoposide",
-    "Tocilizumab"
+    "Pirtobrutinib"
    ],
    "korea": true,
    "sites": [
     {
-     "name": "Seoul National University Hospital- Pediatric Site",
+     "name": "Pusan National University Hospital",
+     "city": "Busan"
+    },
+    {
+     "name": "Chonnam National University Hwasun Hospital",
+     "city": "Hwasun-gun"
+    },
+    {
+     "name": "Seoul National University Hospital",
+     "city": "Seoul"
+    },
+    {
+     "name": "Samsung Medical Center",
+     "city": "Seoul"
+    },
+    {
+     "name": "The Catholic Univ. of Korea Seoul St. Mary's Hospital",
+     "city": "Seoul"
+    },
+    {
+     "name": "The Catholic University of Korea, Yeouido St. Mary's Hospital",
+     "city": "Seoul"
+    }
+   ],
+   "start": "2025-01-03",
+   "updated": "2026-11-04"
+  },
+  {
+   "nct": "NCT07101328",
+   "title": "A Study of LY4152199 in Participants With Previously Treated B-cell Malignancies (BAF_FRontier-1 )",
+   "phase": "Phase 1",
+   "status": "모집 중",
+   "sponsor": "Eli Lilly and Company",
+   "conditions": [
+    "Lymphoma, Non-Hodgkin",
+    "B-cell Lymphoma",
+    "Lymphoma, Large B-Cell, Diffuse",
+    "Lymphoma, Follicular"
+   ],
+   "interventions": [
+    "LY4152199 - IV"
+   ],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Seoul National University Hospital",
      "city": "Seoul"
     },
     {
@@ -592,8 +664,8 @@
      "city": "Seoul"
     }
    ],
-   "start": "2022-11-16",
-   "updated": "2026-11-05"
+   "start": "2026-05-28",
+   "updated": "2026-11-04"
   },
   {
    "nct": "NCT06091865",
@@ -660,78 +732,6 @@
     }
    ],
    "start": "2023-12-13",
-   "updated": "2026-11-04"
-  },
-  {
-   "nct": "NCT07101328",
-   "title": "A Study of LY4152199 in Participants With Previously Treated B-cell Malignancies (BAF_FRontier-1 )",
-   "phase": "Phase 1",
-   "status": "모집 중",
-   "sponsor": "Eli Lilly and Company",
-   "conditions": [
-    "Lymphoma, Non-Hodgkin",
-    "B-cell Lymphoma",
-    "Lymphoma, Large B-Cell, Diffuse",
-    "Lymphoma, Follicular"
-   ],
-   "interventions": [
-    "LY4152199 - IV"
-   ],
-   "korea": true,
-   "sites": [
-    {
-     "name": "Seoul National University Hospital",
-     "city": "Seoul"
-    },
-    {
-     "name": "Asan Medical Center",
-     "city": "Seoul"
-    }
-   ],
-   "start": "2026-05-28",
-   "updated": "2026-11-04"
-  },
-  {
-   "nct": "NCT06588478",
-   "title": "A Study Evaluating the Efficacy and Safety of Pirtobrutinib in Participants With Relapsed or Refractory Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma",
-   "phase": "Phase 2",
-   "status": "모집 중",
-   "sponsor": "Loxo Oncology, Inc.",
-   "conditions": [
-    "Chronic Lymphocytic Leukemia",
-    "Small Lymphocytic Lymphoma"
-   ],
-   "interventions": [
-    "Pirtobrutinib"
-   ],
-   "korea": true,
-   "sites": [
-    {
-     "name": "Pusan National University Hospital",
-     "city": "Busan"
-    },
-    {
-     "name": "Chonnam National University Hwasun Hospital",
-     "city": "Hwasun-gun"
-    },
-    {
-     "name": "Seoul National University Hospital",
-     "city": "Seoul"
-    },
-    {
-     "name": "Samsung Medical Center",
-     "city": "Seoul"
-    },
-    {
-     "name": "The Catholic Univ. of Korea Seoul St. Mary's Hospital",
-     "city": "Seoul"
-    },
-    {
-     "name": "The Catholic University of Korea, Yeouido St. Mary's Hospital",
-     "city": "Seoul"
-    }
-   ],
-   "start": "2025-01-03",
    "updated": "2026-11-04"
   },
   {
@@ -829,6 +829,35 @@
    "updated": "2026-11-02"
   },
   {
+   "nct": "NCT06395103",
+   "title": "Substudy 01A: Zilovertamab Vedotin in Pediatric and Young Adult Participants With Hematologic Malignancies or Solid Tumors (MK-9999-01A/LIGHTBEAM-U01)",
+   "phase": "Phase 1/Phase 2",
+   "status": "모집 중",
+   "sponsor": "Merck Sharp & Dohme LLC",
+   "conditions": [
+    "B-cell Acute Lymphoblastic Leukemia",
+    "Diffuse Large B-cell Lymphoma",
+    "Burkitt Lymphoma",
+    "Neuroblastoma"
+   ],
+   "interventions": [
+    "Zilovertamab vedotin"
+   ],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Seoul National University Hospital-Pediatrics ( Site 1972)",
+     "city": "Seoul"
+    },
+    {
+     "name": "Asan Medical Center-Pediatrics - Pedicatric Oncology ( Site 1973)",
+     "city": "Seoul"
+    }
+   ],
+   "start": "2024-08-16",
+   "updated": "2026-10-30"
+  },
+  {
    "nct": "NCT05952024",
    "title": "Study of Acalabrutinib and Rituximab in Untreated Elderly and/or Frail Patients With DLBCL",
    "phase": "Phase 2",
@@ -881,35 +910,6 @@
     }
    ],
    "start": "2024-07-16",
-   "updated": "2026-10-30"
-  },
-  {
-   "nct": "NCT06395103",
-   "title": "Substudy 01A: Zilovertamab Vedotin in Pediatric and Young Adult Participants With Hematologic Malignancies or Solid Tumors (MK-9999-01A/LIGHTBEAM-U01)",
-   "phase": "Phase 1/Phase 2",
-   "status": "모집 중",
-   "sponsor": "Merck Sharp & Dohme LLC",
-   "conditions": [
-    "B-cell Acute Lymphoblastic Leukemia",
-    "Diffuse Large B-cell Lymphoma",
-    "Burkitt Lymphoma",
-    "Neuroblastoma"
-   ],
-   "interventions": [
-    "Zilovertamab vedotin"
-   ],
-   "korea": true,
-   "sites": [
-    {
-     "name": "Seoul National University Hospital-Pediatrics ( Site 1972)",
-     "city": "Seoul"
-    },
-    {
-     "name": "Asan Medical Center-Pediatrics - Pedicatric Oncology ( Site 1973)",
-     "city": "Seoul"
-    }
-   ],
-   "start": "2024-08-16",
    "updated": "2026-10-30"
   },
   {
@@ -1079,31 +1079,6 @@
    "updated": "2026-10-27"
   },
   {
-   "nct": "NCT07155226",
-   "title": "Study of AZD3632 Monotherapy or in Combination With Anticancer Agents in Participants With Advanced Haematologic Malignancies With KMT2Ar, NPM1m, or Other Genotypes Associated With HOX Overexpression",
-   "phase": "Phase 1/Phase 2",
-   "status": "모집 중",
-   "sponsor": "AstraZeneca",
-   "conditions": [
-    "Acute Lymphoblastic Leukaemia",
-    "Acute Myeloid Leukaemia",
-    "Higher-risk Myelodysplastic Syndromes"
-   ],
-   "interventions": [
-    "AZD3632",
-    "Posaconazole"
-   ],
-   "korea": true,
-   "sites": [
-    {
-     "name": "Research Site",
-     "city": "Seoul"
-    }
-   ],
-   "start": "2026-01-09",
-   "updated": "2026-10-23"
-  },
-  {
    "nct": "NCT06943872",
    "title": "A Study to Investigate Progression-Free Survival With Sonrotoclax Plus Obinutuzumab Or Sonrotoclax Plus Rituximab Compared With Venetoclax Plus Rituximab Treatment In Patients With Relapsed and/or Refractory Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma (CELESTIAL-RRCLL)",
    "phase": "Phase 3",
@@ -1189,6 +1164,31 @@
    "updated": "2026-10-23"
   },
   {
+   "nct": "NCT07155226",
+   "title": "Study of AZD3632 Monotherapy or in Combination With Anticancer Agents in Participants With Advanced Haematologic Malignancies With KMT2Ar, NPM1m, or Other Genotypes Associated With HOX Overexpression",
+   "phase": "Phase 1/Phase 2",
+   "status": "모집 중",
+   "sponsor": "AstraZeneca",
+   "conditions": [
+    "Acute Lymphoblastic Leukaemia",
+    "Acute Myeloid Leukaemia",
+    "Higher-risk Myelodysplastic Syndromes"
+   ],
+   "interventions": [
+    "AZD3632",
+    "Posaconazole"
+   ],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Research Site",
+     "city": "Seoul"
+    }
+   ],
+   "start": "2026-01-09",
+   "updated": "2026-10-23"
+  },
+  {
    "nct": "NCT06549595",
    "title": "A Study of Surovatamig (AZD0486) Plus Rituximab in Previously Untreated Follicular Lymphoma Patients",
    "phase": "Phase 3",
@@ -1250,6 +1250,28 @@
    "updated": "2026-10-14"
   },
   {
+   "nct": "NCT07032103",
+   "title": "Prospective Cohort Study for Lymphoma: Samsung Lymphoma Cohort Study IV",
+   "phase": "",
+   "status": "모집 중",
+   "sponsor": "Samsung Medical Center",
+   "conditions": [
+    "Lymphoma"
+   ],
+   "interventions": [
+    "Immunochemotherapy"
+   ],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Samsung Medical Center",
+     "city": "Seoul"
+    }
+   ],
+   "start": "2022-06-01",
+   "updated": "2026-10-13"
+  },
+  {
    "nct": "NCT06137118",
    "title": "AZD0486 as Monotherapy in B-cell Acute Lymphoblastic Leukaemia",
    "phase": "Phase 1/Phase 2",
@@ -1295,28 +1317,6 @@
     }
    ],
    "start": "2024-01-23",
-   "updated": "2026-10-13"
-  },
-  {
-   "nct": "NCT07032103",
-   "title": "Prospective Cohort Study for Lymphoma: Samsung Lymphoma Cohort Study IV",
-   "phase": "",
-   "status": "모집 중",
-   "sponsor": "Samsung Medical Center",
-   "conditions": [
-    "Lymphoma"
-   ],
-   "interventions": [
-    "Immunochemotherapy"
-   ],
-   "korea": true,
-   "sites": [
-    {
-     "name": "Samsung Medical Center",
-     "city": "Seoul"
-    }
-   ],
-   "start": "2022-06-01",
    "updated": "2026-10-13"
   },
   {
@@ -1432,36 +1432,6 @@
    "updated": "2026-09-30"
   },
   {
-   "nct": "NCT06454149",
-   "title": "Cohort Study for Gastric MALT Lymphoma",
-   "phase": "",
-   "status": "모집 중",
-   "sponsor": "Seoul National University Hospital",
-   "conditions": [
-    "Gastric MALT Lymphoma"
-   ],
-   "interventions": [
-    "MALT lymphoma"
-   ],
-   "korea": true,
-   "sites": [
-    {
-     "name": "Korea University Ansan Hospital",
-     "city": "Ansan-si"
-    },
-    {
-     "name": "Cheol Min Shin",
-     "city": "Seongnam-si"
-    },
-    {
-     "name": "Kangbuk Samsung Hospital",
-     "city": "Seoul"
-    }
-   ],
-   "start": "2024-06-06",
-   "updated": "2026-09-28"
-  },
-  {
    "nct": "NCT06973187",
    "title": "A Study to Evaluate the Safety and Efficacy of Tacabrutideg (BGB-16673) Compared to Pirtobrutinib in Adults With Relapsed/Refractory Chronic Lymphocytic Leukemia or Small Lymphocytic Lymphoma",
    "phase": "Phase 3",
@@ -1503,6 +1473,36 @@
     }
    ],
    "start": "2025-09-04",
+   "updated": "2026-09-28"
+  },
+  {
+   "nct": "NCT06454149",
+   "title": "Cohort Study for Gastric MALT Lymphoma",
+   "phase": "",
+   "status": "모집 중",
+   "sponsor": "Seoul National University Hospital",
+   "conditions": [
+    "Gastric MALT Lymphoma"
+   ],
+   "interventions": [
+    "MALT lymphoma"
+   ],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Korea University Ansan Hospital",
+     "city": "Ansan-si"
+    },
+    {
+     "name": "Cheol Min Shin",
+     "city": "Seongnam-si"
+    },
+    {
+     "name": "Kangbuk Samsung Hospital",
+     "city": "Seoul"
+    }
+   ],
+   "start": "2024-06-06",
    "updated": "2026-09-28"
   },
   {
@@ -2102,6 +2102,34 @@
    "updated": "2026-04-30"
   },
   {
+   "nct": "NCT06552559",
+   "title": "Selinexor With ICE Chemotherapy in Secondary Central Nervous System Involving B-cell Non-Hodgkin Lymphoma",
+   "phase": "Phase 1/Phase 2",
+   "status": "모집 중",
+   "sponsor": "Samsung Medical Center",
+   "conditions": [
+    "B-cell Lymphoma Recurrent",
+    "B-cell Lymphoma Refractory",
+    "CNS Metastases"
+   ],
+   "interventions": [
+    "Selinexor"
+   ],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Samsung Cancer Research Institute",
+     "city": "Seoul"
+    },
+    {
+     "name": "Samsung Medical Center",
+     "city": "Seoul"
+    }
+   ],
+   "start": "2024-05-01",
+   "updated": "2026-04-23"
+  },
+  {
    "nct": "NCT05245656",
    "title": "A Study Comparing Rituximab/Bendamustin(RB) Alternating With Rituximab/Bendamustin/Cytarabin(RBAC) With RB Therapy in Elderly Patients With Mentle Cell Lymphoma",
    "phase": "Phase 2",
@@ -2144,34 +2172,6 @@
     }
    ],
    "start": "2020-11-02",
-   "updated": "2026-04-23"
-  },
-  {
-   "nct": "NCT06552559",
-   "title": "Selinexor With ICE Chemotherapy in Secondary Central Nervous System Involving B-cell Non-Hodgkin Lymphoma",
-   "phase": "Phase 1/Phase 2",
-   "status": "모집 중",
-   "sponsor": "Samsung Medical Center",
-   "conditions": [
-    "B-cell Lymphoma Recurrent",
-    "B-cell Lymphoma Refractory",
-    "CNS Metastases"
-   ],
-   "interventions": [
-    "Selinexor"
-   ],
-   "korea": true,
-   "sites": [
-    {
-     "name": "Samsung Cancer Research Institute",
-     "city": "Seoul"
-    },
-    {
-     "name": "Samsung Medical Center",
-     "city": "Seoul"
-    }
-   ],
-   "start": "2024-05-01",
    "updated": "2026-04-23"
   },
   {
@@ -2266,8 +2266,8 @@
    "updated": "2026-03-16"
   },
   {
-   "nct": "NCT06876649",
-   "title": "A Master Protocol to Evaluate the Long-Term Safety of (LY3527727) Pirtobrutinib",
+   "nct": "NCT06876662",
+   "title": "A Study of (LY3527727) Pirtobrutinib in Participants With Previously Treated Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma or Non-Hodgkin Lymphoma",
    "phase": "Phase 4",
    "status": "모집 중",
    "sponsor": "Eli Lilly and Company",
@@ -2289,8 +2289,8 @@
    "updated": "2026-03-02"
   },
   {
-   "nct": "NCT06876662",
-   "title": "A Study of (LY3527727) Pirtobrutinib in Participants With Previously Treated Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma or Non-Hodgkin Lymphoma",
+   "nct": "NCT06876649",
+   "title": "A Master Protocol to Evaluate the Long-Term Safety of (LY3527727) Pirtobrutinib",
    "phase": "Phase 4",
    "status": "모집 중",
    "sponsor": "Eli Lilly and Company",
