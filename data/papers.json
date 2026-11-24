@@ -1,6 +1,478 @@
 {
- "updated": "2026-11-23T01:44:27+00:00",
+ "updated": "2026-11-24T05:23:04+00:00",
  "items": [
+  {
+   "pmid": "43073152",
+   "title": "Whole-Blood Epstein-Barr Virus DNA in Immunocompetent Primary CNS Lymphoma Patients: A Prospective Exploratory Case-Control Study.",
+   "journal": "Clinical lymphoma, myeloma & leukemia",
+   "date": "2026 Oct 27",
+   "authors": [
+    "Singh S",
+    "Rana D",
+    "Kaur P",
+    "Lal R",
+    "Mahesh KV",
+    "Chatterjee D",
+    "Chhabra S",
+    "Takkar A",
+    "Prakash G",
+    "Minz RW"
+   ],
+   "doi": "10.1016/j.clml.2026.10.021",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "43072620",
+   "title": "Sex-Related Patterns in the Etiology and Complications of Noninfectious Uveitis: A Population-Based Cohort Study.",
+   "journal": "American journal of ophthalmology",
+   "date": "2026 Nov 23",
+   "authors": [
+    "Talaparthy T",
+    "Muayad J",
+    "Chauhan M",
+    "Gangaputra S",
+    "Sallam A"
+   ],
+   "doi": "10.1016/j.ajo.2026.11.012",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "43072582",
+   "title": "Vonoprazan Protects Against Methotrexate-Induced Testicular Toxicity by Attenuating Oxidative Stress, ER Stress, NLRP3/IL-1β Inflammation, and Apoptosis in Mice.",
+   "journal": "Chemico-biological interactions",
+   "date": "2026 Nov 23",
+   "authors": [
+    "Alhaity MR",
+    "Samaha MM",
+    "El-Kashef DH"
+   ],
+   "doi": "10.1016/j.cbi.2026.112440",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "43072383",
+   "title": "Tuberculosis in Patients With Lymphoma: A Nationwide Matched Cohort Study in a Low-Incidence Country.",
+   "journal": "European journal of haematology",
+   "date": "2026 Nov 23",
+   "authors": [
+    "Dahlén T",
+    "Chen EY",
+    "Forsman LD",
+    "Smedby KE"
+   ],
+   "doi": "10.1111/ejh.70378",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "43072077",
+   "title": "Radiotherapy de-escalation for hematological malignancies: Lessons learned from the past and current state of the art.",
+   "journal": "Cancer radiotherapie : journal de la Societe francaise de radiotherapie oncologique",
+   "date": "2026 Nov 23",
+   "authors": [
+    "Belkacemi Y",
+    "Frikha S",
+    "To NH",
+    "Cherif MA",
+    "Grellier N",
+    "Bennassi A",
+    "Lasar C",
+    "Coraggio G",
+    "Debbi K"
+   ],
+   "doi": "10.1016/j.canrad.2026.104931",
+   "types": [
+    "Journal Article",
+    "Review"
+   ]
+  },
+  {
+   "pmid": "43072042",
+   "title": "Serologic stratification by anti-TRIM21/Ro52 and anti-TROVE2/Ro60 antibodies defines distinct longitudinal disease activity, patient-reported symptoms, and immunologic phenotypes in Sjögren's disease.",
+   "journal": "Journal of autoimmunity",
+   "date": "2026 Nov 23",
+   "authors": [
+    "Bettacchioli E",
+    "Asselineau J",
+    "Saraux A",
+    "Cornec D",
+    "Jousse-Joulin S",
+    "Sène D",
+    "Le Guern V",
+    "Dieudé P",
+    "Larroche C",
+    "Morel J",
+    "Hachulla E",
+    "Guggenbuhl P",
+    "Legendre P",
+    "Vittecoq O",
+    "Couderc M",
+    "Fauchais AL",
+    "Salliot C",
+    "Gottenberg JE",
+    "Nguyen Y",
+    "Mariette X",
+    "Devauchelle-Pensec V"
+   ],
+   "doi": "10.1016/j.jaut.2026.103657",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "43071748",
+   "title": "Serum β-γ bridging on capillary zone electrophoresis as a clue for suspecting immunoglobulin G4-related disease: a case report.",
+   "journal": "Laboratory medicine",
+   "date": "2026 Oct 5",
+   "authors": [
+    "Jia Z",
+    "Zhang Y",
+    "Lu Q"
+   ],
+   "doi": "10.1093/labmed/lmag094",
+   "types": [
+    "Journal Article",
+    "Case Reports"
+   ]
+  },
+  {
+   "pmid": "43070557",
+   "title": "Steroid-Responsive Lymphocytic Interstitial Pneumonitis Revealing T Cell-Dominant Chronic Active Epstein-Barr Virus Disease.",
+   "journal": "Journal of human immunity",
+   "date": "2026 Nov 23",
+   "authors": [
+    "Fong A",
+    "Templeton T",
+    "McNaughton P",
+    "Willcocks S"
+   ],
+   "doi": "10.70962/ASCIA2026abstract.CGR15",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "43070470",
+   "title": "Clinicopathologic features and diagnostic outcomes in atypical lymphoid infiltrates.",
+   "journal": "American journal of clinical pathology",
+   "date": "2026 Nov 4",
+   "authors": [
+    "Umeres-Francia GE",
+    "Coty-Fattal Z",
+    "Pearson E",
+    "Chen YH",
+    "Chen Q",
+    "Gao J",
+    "Tariq H",
+    "Fu L",
+    "Aqil B",
+    "Wolniak KL"
+   ],
+   "doi": "10.1093/ajcp/aqag132",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "43070432",
+   "title": "Novel germline RAC2 variants associated with B-cell lymphoma.",
+   "journal": "Clinical and experimental immunology",
+   "date": "2026 Nov 23",
+   "authors": [
+    "Tomomasa D",
+    "Mistui-Sekinaka K",
+    "Kamiya T",
+    "Honda-Ozaki F",
+    "Nishimura M",
+    "Wakatsuki R",
+    "Hijikata A",
+    "Kurata M",
+    "Yoshida K",
+    "Noma K",
+    "Moriya K",
+    "Nakamaki H",
+    "Abe T",
+    "Yano S",
+    "Morio T",
+    "Takagi M",
+    "Okada S",
+    "Imai K",
+    "Mori T",
+    "Kanegane H"
+   ],
+   "doi": "10.1093/cei/uxag078",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "43070215",
+   "title": "A Novel KMT2A::ETS1 Fusion in Mantle Cell Lymphoma.",
+   "journal": "Hematological oncology",
+   "date": "2026 Nov",
+   "authors": [
+    "Fang P",
+    "Yang X",
+    "Yang F",
+    "Lang X",
+    "Chen X",
+    "Xiao S",
+    "Chen Y"
+   ],
+   "doi": "10.1002/hon.70302",
+   "types": [
+    "Case Reports",
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "43069957",
+   "title": "Multimodal Treatment and Sustained Rehabilitation in Primary CNS Diffuse Large B-cell Lymphoma: A Five-Year Survivor With Long-Term Remission.",
+   "journal": "Cureus",
+   "date": "2026 Oct 23",
+   "authors": [
+    "Saeed H",
+    "Khan FI",
+    "Rauf W",
+    "Razaq HB",
+    "Khan M",
+    "Anwar K",
+    "Sarwar MJ",
+    "Reshtin M",
+    "Mehmood Qadri H",
+    "Imran M"
+   ],
+   "doi": "10.7759/cureus.118462",
+   "types": [
+    "Case Reports",
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "43069866",
+   "title": "Presumed vitamin K-dependent coagulopathy secondary to low-grade alimentary lymphoma in a cat.",
+   "journal": "JFMS open reports",
+   "date": "2026 Sep 28",
+   "authors": [
+    "Harlow HY",
+    "Frederick SW",
+    "Chapman PS"
+   ],
+   "doi": "10.1177/20551169261495449",
+   "types": [
+    "Case Reports",
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "43069808",
+   "title": "Cycloserine-Induced Psychosis in a Multidrug-Resistant Tuberculosis Patient in Jeddah, Saudi Arabia: A Case Report.",
+   "journal": "Cureus",
+   "date": "2026 Oct 22",
+   "authors": [
+    "Hariri N"
+   ],
+   "doi": "10.7759/cureus.118416",
+   "types": [
+    "Case Reports",
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "43069778",
+   "title": "Central Nervous System Progression During Longitudinal Treatment of Anaplastic Lymphoma Kinase-Positive Non-small Cell Lung Cancer: A Real-World Cohort Study.",
+   "journal": "Cureus",
+   "date": "2026 Oct 22",
+   "authors": [
+    "Yamada S",
+    "Saraya T",
+    "Takata S",
+    "Fujiwara M",
+    "Ishii H"
+   ],
+   "doi": "10.7759/cureus.118414",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "43069265",
+   "title": "Efficacy of rituximab plus lenalidomide regimens in follicular lymphoma: a meta-analysis of randomized controlled trials.",
+   "journal": "Annals of hematology",
+   "date": "2026 Aug 28",
+   "authors": [
+    "Khan I",
+    "Habib H",
+    "Butt AI",
+    "Hafeez AS",
+    "Mubarika M",
+    "Alokozay E",
+    "Shaharyar M",
+    "Aleem S",
+    "Alam U",
+    "Shadab HA",
+    "Naeem AB",
+    "Nouman M",
+    "Haris HM",
+    "Dogar FN",
+    "Fatima ZM",
+    "Azhar MJ",
+    "Khan S",
+    "Imtiaz A",
+    "Malik SJ",
+    "Khan AA",
+    "Aziz K",
+    "Elahi A",
+    "Khan A"
+   ],
+   "doi": "10.1007/s00277-026-07248-x",
+   "types": [
+    "Journal Article",
+    "Meta-Analysis",
+    "Systematic Review",
+    "Review"
+   ]
+  },
+  {
+   "pmid": "43069252",
+   "title": "Berberine alleviates cobalt chloride-induced neurotoxicity in rats: associated changes in oxidative stress, endoplasmic reticulum stress, and inflammatory signaling markers.",
+   "journal": "Naunyn-Schmiedeberg's archives of pharmacology",
+   "date": "2026 Nov 23",
+   "authors": [
+    "Yavuz H",
+    "Şimşek H",
+    "Akaras N",
+    "Kızıl HE",
+    "Kandemir Ö",
+    "Kandemir FM"
+   ],
+   "doi": "10.1007/s00210-026-06140-9",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "43069223",
+   "title": "Development and validation of a machine learning-based cell death-immune prognostic model for risk stratification in diffuse large B-cell lymphoma.",
+   "journal": "Biomarker research",
+   "date": "2026 Nov 23",
+   "authors": [
+    "Bai ZY",
+    "Yao C",
+    "Zhai YQ",
+    "Hou XY",
+    "Li YG",
+    "Weng ZP",
+    "Xu JQ",
+    "Xie XM",
+    "Yi TZ",
+    "Jin ZY",
+    "Wu XL"
+   ],
+   "doi": "10.1186/s40364-026-01049-0",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "43069117",
+   "title": "Establishing non-inferiority of rituximab plus lenalidomide in the treatment of advanced previously untreated follicular lymphoma.",
+   "journal": "BMC cancer",
+   "date": "2026 Aug 29",
+   "authors": [
+    "Perks J",
+    "Allen A",
+    "Farmer C",
+    "Robinson S",
+    "Melendez-Torres GJ"
+   ],
+   "doi": "10.1186/s12885-026-16836-z",
+   "types": [
+    "Journal Article",
+    "Equivalence Trial"
+   ]
+  },
+  {
+   "pmid": "43068901",
+   "title": "First-line bruton tyrosine kinase inhibitor regimens in marginal zone lymphoma: systematic review and meta-analysis.",
+   "journal": "Leukemia & lymphoma",
+   "date": "2026 Nov 22",
+   "authors": [
+    "Yao N",
+    "Gao J",
+    "Yang J",
+    "Wang C",
+    "Li X",
+    "Wei L",
+    "Wang L"
+   ],
+   "doi": "10.1080/10428194.2026.2757364",
+   "types": [
+    "Journal Article",
+    "Review"
+   ]
+  },
+  {
+   "pmid": "43068849",
+   "title": "TRBC1 Immunohistochemistry Improves Tissue-Based Assessment of T-Cell Clonality in Cutaneous Lymphoid Infiltrates: A Comparative Study With CD4/CD8 Ratio Assessment.",
+   "journal": "Journal of cutaneous pathology",
+   "date": "2026 Nov 22",
+   "authors": [
+    "Darwish N",
+    "Rothrock AT"
+   ],
+   "doi": "10.1111/cup.70262",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "43068699",
+   "title": "Immune-related gene expression signatures identify a subset of patients achieving durable complete response to brentuximab vedotin in relapsed/refractory Hodgkin lymphoma.",
+   "journal": "British journal of haematology",
+   "date": "2026 Nov 22",
+   "authors": [
+    "Nierychlewska P",
+    "Davini A",
+    "Tabanelli V",
+    "Sapienza MR",
+    "Montanari E",
+    "Vanazzi A",
+    "Viviani S",
+    "Maraglino AME",
+    "Lemoli RM",
+    "Tarella C",
+    "Pileri S",
+    "Derenzini E"
+   ],
+   "doi": "10.1111/bjh.70985",
+   "types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "43068674",
+   "title": "A targeted tandem mass spectrometry-based bottom-up proteomic approach incorporating hydrophobicity matched internal standards to evaluate brigatinib-induced drug metabolism enzymes and transporters modulation.",
+   "journal": "Drug metabolism and disposition: the biological fate of chemicals",
+   "date": "2026 Oct 23",
+   "authors": [
+    "Rajput N",
+    "Jadav T",
+    "Dey S",
+    "Sengupta P"
+   ],
+   "doi": "10.1016/j.dmd.2026.100424",
+   "types": [
+    "Journal Article"
+   ]
+  },
   {
    "pmid": "43068390",
    "title": "Primary Mediastinal B-Cell Lymphoma in Clinical Practice: A Case-Based Approach to Unresolved Diagnostic and Therapeutic Dilemmas.",
@@ -251,7 +723,8 @@
    "doi": "10.3389/fimmu.2026.1989947",
    "types": [
     "Case Reports",
-    "Journal Article"
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
    ]
   },
   {
@@ -799,572 +1272,6 @@
    "types": [
     "English Abstract",
     "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43059225",
-   "title": "[The Relationship between PD-L1 and c-Myc Expression and Its Clinical Significance in Diffuse Large B-Cell Lymphoma].",
-   "journal": "Zhongguo shi yan xue ye xue za zhi",
-   "date": "2026 Oct",
-   "authors": [
-    "Zheng XY",
-    "Liu ZQ",
-    "Wang LL",
-    "Xu CH",
-    "Shu L",
-    "Lu JB",
-    "Huang YF",
-    "Miao YQ",
-    "Cheng YX"
-   ],
-   "doi": "10.19746/j.cnki.issn1009-2137.2026.05.007",
-   "types": [
-    "English Abstract",
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43059224",
-   "title": "[Effects of BET Inhibitor OTX-015 on Apoptosis in Non-Hodgkin Lymphoma Cells].",
-   "journal": "Zhongguo shi yan xue ye xue za zhi",
-   "date": "2026 Oct",
-   "authors": [
-    "Ji CJ",
-    "Zhang P",
-    "Li ZH",
-    "Zhang HY"
-   ],
-   "doi": "10.19746/j.cnki.issn1009-2137.2026.05.006",
-   "types": [
-    "English Abstract",
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43059223",
-   "title": "[Clinical Characteristics and Prognosis Analysis of Patients with Central Nervous System Involvement in Mantle Cell Lymphoma].",
-   "journal": "Zhongguo shi yan xue ye xue za zhi",
-   "date": "2026 Oct",
-   "authors": [
-    "Yue Y",
-    "Liu SZ",
-    "Zhang JB",
-    "Yang Y",
-    "Jing HM",
-    "Yang P"
-   ],
-   "doi": "10.19746/j.cnki.issn1009-2137.2026.05.005",
-   "types": [
-    "English Abstract",
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43059019",
-   "title": "Response to Vincenzi et al. on: 'Real-world treatment burden of BV-based frontline regimens in young adults and adults with advanced-stage classical Hodgkin lymphoma'.",
-   "journal": "British journal of haematology",
-   "date": "2026 Nov 19",
-   "authors": [
-    "Dann EJ",
-    "Porges T",
-    "Levi T"
-   ],
-   "doi": "10.1111/bjh.70955",
-   "types": [
-    "Letter"
-   ]
-  },
-  {
-   "pmid": "43058996",
-   "title": "Lorlatinib-Associated Dyslipidemia in ALK-Positive NSCLC: Atherosclerotic Risk and the Unresolved Question of Venous Thromboembolism.",
-   "journal": "The oncologist",
-   "date": "2026 Nov 19",
-   "authors": [
-    "Srirangadhamu Gopu S",
-    "Hasan Shadali Abdul Khader A",
-    "Patel AP",
-    "Nadeem A",
-    "Gadgeel S"
-   ],
-   "doi": "10.1093/oncolo/oyag460",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43058987",
-   "title": "From Options to Outcomes: The Unmet Need for Effective, Targeted Therapies in Relapsed and Refractory Follicular and Marginal Zone Lymphoma.",
-   "journal": "The oncologist",
-   "date": "2026 Nov 19",
-   "authors": [
-    "Alderuccio JP",
-    "Shouse G",
-    "Rhodes JM",
-    "Karimi YH",
-    "Olszewski AJ",
-    "Dreyling M",
-    "Lossos IS"
-   ],
-   "doi": "10.1093/oncolo/oyag462",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43058876",
-   "title": "Bilateral adrenal diffuse large B-cell lymphoma masquerading as bilateral adrenal metastases: a rare presentation diagnosed by endoscopic ultrasound-guided fine-needle biopsy.",
-   "journal": "Journal of medical case reports",
-   "date": "2026 Aug 26",
-   "authors": [
-    "Shahid MIUH",
-    "Batool M",
-    "Arif RM",
-    "Rafique O",
-    "Mahmood S"
-   ],
-   "doi": "10.1186/s13256-026-06429-6",
-   "types": [
-    "Journal Article",
-    "Case Reports"
-   ]
-  },
-  {
-   "pmid": "43058730",
-   "title": "Clonal dynamics of HTLV-1-infected cells under immunosuppression stratify ATL risk and reveal restoration of Tax-specific immune surveillance.",
-   "journal": "Retrovirology",
-   "date": "2026 Aug 25",
-   "authors": [
-    "Ashikawa Y",
-    "Nakashima M",
-    "Saito M",
-    "Nojiri N",
-    "Yoshida-Furihata H",
-    "Ichikawa T",
-    "Okuma Y",
-    "Umekita K",
-    "Yagishita N",
-    "Araya N",
-    "Horibe E",
-    "Aratani S",
-    "Sugata K",
-    "Satou Y",
-    "Sato T",
-    "Yamano Y"
-   ],
-   "doi": "10.1186/s12977-026-00685-6",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43058328",
-   "title": "Clinical-Prognostic Heterogeneity in Classic Follicular Lymphoma Is Not Supported by Molecular Diversity: Data From a Large-Scale Gene Microarray Analysis.",
-   "journal": "Hematological oncology",
-   "date": "2026 Nov",
-   "authors": [
-    "Lage LAPC",
-    "Nogueira DS",
-    "Reichert CO",
-    "Culler HF",
-    "Costa RO",
-    "Mendes JAT",
-    "Aquino NC",
-    "Vale FYND",
-    "Marques OC",
-    "Ferreira CR",
-    "Maximino JR",
-    "Rocha V",
-    "Barbosa D",
-    "Levy D",
-    "Pereira J"
-   ],
-   "doi": "10.1002/hon.70291",
-   "types": [
-    "Letter"
-   ]
-  },
-  {
-   "pmid": "43058221",
-   "title": "Expansion and cytotoxicity of mucosal CAR(+) T cells in enterocolitis associated with BCMA CAR-T cell therapy.",
-   "journal": "Nature medicine",
-   "date": "2026 Nov 19",
-   "authors": [
-    "Sainz TP",
-    "Dong S",
-    "Mundhada A",
-    "Wang W",
-    "Pleitez HG",
-    "Villela C",
-    "Henderson J",
-    "Ayers AA",
-    "Murphy K",
-    "Cortina F",
-    "Sahaf B",
-    "Prabhu S",
-    "Kebriaei P",
-    "Wang WL",
-    "Pacheco CD",
-    "Gui X",
-    "Flowers CR",
-    "Neelapu SS",
-    "Strati P",
-    "Gaballa MR",
-    "Pasvolsky O",
-    "Orlowski R",
-    "Patel K",
-    "Sidana S",
-    "Mackall C",
-    "Miklos DB",
-    "Wang Y",
-    "Richards DM",
-    "Ahmed S",
-    "Green MR",
-    "Mikkilineni L",
-    "Wang SA",
-    "Li Z",
-    "Iyer SP",
-    "Patel KK",
-    "Vega F",
-    "Hamilton MP"
-   ],
-   "doi": "10.1038/s41591-026-04731-w",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43058172",
-   "title": "Montelukast repurposed as a USP2 inhibitor induces c-Myc degradation and suppresses diffuse large B-cell lymphoma.",
-   "journal": "Acta pharmacologica Sinica",
-   "date": "2026 Nov 19",
-   "authors": [
-    "Tan YY",
-    "Wang YY",
-    "Bai WH",
-    "Du CR",
-    "Li GY",
-    "Zhao ZZ",
-    "Zhang JJ",
-    "Wu WX",
-    "Zhang YP",
-    "Zhu CJ",
-    "Yang L",
-    "Liu LG",
-    "Lei H",
-    "Xu HZ",
-    "Zhao YX",
-    "Zhu Q",
-    "Li JM",
-    "Wu YL"
-   ],
-   "doi": "10.1038/s41401-026-01973-9",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43058005",
-   "title": "Radiation Therapy as Salvage or Bridging Before CAR T-Cell Therapy Improves Outcomes in Aggressive B-Cell Lymphomas With Higher-Risk Features.",
-   "journal": "Clinical lymphoma, myeloma & leukemia",
-   "date": "2026 Oct 27",
-   "authors": [
-    "Kapoor N",
-    "Xu-Welliver M",
-    "Welkie RL",
-    "Bajwa A",
-    "Chan W",
-    "Song NJ",
-    "Wang J",
-    "Sigmund A",
-    "Sawalha Y",
-    "Reneau J",
-    "Baiocchi R",
-    "Christian B",
-    "Maddocks K",
-    "Bond D",
-    "Li Z",
-    "Brammer J",
-    "Bezerra E",
-    "Jaglowski S",
-    "Voorhees T",
-    "de Lima M",
-    "Sim A",
-    "Denlinger N"
-   ],
-   "doi": "10.1016/j.clml.2026.10.023",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43057943",
-   "title": "Tumor-Associated Brain Metabolic Heterogeneity in Patients without Intracranial Lesions: A Multicancer (18)F-FDG PET Study.",
-   "journal": "Academic radiology",
-   "date": "2026 Nov 19",
-   "authors": [
-    "Li A",
-    "Ye J",
-    "Lin L",
-    "Han Z",
-    "Lin Y",
-    "Lin J",
-    "Jiang H"
-   ],
-   "doi": "10.1016/j.acra.2026.11.001",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43057681",
-   "title": "Long-term follow-up of relapsed/refractory large B-cell lymphoma patients treated with salvage immunochemotherapy.",
-   "journal": "Transplantation and cellular therapy",
-   "date": "2026 Nov 19",
-   "authors": [
-    "Landsburg DJ",
-    "Svoboda J",
-    "Schuster SJ",
-    "Nasta SD"
-   ],
-   "doi": "10.1016/j.jtct.2026.11.036",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43057424",
-   "title": "Impact of Autologous Stem Cell Transplantation and CAR-T Cells Therapy on Vaccine Immunogenicity in Hematological Malignancies: A Prospective Cohort Study.",
-   "journal": "Clinical microbiology and infection : the official publication of the European Society of Clinical Microbiology and Infectious Diseases",
-   "date": "2026 Nov 19",
-   "authors": [
-    "Badoual P",
-    "Zatta M",
-    "André A",
-    "Ndiaye R",
-    "Le Bras F",
-    "El Gnaoui T",
-    "Roulin L",
-    "Gounot R",
-    "Dupuis J",
-    "Gallois E",
-    "Gallien S",
-    "Fourati S",
-    "Lemonnier F",
-    "Melica G"
-   ],
-   "doi": "10.1016/j.cmi.2026.11.016",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43057415",
-   "title": "Arsenic trioxide inhibits high-grade human B-cell lymphoma cell lines by targeting zinc finger domain of BCL6 and triggering proteasomal degradation.",
-   "journal": "Life sciences",
-   "date": "2026 Nov 19",
-   "authors": [
-    "Chen D",
-    "Li X",
-    "Fang Q",
-    "Liu X",
-    "Liang X",
-    "Wang Z",
-    "Yu R",
-    "Hong W",
-    "Huang W",
-    "Hu X"
-   ],
-   "doi": "10.1016/j.lfs.2026.124776",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43057222",
-   "title": "Long-term relapse dynamics and relative survival after autologous haematopoietic stem cell transplantation for mantle cell lymphoma: 25-year follow-up of the Nordic MCL2 and MCL3 trials.",
-   "journal": "British journal of haematology",
-   "date": "2026 Nov 19",
-   "authors": [
-    "Trab T",
-    "Eskelund C",
-    "Ekberg S",
-    "Galleberg RB",
-    "Riise J",
-    "Fagerli UM",
-    "Bersvendsen HS",
-    "Bø IB",
-    "Pasanen A",
-    "Rönkä A",
-    "Kuitunen H",
-    "Sonnevi K",
-    "Lagerlöf I",
-    "Tufvesson I",
-    "Hallén K",
-    "Andersson PO",
-    "Papworth K",
-    "Väärt J",
-    "Glimelius I",
-    "Jerlström U",
-    "Bentzen HHN",
-    "Mortensen TB",
-    "Husby S",
-    "El-Galaly TC",
-    "Kolstad A",
-    "Räty R",
-    "Laurell A",
-    "Geisler C",
-    "Grønbæk K",
-    "Jerkeman M"
-   ],
-   "doi": "10.1111/bjh.70967",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43056990",
-   "title": "Navitoclax overcomes epithelial-mesenchymal transition-associated resistance in ALK-positive non-small cell lung cancer with rapid disease progression during alectinib treatment.",
-   "journal": "Lung cancer (Amsterdam, Netherlands)",
-   "date": "2026 Nov 13",
-   "authors": [
-    "Nishimura T",
-    "Tomida S",
-    "Kuribayashi T",
-    "Tanaka T",
-    "Noumi T",
-    "Taoka M",
-    "Mori S",
-    "Nishimura J",
-    "Morita A",
-    "Takada K",
-    "Hara N",
-    "Watanabe H",
-    "Ninomiya K",
-    "Higo H",
-    "Kubo T",
-    "Rai K",
-    "Ichihara E",
-    "Ohashi K",
-    "Hotta K",
-    "Maeda Y",
-    "Togashi Y",
-    "Makimoto G"
-   ],
-   "doi": "10.1016/j.lungcan.2026.109681",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43056978",
-   "title": "MALT1 is upregulated and its inhibition improves neural injury, behavioral abnormalities, and inflammation in major depressive disorder.",
-   "journal": "Psychiatry research",
-   "date": "2026 Nov 12",
-   "authors": [
-    "Tang L",
-    "Yong N",
-    "Wang H",
-    "Wang T",
-    "Liao R",
-    "Yuan X",
-    "Chen P",
-    "Li N",
-    "Liu L",
-    "Pan J"
-   ],
-   "doi": "10.1016/j.psychres.2026.117586",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43056894",
-   "title": "Hematopoietic stem cell mobilization outcomes following rituximab ± ICE in relapsed or refractory lymphomas.",
-   "journal": "Transfusion and apheresis science : official journal of the World Apheresis Association : official journal of the European Society for Haemapheresis",
-   "date": "2026 Nov 13",
-   "authors": [
-    "Yilmaz S",
-    "Sincan G",
-    "Erkurt MA",
-    "Ekinci O",
-    "Namdaroglu S",
-    "Tuna AK",
-    "Katircilar Y",
-    "Guner SI",
-    "Erdem F",
-    "Kul S",
-    "Acik DY",
-    "Uzay A",
-    "Ozet G",
-    "Karakus A",
-    "Demir C",
-    "Dumludag B",
-    "Kaya E",
-    "Basci S",
-    "Yigenoglu TN",
-    "Korkmaz S",
-    "Altuntas F"
-   ],
-   "doi": "10.1016/j.transci.2026.104566",
-   "types": [
-    "Journal Article"
-   ]
-  },
-  {
-   "pmid": "43056705",
-   "title": "Diagnostic Performance of Radiomics-Based Machine Learning in Differentiating Glioblastoma From Brain Metastasis: Systematic Review and Meta-Analysis.",
-   "journal": "Journal of medical Internet research",
-   "date": "2026 Nov 19",
-   "authors": [
-    "Hong C",
-    "Liu G",
-    "Bie Z",
-    "Guo Y",
-    "Du Y",
-    "Hu Y",
-    "Li S",
-    "Liu P"
-   ],
-   "doi": "10.2196/104060",
-   "types": [
-    "Journal Article",
-    "Systematic Review",
-    "Meta-Analysis",
-    "Review"
-   ]
-  },
-  {
-   "pmid": "43056609",
-   "title": "Real-World Application of the WHO Reporting System for Lymph Node Cytopathology in the Context of the 5th Edition of the WHO Classification of Hematolymphoid Neoplasms.",
-   "journal": "Acta cytologica",
-   "date": "2026 Nov 19",
-   "authors": [
-    "Yuil Valdes AG",
-    "Hafeez S",
-    "Lynn TJ",
-    "Khoury JD"
-   ],
-   "doi": "10.1159/000551968",
-   "types": [
-    "Journal Article",
-    "Review"
-   ]
-  },
-  {
-   "pmid": "43056607",
-   "title": "Diagnostic Approaches, Traps, and Pitfalls in the FNAC Diagnosis of Lesions of the Spleen.",
-   "journal": "Acta cytologica",
-   "date": "2026 Nov 19",
-   "authors": [
-    "Maffei E",
-    "Calaminici M",
-    "Cozzolino I",
-    "Zeppa P"
-   ],
-   "doi": "10.1159/000550763",
-   "types": [
-    "Journal Article",
-    "Review"
    ]
   }
  ]
