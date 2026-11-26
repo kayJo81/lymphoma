@@ -843,6 +843,7 @@
     app.innerHTML = `
       <h1>한자</h1>
       <p class="lead">JLPT N5 기초 한자 ${KANJI.length}자. 한국 한자음(훈음)과 함께 외우면 음독이 쉽게 연결돼요. 예: 日 <b>날 일</b> → ニチ. 퀴즈에서 3번 맞히거나 '외웠어요'를 누르면 초록색이 돼요.</p>
+      <p class="muted small" style="margin-top:-12px">획순 데이터: <a href="https://kanjivg.tagaini.net" target="_blank" rel="noopener">KanjiVG</a> (Ulrich Apel, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>)</p>
       <div class="tabs" id="kjmode">${[["table", "📋 한자표"], ["read", "📖 단어 읽기 퀴즈"], ["mean", "🈯 훈음 맞히기"]].map(([v, l]) => `<button data-v="${v}" class="${v === KJ.mode ? "on" : ""}">${l}</button>`).join("")}
         <span class="pill ok" style="align-self:center">${known} / ${KANJI.length} 외움</span></div>
       <div class="tabs" id="kjgroup">${groupTabs.map(([v, l]) => `<button data-v="${v}" class="${v === KJ.group ? "on" : ""}">${l}</button>`).join("")}</div>
@@ -855,12 +856,95 @@
     else kanjiQuiz(body, list);
   }
 
+  // 획순: KanjiVG 경로를 한 획씩 그려 보여 주고, 따라 쓰기 캔버스를 겹쳐 둡니다.
+  const hasStrokes = (ch) => typeof KANJI_STROKES !== "undefined" && !!KANJI_STROKES[ch];
+  function strokePanel(ch) {
+    if (!hasStrokes(ch)) return `<div class="kc-big jp">${ch}</div>`;
+    const ps = KANJI_STROKES[ch];
+    return `
+      <div class="ks-wrap">
+        <div class="ks-box" id="ksbox">
+          <svg viewBox="0 0 109 109" class="ksvg" role="img" aria-label="${ch} 획순">
+            <g class="ks-guide">${ps.map((d) => `<path d="${d}"/>`).join("")}</g>
+            <g class="ks-draw">${ps.map((d) => `<path d="${d}"/>`).join("")}</g>
+            <g class="ks-num"></g>
+          </svg>
+          <canvas class="ks-canvas" hidden></canvas>
+        </div>
+        <div class="ks-ctrl">
+          <button class="btn small" id="ksplay" title="처음부터 다시 그리기">▶ 획순</button>
+          <button class="btn small" id="ksstep" title="한 획씩">한 획 ▶</button>
+          <button class="btn small" id="kstrace" aria-pressed="false" title="손가락이나 마우스로 따라 쓰기">✍️ 따라 쓰기</button>
+        </div>
+        <div class="ks-status muted small" id="ksstat"></div>
+      </div>`;
+  }
+  let strokeTimer = null;
+  function setupStrokes(ch) {
+    const box = $("#ksbox"); if (!box) return;
+    clearTimeout(strokeTimer);
+    const paths = [...box.querySelectorAll(".ks-draw path")];
+    const numG = box.querySelector(".ks-num");
+    const stat = $("#ksstat");
+    const lens = paths.map((p) => p.getTotalLength());
+    const reduced = () => !!(window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const dur = (L) => (reduced() ? 0 : Math.max(280, L * 13));
+    let shown = 0;
+    const status = () => { stat.textContent = `${shown} / ${paths.length}획`; };
+    const hide = (i) => { const p = paths[i]; p.style.transition = "none"; p.style.strokeDasharray = lens[i]; p.style.strokeDashoffset = lens[i]; p.classList.remove("cur"); };
+    const reset = () => { clearTimeout(strokeTimer); paths.forEach((_, i) => hide(i)); numG.innerHTML = ""; shown = 0; status(); };
+    const drawOne = () => {
+      if (shown >= paths.length) reset();
+      const i = shown, p = paths[i], L = lens[i];
+      paths.forEach((x) => x.classList.remove("cur"));
+      p.classList.add("cur");
+      p.style.transition = "none"; p.style.strokeDashoffset = L;
+      p.getBoundingClientRect();
+      p.style.transition = `stroke-dashoffset ${dur(L)}ms linear`;
+      p.style.strokeDashoffset = 0;
+      const pt = p.getPointAtLength(0);
+      numG.insertAdjacentHTML("beforeend", `<circle cx="${pt.x.toFixed(1)}" cy="${pt.y.toFixed(1)}" r="3.9"/><text x="${pt.x.toFixed(1)}" y="${(pt.y + 1.8).toFixed(1)}">${i + 1}</text>`);
+      shown++; status();
+      return dur(L);
+    };
+    const play = () => {
+      reset();
+      const next = () => { if (!box.isConnected || shown >= paths.length) return; strokeTimer = setTimeout(next, drawOne() + 220); };
+      next();
+    };
+    $("#ksplay").onclick = play;
+    $("#ksstep").onclick = () => { clearTimeout(strokeTimer); drawOne(); };
+
+    // 따라 쓰기
+    const cv = box.querySelector(".ks-canvas"), tb = $("#kstrace");
+    let ctx = null, drawing = false;
+    const fit = () => {
+      const r = box.getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
+      cv.width = Math.round(r.width * dpr); cv.height = Math.round(r.height * dpr);
+      ctx = cv.getContext("2d"); ctx.scale(dpr, dpr);
+      ctx.lineCap = "round"; ctx.lineJoin = "round"; ctx.lineWidth = Math.max(5, r.width / 22);
+      ctx.strokeStyle = getComputedStyle(box).getPropertyValue("--accent").trim() || "#c8423b";
+    };
+    const pos = (e) => { const r = cv.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; };
+    cv.onpointerdown = (e) => { drawing = true; cv.setPointerCapture(e.pointerId); const [x, y] = pos(e); ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + 0.1, y + 0.1); ctx.stroke(); };
+    cv.onpointermove = (e) => { if (!drawing) return; const [x, y] = pos(e); ctx.lineTo(x, y); ctx.stroke(); };
+    cv.onpointerup = cv.onpointercancel = () => { drawing = false; };
+    tb.onclick = () => {
+      const on = cv.hidden;
+      if (on && ctx === null) fit();
+      if (on) { reset(); box.classList.add("tracing"); cv.hidden = false; tb.setAttribute("aria-pressed", "true"); tb.textContent = "🧽 지우기"; stat.textContent = "회색 글자 위에 획순대로 써 보세요. '지우기'를 누르면 처음부터."; }
+      else { ctx.clearRect(0, 0, cv.width, cv.height); }
+    };
+    $("#ksplay").addEventListener("click", () => { if (!cv.hidden) { cv.hidden = true; box.classList.remove("tracing"); tb.setAttribute("aria-pressed", "false"); tb.textContent = "✍️ 따라 쓰기"; if (ctx) ctx.clearRect(0, 0, cv.width, cv.height); } });
+    play();
+  }
+
   function kanjiCard(k, list) {
     const i = list.indexOf(k);
     return `
       <div class="card kcard" id="kcard">
         <div class="kc-top">
-          <div class="kc-big jp">${k.ch}</div>
+          ${strokePanel(k.ch)}
           <div class="kc-info">
             <div class="kc-hun">${esc(k.hun)}</div>
             <dl>
@@ -903,6 +987,7 @@
       const k = list.find((x) => x.ch === KJ.sel); speak(k.ex[0].r);
     };
     if (!sel) return;
+    setupStrokes(sel.ch);
     body.querySelector(".kc-ex").onclick = (e) => { const b = e.target.closest("[data-kw]"); if (b) speak(sel.ex[+b.dataset.kw].r); };
     const go = (d) => { const i = list.indexOf(sel) + d; KJ.sel = list[i].ch; rerender(false); speak(list[i].ex[0].r); };
     $("#kprev").onclick = () => go(-1);
