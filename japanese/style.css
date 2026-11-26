@@ -257,3 +257,21 @@ h2 { font-size: 20px; margin: 28px 0 12px; }
   .vtbl.rules td::before { content: attr(data-g); display: inline-block; min-width: 46px; color: var(--muted); font-size: 12px; }
   .vtbl.rules td .ex-c { display: inline; margin-left: 6px; }
 }
+
+/* 획순 */
+.ks-wrap { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.ks-box { position: relative; width: 168px; height: 168px; border: 1px solid var(--line); border-radius: 14px; background:
+  linear-gradient(var(--line), var(--line)) center / 100% 1px no-repeat,
+  linear-gradient(var(--line), var(--line)) center / 1px 100% no-repeat, var(--surface); }
+.ksvg { width: 100%; height: 100%; display: block; }
+.ksvg path { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.ks-guide path { stroke: var(--line); stroke-width: 3.2; }
+.ks-draw path { stroke: var(--text); stroke-width: 3.4; }
+.ks-draw path.cur { stroke: var(--accent); }
+.ks-num circle { fill: var(--accent); }
+.ks-num text { fill: var(--surface); font: 600 5.2px var(--font); text-anchor: middle; }
+.ks-box.tracing .ks-draw, .ks-box.tracing .ks-num { display: none; }
+.ks-box.tracing .ks-guide path { stroke: var(--muted); opacity: .35; stroke-width: 5; }
+.ks-canvas { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; cursor: crosshair; border-radius: 14px; }
+.ks-ctrl { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+.ks-status { min-height: 1.4em; text-align: center; max-width: 220px; }
