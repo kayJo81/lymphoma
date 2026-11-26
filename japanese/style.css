@@ -66,7 +66,7 @@ h1, h2, h3 { text-wrap: balance; }
 .brand { display: flex; align-items: center; gap: 8px; font-weight: 700; text-decoration: none; }
 .brand-mark { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: var(--surface); font-family: var(--jp); font-size: 15px; }
 .nav { display: flex; gap: 4px; overflow-x: auto; flex: 1; }
-.nav a { padding: 6px 12px; border-radius: 999px; text-decoration: none; color: var(--muted); white-space: nowrap; }
+.nav a { padding: 6px 10px; border-radius: 999px; text-decoration: none; color: var(--muted); white-space: nowrap; }
 .nav a.active { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
 .slow { font-size: 14px; color: var(--muted); display: flex; gap: 4px; align-items: center; white-space: nowrap; }
 @media (max-width: 560px) {
@@ -129,7 +129,7 @@ h2 { font-size: 20px; margin: 28px 0 12px; }
 /* 퀴즈 */
 .quiz { max-width: 520px; margin: 0 auto; text-align: center; }
 .quiz .q { font-family: var(--jp); font-size: 72px; line-height: 1.2; margin: 16px 0 4px; }
-.quiz .q.word { font-size: 40px; }
+.quiz .q.qword { font-size: 40px; }
 .quiz .qsub { color: var(--muted); min-height: 1.6em; }
 .choices { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 18px; }
 .choices button { padding: 14px 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); font-size: 17px; }
@@ -218,3 +218,42 @@ h2 { font-size: 20px; margin: 28px 0 12px; }
 .opt.right { background: var(--ok-soft); border-color: var(--ok); color: var(--ok); font-weight: 700; }
 .opt.wrong { background: var(--accent-soft); border-color: var(--bad); color: var(--bad); }
 .opt:disabled { cursor: default; }
+
+/* 한자 */
+.kgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); gap: 8px; }
+.ktile { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 10px 4px 8px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.ktile:hover { border-color: var(--accent); }
+.ktile.known { border-color: var(--ok); background: var(--ok-soft); }
+.ktile.cur { outline: 2px solid var(--accent); }
+.kt-ch { font-size: 30px; line-height: 1.2; }
+.kt-hun { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.kcard { margin-bottom: 14px; scroll-margin-top: 120px; }
+.kc-top { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+.kc-big { font-size: 88px; line-height: 1; width: 120px; height: 120px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 14px; background: linear-gradient(var(--line), var(--line)) center / 100% 1px no-repeat, linear-gradient(var(--line), var(--line)) center / 1px 100% no-repeat; }
+.kc-info { flex: 1; min-width: 180px; }
+.kc-hun { font-size: 22px; font-weight: 700; color: var(--accent); }
+.kc-info dl { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; margin: 6px 0 0; }
+.kc-info dt { color: var(--muted); font-size: 13px; padding-top: 2px; }
+.kc-info dd { margin: 0; }
+.kc-ex { margin-top: 10px; }
+.kq-after { min-height: 1.6em; margin-top: 12px; }
+
+/* 동사 */
+.steps { margin: 8px 0; padding-left: 20px; display: grid; gap: 6px; }
+.te-song { display: grid; gap: 6px; padding: 12px 14px; border-radius: 12px; background: var(--accent-soft); margin: 8px 0; }
+.te-song b { color: var(--accent); }
+.tbl-wrap { overflow-x: auto; margin-top: 8px; }
+.vtbl { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 300px; }
+.vtbl th, .vtbl td { text-align: left; vertical-align: top; padding: 8px; border-top: 1px solid var(--line); }
+.vtbl thead th { border-top: 0; color: var(--muted); font-weight: 600; }
+.vtbl tbody th { white-space: nowrap; }
+.ex-c { color: var(--accent); margin-top: 2px; }
+@media (max-width: 560px) {
+  .nav { gap: 0; }
+  .nav a { padding: 6px 8px; font-size: 15px; }
+  .vtbl.rules thead { display: none; }
+  .vtbl.rules tr { display: block; border-top: 1px solid var(--line); padding: 8px 0; }
+  .vtbl.rules th, .vtbl.rules td { display: block; border: 0; padding: 2px 4px; }
+  .vtbl.rules td::before { content: attr(data-g); display: inline-block; min-width: 46px; color: var(--muted); font-size: 12px; }
+  .vtbl.rules td .ex-c { display: inline; margin-left: 6px; }
+}

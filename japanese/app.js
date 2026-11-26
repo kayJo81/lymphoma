@@ -48,7 +48,7 @@
   // ---------- 저장소 ----------
   const KEY = "nihongo-step-v1";
   const today = () => new Date().toLocaleDateString("sv-SE"); // YYYY-MM-DD
-  let S = { kana: {}, known: {}, dialogs: {}, listen: {}, days: [], prefs: { r: true, ro: false, ko: true } };
+  let S = { kana: {}, known: {}, dialogs: {}, listen: {}, kanji: {}, verb: {}, days: [], prefs: { r: true, ro: false, ko: true } };
   try { const raw = localStorage.getItem(KEY); if (raw) S = Object.assign(S, JSON.parse(raw)); } catch (e) { /* 저장소 사용 불가 */ }
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { /* 무시 */ } };
   if (!S.days.includes(today())) { S.days.push(today()); S.days = S.days.slice(-400); save(); }
@@ -298,6 +298,7 @@
     const kw = allWords.filter((w) => S.known[w.jp]).length;
     const dd = DIALOGS.filter((d) => S.dialogs[d.id]).length;
     const ld = LISTENING.filter((x) => S.listen[x.id]).length;
+    const kd = KANJI.filter((k) => kanjiKnown(k.ch)).length;
     const dayIdx = Math.floor(Date.now() / 86400000);
     const line = allLines[dayIdx % allLines.length];
     const stat = (num, total, lbl) => `<div class="card stat"><div class="num">${num}<span class="muted small"> / ${total}</span></div><div class="lbl">${lbl}</div><div class="bar"><i style="width:${Math.round((num / total) * 100)}%"></i></div></div>`;
@@ -310,6 +311,7 @@
       <div class="stats">
         ${stat(hm, basicCount, "히라가나 익힘")}
         ${stat(km, basicCount, "가타카나 익힘")}
+        ${stat(kd, KANJI.length, "외운 한자")}
         ${stat(kw, allWords.length, "아는 단어")}
         ${stat(dd, DIALOGS.length, "회화 완료")}
         ${stat(ld, LISTENING.length, "듣기 완료")}
@@ -331,9 +333,11 @@
       <h2>학습하기</h2>
       <div class="grid">
         <a class="card link-card" href="#kana"><div class="ico jp">あ</div><h3>문자</h3><p>히라가나·가타카나 표와 퀴즈</p></a>
+        <a class="card link-card" href="#kanji"><div class="ico jp">漢</div><h3>한자</h3><p>N5 기초 한자 ${KANJI.length}자, 한국 훈음과 함께</p></a>
         <a class="card link-card" href="#vocab"><div class="ico jp">語</div><h3>단어</h3><p>주제별 ${allWords.length}개 단어, 플래시카드</p></a>
         <a class="card link-card" href="#talk"><div class="ico jp">話</div><h3>회화</h3><p>여행 상황별 대화 ${DIALOGS.length}편 롤플레이</p></a>
         <a class="card link-card" href="#listen"><div class="ico jp">聞</div><h3>듣기</h3><p>길 안내·안내방송 ${LISTENING.length}편 듣고 맞히기</p></a>
+        <a class="card link-card" href="#verb"><div class="ico jp">動</div><h3>동사 활용</h3><p>1·2·3그룹, ます·ない·て·た형 규칙과 퀴즈</p></a>
         <a class="card link-card" href="#grammar"><div class="ico jp">文</div><h3>문법</h3><p>꼭 필요한 기초 문형 ${GRAMMAR.length}가지</p></a>
       </div>
       <p style="margin-top:28px"><button class="btn small" id="reset">학습 기록 초기화</button></p>`;
@@ -342,7 +346,7 @@
     let armed = false;
     $("#reset").onclick = (e) => {
       if (!armed) { armed = true; e.currentTarget.textContent = "정말 지울까요? 한 번 더 누르면 초기화돼요"; return; }
-      S.kana = {}; S.known = {}; S.dialogs = {}; S.listen = {}; S.days = [today()]; save(); viewHome();
+      S.kana = {}; S.known = {}; S.dialogs = {}; S.listen = {}; S.kanji = {}; S.verb = {}; S.days = [today()]; save(); viewHome();
     };
   }
 
@@ -476,7 +480,7 @@
     const opts = shuffle([target, ...shuffle(cat.words.filter((w) => w !== target)).slice(0, 3)]);
     body.innerHTML = `
       <div class="card quiz">
-        <div class="q word">${esc(target.jp)}</div>
+        <div class="q qword">${esc(target.jp)}</div>
         <div class="qsub jp">${esc(plain(target.r))}</div>
         <div class="choices">${opts.map((o) => `<button data-jp="${esc(o.jp)}">${esc(o.ko)}</button>`).join("")}</div>
         <div class="score">정답 ${q.right} / ${q.total}${pool.length ? "" : " · 이 주제는 모두 암기했어요! 🎉"}</div>
@@ -823,6 +827,364 @@
     };
   }
 
+  // ---------- 한자 ----------
+  const KANJI = KANJI_GROUPS.flatMap((g) => g.list.map(([ch, hun, on, kun, strokes, ex]) => ({
+    ch, hun, on, kun, strokes, gid: g.id,
+    ex: ex.split(";").map((w) => { const [jp, r, ko] = w.split("|"); return { jp, r, ko }; }),
+  })));
+  const KANJI_WORDS = KANJI.flatMap((k) => k.ex.map((w) => ({ ...w, ch: k.ch, gid: k.gid })));
+  const kanjiLevel = (ch) => S.kanji[ch] || 0;
+  const kanjiKnown = (ch) => kanjiLevel(ch) >= 3;
+  const KJ = { group: "all", mode: "table", sel: null, quiz: null };
+
+  function viewKanji() {
+    const groupTabs = [["all", "전체"], ...KANJI_GROUPS.map((g) => [g.id, g.title])];
+    const known = KANJI.filter((k) => kanjiKnown(k.ch)).length;
+    app.innerHTML = `
+      <h1>한자</h1>
+      <p class="lead">JLPT N5 기초 한자 ${KANJI.length}자. 한국 한자음(훈음)과 함께 외우면 음독이 쉽게 연결돼요. 예: 日 <b>날 일</b> → ニチ. 퀴즈에서 3번 맞히거나 '외웠어요'를 누르면 초록색이 돼요.</p>
+      <div class="tabs" id="kjmode">${[["table", "📋 한자표"], ["read", "📖 단어 읽기 퀴즈"], ["mean", "🈯 훈음 맞히기"]].map(([v, l]) => `<button data-v="${v}" class="${v === KJ.mode ? "on" : ""}">${l}</button>`).join("")}
+        <span class="pill ok" style="align-self:center">${known} / ${KANJI.length} 외움</span></div>
+      <div class="tabs" id="kjgroup">${groupTabs.map(([v, l]) => `<button data-v="${v}" class="${v === KJ.group ? "on" : ""}">${l}</button>`).join("")}</div>
+      <div id="kjbody"></div>`;
+    $("#kjmode").onclick = (e) => { const b = e.target.closest("button"); if (b) { KJ.mode = b.dataset.v; KJ.quiz = null; viewKanji(); } };
+    $("#kjgroup").onclick = (e) => { const b = e.target.closest("button"); if (b) { KJ.group = b.dataset.v; KJ.sel = null; KJ.quiz = null; viewKanji(); } };
+    const body = $("#kjbody");
+    const list = KANJI.filter((k) => KJ.group === "all" || k.gid === KJ.group);
+    if (KJ.mode === "table") kanjiTable(body, list);
+    else kanjiQuiz(body, list);
+  }
+
+  function kanjiCard(k, list) {
+    const i = list.indexOf(k);
+    return `
+      <div class="card kcard" id="kcard">
+        <div class="kc-top">
+          <div class="kc-big jp">${k.ch}</div>
+          <div class="kc-info">
+            <div class="kc-hun">${esc(k.hun)}</div>
+            <dl>
+              <dt>음독</dt><dd class="jp">${esc(k.on)}</dd>
+              <dt>훈독</dt><dd class="jp">${esc(k.kun)}</dd>
+              <dt>획수</dt><dd>${k.strokes}획</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="kc-ex">${k.ex.map((w, wi) => `
+          <div class="ex">
+            <button class="icon-btn" data-kw="${wi}" aria-label="듣기">🔊</button>
+            <div><span class="e-jp">${esc(w.jp)}</span> <span class="e-r jp">${esc(w.r)}</span> <span class="e-ko">· ${esc(w.ko)}</span></div>
+          </div>`).join("")}</div>
+        <div class="row" style="justify-content:space-between;margin-top:10px">
+          <div class="row">
+            <button class="btn small" id="kprev" ${i <= 0 ? "disabled" : ""}>◀ 이전</button>
+            <button class="btn small" id="knext" ${i >= list.length - 1 ? "disabled" : ""}>다음 ▶</button>
+          </div>
+          <div class="row">
+            <button class="btn small" id="kclose">닫기</button>
+            <button class="btn small ${kanjiKnown(k.ch) ? "" : "primary"}" id="kknow">${kanjiKnown(k.ch) ? "✓ 외웠어요 (취소)" : "외웠어요"}</button>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  function kanjiTable(body, list) {
+    const sel = list.find((k) => k.ch === KJ.sel);
+    body.innerHTML = `
+      ${sel ? kanjiCard(sel, list) : ""}
+      <div class="kgrid">${list.map((k) => `
+        <button class="ktile ${kanjiKnown(k.ch) ? "known" : ""} ${sel === k ? "cur" : ""}" data-k="${k.ch}">
+          <span class="jp kt-ch">${k.ch}</span><span class="kt-hun">${esc(k.hun)}</span>
+        </button>`).join("")}</div>`;
+    const rerender = (scroll) => { kanjiTable(body, list); if (scroll && $("#kcard")) $("#kcard").scrollIntoView({ block: "start", behavior: "smooth" }); };
+    body.querySelector(".kgrid").onclick = (e) => {
+      const b = e.target.closest("[data-k]"); if (!b) return;
+      KJ.sel = b.dataset.k; rerender(true);
+      const k = list.find((x) => x.ch === KJ.sel); speak(k.ex[0].r);
+    };
+    if (!sel) return;
+    body.querySelector(".kc-ex").onclick = (e) => { const b = e.target.closest("[data-kw]"); if (b) speak(sel.ex[+b.dataset.kw].r); };
+    const go = (d) => { const i = list.indexOf(sel) + d; KJ.sel = list[i].ch; rerender(false); speak(list[i].ex[0].r); };
+    $("#kprev").onclick = () => go(-1);
+    $("#knext").onclick = () => go(1);
+    $("#kclose").onclick = () => { KJ.sel = null; rerender(false); };
+    $("#kknow").onclick = () => { S.kanji[sel.ch] = kanjiKnown(sel.ch) ? 0 : 3; save(); viewKanji(); if ($("#kcard")) $("#kcard").scrollIntoView({ block: "start" }); };
+  }
+
+  function kanjiQuiz(body, list) {
+    const q = KJ.quiz || (KJ.quiz = { right: 0, total: 0 });
+    const readMode = KJ.mode === "read";
+    const weighted = list.flatMap((k) => Array(kanjiKnown(k.ch) ? 1 : 4).fill(k));
+    let k = pick(weighted);
+    if (q.last && list.length > 1) while (k.ch === q.last) k = pick(weighted);
+    q.last = k.ch;
+    let prompt, sub, opts, answer;
+    if (readMode) {
+      const w = pick(k.ex);
+      const pool = KANJI_WORDS.filter((x) => x.r !== w.r);
+      const near = shuffle(pool.filter((x) => x.ch === k.ch || x.gid === k.gid));
+      const wrong = [...new Set([...near, ...shuffle(pool)].map((x) => x.r))].slice(0, 3);
+      prompt = w.jp; sub = "읽는 법은?"; answer = w.r;
+      opts = shuffle([w.r, ...wrong]).map((r) => ({ v: r, label: `<span class="jp">${esc(r)}</span>` }));
+      q.cur = { k, after: `${esc(w.jp)} <span class="jp">${esc(w.r)}</span> · ${esc(w.ko)}`, say: w.r };
+    } else {
+      const wrong = shuffle(KANJI.filter((x) => x !== k && x.hun !== k.hun)).slice(0, 3);
+      prompt = k.ch; sub = "이 한자의 훈음(뜻과 음)은?"; answer = k.hun;
+      opts = shuffle([k, ...wrong]).map((x) => ({ v: x.hun, label: esc(x.hun) }));
+      q.cur = { k, after: `${k.ch} · ${esc(k.hun)} · 음독 <span class="jp">${esc(k.on)}</span> · 훈독 <span class="jp">${esc(k.kun)}</span>`, say: k.ex[0].r };
+    }
+    body.innerHTML = `
+      <div class="card quiz">
+        <div class="q ${readMode ? "qword" : ""}">${esc(prompt)}</div>
+        <div class="qsub">${sub}</div>
+        <div class="choices">${opts.map((o) => `<button data-v="${esc(o.v)}">${o.label}</button>`).join("")}</div>
+        <div class="kq-after small" id="kqafter"></div>
+        <div class="score">정답 ${q.right} / ${q.total}</div>
+      </div>`;
+    body.querySelector(".choices").onclick = (e) => {
+      const b = e.target.closest("button"); if (!b || b.disabled) return;
+      const ok = b.dataset.v === answer;
+      q.total++;
+      body.querySelectorAll(".choices button").forEach((x) => { x.disabled = true; if (x.dataset.v === answer) x.classList.add("right"); });
+      if (ok) { q.right++; S.kanji[k.ch] = kanjiLevel(k.ch) + 1; } else { b.classList.add("wrong"); S.kanji[k.ch] = 0; }
+      save();
+      $("#kqafter").innerHTML = q.cur.after;
+      speak(q.cur.say);
+      setTimeout(() => { if (body.isConnected && KJ.quiz === q) kanjiQuiz(body, list); }, ok ? 1300 : 2600);
+    };
+  }
+
+  // ---------- 동사 활용 ----------
+  const ROW = { "う": "わいえお", "く": "かきけこ", "ぐ": "がぎげご", "す": "さしせそ", "つ": "たちてと", "ぬ": "なにねの", "ぶ": "ばびべぼ", "む": "まみめも", "る": "らりれろ" };
+  const TE = { "う": "って", "つ": "って", "る": "って", "む": "んで", "ぶ": "んで", "ぬ": "んで", "く": "いて", "ぐ": "いで", "す": "して" };
+  const I_ROW = "いきしちにひみりぎじびぴ", E_ROW = "えけせてねへめれげぜでべぺ";
+  const FORMS = [
+    { id: "dict", name: "사전형", ko: "기본형 (~하다)", rule: ["그대로", "그대로", "する・くる"] },
+    { id: "masu", name: "ます형", ko: "정중형 (~합니다)", rule: ["う단 → い단 + ます", "る → ます", "します・きます"] },
+    { id: "nai", name: "ない형", ko: "부정 (~하지 않다)", rule: ["う단 → あ단 + ない (う → わ)", "る → ない", "しない・こない"] },
+    { id: "te", name: "て형", ko: "연결 (~하고, ~해서)", rule: ["음편: う・つ・る→って / む・ぶ・ぬ→んで / く→いて / ぐ→いで / す→して (예외 行く→行って)", "る → て", "して・きて"] },
+    { id: "ta", name: "た형", ko: "과거 (~했다)", rule: ["て형의 て→た, で→だ (行く→行った)", "る → た", "した・きた"] },
+    { id: "pot", name: "가능형", ko: "가능 (~할 수 있다)", rule: ["う단 → え단 + る", "る → られる", "できる・こられる"] },
+    { id: "vol", name: "의지형", ko: "권유·의지 (~하자)", rule: ["う단 → お단 + う", "る → よう", "しよう・こよう"] },
+  ];
+  const IRR = {
+    suru: { dict: "する", masu: "します", nai: "しない", te: "して", ta: "した", pot: "できる", vol: "しよう" },
+    kuru: { dict: "くる", masu: "きます", nai: "こない", te: "きて", ta: "きた", pot: "こられる", vol: "こよう" },
+  };
+  const IRR_WRONG = {
+    suru: { masu: ["すます"], nai: ["すない", "さない"], te: ["すって", "しって"], ta: ["すった"], pot: ["される", "すれる"], vol: ["すよう", "そう"] },
+    kuru: { masu: ["くります", "こます"], nai: ["きない", "くない"], te: ["くって", "こって"], ta: ["くった", "こった"], pot: ["きられる", "くれる"], vol: ["きよう", "くろう"] },
+  };
+  const VB = VERBS.map(([jp, r, g, ko]) => ({ jp, r, g, ko }));
+  const irrKind = (v) => (v.r.endsWith("くる") && v.jp.endsWith("来る") ? "kuru" : v.r.endsWith("する") ? "suru" : null);
+
+  // 읽기(r)를 기준으로 활용하고, 표기는 앞부분(한자)을 그대로 붙입니다.
+  function conjAs(v, form, g) {
+    const kind = g === 3 ? irrKind(v) : null;
+    if (kind) {
+      const cut = 2, rr = IRR[kind][form];
+      const jpHead = kind === "kuru" ? v.jp.slice(0, -2) + "来" : v.jp.slice(0, -2);
+      return { r: v.r.slice(0, -cut) + rr, jp: kind === "kuru" ? jpHead + rr.slice(1) : jpHead + rr };
+    }
+    const last = v.r.slice(-1), rStem = v.r.slice(0, -1), jStem = v.jp.slice(0, -1);
+    let tail;
+    if (g === 2) {
+      tail = { dict: "る", masu: "ます", nai: "ない", te: "て", ta: "た", pot: "られる", vol: "よう" }[form];
+    } else {
+      const row = ROW[last]; if (!row) return null;
+      if (form === "dict") tail = last;
+      else if (form === "masu") tail = row[1] + "ます";
+      else if (form === "nai") tail = row[0] + "ない";
+      else if (form === "pot") tail = row[2] + "る";
+      else if (form === "vol") tail = row[3] + "う";
+      else {
+        let te = v.r === "いく" || v.r.endsWith("いく") && v.jp.endsWith("行く") ? "って" : TE[last];
+        tail = form === "te" ? te : te.replace("て", "た").replace("で", "だ");
+      }
+    }
+    return { r: rStem + tail, jp: jStem + tail };
+  }
+  const conj = (v, form) => conjAs(v, form, v.g);
+
+  function groupWhy(v) {
+    if (v.g === 3) return `${v.jp}: 불규칙 동사(3그룹)는 する·来る(くる)와 '명사+する' 뿐이에요.`;
+    const last = v.r.slice(-1);
+    if (last !== "る") return `${v.jp}: る로 끝나지 않으면 무조건 1그룹이에요. (${last}로 끝남)`;
+    const prev = v.r.slice(-2, -1);
+    const ie = I_ROW.includes(prev) ? "い단" : E_ROW.includes(prev) ? "え단" : null;
+    if (!ie) return `${v.jp}: る 앞이 ${prev}(い단·え단이 아님)라서 1그룹이에요.`;
+    if (v.g === 2) return `${v.jp}: る 앞이 ${prev}(${ie})라서 2그룹이에요.`;
+    return `${v.jp}: る 앞이 ${prev}(${ie})라 2그룹처럼 보이지만 <b>예외 1그룹</b>이에요. 꼭 외워 두세요!`;
+  }
+  function conjWhy(v, form) {
+    const f = FORMS.find((x) => x.id === form);
+    const res = conj(v, form);
+    return `${v.jp} → <b class="jp">${esc(res.jp)}</b> <span class="jp muted">(${esc(res.r)})</span><br>${v.g}그룹 ${f.name}: ${esc(f.rule[v.g - 1])}${v.g === 1 && v.r.endsWith("る") && (I_ROW.includes(v.r.slice(-2, -1)) || E_ROW.includes(v.r.slice(-2, -1))) ? " · 예외 1그룹이라 2그룹처럼 활용하지 않아요." : ""}`;
+  }
+  function conjWrongs(v, form) {
+    const right = conj(v, form).r;
+    const set = new Set();
+    const kind = v.g === 3 ? irrKind(v) : null;
+    if (kind) (IRR_WRONG[kind][form] || []).forEach((w) => set.add(v.r.slice(0, -2) + w));
+    if (v.g === 1 && v.r.endsWith("る")) { const w = conjAs(v, form, 2); if (w) set.add(w.r); }
+    if (v.g === 2 && form !== "pot") { const w = conjAs(v, form, 1); if (w) set.add(w.r); } // 가능형 食べれる(ら抜き)는 회화에서 쓰이므로 오답으로 내지 않음
+    if (v.g === 1 && (form === "te" || form === "ta")) {
+      const stem = v.r.slice(0, -1);
+      ["って", "んで", "いて", "して"].forEach((t) => set.add(stem + (form === "te" ? t : t.replace("て", "た").replace("で", "だ"))));
+    }
+    if (v.g === 1 && form === "nai" && v.r.endsWith("う")) set.add(v.r.slice(0, -1) + "あない");
+    FORMS.filter((f) => f.id !== form && f.id !== "dict").forEach((f) => set.add(conj(v, f.id).r));
+    set.delete(right);
+    const ordered = [...set];
+    return [...ordered.slice(0, 2), ...shuffle(ordered.slice(2))].slice(0, 3);
+  }
+
+  const VS = { tab: "rule", sel: VB[5].jp, forms: new Set(["masu", "nai", "te", "ta"]), gq: null, cq: null };
+  function viewVerb() {
+    const tabs = [["rule", "① 규칙 정리"], ["table", "② 활용표"], ["group", "③ 그룹 맞히기"], ["conj", "④ 활용 연습"]];
+    app.innerHTML = `
+      <h1>동사 활용</h1>
+      <p class="lead">일본어 동사는 1그룹(5단)·2그룹(1단)·3그룹(불규칙)으로 나눠 활용해요. 규칙을 보고, 활용표로 확인하고, 퀴즈로 손에 익혀 보세요.</p>
+      <div class="tabs" id="vtabs">${tabs.map(([v, l]) => `<button data-v="${v}" class="${v === VS.tab ? "on" : ""}">${l}</button>`).join("")}</div>
+      <div id="vbody2"></div>`;
+    $("#vtabs").onclick = (e) => { const b = e.target.closest("button"); if (b) { VS.tab = b.dataset.v; viewVerb(); } };
+    const body = $("#vbody2");
+    ({ rule: verbRules, table: verbTable, group: verbGroupQuiz, conj: verbConjQuiz })[VS.tab](body);
+  }
+
+  function verbRules(body) {
+    const exc = VB.filter((v) => v.g === 1 && v.r.endsWith("る") && (I_ROW.includes(v.r.slice(-2, -1)) || E_ROW.includes(v.r.slice(-2, -1))));
+    const sample = [VB.find((v) => v.jp === "書く"), VB.find((v) => v.jp === "食べる"), VB.find((v) => v.jp === "する"), VB.find((v) => v.jp === "来る")];
+    body.innerHTML = `
+      <div class="card gram">
+        <h3>그룹 나누는 법</h3>
+        <ol class="steps">
+          <li><b>する · 来る(くる)</b>, 그리고 <span class="jp">勉強する</span>처럼 '명사 + する' → <b>3그룹</b></li>
+          <li><b>る로 끝나지 않으면</b> (う・く・ぐ・す・つ・ぬ・ぶ・む) → <b>1그룹</b></li>
+          <li><b>る로 끝나고, 바로 앞 글자가 い단·え단</b>이면 (<span class="jp">た<u>べ</u>る, <u>み</u>る</span>) → <b>2그룹</b></li>
+          <li>る 앞이 あ단·う단·お단이면 (<span class="jp">わ<u>か</u>る, <u>の</u>る</span>) → <b>1그룹</b></li>
+        </ol>
+        <p class="muted small">⚠️ 예외 1그룹: 생긴 건 2그룹인데 1그룹으로 활용하는 동사예요. 시험에 자주 나와요.</p>
+        <div class="chips">${exc.map((v) => `<button class="chip" data-say="${esc(v.r)}"><span class="jp">${esc(v.jp)}</span><small class="jp">${esc(v.r)} · ${esc(v.ko)}</small></button>`).join("")}</div>
+      </div>
+      <div class="card gram">
+        <h3>て형 음편 외우기</h3>
+        <p>1그룹은 마지막 글자에 따라 て형이 바뀌어요. 소리 내어 외워 보세요.</p>
+        <div class="te-song">
+          <div><span class="jp">う・つ・る</span> → <b class="jp">って</b> <span class="muted jp">会って 待って 乗って</span></div>
+          <div><span class="jp">む・ぶ・ぬ</span> → <b class="jp">んで</b> <span class="muted jp">飲んで 遊んで 死んで</span></div>
+          <div><span class="jp">く</span> → <b class="jp">いて</b> <span class="muted jp">書いて 聞いて</span></div>
+          <div><span class="jp">ぐ</span> → <b class="jp">いで</b> <span class="muted jp">泳いで 急いで</span></div>
+          <div><span class="jp">す</span> → <b class="jp">して</b> <span class="muted jp">話して 貸して</span></div>
+          <div>예외 <span class="jp">行く</span> → <b class="jp">行って</b> <span class="muted">(いいて ✕)</span></div>
+        </div>
+        <p class="muted small">た형은 て형에서 て→た, で→だ로만 바꾸면 돼요.</p>
+      </div>
+      <div class="card gram">
+        <h3>활용 규칙표</h3>
+        <div class="tbl-wrap"><table class="vtbl rules">
+          <thead><tr><th>활용형</th><th>1그룹 (5단)</th><th>2그룹 (1단)</th><th>3그룹</th></tr></thead>
+          <tbody>${FORMS.filter((f) => f.id !== "dict").map((f) => `
+            <tr><th>${f.name}<div class="muted small">${f.ko}</div></th>
+              <td data-g="1그룹">${esc(f.rule[0])}<div class="jp ex-c">${esc(conj(sample[0], f.id).jp)}</div></td>
+              <td data-g="2그룹">${esc(f.rule[1])}<div class="jp ex-c">${esc(conj(sample[1], f.id).jp)}</div></td>
+              <td data-g="3그룹">${esc(f.rule[2])}</td></tr>`).join("")}</tbody>
+        </table></div>
+        <p class="muted small">예시: 1그룹 <span class="jp">書く</span>, 2그룹 <span class="jp">食べる</span>. 2그룹 가능형은 회화에서 <span class="jp">食べれる</span>처럼 ら를 빼기도 해요(ら抜き言葉).</p>
+      </div>`;
+    body.onclick = (e) => { const b = e.target.closest("[data-say]"); if (b) speak(b.dataset.say); };
+  }
+
+  function verbTable(body) {
+    const v = VB.find((x) => x.jp === VS.sel) || VB[0];
+    const byG = [1, 2, 3].map((g) => VB.filter((x) => x.g === g));
+    body.innerHTML = `
+      <div class="card">
+        ${byG.map((list, gi) => `
+          <div class="muted small" style="margin:${gi ? "10px" : "0"} 0 6px">${gi + 1}그룹</div>
+          <div class="chips">${list.map((x) => `<button class="chip ${x === v ? "sel" : ""}" data-v="${esc(x.jp)}"><span class="jp">${esc(x.jp)}</span></button>`).join("")}</div>`).join("")}
+      </div>
+      <div class="card" style="margin-top:12px">
+        <div class="row" style="justify-content:space-between">
+          <div><span class="jp" style="font-size:24px">${esc(v.jp)}</span> <span class="jp muted">${esc(v.r)}</span> · ${esc(v.ko)}</div>
+          <span class="pill">${v.g}그룹</span>
+        </div>
+        <p class="small muted" style="margin:6px 0 0">${groupWhy(v)}</p>
+        <div class="tbl-wrap"><table class="vtbl">
+          <tbody>${FORMS.map((f) => { const c = conj(v, f.id); return `
+            <tr><th>${f.name}<div class="muted small">${f.ko}</div></th>
+              <td><div class="jp" style="font-size:18px">${esc(c.jp)}</div><div class="jp muted small">${esc(c.r)} · ${esc(romaji(c.r))}</div></td>
+              <td style="width:44px"><button class="icon-btn" data-say="${esc(c.r)}" aria-label="듣기">🔊</button></td></tr>`; }).join("")}</tbody>
+        </table></div>
+      </div>`;
+    body.onclick = (e) => {
+      const s = e.target.closest("[data-say]"); if (s) return speak(s.dataset.say);
+      const b = e.target.closest("[data-v]"); if (b) { VS.sel = b.dataset.v; verbTable(body); speak(VB.find((x) => x.jp === VS.sel).r); }
+    };
+  }
+
+  function verbGroupQuiz(body) {
+    const q = VS.gq || (VS.gq = { right: 0, total: 0, v: null, ans: null });
+    if (!q.v || q.ans !== null && q.next) { let v = pick(VB); while (q.v && v === q.v) v = pick(VB); q.v = v; q.ans = null; q.next = false; }
+    const v = q.v;
+    body.innerHTML = `
+      <div class="card quiz">
+        <div class="q qword">${esc(v.jp)}</div>
+        <div class="qsub jp">${esc(v.r)} · <span style="font-family:var(--font)">${esc(v.ko)}</span></div>
+        <div class="choices" style="grid-template-columns:repeat(3,1fr)">${[1, 2, 3].map((g) => `<button data-g="${g}" class="${q.ans === null ? "" : g === v.g ? "right" : g === q.ans ? "wrong" : ""}" ${q.ans === null ? "" : "disabled"}>${g}그룹</button>`).join("")}</div>
+        ${q.ans !== null ? `<div class="result" style="text-align:left">${groupWhy(v)}</div><div class="row" style="justify-content:center;margin-top:12px"><button class="btn primary" id="gnext">다음 ▶</button></div>` : ""}
+        <div class="score">정답 ${q.right} / ${q.total}</div>
+      </div>`;
+    if (q.ans === null) speak(v.r);
+    body.querySelector(".choices").onclick = (e) => {
+      const b = e.target.closest("[data-g]"); if (!b || q.ans !== null) return;
+      q.ans = +b.dataset.g; q.total++; if (q.ans === v.g) q.right++;
+      S.verb.g = [(S.verb.g || [0, 0])[0] + (q.ans === v.g ? 1 : 0), (S.verb.g || [0, 0])[1] + 1]; save();
+      verbGroupQuiz(body);
+    };
+    const nx = $("#gnext"); if (nx) nx.onclick = () => { q.next = true; verbGroupQuiz(body); };
+  }
+
+  function verbConjQuiz(body) {
+    const q = VS.cq || (VS.cq = { right: 0, total: 0, cur: null, ans: null });
+    const forms = FORMS.filter((f) => VS.forms.has(f.id));
+    if (!q.cur || q.next) {
+      let v = pick(VB); while (q.cur && v === q.cur.v) v = pick(VB);
+      const f = pick(forms.length ? forms : FORMS.slice(1));
+      const right = conj(v, f.id);
+      q.cur = { v, f, right, opts: shuffle([right.r, ...conjWrongs(v, f.id)]) };
+      q.ans = null; q.next = false;
+    }
+    const { v, f, right, opts } = q.cur;
+    body.innerHTML = `
+      <div class="card">
+        <div class="muted small" style="margin-bottom:6px">연습할 활용형</div>
+        <div class="chips" id="cforms">${FORMS.slice(1).map((x) => `<button class="chip ${VS.forms.has(x.id) ? "sel" : ""}" data-f="${x.id}">${x.name}</button>`).join("")}</div>
+      </div>
+      <div class="card quiz" style="margin-top:12px">
+        <div class="qsub"><span class="pill">${esc(f.name)}</span> ${esc(f.ko)}로 바꾸면?</div>
+        <div class="q qword">${esc(v.jp)}</div>
+        <div class="qsub jp">${esc(v.r)} · <span style="font-family:var(--font)">${esc(v.ko)}</span></div>
+        <div class="choices">${opts.map((o) => `<button data-o="${esc(o)}" class="jp ${q.ans === null ? "" : o === right.r ? "right" : o === q.ans ? "wrong" : ""}" ${q.ans === null ? "" : "disabled"}>${esc(o)}</button>`).join("")}</div>
+        ${q.ans !== null ? `<div class="result" style="text-align:left">${conjWhy(v, f.id)}</div><div class="row" style="justify-content:center;margin-top:12px"><button class="btn primary" id="cnext">다음 ▶</button></div>` : ""}
+        <div class="score">정답 ${q.right} / ${q.total}</div>
+      </div>`;
+    $("#cforms").onclick = (e) => {
+      const b = e.target.closest("[data-f]"); if (!b) return;
+      const id = b.dataset.f;
+      if (VS.forms.has(id)) { if (VS.forms.size > 1) VS.forms.delete(id); } else VS.forms.add(id);
+      q.next = true; verbConjQuiz(body);
+    };
+    body.querySelector(".choices").onclick = (e) => {
+      const b = e.target.closest("[data-o]"); if (!b || q.ans !== null) return;
+      q.ans = b.dataset.o; q.total++; const ok = q.ans === right.r; if (ok) q.right++;
+      S.verb.c = [(S.verb.c || [0, 0])[0] + (ok ? 1 : 0), (S.verb.c || [0, 0])[1] + 1]; save();
+      speak(right.r);
+      verbConjQuiz(body);
+    };
+    const nx = $("#cnext"); if (nx) nx.onclick = () => { q.next = true; verbConjQuiz(body); };
+  }
+
   // ---------- 화면: 문법 ----------
   function viewGrammar() {
     app.innerHTML = `
@@ -852,12 +1214,12 @@
     if (session) session.stop();
     document.querySelectorAll(".nav a").forEach((a) => a.classList.toggle("active", a.dataset.route === name));
     stopSpeak();
-    ({ home: viewHome, kana: viewKana, vocab: viewVocab, talk: () => viewTalk(arg, arg2), listen: () => viewListen(arg), grammar: viewGrammar }[name] || viewHome)();
+    ({ home: viewHome, kana: viewKana, vocab: viewVocab, talk: () => viewTalk(arg, arg2), listen: () => viewListen(arg), kanji: viewKanji, verb: viewVerb, grammar: viewGrammar }[name] || viewHome)();
     window.scrollTo(0, 0);
   }
   window.addEventListener("hashchange", route);
   route();
 
   // 테스트용 노출
-  window.__nihongo = { romaji };
+  window.__nihongo = { romaji, conj, conjWrongs, VB, FORMS };
 })();
