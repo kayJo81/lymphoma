@@ -1,6 +1,361 @@
 {
- "updated": "2026-11-27T03:45:11+00:00",
+ "updated": "2026-11-28T03:24:46+00:00",
  "items": [
+  {
+   "nct": "NCT07342478",
+   "title": "ROCKET-CLL Global Phase 3 Study: Rocbrutinib vs Pirtobrutinib in cBTKi-Pretreated R/R CLL/SLL",
+   "phase": "Phase 3",
+   "status": "모집 중",
+   "sponsor": "Newave Pharmaceutical Inc",
+   "conditions": [
+    "CLL / SLL",
+    "CLL (Chronic Lymphocytic Leukemia)",
+    "CLL, Refractory",
+    "CLL, Relapsed"
+   ],
+   "interventions": [
+    "Rocbrutinib",
+    "Pirtobrutinib"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2026-04-23",
+   "updated": "2026-11-27"
+  },
+  {
+   "nct": "NCT05358379",
+   "title": "A Study to Investigate THT140, in Subjects With Advanced Solid Tumors and Lymphoma",
+   "phase": "Phase 1/Phase 2",
+   "status": "모집 중",
+   "sponsor": "Tethra Biosciences Inc.",
+   "conditions": [
+    "Solid Tumor, Adult Lymphoma"
+   ],
+   "interventions": [
+    "THT140"
+   ],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Seoul National University Hospital",
+     "city": "Seoul"
+    }
+   ],
+   "start": "2022-04-14",
+   "updated": "2026-11-27"
+  },
+  {
+   "nct": "NCT07630545",
+   "title": "A Phase I Study in Healthy Volunteers and Parkinson's Disease (PD) Patients.",
+   "phase": "Phase 1",
+   "status": "모집 중",
+   "sponsor": "Mission Therapeutics",
+   "conditions": [
+    "Parkinson's Disease (PD)",
+    "Mild to Moderate Parkinson's Disease",
+    "Early Stage Parkinson's Disease"
+   ],
+   "interventions": [
+    "MTX325",
+    "Placebo"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2023-11-30",
+   "updated": "2026-11-27"
+  },
+  {
+   "nct": "NCT05621291",
+   "title": "A Multicenter Study to Evaluate Next-Generation Sequencing (NGS) Testing and Monitoring of B-Cell Recovery to Guide Management Following Chimeric Antigen Receptor T-cell (CART) Induced Remission in Children and Young Adults With B Lineage Acute Lymph...",
+   "phase": "",
+   "status": "모집 중",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "B-All",
+    "Acute Lymphoblastic Leukemia"
+   ],
+   "interventions": [
+    "NGS testing"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2026-12-01",
+   "updated": "2026-11-27"
+  },
+  {
+   "nct": "NCT06486051",
+   "title": "A Study of Atlacabtagene Autoleucel CAR T-cells for Adults With Relapsed Large B-cell Lymphoma",
+   "phase": "Phase 2",
+   "status": "모집 중",
+   "sponsor": "Malaghan Institute of Medical Research",
+   "conditions": [
+    "Large B-cell Lymphoma",
+    "Diffuse Large B-Cell Lymphoma, Not Otherwise Specified",
+    "Primary Mediastinal Large B-cell Lymphoma (PMBCL)",
+    "Transformed Non-Hodgkin Lymphoma"
+   ],
+   "interventions": [
+    "Fludarabine",
+    "Cyclophosphamide",
+    "Atlacabtagene autoleucel CAR T-cells"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2024-07-12",
+   "updated": "2026-11-27"
+  },
+  {
+   "nct": "NCT05974202",
+   "title": "rTMS and Cognitive-behavioral Therapy for Cocaine Use Disorder",
+   "phase": "",
+   "status": "모집 중",
+   "sponsor": "New York State Psychiatric Institute",
+   "conditions": [
+    "Cocaine Use",
+    "Cocaine Dependence",
+    "Cocaine Use Disorder",
+    "Cocaine Use Disorder, Moderate"
+   ],
+   "interventions": [
+    "Active H7-coil repetitive transcranial magnetic stimulation (rTMS)",
+    "Sham H7-coil repetitive transcranial magnetic stimulation (rTMS)"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2026-08-14",
+   "updated": "2026-11-27"
+  },
+  {
+   "nct": "NCT06317662",
+   "title": "Testing the Addition of the Anti-cancer Drug Venetoclax and/or the Anti-cancer Immunotherapy Blinatumomab to the Usual Chemotherapy Treatment for Infants With Newly Diagnosed KMT2A-rearranged or KMT2A-non-rearranged Leukemia",
+   "phase": "Phase 2",
+   "status": "모집 중",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Acute Leukemia of Ambiguous Lineage",
+    "B Acute Lymphoblastic Leukemia"
+   ],
+   "interventions": [
+    "Asparaginase Erwinia chrysanthemi",
+    "Biospecimen Collection",
+    "Blinatumomab",
+    "Bone Marrow Aspiration",
+    "Calaspargase Pegol",
+    "Computed Tomography",
+    "Cyclophosphamide",
+    "Cytarabine",
+    "Daunorubicin",
+    "Dexamethasone",
+    "Doxorubicin",
+    "Echocardiography Test",
+    "FDG-Positron Emission Tomography",
+    "Leucovorin",
+    "Levoleucovorin",
+    "Lumbar Puncture",
+    "Magnetic Resonance Imaging",
+    "Mercaptopurine",
+    "Methotrexate",
+    "Methylprednisolone",
+    "Multigated Acquisition Scan",
+    "Prednisolone",
+    "Prednisone",
+    "Therapeutic Hydrocortisone",
+    "Thioguanine",
+    "Venetoclax",
+    "Vincristine"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2025-06-05",
+   "updated": "2026-11-27"
+  },
+  {
+   "nct": "NCT05142189",
+   "title": "Clinical Trial Evaluating the Safety, Tolerability and Preliminary Efficacy of BNT116 Alone and in Combinations in Patients With Advanced Non-small Cell Lung Cancer",
+   "phase": "Phase 1",
+   "status": "모집 중",
+   "sponsor": "BioNTech SE",
+   "conditions": [
+    "Non-Small Cell Lung Cancer"
+   ],
+   "interventions": [
+    "BNT116",
+    "Cemiplimab",
+    "Docetaxel",
+    "Carboplatin",
+    "Paclitaxel",
+    "BNT316",
+    "anti-B7-H3 antibody conjugated to topoisomerase I inhibitor",
+    "anti-HER3 antibody conjugated to topoisomerase I inhibitor",
+    "Pumitamig",
+    "Osimertinib",
+    "ALK-inhibitor or RET-inhibitor"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2022-06-17",
+   "updated": "2026-11-27"
+  },
+  {
+   "nct": "NCT07961694",
+   "title": "Artificial Intelligence Automated Telephone Consultations for Week 1 Post Surgery Cataract Surgery Patients",
+   "phase": "",
+   "status": "모집 중",
+   "sponsor": "Ufonia",
+   "conditions": [
+    "Cataract Surgery",
+    "Cataract After Surgery",
+    "Cataract Patients",
+    "Cataract and Intraocular Lens (IOL) Surgery"
+   ],
+   "interventions": [
+    "Dora Artificial Intelligence Clinical Assistant"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2025-12-12",
+   "updated": "2026-11-27"
+  },
+  {
+   "nct": "NCT07572136",
+   "title": "Anti-CRLF2-R/TSLPR Chimeric Antigen Receptor T Cells (TSLPR-CART) in Participants With Recurrent or Refractory CRLF2-R/TSLPR-Overexpressing B-Cell Acute Lymphoblastic Leukemia (B-ALL)",
+   "phase": "Phase 1",
+   "status": "모집 중",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "B-All",
+    "Acute Lymphoblastic Leukemia"
+   ],
+   "interventions": [
+    "TSLPR-CART",
+    "Cyclophosphamide",
+    "Fludarabine"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2026-12-01",
+   "updated": "2026-11-27"
+  },
+  {
+   "nct": "NCT05294731",
+   "title": "Treatment of Chinese Participants With B-Cell Malignancies With BGB-16673, a Bruton Tyrosine Kinase-Targeted Protein-Degrader",
+   "phase": "Phase 1/Phase 2",
+   "status": "모집 중",
+   "sponsor": "BeOne Medicines",
+   "conditions": [
+    "B-cell Malignancy",
+    "Non-Hodgkin Lymphoma",
+    "Mantle Cell Lymphoma",
+    "Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma"
+   ],
+   "interventions": [
+    "Tacabrutideg"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2022-05-06",
+   "updated": "2026-11-27"
+  },
+  {
+   "nct": "NCT07008027",
+   "title": "Real World Asparaginase Therapy Toxicity",
+   "phase": "",
+   "status": "모집 중",
+   "sponsor": "St. Jude Children's Research Hospital",
+   "conditions": [
+    "Drug Toxicity"
+   ],
+   "interventions": [],
+   "korea": false,
+   "sites": [],
+   "start": "2026-11-24",
+   "updated": "2026-11-27"
+  },
+  {
+   "nct": "NCT06392477",
+   "title": "A Study to Evaluate the Safety and Activity of SAR448501/DR-0201 in Patients With Relapsed/ Refractory B-Cell Non-Hodgkin Lymphoma",
+   "phase": "Phase 1",
+   "status": "모집 중",
+   "sponsor": "Sanofi",
+   "conditions": [
+    "B-cell Non Hodgkin Lymphoma"
+   ],
+   "interventions": [
+    "SAR448501"
+   ],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Investigational Site Number : 001-401",
+     "city": "Busan"
+    },
+    {
+     "name": "Investigational Site Number : 001-403",
+     "city": "Busan"
+    },
+    {
+     "name": "Investigational Site Number : 001-404",
+     "city": "Goyang-si"
+    },
+    {
+     "name": "Investigational Site Number : 001-402",
+     "city": "Seoul"
+    },
+    {
+     "name": "Investigational Site Number : 001-405",
+     "city": "Seoul"
+    }
+   ],
+   "start": "2024-07-08",
+   "updated": "2026-11-27"
+  },
+  {
+   "nct": "NCT06922604",
+   "title": "Glofitamab With Obinutuzumab Pre-treatment for the Treatment of Central Nervous System Lymphoma",
+   "phase": "Phase 1",
+   "status": "모집 중",
+   "sponsor": "City of Hope Medical Center",
+   "conditions": [
+    "Primary Central Nervous System Lymphoma",
+    "Secondary Central Nervous System Lymphoma"
+   ],
+   "interventions": [
+    "Biospecimen Collection",
+    "Computed Tomography",
+    "Glofitamab",
+    "Lumbar Puncture",
+    "Magnetic Resonance Imaging",
+    "Obinutuzumab",
+    "Positron Emission Tomography",
+    "Polatuzumab Vedotin"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2025-07-30",
+   "updated": "2026-11-25"
+  },
+  {
+   "nct": "NCT07613788",
+   "title": "Rimegepant Plus Glofitamab and CD19 CAR-T Therapy in R/R LBCL",
+   "phase": "Phase 2",
+   "status": "모집 중",
+   "sponsor": "Ruijin Hospital",
+   "conditions": [
+    "Relapsed/Refractory Large B-cell Lymphoma (LBCL)"
+   ],
+   "interventions": [
+    "Rimegepant",
+    "Glofitamab",
+    "Obinutuzumab",
+    "CD19 CAR-T Cell Therapy",
+    "Fludarabine",
+    "Cyclophosphamide"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2026-06-10",
+   "updated": "2026-11-25"
+  },
   {
    "nct": "NCT07332507",
    "title": "Testing the Effect of Teclistamab on Recurrent Plasmablastic Lymphoma",
@@ -20,6 +375,25 @@
    "korea": false,
    "sites": [],
    "start": "2027-03-26",
+   "updated": "2026-11-25"
+  },
+  {
+   "nct": "NCT07780123",
+   "title": "Nurture by Nature Feasibility Study",
+   "phase": "",
+   "status": "모집 중",
+   "sponsor": "Ina Olmer Specht",
+   "conditions": [
+    "Nature, Human",
+    "Pediatric ALL",
+    "Well-Being, Psychological"
+   ],
+   "interventions": [
+    "Nature-base intervention"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2027-01-01",
    "updated": "2026-11-25"
   },
   {
@@ -51,251 +425,6 @@
    "korea": false,
    "sites": [],
    "start": "2025-10-07",
-   "updated": "2026-11-25"
-  },
-  {
-   "nct": "NCT06043323",
-   "title": "A Phase II Study of Axicabtagene Ciloleucel, an Anti-CD19 Chimeric Antigen Receptor (CAR) Tcell Therapy, in Combination With Radiotherapy (RT) in Relapsed/Refractory Follicular Lymphoma",
-   "phase": "Phase 2",
-   "status": "모집 중",
-   "sponsor": "M.D. Anderson Cancer Center",
-   "conditions": [
-    "Follicular Lymphoma"
-   ],
-   "interventions": [
-    "Axicabtagene Ciloleucel",
-    "Cyclophosphamide",
-    "Fludarabine phosphate",
-    "Prednisone",
-    "Diphenhydramine",
-    "Acetaminophen"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2024-01-08",
-   "updated": "2026-11-25"
-  },
-  {
-   "nct": "NCT07294677",
-   "title": "CApivasertib, Venetoclax And Low-intensity chemotheRapY for Adults With ALL/LBL",
-   "phase": "Phase 1/Phase 2",
-   "status": "모집 중",
-   "sponsor": "University of Chicago",
-   "conditions": [
-    "Leukemia",
-    "Lymphoma"
-   ],
-   "interventions": [
-    "Capivasertib",
-    "Venetoclax",
-    "Rituximab",
-    "Blinatumomab",
-    "Nelarabine",
-    "mini-hyperCVD"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2026-02-05",
-   "updated": "2026-11-25"
-  },
-  {
-   "nct": "NCT07222345",
-   "title": "Feasibility of High Intensity Interval Training in Survivors of Childhood, Adolescent, and Young Adult Hodgkin Lymphoma",
-   "phase": "",
-   "status": "모집 중",
-   "sponsor": "St. Jude Children's Research Hospital",
-   "conditions": [
-    "Hodgkin Lymphoma"
-   ],
-   "interventions": [
-    "High Intensity Interval Training (HIIT)"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2026-06-08",
-   "updated": "2026-11-25"
-  },
-  {
-   "nct": "NCT07444632",
-   "title": "Phase1 Basket Trial Of CAR.70-Engineered IL15-Transduced With TGFBR2 Knock Out Cord Blood-Derived NK Cells For Relapsed/Refractory Lymphoid Malignancies",
-   "phase": "Phase 1",
-   "status": "모집 중",
-   "sponsor": "M.D. Anderson Cancer Center",
-   "conditions": [
-    "Lymphoid",
-    "Hodgkin Lymphoma"
-   ],
-   "interventions": [
-    "Fludarabine",
-    "TGFBR2 KO CAR27/IL-15 NK cells",
-    "Cyclophosphamide"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2026-05-28",
-   "updated": "2026-11-25"
-  },
-  {
-   "nct": "NCT06922604",
-   "title": "Glofitamab With Obinutuzumab Pre-treatment for the Treatment of Central Nervous System Lymphoma",
-   "phase": "Phase 1",
-   "status": "모집 중",
-   "sponsor": "City of Hope Medical Center",
-   "conditions": [
-    "Primary Central Nervous System Lymphoma",
-    "Secondary Central Nervous System Lymphoma"
-   ],
-   "interventions": [
-    "Biospecimen Collection",
-    "Computed Tomography",
-    "Glofitamab",
-    "Lumbar Puncture",
-    "Magnetic Resonance Imaging",
-    "Obinutuzumab",
-    "Positron Emission Tomography",
-    "Polatuzumab Vedotin"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2025-07-30",
-   "updated": "2026-11-25"
-  },
-  {
-   "nct": "NCT07780123",
-   "title": "Nurture by Nature Feasibility Study",
-   "phase": "",
-   "status": "모집 중",
-   "sponsor": "Ina Olmer Specht",
-   "conditions": [
-    "Nature, Human",
-    "Pediatric ALL",
-    "Well-Being, Psychological"
-   ],
-   "interventions": [
-    "Nature-base intervention"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2027-01-01",
-   "updated": "2026-11-25"
-  },
-  {
-   "nct": "NCT07572136",
-   "title": "Anti-CRLF2-R/TSLPR Chimeric Antigen Receptor T Cells (TSLPR-CART) in Participants With Recurrent or Refractory CRLF2-R/TSLPR-Overexpressing B-Cell Acute Lymphoblastic Leukemia (B-ALL)",
-   "phase": "Phase 1",
-   "status": "모집 중",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "B-All",
-    "Acute Lymphoblastic Leukemia"
-   ],
-   "interventions": [
-    "TSLPR-CART",
-    "Cyclophosphamide",
-    "Fludarabine"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2026-11-30",
-   "updated": "2026-11-25"
-  },
-  {
-   "nct": "NCT07228741",
-   "title": "Resistance Exercise and Incretin Mimetic for Cardiometabolic Health in Survivors of ALL With Obesity",
-   "phase": "Phase 2",
-   "status": "모집 중",
-   "sponsor": "St. Jude Children's Research Hospital",
-   "conditions": [
-    "Acute Lymphoblastic Leukemia",
-    "Obesity"
-   ],
-   "interventions": [
-    "Tirzepatide",
-    "Resistance Exercise",
-    "Lifestyle Counseling"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2026-04-23",
-   "updated": "2026-11-25"
-  },
-  {
-   "nct": "NCT06193369",
-   "title": "Digital Peer Navigation for Adolescents and Young Adults With Cancer",
-   "phase": "",
-   "status": "모집 중",
-   "sponsor": "University Health Network, Toronto",
-   "conditions": [
-    "Lymphoma",
-    "Breast Cancer",
-    "Testicular Cancer",
-    "Sarcoma"
-   ],
-   "interventions": [
-    "Digital Peer Navigation"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2024-08-27",
-   "updated": "2026-11-25"
-  },
-  {
-   "nct": "NCT06795815",
-   "title": "The Implementation of the Go Wish Game to Promote Advance Care Planning in Onco- Hematologic Disease",
-   "phase": "",
-   "status": "모집 중",
-   "sponsor": "Azienda USL Reggio Emilia - IRCCS",
-   "conditions": [
-    "Leukemia",
-    "Multiple Mieloma",
-    "Advanced Solid Tumors",
-    "Lymphoma"
-   ],
-   "interventions": [
-    "Go Wish Game"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2025-06-30",
-   "updated": "2026-11-25"
-  },
-  {
-   "nct": "NCT07082868",
-   "title": "A Study of Epcoritamab and Ibrutinib in People With Central Nervous System Lymphoma (CNSL)",
-   "phase": "Phase 1",
-   "status": "모집 중",
-   "sponsor": "Memorial Sloan Kettering Cancer Center",
-   "conditions": [
-    "Primary Central Nervous System Lymphoma (PCNSL)",
-    "Primary Central Nervous System Lymphoma",
-    "Relapsed Primary Central Nervous System Lymphoma",
-    "Refractory Primary Central Nervous System Lymphoma"
-   ],
-   "interventions": [
-    "ibrutinib",
-    "Epcoritamab"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2025-08-13",
-   "updated": "2026-11-25"
-  },
-  {
-   "nct": "NCT05621291",
-   "title": "A Multicenter Study to Evaluate Next-Generation Sequencing (NGS) Testing and Monitoring of B-Cell Recovery to Guide Management Following Chimeric Antigen Receptor T-cell (CART) Induced Remission in Children and Young Adults With B Lineage Acute Lymph...",
-   "phase": "",
-   "status": "모집 중",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "B-All",
-    "Acute Lymphoblastic Leukemia"
-   ],
-   "interventions": [
-    "NGS testing"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2026-11-30",
    "updated": "2026-11-25"
   },
   {
@@ -356,6 +485,107 @@
    "updated": "2026-11-25"
   },
   {
+   "nct": "NCT07862764",
+   "title": "A Study to Assess Change in Disease State and Adverse Events in Korean Adult Patients With Relapsed or Refractory Diffuse Large B-Cell Lymphoma (DLBCL) or Follicular Lymphoma (FL) Receiving Epcoritamab Injections",
+   "phase": "",
+   "status": "모집 중",
+   "sponsor": "AbbVie",
+   "conditions": [
+    "Diffuse Large B-Cell Lymphoma"
+   ],
+   "interventions": [],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Korea University Anam Hospital /ID# 288493",
+     "city": "Seoul"
+    }
+   ],
+   "start": "2026-10-26",
+   "updated": "2026-11-25"
+  },
+  {
+   "nct": "NCT07222345",
+   "title": "Feasibility of High Intensity Interval Training in Survivors of Childhood, Adolescent, and Young Adult Hodgkin Lymphoma",
+   "phase": "",
+   "status": "모집 중",
+   "sponsor": "St. Jude Children's Research Hospital",
+   "conditions": [
+    "Hodgkin Lymphoma"
+   ],
+   "interventions": [
+    "High Intensity Interval Training (HIIT)"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2026-06-08",
+   "updated": "2026-11-25"
+  },
+  {
+   "nct": "NCT07082868",
+   "title": "A Study of Epcoritamab and Ibrutinib in People With Central Nervous System Lymphoma (CNSL)",
+   "phase": "Phase 1",
+   "status": "모집 중",
+   "sponsor": "Memorial Sloan Kettering Cancer Center",
+   "conditions": [
+    "Primary Central Nervous System Lymphoma (PCNSL)",
+    "Primary Central Nervous System Lymphoma",
+    "Relapsed Primary Central Nervous System Lymphoma",
+    "Refractory Primary Central Nervous System Lymphoma"
+   ],
+   "interventions": [
+    "ibrutinib",
+    "Epcoritamab"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2025-08-13",
+   "updated": "2026-11-25"
+  },
+  {
+   "nct": "NCT07294677",
+   "title": "CApivasertib, Venetoclax And Low-intensity chemotheRapY for Adults With ALL/LBL",
+   "phase": "Phase 1/Phase 2",
+   "status": "모집 중",
+   "sponsor": "University of Chicago",
+   "conditions": [
+    "Leukemia",
+    "Lymphoma"
+   ],
+   "interventions": [
+    "Capivasertib",
+    "Venetoclax",
+    "Rituximab",
+    "Blinatumomab",
+    "Nelarabine",
+    "mini-hyperCVD"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2026-02-05",
+   "updated": "2026-11-25"
+  },
+  {
+   "nct": "NCT06193369",
+   "title": "Digital Peer Navigation for Adolescents and Young Adults With Cancer",
+   "phase": "",
+   "status": "모집 중",
+   "sponsor": "University Health Network, Toronto",
+   "conditions": [
+    "Lymphoma",
+    "Breast Cancer",
+    "Testicular Cancer",
+    "Sarcoma"
+   ],
+   "interventions": [
+    "Digital Peer Navigation"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2024-08-27",
+   "updated": "2026-11-25"
+  },
+  {
    "nct": "NCT05952024",
    "title": "Study of Acalabrutinib and Rituximab in Untreated Elderly and/or Frail Patients With DLBCL",
    "phase": "Phase 2",
@@ -411,61 +641,175 @@
    "updated": "2026-11-25"
   },
   {
-   "nct": "NCT07613788",
-   "title": "Rimegepant Plus Glofitamab and CD19 CAR-T Therapy in R/R LBCL",
-   "phase": "Phase 2",
+   "nct": "NCT07444632",
+   "title": "Phase1 Basket Trial Of CAR.70-Engineered IL15-Transduced With TGFBR2 Knock Out Cord Blood-Derived NK Cells For Relapsed/Refractory Lymphoid Malignancies",
+   "phase": "Phase 1",
    "status": "모집 중",
-   "sponsor": "Ruijin Hospital",
+   "sponsor": "M.D. Anderson Cancer Center",
    "conditions": [
-    "Relapsed/Refractory Large B-cell Lymphoma (LBCL)"
+    "Lymphoid",
+    "Hodgkin Lymphoma"
    ],
    "interventions": [
-    "Rimegepant",
-    "Glofitamab",
-    "Obinutuzumab",
-    "CD19 CAR-T Cell Therapy",
     "Fludarabine",
+    "TGFBR2 KO CAR27/IL-15 NK cells",
     "Cyclophosphamide"
    ],
    "korea": false,
    "sites": [],
-   "start": "2026-06-10",
+   "start": "2026-05-28",
    "updated": "2026-11-25"
   },
   {
-   "nct": "NCT07862764",
-   "title": "A Study to Assess Change in Disease State and Adverse Events in Korean Adult Patients With Relapsed or Refractory Diffuse Large B-Cell Lymphoma (DLBCL) or Follicular Lymphoma (FL) Receiving Epcoritamab Injections",
+   "nct": "NCT07228741",
+   "title": "Resistance Exercise and Incretin Mimetic for Cardiometabolic Health in Survivors of ALL With Obesity",
+   "phase": "Phase 2",
+   "status": "모집 중",
+   "sponsor": "St. Jude Children's Research Hospital",
+   "conditions": [
+    "Acute Lymphoblastic Leukemia",
+    "Obesity"
+   ],
+   "interventions": [
+    "Tirzepatide",
+    "Resistance Exercise",
+    "Lifestyle Counseling"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2026-04-23",
+   "updated": "2026-11-25"
+  },
+  {
+   "nct": "NCT06795815",
+   "title": "The Implementation of the Go Wish Game to Promote Advance Care Planning in Onco- Hematologic Disease",
    "phase": "",
    "status": "모집 중",
-   "sponsor": "AbbVie",
+   "sponsor": "Azienda USL Reggio Emilia - IRCCS",
    "conditions": [
-    "Diffuse Large B-Cell Lymphoma"
+    "Leukemia",
+    "Multiple Mieloma",
+    "Advanced Solid Tumors",
+    "Lymphoma"
    ],
-   "interventions": [],
+   "interventions": [
+    "Go Wish Game"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2025-06-30",
+   "updated": "2026-11-25"
+  },
+  {
+   "nct": "NCT06043323",
+   "title": "A Phase II Study of Axicabtagene Ciloleucel, an Anti-CD19 Chimeric Antigen Receptor (CAR) Tcell Therapy, in Combination With Radiotherapy (RT) in Relapsed/Refractory Follicular Lymphoma",
+   "phase": "Phase 2",
+   "status": "모집 중",
+   "sponsor": "M.D. Anderson Cancer Center",
+   "conditions": [
+    "Follicular Lymphoma"
+   ],
+   "interventions": [
+    "Axicabtagene Ciloleucel",
+    "Cyclophosphamide",
+    "Fludarabine phosphate",
+    "Prednisone",
+    "Diphenhydramine",
+    "Acetaminophen"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2024-01-08",
+   "updated": "2026-11-25"
+  },
+  {
+   "nct": "NCT04545762",
+   "title": "Anti-CD19 Chimeric Antigen Receptor T Cells for Treatment of Relapsed or Refractory Non-Hodgkin Lymphoma",
+   "phase": "Phase 1",
+   "status": "모집 중",
+   "sponsor": "C. Babis Andreadis",
+   "conditions": [
+    "Refractory Non-Hodgkin Lymphoma",
+    "Burkitt Lymphoma",
+    "Mantle Cell Lymphoma",
+    "Follicular Lymphoma"
+   ],
+   "interventions": [
+    "Fludarabine",
+    "Cyclophosphamide",
+    "anti-CD19 CAR-T cells"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2020-09-11",
+   "updated": "2026-11-24"
+  },
+  {
+   "nct": "NCT07101328",
+   "title": "A Study of LY4152199 in Participants With Previously Treated B-cell Malignancies (BAF_FRontier-1 )",
+   "phase": "Phase 1",
+   "status": "모집 중",
+   "sponsor": "Eli Lilly and Company",
+   "conditions": [
+    "Lymphoma, Non-Hodgkin",
+    "B-cell Lymphoma",
+    "Lymphoma, Large B-Cell, Diffuse",
+    "Lymphoma, Follicular"
+   ],
+   "interventions": [
+    "LY4152199 - IV"
+   ],
    "korea": true,
    "sites": [
     {
-     "name": "Korea University Anam Hospital /ID# 288493",
+     "name": "Seoul National University Hospital",
+     "city": "Seoul"
+    },
+    {
+     "name": "Asan Medical Center",
      "city": "Seoul"
     }
    ],
-   "start": "2026-10-26",
-   "updated": "2026-11-25"
+   "start": "2026-05-28",
+   "updated": "2026-11-24"
   },
   {
-   "nct": "NCT05237986",
-   "title": "Cognitive Aftereffects of Neurotoxicity in Children and Young Adults With Relapsed/Refractory Hematologic Malignancies Who Receive CAR T-cell Therapy",
-   "phase": "",
+   "nct": "NCT07724457",
+   "title": "Testing the Addition of a New Anti-Cancer Drug, Glofitamab to Usual Chemotherapy for Burkitt and Double Hit Lymphoma",
+   "phase": "Phase 2/Phase 3",
    "status": "모집 중",
    "sponsor": "National Cancer Institute (NCI)",
    "conditions": [
-    "Lymphoma",
-    "Leukemia"
+    "Recurrent Burkitt Lymphoma",
+    "Recurrent High Grade B-Cell Lymphoma With MYC and BCL2 Rearrangements",
+    "Refractory Burkitt Lymphoma",
+    "Refractory High Grade B-Cell Lymphoma With MYC and BCL2 Rearrangements"
    ],
-   "interventions": [],
+   "interventions": [
+    "Biospecimen Collection",
+    "Bone Marrow Biopsy",
+    "Carboplatin",
+    "Computed Tomography",
+    "Cyclophosphamide",
+    "Cytarabine",
+    "Doxorubicin",
+    "Etoposide",
+    "Glofitamab",
+    "Ifosfamide",
+    "Lumbar Puncture",
+    "Magnetic Resonance Imaging",
+    "Methotrexate",
+    "Obinutuzumab",
+    "Positron Emission Tomography",
+    "Prednisone",
+    "Rituximab",
+    "Rituximab and Hyaluronidase Human",
+    "Survey Administration",
+    "Vincristine"
+   ],
    "korea": false,
    "sites": [],
-   "start": "2025-06-23",
+   "start": "2027-07-27",
    "updated": "2026-11-24"
   },
   {
@@ -487,22 +831,23 @@
    "updated": "2026-11-24"
   },
   {
-   "nct": "NCT07218341",
-   "title": "A Study of Pirtobrutinib (LY3527727) in Participants With Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma",
-   "phase": "Phase 4",
+   "nct": "NCT07385612",
+   "title": "Research for Resistance Factors in the Treatment of Lymphoid Hemopathy",
+   "phase": "",
    "status": "모집 중",
-   "sponsor": "Eli Lilly and Company",
+   "sponsor": "Nantes University Hospital",
    "conditions": [
-    "Chronic Lymphocytic Leukemia",
-    "Lymphoma, Small Lymphocytic"
+    "MATURE B-CELL LYMPHOIDS"
    ],
    "interventions": [
-    "Pirtobrutinib",
-    "Idelalisib"
+    "blood sample",
+    "Bone Marrow cells",
+    "lymph node tissue",
+    "pleural or ascitic fluid aspirations"
    ],
    "korea": false,
    "sites": [],
-   "start": "2026-03-09",
+   "start": "2026-06-15",
    "updated": "2026-11-24"
   },
   {
@@ -523,23 +868,158 @@
    "updated": "2026-11-24"
   },
   {
-   "nct": "NCT07385612",
-   "title": "Research for Resistance Factors in the Treatment of Lymphoid Hemopathy",
-   "phase": "",
+   "nct": "NCT04269902",
+   "title": "Testing Early Treatment for Patients With High-Risk Chronic Lymphocytic Leukemia (CLL) or Small Lymphocytic Leukemia (SLL), EVOLVE CLL/SLL Study",
+   "phase": "Phase 3",
    "status": "모집 중",
-   "sponsor": "Nantes University Hospital",
+   "sponsor": "National Cancer Institute (NCI)",
    "conditions": [
-    "MATURE B-CELL LYMPHOIDS"
+    "Chronic Lymphocytic Leukemia",
+    "Small Lymphocytic Lymphoma"
    ],
    "interventions": [
-    "blood sample",
-    "Bone Marrow cells",
-    "lymph node tissue",
-    "pleural or ascitic fluid aspirations"
+    "Biospecimen Collection",
+    "Bone Marrow Aspiration",
+    "Bone Marrow Biopsy",
+    "Computed Tomography",
+    "Obinutuzumab",
+    "Questionnaire Administration",
+    "Venetoclax"
    ],
    "korea": false,
    "sites": [],
-   "start": "2026-06-15",
+   "start": "2021-03-02",
+   "updated": "2026-11-24"
+  },
+  {
+   "nct": "NCT06340737",
+   "title": "AutologousCD22 Chimeric Antigen Receptor (CAR)T Cells in w/Recurrent/Refractory B Cell Lymphomas",
+   "phase": "Phase 1",
+   "status": "모집 중",
+   "sponsor": "Stanford University",
+   "conditions": [
+    "Follicular Lymphoma",
+    "Mantle Cell Lymphoma",
+    "Hairy Cell Leukemia",
+    "Lymphoplasmacytic Lymphoma"
+   ],
+   "interventions": [
+    "CD22CART Infusion"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2024-03-29",
+   "updated": "2026-11-24"
+  },
+  {
+   "nct": "NCT06124157",
+   "title": "A Study Testing the Combination of Dasatinib or Imatinib to Chemotherapy Treatment With Blinatumomab for Children, Adolescents, and Young Adults With Philadelphia Chromosome Positive (Ph+) or ABL-Class Philadelphia Chromosome-Like (Ph-Like) B-cell Acute Lymphoblastic Leukemia (B-ALL)",
+   "phase": "Phase 2",
+   "status": "모집 중",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "B Acute Lymphoblastic Leukemia"
+   ],
+   "interventions": [
+    "Biospecimen Collection",
+    "Blinatumomab",
+    "Bone Marrow Biopsy",
+    "Calaspargase Pegol",
+    "Cyclophosphamide",
+    "Cytarabine",
+    "Dasatinib",
+    "Daunorubicin",
+    "Doxorubicin",
+    "Echocardiography Test",
+    "Imatinib",
+    "Leucovorin",
+    "Mercaptopurine",
+    "Methotrexate",
+    "Multigated Acquisition Scan",
+    "Pegaspargase",
+    "Prednisolone",
+    "Prednisone",
+    "Radiation Therapy",
+    "Thioguanine",
+    "Vincristine"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2025-05-30",
+   "updated": "2026-11-24"
+  },
+  {
+   "nct": "NCT03824483",
+   "title": "Study of Zanubrutinib, Obinutuzumab, and Venetoclax in Patients With Chronic Lymphocytic Leukemia (CLL) or Small Lymphocytic Leukemia (SLL)",
+   "phase": "Phase 2",
+   "status": "모집 중",
+   "sponsor": "Memorial Sloan Kettering Cancer Center",
+   "conditions": [
+    "Chronic Lymphocytic Leukemia (CLL)",
+    "Small Lymphocytic Leukemia (SLL)"
+   ],
+   "interventions": [
+    "Zanubrutinib",
+    "Obinutuzumab",
+    "Venetoclax"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2019-02-22",
+   "updated": "2026-11-24"
+  },
+  {
+   "nct": "NCT07024706",
+   "title": "MAVRiC Studies 2L Treatment With AV in Patients With CLL/SLL Who Have Relapsed After a Course of BTKi + BCL2i Combination, With or Without Obinutuzumab",
+   "phase": "Phase 2",
+   "status": "모집 중",
+   "sponsor": "AstraZeneca",
+   "conditions": [
+    "Chronic Lymphocytic Leukemia (CLL)",
+    "Small Lymphocytic Lymphoma (SLL)"
+   ],
+   "interventions": [
+    "Acalabrutinib",
+    "Venetoclax"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2026-06-04",
+   "updated": "2026-11-24"
+  },
+  {
+   "nct": "NCT05054257",
+   "title": "CART19 Cells Effects in Patients With Relapsed or Refractory Acute Lymphoblastic Leukemia and Non-Hodgkin's Lymphoma",
+   "phase": "Phase 1",
+   "status": "모집 중",
+   "sponsor": "Institute of Hematology and Blood Transfusion, Czech Republic",
+   "conditions": [
+    "Relapsed or Refractory B-cell Acute Lymphoblastic Leukemia",
+    "Non-Hodgkin's Lymphoma Refractory",
+    "Non-Hodgkin's Lymphoma, Relapsed"
+   ],
+   "interventions": [
+    "Autologous CAR19 T lymphocytes"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2021-06-02",
+   "updated": "2026-11-24"
+  },
+  {
+   "nct": "NCT05237986",
+   "title": "Cognitive Aftereffects of Neurotoxicity in Children and Young Adults With Relapsed/Refractory Hematologic Malignancies Who Receive CAR T-cell Therapy",
+   "phase": "",
+   "status": "모집 중",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Lymphoma",
+    "Leukemia"
+   ],
+   "interventions": [],
+   "korea": false,
+   "sites": [],
+   "start": "2025-06-23",
    "updated": "2026-11-24"
   },
   {
@@ -564,22 +1044,45 @@
    "updated": "2026-11-24"
   },
   {
-   "nct": "NCT07024706",
-   "title": "MAVRiC Studies 2L Treatment With AV in Patients With CLL/SLL Who Have Relapsed After a Course of BTKi + BCL2i Combination, With or Without Obinutuzumab",
-   "phase": "Phase 2",
+   "nct": "NCT04685616",
+   "title": "Brentuximab Vedotin in Early Stage Hodgkin Lymphoma",
+   "phase": "Phase 3",
    "status": "모집 중",
-   "sponsor": "AstraZeneca",
+   "sponsor": "University College, London",
    "conditions": [
-    "Chronic Lymphocytic Leukemia (CLL)",
-    "Small Lymphocytic Lymphoma (SLL)"
+    "Hodgkin Lymphoma"
    ],
    "interventions": [
-    "Acalabrutinib",
-    "Venetoclax"
+    "Involved site radiotherapy",
+    "Doxorubicin",
+    "Bleomycin",
+    "Brentuximab vedotin",
+    "Vinblastine",
+    "Dacarbazine",
+    "Haematopoietic growth factor"
    ],
    "korea": false,
    "sites": [],
-   "start": "2026-06-04",
+   "start": "2022-04-14",
+   "updated": "2026-11-24"
+  },
+  {
+   "nct": "NCT07218341",
+   "title": "A Study of Pirtobrutinib (LY3527727) in Participants With Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma",
+   "phase": "Phase 4",
+   "status": "모집 중",
+   "sponsor": "Eli Lilly and Company",
+   "conditions": [
+    "Chronic Lymphocytic Leukemia",
+    "Lymphoma, Small Lymphocytic"
+   ],
+   "interventions": [
+    "Pirtobrutinib",
+    "Idelalisib"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2026-03-09",
    "updated": "2026-11-24"
   },
   {
@@ -639,159 +1142,6 @@
    "updated": "2026-11-24"
   },
   {
-   "nct": "NCT06124157",
-   "title": "A Study Testing the Combination of Dasatinib or Imatinib to Chemotherapy Treatment With Blinatumomab for Children, Adolescents, and Young Adults With Philadelphia Chromosome Positive (Ph+) or ABL-Class Philadelphia Chromosome-Like (Ph-Like) B-cell Acute Lymphoblastic Leukemia (B-ALL)",
-   "phase": "Phase 2",
-   "status": "모집 중",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "B Acute Lymphoblastic Leukemia"
-   ],
-   "interventions": [
-    "Biospecimen Collection",
-    "Blinatumomab",
-    "Bone Marrow Biopsy",
-    "Calaspargase Pegol",
-    "Cyclophosphamide",
-    "Cytarabine",
-    "Dasatinib",
-    "Daunorubicin",
-    "Doxorubicin",
-    "Echocardiography Test",
-    "Imatinib",
-    "Leucovorin",
-    "Mercaptopurine",
-    "Methotrexate",
-    "Multigated Acquisition Scan",
-    "Pegaspargase",
-    "Prednisolone",
-    "Prednisone",
-    "Radiation Therapy",
-    "Thioguanine",
-    "Vincristine"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2025-05-30",
-   "updated": "2026-11-24"
-  },
-  {
-   "nct": "NCT04685616",
-   "title": "Brentuximab Vedotin in Early Stage Hodgkin Lymphoma",
-   "phase": "Phase 3",
-   "status": "모집 중",
-   "sponsor": "University College, London",
-   "conditions": [
-    "Hodgkin Lymphoma"
-   ],
-   "interventions": [
-    "Involved site radiotherapy",
-    "Doxorubicin",
-    "Bleomycin",
-    "Brentuximab vedotin",
-    "Vinblastine",
-    "Dacarbazine",
-    "Haematopoietic growth factor"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2022-04-14",
-   "updated": "2026-11-24"
-  },
-  {
-   "nct": "NCT04269902",
-   "title": "Testing Early Treatment for Patients With High-Risk Chronic Lymphocytic Leukemia (CLL) or Small Lymphocytic Leukemia (SLL), EVOLVE CLL/SLL Study",
-   "phase": "Phase 3",
-   "status": "모집 중",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "Chronic Lymphocytic Leukemia",
-    "Small Lymphocytic Lymphoma"
-   ],
-   "interventions": [
-    "Biospecimen Collection",
-    "Bone Marrow Aspiration",
-    "Bone Marrow Biopsy",
-    "Computed Tomography",
-    "Obinutuzumab",
-    "Questionnaire Administration",
-    "Venetoclax"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2021-03-02",
-   "updated": "2026-11-24"
-  },
-  {
-   "nct": "NCT06340737",
-   "title": "AutologousCD22 Chimeric Antigen Receptor (CAR)T Cells in w/Recurrent/Refractory B Cell Lymphomas",
-   "phase": "Phase 1",
-   "status": "모집 중",
-   "sponsor": "Stanford University",
-   "conditions": [
-    "Follicular Lymphoma",
-    "Mantle Cell Lymphoma",
-    "Hairy Cell Leukemia",
-    "Lymphoplasmacytic Lymphoma"
-   ],
-   "interventions": [
-    "CD22CART Infusion"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2024-03-29",
-   "updated": "2026-11-24"
-  },
-  {
-   "nct": "NCT03824483",
-   "title": "Study of Zanubrutinib, Obinutuzumab, and Venetoclax in Patients With Chronic Lymphocytic Leukemia (CLL) or Small Lymphocytic Leukemia (SLL)",
-   "phase": "Phase 2",
-   "status": "모집 중",
-   "sponsor": "Memorial Sloan Kettering Cancer Center",
-   "conditions": [
-    "Chronic Lymphocytic Leukemia (CLL)",
-    "Small Lymphocytic Leukemia (SLL)"
-   ],
-   "interventions": [
-    "Zanubrutinib",
-    "Obinutuzumab",
-    "Venetoclax"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2019-02-22",
-   "updated": "2026-11-24"
-  },
-  {
-   "nct": "NCT07101328",
-   "title": "A Study of LY4152199 in Participants With Previously Treated B-cell Malignancies (BAF_FRontier-1 )",
-   "phase": "Phase 1",
-   "status": "모집 중",
-   "sponsor": "Eli Lilly and Company",
-   "conditions": [
-    "Lymphoma, Non-Hodgkin",
-    "B-cell Lymphoma",
-    "Lymphoma, Large B-Cell, Diffuse",
-    "Lymphoma, Follicular"
-   ],
-   "interventions": [
-    "LY4152199 - IV"
-   ],
-   "korea": true,
-   "sites": [
-    {
-     "name": "Seoul National University Hospital",
-     "city": "Seoul"
-    },
-    {
-     "name": "Asan Medical Center",
-     "city": "Seoul"
-    }
-   ],
-   "start": "2026-05-28",
-   "updated": "2026-11-24"
-  },
-  {
    "nct": "NCT04840602",
    "title": "Testing the Combination of Venetoclax and Rituximab, in Comparison to the Usual Treatment (Ibrutinib Plus Rituximab or Zanubrutinib Alone) for Waldenstrom's Macroglobulinemia/Lymphoplasmacytic Lymphoma",
    "phase": "Phase 2",
@@ -818,115 +1168,146 @@
    "updated": "2026-11-24"
   },
   {
-   "nct": "NCT05054257",
-   "title": "CART19 Cells Effects in Patients With Relapsed or Refractory Acute Lymphoblastic Leukemia and Non-Hodgkin's Lymphoma",
-   "phase": "Phase 1",
+   "nct": "NCT07145411",
+   "title": "HPC Offered for PRESERVE Expansion",
+   "phase": "",
    "status": "모집 중",
-   "sponsor": "Institute of Hematology and Blood Transfusion, Czech Republic",
+   "sponsor": "Ossium Health, Inc.",
    "conditions": [
-    "Relapsed or Refractory B-cell Acute Lymphoblastic Leukemia",
-    "Non-Hodgkin's Lymphoma Refractory",
-    "Non-Hodgkin's Lymphoma, Relapsed"
+    "Bone Marrow Transplant (BMT)"
    ],
    "interventions": [
-    "Autologous CAR19 T lymphocytes"
+    "Bone Marrow Transplant with Ossium's HPC, Marrow (bone marrow recovered from deceased organ and tissue donors)"
    ],
    "korea": false,
    "sites": [],
-   "start": "2021-06-02",
-   "updated": "2026-11-24"
+   "start": "2024-06-27",
+   "updated": "2026-11-23"
   },
   {
-   "nct": "NCT04545762",
-   "title": "Anti-CD19 Chimeric Antigen Receptor T Cells for Treatment of Relapsed or Refractory Non-Hodgkin Lymphoma",
-   "phase": "Phase 1",
-   "status": "모집 중",
-   "sponsor": "C. Babis Andreadis",
-   "conditions": [
-    "Refractory Non-Hodgkin Lymphoma",
-    "Burkitt Lymphoma",
-    "Mantle Cell Lymphoma",
-    "Follicular Lymphoma"
-   ],
-   "interventions": [
-    "Fludarabine",
-    "Cyclophosphamide",
-    "anti-CD19 CAR-T cells"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2020-09-11",
-   "updated": "2026-11-24"
-  },
-  {
-   "nct": "NCT07724457",
-   "title": "Testing the Addition of a New Anti-Cancer Drug, Glofitamab to Usual Chemotherapy for Burkitt and Double Hit Lymphoma",
-   "phase": "Phase 2/Phase 3",
+   "nct": "NCT03223610",
+   "title": "Venetoclax, Ibrutinib, Prednisone, Obinutuzumab, and Revlimid (ViPOR) in Relapsed/Refractory B-cell Lymphoma",
+   "phase": "Phase 1/Phase 2",
    "status": "모집 중",
    "sponsor": "National Cancer Institute (NCI)",
    "conditions": [
-    "Recurrent Burkitt Lymphoma",
-    "Recurrent High Grade B-Cell Lymphoma With MYC and BCL2 Rearrangements",
-    "Refractory Burkitt Lymphoma",
-    "Refractory High Grade B-Cell Lymphoma With MYC and BCL2 Rearrangements"
+    "Lymphoma",
+    "Non-Hodgkin Lymphoma",
+    "Diffuse Large B-Cell Lymphoma",
+    "Burkitt Lymphoma"
    ],
    "interventions": [
-    "Biospecimen Collection",
-    "Bone Marrow Biopsy",
-    "Carboplatin",
-    "Computed Tomography",
-    "Cyclophosphamide",
-    "Cytarabine",
-    "Doxorubicin",
-    "Etoposide",
-    "Glofitamab",
-    "Ifosfamide",
-    "Lumbar Puncture",
-    "Magnetic Resonance Imaging",
-    "Methotrexate",
-    "Obinutuzumab",
-    "Positron Emission Tomography",
+    "Venetoclax",
+    "Ibrutinib",
     "Prednisone",
-    "Rituximab",
-    "Rituximab and Hyaluronidase Human",
-    "Survey Administration",
-    "Vincristine"
+    "Obinutuzumab",
+    "Revlimid (lenalidomide)"
    ],
    "korea": false,
    "sites": [],
-   "start": "2027-07-27",
-   "updated": "2026-11-24"
+   "start": "2018-02-09",
+   "updated": "2026-11-23"
   },
   {
-   "nct": "NCT05139017",
-   "title": "A Study of Zilovertamab Vedotin (MK-2140) in Combination With Standard of Care in Participants With Relapsed or Refractory Diffuse Large B-Cell Lymphoma (rrDLBCL) (MK-2140-003)",
+   "nct": "NCT07570173",
+   "title": "A Clinical Trial of MK-1045 in People With B-cell Acute Lymphoblastic Leukemia (MK-1045-005)",
    "phase": "Phase 2/Phase 3",
    "status": "모집 중",
    "sponsor": "Merck Sharp & Dohme LLC",
    "conditions": [
-    "DLBCL",
-    "Diffuse Large B-Cell Lymphoma"
+    "B-cell Acute Lymphoblastic Leukemia"
    ],
    "interventions": [
-    "Zilovertamab vedotin",
-    "Rituximab",
-    "Gemcitabine",
-    "Oxaliplatin",
-    "Bendamustine",
-    "Granulocyte Colony-Stimulating Factor (G-CSF)"
+    "MK-1045",
+    "Blinatumomab",
+    "Acetaminophen",
+    "Diphenhydramine",
+    "Dexamethasone",
+    "Tocilizumab",
+    "Siltuximab",
+    "Avtozma",
+    "Tyenne"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2026-05-18",
+   "updated": "2026-11-23"
+  },
+  {
+   "nct": "NCT02682667",
+   "title": "Biospecimen Procurement for Center for Immuno-Oncology Immunotherapy Protocols",
+   "phase": "",
+   "status": "모집 중",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Multiple Myeloma",
+    "Lymphoma, Non-Hodgkin",
+    "Leukemia-Lymphoma, Adult T-Cell",
+    "Hodgkin Disease"
+   ],
+   "interventions": [],
+   "korea": false,
+   "sites": [],
+   "start": "2016-04-11",
+   "updated": "2026-11-23"
+  },
+  {
+   "nct": "NCT05254743",
+   "title": "A Study of Pirtobrutinib (LOXO-305) Versus Ibrutinib in Participants With Chronic Lymphocytic Leukemia (CLL)/Small Lymphocytic Lymphoma (SLL)",
+   "phase": "Phase 3",
+   "status": "모집 중",
+   "sponsor": "Loxo Oncology, Inc.",
+   "conditions": [
+    "Chronic Lymphocytic Leukemia",
+    "Leukemia, Lymphocytic",
+    "Leukemia, B-cell",
+    "Small Lymphocytic Lymphoma"
+   ],
+   "interventions": [
+    "Pirtobrutinib",
+    "Ibrutinib"
    ],
    "korea": true,
    "sites": [
     {
-     "name": "Seoul National University Hospital-Oncology ( Site 0302)",
+     "name": "Inje Univ Busan Paik Hospital",
+     "city": "Busan"
+    },
+    {
+     "name": "The Catholic University of Korea-Seoul St. Mary's Hospital",
+     "city": "Seocho-Gu"
+    },
+    {
+     "name": "Seoul National University Hospital",
      "city": "Seoul"
     },
     {
-     "name": "Samsung Medical Center ( Site 0300)",
+     "name": "Samsung Medical Center",
      "city": "Seoul"
     }
    ],
-   "start": "2022-01-14",
+   "start": "2022-07-22",
+   "updated": "2026-11-23"
+  },
+  {
+   "nct": "NCT04065399",
+   "title": "A Study of Revumenib in R/R Leukemias Including Those With an MLL/KMT2A Gene Rearrangement or NPM1 Mutation",
+   "phase": "Phase 1/Phase 2",
+   "status": "모집 중",
+   "sponsor": "Syndax Pharmaceuticals",
+   "conditions": [
+    "Acute Myeloid Leukemia",
+    "Acute Lymphoblastic Leukemia",
+    "Mixed Lineage Acute Leukemia",
+    "Mixed Phenotype Acute Leukemia"
+   ],
+   "interventions": [
+    "revumenib",
+    "cobicistat"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2019-11-05",
    "updated": "2026-11-23"
   },
   {
@@ -960,21 +1341,111 @@
    "updated": "2026-11-23"
   },
   {
-   "nct": "NCT02682667",
-   "title": "Biospecimen Procurement for Center for Immuno-Oncology Immunotherapy Protocols",
+   "nct": "NCT07003295",
+   "title": "Testing the Anti-cancer Drug, Glofitamab, in Patients With Mantle Cell Lymphoma (A Type of Blood Cancer) Whose Disease Returned After CAR-T Cell Therapy",
+   "phase": "Phase 2",
+   "status": "모집 중",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Recurrent Mantle Cell Lymphoma",
+    "Refractory Mantle Cell Lymphoma"
+   ],
+   "interventions": [
+    "Biospecimen Collection",
+    "Computed Tomography",
+    "Glofitamab",
+    "Obinutuzumab",
+    "Positron Emission Tomography"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2026-07-08",
+   "updated": "2026-11-23"
+  },
+  {
+   "nct": "NCT05527275",
+   "title": "A Phase I/II Study of Mitoxantrone Liposome Combined With Chidamide in Relapsed/Refractory Peripheral T-cell Lymphoma",
+   "phase": "Phase 1/Phase 2",
+   "status": "모집 중",
+   "sponsor": "Sun Yat-sen University",
+   "conditions": [
+    "Relapsed and Refractory Peripheral T-cell Lymphoma"
+   ],
+   "interventions": [
+    "Mitoxantrone liposome combine with Chidamide"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2022-10-01",
+   "updated": "2026-11-23"
+  },
+  {
+   "nct": "NCT03297606",
+   "title": "Canadian Profiling and Targeted Agent Utilization Trial",
+   "phase": "Phase 2",
+   "status": "모집 중",
+   "sponsor": "Canadian Cancer Trials Group",
+   "conditions": [
+    "Lymphoma, Non-Hodgkin",
+    "Multiple Myeloma",
+    "Advanced Solid Tumors"
+   ],
+   "interventions": [
+    "Olaparib",
+    "Dasatinib",
+    "Nivolumab plus Ipilimumab",
+    "Axitinib",
+    "Bosutinib",
+    "Crizotinib",
+    "Palbociclib",
+    "Sunitinib",
+    "Temsirolimus",
+    "Erlotinib",
+    "Trastuzumab plus Pertuzumab",
+    "Vemurafenib plus Cobimetinib",
+    "Vismodegib",
+    "Tucatinib"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2018-03-23",
+   "updated": "2026-11-23"
+  },
+  {
+   "nct": "NCT00006518",
+   "title": "Specimen Collections From Participants With HIV Infection, KSHV Infection, Viral-Related Pre-malignant Lesions and Cancer",
    "phase": "",
    "status": "모집 중",
    "sponsor": "National Cancer Institute (NCI)",
    "conditions": [
-    "Multiple Myeloma",
-    "Lymphoma, Non-Hodgkin",
-    "Leukemia-Lymphoma, Adult T-Cell",
-    "Hodgkin Disease"
+    "HIV",
+    "Kaposi's Sarcoma",
+    "Lymphomas",
+    "Multicentric Castleman's Disease"
    ],
    "interventions": [],
    "korea": false,
    "sites": [],
-   "start": "2016-04-11",
+   "start": "2000-12-06",
+   "updated": "2026-11-23"
+  },
+  {
+   "nct": "NCT05998642",
+   "title": "Ibrutinib in Transplant-Ineligible Individuals With Newly Diagnosed Primary CNS Lymphoma",
+   "phase": "Phase 2",
+   "status": "모집 중",
+   "sponsor": "Canadian Cancer Trials Group",
+   "conditions": [
+    "Non-hodgkin Lymphoma"
+   ],
+   "interventions": [
+    "Methotrexate",
+    "Rituximab (where available)",
+    "Ibrutinib"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2024-02-13",
    "updated": "2026-11-23"
   },
   {
@@ -1022,6 +1493,57 @@
    "updated": "2026-11-23"
   },
   {
+   "nct": "NCT07341191",
+   "title": "Sonrotoclax Plus Zanubrutinib in Relapsed/Refractory Mantle Cell Lymphoma Planned for Standard-of-Care CAR-T Cell Therapy",
+   "phase": "Phase 2",
+   "status": "모집 중",
+   "sponsor": "Canadian Cancer Trials Group",
+   "conditions": [
+    "Mantle Cell Lymphoma"
+   ],
+   "interventions": [
+    "Zanubrutinib",
+    "Sonrotoclax",
+    "CAR-T Cell Therapy"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2026-08-24",
+   "updated": "2026-11-23"
+  },
+  {
+   "nct": "NCT05139017",
+   "title": "A Study of Zilovertamab Vedotin (MK-2140) in Combination With Standard of Care in Participants With Relapsed or Refractory Diffuse Large B-Cell Lymphoma (rrDLBCL) (MK-2140-003)",
+   "phase": "Phase 2/Phase 3",
+   "status": "모집 중",
+   "sponsor": "Merck Sharp & Dohme LLC",
+   "conditions": [
+    "DLBCL",
+    "Diffuse Large B-Cell Lymphoma"
+   ],
+   "interventions": [
+    "Zilovertamab vedotin",
+    "Rituximab",
+    "Gemcitabine",
+    "Oxaliplatin",
+    "Bendamustine",
+    "Granulocyte Colony-Stimulating Factor (G-CSF)"
+   ],
+   "korea": true,
+   "sites": [
+    {
+     "name": "Seoul National University Hospital-Oncology ( Site 0302)",
+     "city": "Seoul"
+    },
+    {
+     "name": "Samsung Medical Center ( Site 0300)",
+     "city": "Seoul"
+    }
+   ],
+   "start": "2022-01-14",
+   "updated": "2026-11-23"
+  },
+  {
    "nct": "NCT04902443",
    "title": "Pomalidomide and Nivolumab in People With Virus-Associated Malignancies With or Without HIV",
    "phase": "Phase 1",
@@ -1042,294 +1564,58 @@
    "updated": "2026-11-23"
   },
   {
-   "nct": "NCT05254743",
-   "title": "A Study of Pirtobrutinib (LOXO-305) Versus Ibrutinib in Participants With Chronic Lymphocytic Leukemia (CLL)/Small Lymphocytic Lymphoma (SLL)",
+   "nct": "NCT07057765",
+   "title": "Predictive Value of CRP, Albumin, CAR, and mGPS in Treatment Outcomes of DLBCL",
+   "phase": "",
+   "status": "모집 중",
+   "sponsor": "Ain Shams University",
+   "conditions": [
+    "DLBCL - Diffuse Large B Cell Lymphoma",
+    "Markers of Inflammation"
+   ],
+   "interventions": [
+    "Observational Assessment of Standard R-CHOP Treatment"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2025-05-05",
+   "updated": "2026-11-20"
+  },
+  {
+   "nct": "NCT07104032",
+   "title": "IGNITE: Study of Tirabrutinib vs Rituximab and Temozolomide for Relapsed/Refractory Primary Central Nervous System Lymphoma (PCNSL)",
    "phase": "Phase 3",
    "status": "모집 중",
-   "sponsor": "Loxo Oncology, Inc.",
+   "sponsor": "Ono Pharmaceutical Co., Ltd.",
    "conditions": [
-    "Chronic Lymphocytic Leukemia",
-    "Leukemia, Lymphocytic",
-    "Leukemia, B-cell",
-    "Small Lymphocytic Lymphoma"
+    "Relapsed/Refractory Primary Central Nervous System Lymphoma"
    ],
    "interventions": [
-    "Pirtobrutinib",
-    "Ibrutinib"
+    "Tirabrutinib",
+    "Rituximab",
+    "Temozolomide"
    ],
-   "korea": true,
-   "sites": [
-    {
-     "name": "Inje Univ Busan Paik Hospital",
-     "city": "Busan"
-    },
-    {
-     "name": "The Catholic University of Korea-Seoul St. Mary's Hospital",
-     "city": "Seocho-Gu"
-    },
-    {
-     "name": "Seoul National University Hospital",
-     "city": "Seoul"
-    },
-    {
-     "name": "Samsung Medical Center",
-     "city": "Seoul"
-    }
-   ],
-   "start": "2022-07-22",
-   "updated": "2026-11-23"
+   "korea": false,
+   "sites": [],
+   "start": "2026-06-12",
+   "updated": "2026-11-20"
   },
   {
-   "nct": "NCT03223610",
-   "title": "Venetoclax, Ibrutinib, Prednisone, Obinutuzumab, and Revlimid (ViPOR) in Relapsed/Refractory B-cell Lymphoma",
-   "phase": "Phase 1/Phase 2",
+   "nct": "NCT07140016",
+   "title": "A Study of Gilteritinib in Adults With Advanced ALK-positive Non-small Cell Lung Cancer (NSCLC)",
+   "phase": "Phase 1",
    "status": "모집 중",
-   "sponsor": "National Cancer Institute (NCI)",
+   "sponsor": "Astellas Pharma Global Development, Inc.",
    "conditions": [
-    "Lymphoma",
-    "Non-Hodgkin Lymphoma",
-    "Diffuse Large B-Cell Lymphoma",
-    "Burkitt Lymphoma"
+    "Non-small Cell Lung Cancer (NSCLC)",
+    "Anaplastic Lymphoma Kinase (ALK) Positive"
    ],
    "interventions": [
-    "Venetoclax",
-    "Ibrutinib",
-    "Prednisone",
-    "Obinutuzumab",
-    "Revlimid (lenalidomide)"
+    "gilteritinib"
    ],
    "korea": false,
    "sites": [],
-   "start": "2018-02-09",
-   "updated": "2026-11-23"
-  },
-  {
-   "nct": "NCT04065399",
-   "title": "A Study of Revumenib in R/R Leukemias Including Those With an MLL/KMT2A Gene Rearrangement or NPM1 Mutation",
-   "phase": "Phase 1/Phase 2",
-   "status": "모집 중",
-   "sponsor": "Syndax Pharmaceuticals",
-   "conditions": [
-    "Acute Myeloid Leukemia",
-    "Acute Lymphoblastic Leukemia",
-    "Mixed Lineage Acute Leukemia",
-    "Mixed Phenotype Acute Leukemia"
-   ],
-   "interventions": [
-    "revumenib",
-    "cobicistat"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2019-11-05",
-   "updated": "2026-11-23"
-  },
-  {
-   "nct": "NCT07342478",
-   "title": "ROCKET-CLL Global Phase 3 Study: Rocbrutinib vs Pirtobrutinib in cBTKi-Pretreated R/R CLL/SLL",
-   "phase": "Phase 3",
-   "status": "모집 중",
-   "sponsor": "Newave Pharmaceutical Inc",
-   "conditions": [
-    "CLL / SLL",
-    "CLL (Chronic Lymphocytic Leukemia)",
-    "CLL, Refractory",
-    "CLL, Relapsed"
-   ],
-   "interventions": [
-    "Rocbrutinib",
-    "Pirtobrutinib"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2026-04-23",
-   "updated": "2026-11-23"
-  },
-  {
-   "nct": "NCT05527275",
-   "title": "A Phase I/II Study of Mitoxantrone Liposome Combined With Chidamide in Relapsed/Refractory Peripheral T-cell Lymphoma",
-   "phase": "Phase 1/Phase 2",
-   "status": "모집 중",
-   "sponsor": "Sun Yat-sen University",
-   "conditions": [
-    "Relapsed and Refractory Peripheral T-cell Lymphoma"
-   ],
-   "interventions": [
-    "Mitoxantrone liposome combine with Chidamide"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2022-10-01",
-   "updated": "2026-11-23"
-  },
-  {
-   "nct": "NCT07145411",
-   "title": "HPC Offered for PRESERVE Expansion",
-   "phase": "",
-   "status": "모집 중",
-   "sponsor": "Ossium Health, Inc.",
-   "conditions": [
-    "Bone Marrow Transplant (BMT)"
-   ],
-   "interventions": [
-    "Bone Marrow Transplant with Ossium's HPC, Marrow (bone marrow recovered from deceased organ and tissue donors)"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2024-06-27",
-   "updated": "2026-11-23"
-  },
-  {
-   "nct": "NCT07341191",
-   "title": "Sonrotoclax Plus Zanubrutinib in Relapsed/Refractory Mantle Cell Lymphoma Planned for Standard-of-Care CAR-T Cell Therapy",
-   "phase": "Phase 2",
-   "status": "모집 중",
-   "sponsor": "Canadian Cancer Trials Group",
-   "conditions": [
-    "Mantle Cell Lymphoma"
-   ],
-   "interventions": [
-    "Zanubrutinib",
-    "Sonrotoclax",
-    "CAR-T Cell Therapy"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2026-08-24",
-   "updated": "2026-11-23"
-  },
-  {
-   "nct": "NCT03297606",
-   "title": "Canadian Profiling and Targeted Agent Utilization Trial",
-   "phase": "Phase 2",
-   "status": "모집 중",
-   "sponsor": "Canadian Cancer Trials Group",
-   "conditions": [
-    "Lymphoma, Non-Hodgkin",
-    "Multiple Myeloma",
-    "Advanced Solid Tumors"
-   ],
-   "interventions": [
-    "Olaparib",
-    "Dasatinib",
-    "Nivolumab plus Ipilimumab",
-    "Axitinib",
-    "Bosutinib",
-    "Crizotinib",
-    "Palbociclib",
-    "Sunitinib",
-    "Temsirolimus",
-    "Erlotinib",
-    "Trastuzumab plus Pertuzumab",
-    "Vemurafenib plus Cobimetinib",
-    "Vismodegib",
-    "Tucatinib"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2018-03-23",
-   "updated": "2026-11-23"
-  },
-  {
-   "nct": "NCT05998642",
-   "title": "Ibrutinib in Transplant-Ineligible Individuals With Newly Diagnosed Primary CNS Lymphoma",
-   "phase": "Phase 2",
-   "status": "모집 중",
-   "sponsor": "Canadian Cancer Trials Group",
-   "conditions": [
-    "Non-hodgkin Lymphoma"
-   ],
-   "interventions": [
-    "Methotrexate",
-    "Rituximab (where available)",
-    "Ibrutinib"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2024-02-13",
-   "updated": "2026-11-23"
-  },
-  {
-   "nct": "NCT00006518",
-   "title": "Specimen Collections From Participants With HIV Infection, KSHV Infection, Viral-Related Pre-malignant Lesions and Cancer",
-   "phase": "",
-   "status": "모집 중",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "HIV",
-    "Kaposi's Sarcoma",
-    "Lymphomas",
-    "Multicentric Castleman's Disease"
-   ],
-   "interventions": [],
-   "korea": false,
-   "sites": [],
-   "start": "2000-12-06",
-   "updated": "2026-11-23"
-  },
-  {
-   "nct": "NCT07003295",
-   "title": "Testing the Anti-cancer Drug, Glofitamab, in Patients With Mantle Cell Lymphoma (A Type of Blood Cancer) Whose Disease Returned After CAR-T Cell Therapy",
-   "phase": "Phase 2",
-   "status": "모집 중",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "Recurrent Mantle Cell Lymphoma",
-    "Refractory Mantle Cell Lymphoma"
-   ],
-   "interventions": [
-    "Biospecimen Collection",
-    "Computed Tomography",
-    "Glofitamab",
-    "Obinutuzumab",
-    "Positron Emission Tomography"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2026-07-08",
-   "updated": "2026-11-23"
-  },
-  {
-   "nct": "NCT07570173",
-   "title": "A Clinical Trial of MK-1045 in People With B-cell Acute Lymphoblastic Leukemia (MK-1045-005)",
-   "phase": "Phase 2/Phase 3",
-   "status": "모집 중",
-   "sponsor": "Merck Sharp & Dohme LLC",
-   "conditions": [
-    "B-cell Acute Lymphoblastic Leukemia"
-   ],
-   "interventions": [
-    "MK-1045",
-    "Blinatumomab",
-    "Acetaminophen",
-    "Diphenhydramine",
-    "Dexamethasone",
-    "Tocilizumab",
-    "Siltuximab",
-    "Avtozma",
-    "Tyenne"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2026-05-18",
-   "updated": "2026-11-23"
-  },
-  {
-   "nct": "NCT01087333",
-   "title": "Collection of Human Samples to Study Hairy Cell and Other Leukemias, and to Develop Recombinant Immunotoxins for Cancer Treatment",
-   "phase": "",
-   "status": "모집 중",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "Hairy Cell Leukemia (HCL)",
-    "Chronic Lymphocytic Leukemia (CLL)",
-    "Non-Hodgkins Lymphoma (NHL)",
-    "Cutaneous T Cell Lymphoma (CTCL)"
-   ],
-   "interventions": [],
-   "korea": false,
-   "sites": [],
-   "start": "2010-03-02",
+   "start": "2025-09-22",
    "updated": "2026-11-20"
   },
   {
@@ -1351,43 +1637,6 @@
    "korea": false,
    "sites": [],
    "start": "2026-07-22",
-   "updated": "2026-11-20"
-  },
-  {
-   "nct": "NCT06393738",
-   "title": "A Study of ARV-393 in Relapsed/Refractory Non-Hodgkin Lymphoma.",
-   "phase": "Phase 1",
-   "status": "모집 중",
-   "sponsor": "Arvinas Inc.",
-   "conditions": [
-    "Relapsed/Refractory (R/R) Mature B Cell Non Hodgkin Lymphoma (NHL)",
-    "Relapsed/Refractory (R/R) Angioimmunoblastic T-cell Lymphoma (AITL)"
-   ],
-   "interventions": [
-    "ARV-393",
-    "Glofitamab"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2024-09-05",
-   "updated": "2026-11-20"
-  },
-  {
-   "nct": "NCT07586618",
-   "title": "First-in-human Study of a New Treatment (4A10) for Patients With Relapsed or Hard-to-treat Acute Lymphoblastic Leukemia or Lymphoblastic Lymphoma, Focused on Safety and How the Drug Behaves in the Body and Early Signs of Effect.",
-   "phase": "Phase 1",
-   "status": "모집 중",
-   "sponsor": "Allterum Therapeutics, Inc",
-   "conditions": [
-    "Lymphoblastic Lymphoma",
-    "Acute Lymphoblastic Leukemia ALL"
-   ],
-   "interventions": [
-    "4A10"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2026-06-01",
    "updated": "2026-11-20"
   },
   {
@@ -1414,23 +1663,40 @@
    "updated": "2026-11-20"
   },
   {
-   "nct": "NCT03394365",
-   "title": "A Phase 3 Study of Tabelecleucel for Participants With Epstein-Barr Virus-Associated Post-Transplant Lymphoproliferative Disease After Failure With Rituximab or Rituximab and Chemotherapy",
-   "phase": "Phase 3",
+   "nct": "NCT06393738",
+   "title": "A Study of ARV-393 in Relapsed/Refractory Non-Hodgkin Lymphoma.",
+   "phase": "Phase 1",
    "status": "모집 중",
-   "sponsor": "Pierre Fabre Medicament",
+   "sponsor": "Arvinas Inc.",
    "conditions": [
-    "Epstein-Barr Virus+ Associated Post-transplant Lymphoproliferative Disease (EBV+ PTLD)",
-    "Solid Organ Transplant Complications",
-    "Lymphoproliferative Disorders",
-    "Allogeneic Hematopoietic Cell Transplant"
+    "Relapsed/Refractory (R/R) Mature B Cell Non Hodgkin Lymphoma (NHL)",
+    "Relapsed/Refractory (R/R) Angioimmunoblastic T-cell Lymphoma (AITL)"
    ],
    "interventions": [
-    "tabelecleucel"
+    "ARV-393",
+    "Glofitamab"
    ],
    "korea": false,
    "sites": [],
-   "start": "2017-12-29",
+   "start": "2024-09-05",
+   "updated": "2026-11-20"
+  },
+  {
+   "nct": "NCT01087333",
+   "title": "Collection of Human Samples to Study Hairy Cell and Other Leukemias, and to Develop Recombinant Immunotoxins for Cancer Treatment",
+   "phase": "",
+   "status": "모집 중",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Hairy Cell Leukemia (HCL)",
+    "Chronic Lymphocytic Leukemia (CLL)",
+    "Non-Hodgkins Lymphoma (NHL)",
+    "Cutaneous T Cell Lymphoma (CTCL)"
+   ],
+   "interventions": [],
+   "korea": false,
+   "sites": [],
+   "start": "2010-03-02",
    "updated": "2026-11-20"
   },
   {
@@ -1454,81 +1720,41 @@
    "updated": "2026-11-20"
   },
   {
-   "nct": "NCT07057765",
-   "title": "Predictive Value of CRP, Albumin, CAR, and mGPS in Treatment Outcomes of DLBCL",
-   "phase": "",
-   "status": "모집 중",
-   "sponsor": "Ain Shams University",
-   "conditions": [
-    "DLBCL - Diffuse Large B Cell Lymphoma",
-    "Markers of Inflammation"
-   ],
-   "interventions": [
-    "Observational Assessment of Standard R-CHOP Treatment"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2025-05-05",
-   "updated": "2026-11-20"
-  },
-  {
-   "nct": "NCT07140016",
-   "title": "A Study of Gilteritinib in Adults With Advanced ALK-positive Non-small Cell Lung Cancer (NSCLC)",
-   "phase": "Phase 1",
-   "status": "모집 중",
-   "sponsor": "Astellas Pharma Global Development, Inc.",
-   "conditions": [
-    "Non-small Cell Lung Cancer (NSCLC)",
-    "Anaplastic Lymphoma Kinase (ALK) Positive"
-   ],
-   "interventions": [
-    "gilteritinib"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2025-09-22",
-   "updated": "2026-11-20",
-   "title_ko": "진행성 ALK 양성 비소세포폐암(NSCLC) 성인을 대상으로 한 길테리티닙에 대한 연구"
-  },
-  {
-   "nct": "NCT07104032",
-   "title": "IGNITE: Study of Tirabrutinib vs Rituximab and Temozolomide for Relapsed/Refractory Primary Central Nervous System Lymphoma (PCNSL)",
+   "nct": "NCT03394365",
+   "title": "A Phase 3 Study of Tabelecleucel for Participants With Epstein-Barr Virus-Associated Post-Transplant Lymphoproliferative Disease After Failure With Rituximab or Rituximab and Chemotherapy",
    "phase": "Phase 3",
    "status": "모집 중",
-   "sponsor": "Ono Pharmaceutical Co., Ltd.",
+   "sponsor": "Pierre Fabre Medicament",
    "conditions": [
-    "Relapsed/Refractory Primary Central Nervous System Lymphoma"
+    "Epstein-Barr Virus+ Associated Post-transplant Lymphoproliferative Disease (EBV+ PTLD)",
+    "Solid Organ Transplant Complications",
+    "Lymphoproliferative Disorders",
+    "Allogeneic Hematopoietic Cell Transplant"
    ],
    "interventions": [
-    "Tirabrutinib",
-    "Rituximab",
-    "Temozolomide"
+    "tabelecleucel"
    ],
    "korea": false,
    "sites": [],
-   "start": "2026-06-12",
+   "start": "2017-12-29",
    "updated": "2026-11-20"
   },
   {
-   "nct": "NCT05358379",
-   "title": "A Study to Investigate THT140, in Subjects With Advanced Solid Tumors and Lymphoma",
-   "phase": "Phase 1/Phase 2",
+   "nct": "NCT07586618",
+   "title": "First-in-human Study of a New Treatment (4A10) for Patients With Relapsed or Hard-to-treat Acute Lymphoblastic Leukemia or Lymphoblastic Lymphoma, Focused on Safety and How the Drug Behaves in the Body and Early Signs of Effect.",
+   "phase": "Phase 1",
    "status": "모집 중",
-   "sponsor": "Tethra Biosciences Inc.",
+   "sponsor": "Allterum Therapeutics, Inc",
    "conditions": [
-    "Solid Tumor, Adult Lymphoma"
+    "Lymphoblastic Lymphoma",
+    "Acute Lymphoblastic Leukemia ALL"
    ],
    "interventions": [
-    "THT140"
+    "4A10"
    ],
-   "korea": true,
-   "sites": [
-    {
-     "name": "Seoul National University Hospital",
-     "city": "Seoul"
-    }
-   ],
-   "start": "2022-04-14",
+   "korea": false,
+   "sites": [],
+   "start": "2026-06-01",
    "updated": "2026-11-20"
   },
   {
@@ -1549,55 +1775,6 @@
    "korea": false,
    "sites": [],
    "start": "2022-04-18",
-   "updated": "2026-11-19"
-  },
-  {
-   "nct": "NCT05890352",
-   "title": "Study Adding Drugs to Usual Treatment for Large B-Cell Lymphoma That Returned or Did Not Respond to Treatment",
-   "phase": "Phase 2",
-   "status": "모집 중",
-   "sponsor": "SWOG Cancer Research Network",
-   "conditions": [
-    "Grade 3b Follicular Lymphoma",
-    "High Grade B-Cell Lymphoma",
-    "High Grade B-Cell Lymphoma With MYC and BCL2 and/or BCL6 Rearrangements",
-    "Recurrent Diffuse Large B-Cell Lymphoma"
-   ],
-   "interventions": [
-    "Biospecimen Collection",
-    "Computed Tomography",
-    "Lenalidomide",
-    "Magnetic Resonance Imaging",
-    "Positron Emission Tomography",
-    "Quality-of-Life Assessment",
-    "Questionnaire Administration",
-    "Tafasitamab",
-    "Tazemetostat",
-    "Zanubrutinib"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2023-09-26",
-   "updated": "2026-11-19"
-  },
-  {
-   "nct": "NCT07948733",
-   "title": "First in Human Study of a Dual Targeting CD20 and CD19 CAR T Cell Treatment for Patients With B Cell Blood Cancers That Have Returned or Not Responded to Treatment",
-   "phase": "Phase 1",
-   "status": "모집 중",
-   "sponsor": "Cellogen Therapeutics Pvt. Ltd.",
-   "conditions": [
-    "B-Cell Non-Hodgkin Lymphoma (NHL)",
-    "B-cell Acute Lymphoblastic Leukemia (B-ALL)"
-   ],
-   "interventions": [
-    "Autologous bispecific CD20/CD19 CAR-T cells - 1 × 10⁶ cells/kg",
-    "Autologous bispecific CD20/CD19 CAR-T cells - 2 × 10⁶ cells/kg",
-    "Autologous bispecific CD20/CD19 CAR-T cells - 4 × 10⁶ cells/kg"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2026-10-26",
    "updated": "2026-11-19"
   },
   {
@@ -1631,23 +1808,58 @@
    "updated": "2026-11-19"
   },
   {
-   "nct": "NCT06678659",
-   "title": "A Study of REC-1245 in Participants With Unresectable, Locally Advanced, or Metastatic Cancer",
-   "phase": "Phase 1/Phase 2",
+   "nct": "NCT05890352",
+   "title": "Study Adding Drugs to Usual Treatment for Large B-Cell Lymphoma That Returned or Did Not Respond to Treatment",
+   "phase": "Phase 2",
    "status": "모집 중",
-   "sponsor": "Recursion Pharmaceuticals Inc.",
+   "sponsor": "SWOG Cancer Research Network",
    "conditions": [
-    "Unresectable",
-    "Locally Advanced",
-    "Metastatic Cancers",
-    "Relapsed/Refractory Lymphomas"
+    "Grade 3b Follicular Lymphoma",
+    "High Grade B-Cell Lymphoma",
+    "High Grade B-Cell Lymphoma With MYC and BCL2 and/or BCL6 Rearrangements",
+    "Recurrent Diffuse Large B-Cell Lymphoma"
    ],
    "interventions": [
-    "REC-1245"
+    "Biospecimen Collection",
+    "Computed Tomography",
+    "Lenalidomide",
+    "Magnetic Resonance Imaging",
+    "Positron Emission Tomography",
+    "Quality-of-Life Assessment",
+    "Questionnaire Administration",
+    "Tafasitamab",
+    "Tazemetostat",
+    "Zanubrutinib"
    ],
    "korea": false,
    "sites": [],
-   "start": "2024-11-21",
+   "start": "2023-09-26",
+   "updated": "2026-11-19"
+  },
+  {
+   "nct": "NCT03823534",
+   "title": "Post-Op Pain Control for Prophylactic Intramedullary Nailing.",
+   "phase": "Phase 3",
+   "status": "모집 중",
+   "sponsor": "St. Louis University",
+   "conditions": [
+    "Bone Metastases",
+    "Lymphoma",
+    "Multiple Myeloma",
+    "Opioid Use"
+   ],
+   "interventions": [
+    "Ketorolac",
+    "Normal saline",
+    "Acetaminophen",
+    "Oxycodone Acetaminophen",
+    "Morphine",
+    "Hydrocodone/Acetaminophen",
+    "Oxycodone"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2019-02-20",
    "updated": "2026-11-19"
   },
   {
@@ -1682,33 +1894,46 @@
    "korea": false,
    "sites": [],
    "start": "2021-01-25",
-   "updated": "2026-11-19",
-   "title_ko": "혈액암 치료를 위한 Treosulfan, Fludarabine 및 전신 방사선 조사를 이용한 기증자 줄기 세포 이식"
+   "updated": "2026-11-19"
   },
   {
-   "nct": "NCT03823534",
-   "title": "Post-Op Pain Control for Prophylactic Intramedullary Nailing.",
-   "phase": "Phase 3",
+   "nct": "NCT07948733",
+   "title": "First in Human Study of a Dual Targeting CD20 and CD19 CAR T Cell Treatment for Patients With B Cell Blood Cancers That Have Returned or Not Responded to Treatment",
+   "phase": "Phase 1",
    "status": "모집 중",
-   "sponsor": "St. Louis University",
+   "sponsor": "Cellogen Therapeutics Pvt. Ltd.",
    "conditions": [
-    "Bone Metastases",
-    "Lymphoma",
-    "Multiple Myeloma",
-    "Opioid Use"
+    "B-Cell Non-Hodgkin Lymphoma (NHL)",
+    "B-cell Acute Lymphoblastic Leukemia (B-ALL)"
    ],
    "interventions": [
-    "Ketorolac",
-    "Normal saline",
-    "Acetaminophen",
-    "Oxycodone Acetaminophen",
-    "Morphine",
-    "Hydrocodone/Acetaminophen",
-    "Oxycodone"
+    "Autologous bispecific CD20/CD19 CAR-T cells - 1 × 10⁶ cells/kg",
+    "Autologous bispecific CD20/CD19 CAR-T cells - 2 × 10⁶ cells/kg",
+    "Autologous bispecific CD20/CD19 CAR-T cells - 4 × 10⁶ cells/kg"
    ],
    "korea": false,
    "sites": [],
-   "start": "2019-02-20",
+   "start": "2026-10-26",
+   "updated": "2026-11-19"
+  },
+  {
+   "nct": "NCT06678659",
+   "title": "A Study of REC-1245 in Participants With Unresectable, Locally Advanced, or Metastatic Cancer",
+   "phase": "Phase 1/Phase 2",
+   "status": "모집 중",
+   "sponsor": "Recursion Pharmaceuticals Inc.",
+   "conditions": [
+    "Unresectable",
+    "Locally Advanced",
+    "Metastatic Cancers",
+    "Relapsed/Refractory Lymphomas"
+   ],
+   "interventions": [
+    "REC-1245"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2024-11-21",
    "updated": "2026-11-19"
   },
   {
@@ -1735,60 +1960,45 @@
    "korea": false,
    "sites": [],
    "start": "2026-12",
-   "updated": "2026-11-19",
-   "title_ko": "원격 타액 수집의 타당성 및 수용성"
+   "updated": "2026-11-19"
   },
   {
-   "nct": "NCT07002216",
-   "title": "BrECADD Therapy in Stage 2 B-IV Hodgkin Lymphoma",
-   "phase": "Phase 2",
+   "nct": "NCT05296304",
+   "title": "A Study of Bexarotene Combined With Radiotherapy in People With Mycosis Fungoides",
+   "phase": "Phase 1",
    "status": "모집 중",
-   "sponsor": "University of Miami",
+   "sponsor": "Memorial Sloan Kettering Cancer Center",
    "conditions": [
-    "Hodgkin Lymphoma",
-    "Advanced Hodgkin Lymphoma"
+    "Cutaneous T-cell Lymphoma"
    ],
    "interventions": [
-    "Brentuximab Vedotin",
-    "Etoposide",
-    "Cyclophosphamide",
-    "Doxorubicin",
-    "Dacarbazine",
-    "Dexamethasone"
+    "Bexarotene",
+    "Total Skin Electron Beam (TSEB)"
    ],
    "korea": false,
    "sites": [],
-   "start": "2025-07-15",
-   "updated": "2026-11-18",
-   "title_ko": "2기 B-IV 호지킨 림프종의 BrECADD 요법"
+   "start": "2022-03-16",
+   "updated": "2026-11-18"
   },
   {
-   "nct": "NCT07892027",
-   "title": "Natalizumab for the Prevention of ICANS in Patients With Recurrent or Refractory Diffuse Large B-Cell Lymphoma or Mantle Cell Lymphoma Receiving CAR T-Cell Therapy",
-   "phase": "Phase 2",
+   "nct": "NCT07945470",
+   "title": "Simulation-Free Single-Fraction Radiation Therapy for Indolent Lymphoma",
+   "phase": "",
    "status": "모집 중",
-   "sponsor": "University of Michigan Rogel Cancer Center",
+   "sponsor": "University Health Network, Toronto",
    "conditions": [
-    "Recurrent Diffuse Large B-Cell Lymphoma",
-    "Recurrent Mantle Cell Lymphoma",
-    "Refractory Diffuse Large B-Cell Lymphoma",
-    "Refractory Mantle Cell Lymphoma"
+    "Indolent B-Cell Non-Hodgkin Lymphoma",
+    "Marginal Zone Lymphoma",
+    "Follicular Lymphoma",
+    "Small Lymphocytic Lymphoma"
    ],
    "interventions": [
-    "Axicabtagene Ciloleucel",
-    "Biospecimen Collection",
-    "Brexucabtagene Autoleucel",
-    "Computed Tomography",
-    "Cyclophosphamide",
-    "Fludarabine",
-    "Natalizumab",
-    "Positron Emission Tomography"
+    "Simulation-Free Single-Fraction Radiation Therapy (4 Gy × 1)"
    ],
    "korea": false,
    "sites": [],
-   "start": "2026-11-10",
-   "updated": "2026-11-18",
-   "title_ko": "CAR T세포 치료를 받고 있는 재발성 또는 불응성 확산성 거대 B세포 림프종 또는 맨틀세포 림프종 환자의 ICANS 예방을 위한 나탈리주맙"
+   "start": "2026-10-09",
+   "updated": "2026-11-18"
   },
   {
    "nct": "NCT04301076",
@@ -1849,8 +2059,7 @@
    "korea": false,
    "sites": [],
    "start": "2025-09-04",
-   "updated": "2026-11-18",
-   "title_ko": "CAR-T 이전의 재발성 및 불응성 거대 B세포 림프종에 대한 Odronextamab"
+   "updated": "2026-11-18"
   },
   {
    "nct": "NCT06337318",
@@ -1873,45 +2082,34 @@
    "korea": false,
    "sites": [],
    "start": "2024-10-23",
-   "updated": "2026-11-18",
-   "title_ko": "종양 부담이 낮은 여포성 림프종 환자를 위한 리툭시맙과 모수네투주맙 약물 치료 비교"
+   "updated": "2026-11-18"
   },
   {
-   "nct": "NCT07945470",
-   "title": "Simulation-Free Single-Fraction Radiation Therapy for Indolent Lymphoma",
-   "phase": "",
+   "nct": "NCT07892027",
+   "title": "Natalizumab for the Prevention of ICANS in Patients With Recurrent or Refractory Diffuse Large B-Cell Lymphoma or Mantle Cell Lymphoma Receiving CAR T-Cell Therapy",
+   "phase": "Phase 2",
    "status": "모집 중",
-   "sponsor": "University Health Network, Toronto",
+   "sponsor": "University of Michigan Rogel Cancer Center",
    "conditions": [
-    "Indolent B-Cell Non-Hodgkin Lymphoma",
-    "Marginal Zone Lymphoma",
-    "Follicular Lymphoma",
-    "Small Lymphocytic Lymphoma"
+    "Recurrent Diffuse Large B-Cell Lymphoma",
+    "Recurrent Mantle Cell Lymphoma",
+    "Refractory Diffuse Large B-Cell Lymphoma",
+    "Refractory Mantle Cell Lymphoma"
    ],
    "interventions": [
-    "Simulation-Free Single-Fraction Radiation Therapy (4 Gy × 1)"
+    "Axicabtagene Ciloleucel",
+    "Biospecimen Collection",
+    "Brexucabtagene Autoleucel",
+    "Computed Tomography",
+    "Cyclophosphamide",
+    "Fludarabine",
+    "Natalizumab",
+    "Positron Emission Tomography"
    ],
    "korea": false,
    "sites": [],
-   "start": "2026-10-09",
-   "updated": "2026-11-18",
-   "title_ko": "무통성 림프종에 대한 시뮬레이션이 필요 없는 단일 분할 방사선 치료"
-  },
-  {
-   "nct": "NCT07008027",
-   "title": "Real World Asparaginase Therapy Toxicity",
-   "phase": "",
-   "status": "모집 중",
-   "sponsor": "St. Jude Children's Research Hospital",
-   "conditions": [
-    "Drug Toxicity"
-   ],
-   "interventions": [],
-   "korea": false,
-   "sites": [],
-   "start": "2026-12",
-   "updated": "2026-11-18",
-   "title_ko": "실제 아스파라기나제 치료 독성"
+   "start": "2026-11-10",
+   "updated": "2026-11-18"
   },
   {
    "nct": "NCT05272384",
@@ -1935,8 +2133,30 @@
    "korea": false,
    "sites": [],
    "start": "2022-11-03",
-   "updated": "2026-11-18",
-   "title_ko": "재발성 또는 불응성 B세포 림프종에 대한 Nivolumab과 ASTX727의 조합 테스트"
+   "updated": "2026-11-18"
+  },
+  {
+   "nct": "NCT07002216",
+   "title": "BrECADD Therapy in Stage 2 B-IV Hodgkin Lymphoma",
+   "phase": "Phase 2",
+   "status": "모집 중",
+   "sponsor": "University of Miami",
+   "conditions": [
+    "Hodgkin Lymphoma",
+    "Advanced Hodgkin Lymphoma"
+   ],
+   "interventions": [
+    "Brentuximab Vedotin",
+    "Etoposide",
+    "Cyclophosphamide",
+    "Doxorubicin",
+    "Dacarbazine",
+    "Dexamethasone"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2025-07-15",
+   "updated": "2026-11-18"
   },
   {
    "nct": "NCT03739814",
@@ -1961,242 +2181,7 @@
    "korea": false,
    "sites": [],
    "start": "2019-05-08",
-   "updated": "2026-11-18",
-   "title_ko": "새로 진단된, 재발성 또는 불응성 CD22 양성 B 계통 급성 림프구성 백혈병 환자 치료에 포나티닙을 병용하거나 병용하지 않는 이노투주맙 오조가미신 및 블리나투모맙"
-  },
-  {
-   "nct": "NCT06317662",
-   "title": "Testing the Addition of the Anti-cancer Drug Venetoclax and/or the Anti-cancer Immunotherapy Blinatumomab to the Usual Chemotherapy Treatment for Infants With Newly Diagnosed KMT2A-rearranged or KMT2A-non-rearranged Leukemia",
-   "phase": "Phase 2",
-   "status": "모집 중",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "Acute Leukemia of Ambiguous Lineage",
-    "B Acute Lymphoblastic Leukemia"
-   ],
-   "interventions": [
-    "Asparaginase Erwinia chrysanthemi",
-    "Biospecimen Collection",
-    "Blinatumomab",
-    "Bone Marrow Aspiration",
-    "Calaspargase Pegol",
-    "Computed Tomography",
-    "Cyclophosphamide",
-    "Cytarabine",
-    "Daunorubicin",
-    "Dexamethasone",
-    "Doxorubicin",
-    "Echocardiography Test",
-    "FDG-Positron Emission Tomography",
-    "Leucovorin",
-    "Levoleucovorin",
-    "Lumbar Puncture",
-    "Magnetic Resonance Imaging",
-    "Mercaptopurine",
-    "Methotrexate",
-    "Methylprednisolone",
-    "Multigated Acquisition Scan",
-    "Prednisolone",
-    "Prednisone",
-    "Therapeutic Hydrocortisone",
-    "Thioguanine",
-    "Venetoclax",
-    "Vincristine"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2025-06-05",
-   "updated": "2026-11-18",
-   "title_ko": "새로 진단된 KMT2A 재배열 백혈병 또는 KMT2A 재배열되지 않은 백혈병이 있는 유아를 위한 일반적인 화학요법 치료에 항암제 베네토클락스 및/또는 항암 면역요법인 블리나투모맙을 추가하는 테스트"
-  },
-  {
-   "nct": "NCT05296304",
-   "title": "A Study of Bexarotene Combined With Radiotherapy in People With Mycosis Fungoides",
-   "phase": "Phase 1",
-   "status": "모집 중",
-   "sponsor": "Memorial Sloan Kettering Cancer Center",
-   "conditions": [
-    "Cutaneous T-cell Lymphoma"
-   ],
-   "interventions": [
-    "Bexarotene",
-    "Total Skin Electron Beam (TSEB)"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2022-03-16",
-   "updated": "2026-11-18",
-   "title_ko": "균상 식육종 환자의 방사선 요법과 결합된 벡사로텐에 대한 연구"
-  },
-  {
-   "nct": "NCT03190928",
-   "title": "Clonal Evolution in Follicular Lymphoma",
-   "phase": "",
-   "status": "모집 중",
-   "sponsor": "National Cancer Institute (NCI)",
-   "conditions": [
-    "Follicular Lymphoma"
-   ],
-   "interventions": [],
-   "korea": false,
-   "sites": [],
-   "start": "2017-07-27",
-   "updated": "2026-11-17",
-   "title_ko": "여포성 림프종의 클론성 진화"
-  },
-  {
-   "nct": "NCT07662928",
-   "title": "Epcoritamab in Combination With Dose Adjusted EPOCH-R for High-risk Burkitt Lymphoma (BL), The BEDROCK Study",
-   "phase": "Phase 2",
-   "status": "모집 중",
-   "sponsor": "AIDS Malignancy Consortium",
-   "conditions": [
-    "Adult Burkitt Lymphoma"
-   ],
-   "interventions": [
-    "Biospecimen Collection",
-    "Bone Marrow Aspiration",
-    "Bone Marrow Biopsy",
-    "Computed Tomography",
-    "Cyclophosphamide",
-    "Doxorubicin",
-    "Echocardiography Test",
-    "Epcoritamab",
-    "Etoposide",
-    "Magnetic Resonance Imaging",
-    "Multigated Acquisition Scan",
-    "Positron Emission Tomography",
-    "Prednisone",
-    "Rituximab",
-    "Vincristine"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2026-09-16",
-   "updated": "2026-11-17",
-   "title_ko": "고위험 버킷 림프종(BL)에 대한 용량 조절 EPOCH-R과 병용하는 엡코리타맙, BEDROCK 연구"
-  },
-  {
-   "nct": "NCT06136559",
-   "title": "A Study of Nemtabrutinib (MK-1026) Versus Comparator (Investigator's Choice of Ibrutinib or Acalabrutinib) in First Line (1L) Chronic Lymphocytic Leukemia (CLL)/ Small Lymphocytic Lymphoma (SLL) (MK-1026-011/BELLWAVE-011)",
-   "phase": "Phase 3",
-   "status": "모집 중",
-   "sponsor": "Merck Sharp & Dohme LLC",
-   "conditions": [
-    "Chronic Lymphocytic Leukemia",
-    "Small Lymphocytic Lymphoma"
-   ],
-   "interventions": [
-    "Nemtabrutinib",
-    "Ibrutinib",
-    "Acalabrutinib"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2023-12-13",
-   "updated": "2026-11-17",
-   "title_ko": "1차 치료(1L) 만성 림프구성 백혈병(CLL)/소림프구성 림프종(SLL)(MK-1026-011/BELLWAVE-011)에 대한 Nemtabrutinib(MK-1026) 대 비교약(시험자가 선택한 Ibrutinib 또는 Acalabrutinib)에 대한 연구"
-  },
-  {
-   "nct": "NCT05303519",
-   "title": "SIGMA (Safusidenib in IDH1 Mutant Glioma Maintenance)",
-   "phase": "Phase 3",
-   "status": "모집 중",
-   "sponsor": "Nuvation Bio Inc.",
-   "conditions": [
-    "Glioma",
-    "Astrocytoma, Grade IV",
-    "IDH1-mutant Glioma",
-    "Astrocytoma, IDH-Mutant, Grade 3"
-   ],
-   "interventions": [
-    "safusidenib",
-    "Placebo"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2023-06-05",
-   "updated": "2026-11-17",
-   "title_ko": "SIGMA(IDH1 돌연변이 신경교종 유지 관리의 사푸시데닙)"
-  },
-  {
-   "nct": "NCT07941063",
-   "title": "Multimodal Ultrasound for Lymphoma Classification and Treatment Response Prediction",
-   "phase": "",
-   "status": "모집 중",
-   "sponsor": "Chinese PLA General Hospital",
-   "conditions": [
-    "Lymphoma",
-    "Hodgkin Lymphoma",
-    "Non-Hodgkin Lymphoma"
-   ],
-   "interventions": [
-    "Multimodal Ultrasound Examination"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2026-01-01",
-   "updated": "2026-11-17",
-   "title_ko": "림프종 분류 및 치료 반응 예측을 위한 다중 모드 초음파"
-  },
-  {
-   "nct": "NCT07270679",
-   "title": "Genetic Markers of Susceptibility to Chemotherapy-induced Ovarian Damage in Cancer Patients Undergoing Ovarian Biopsy for Cryopreservation",
-   "phase": "",
-   "status": "모집 중",
-   "sponsor": "IRCCS Azienda Ospedaliero-Universitaria di Bologna",
-   "conditions": [
-    "Breast Cancer",
-    "Hodgkin Lymphoma"
-   ],
-   "interventions": [],
-   "korea": false,
-   "sites": [],
-   "start": "2025-07-23",
-   "updated": "2026-11-17",
-   "title_ko": "냉동 보존을 위해 난소 생검을 받는 암 환자의 화학요법으로 인한 난소 손상에 대한 감수성의 유전적 지표"
-  },
-  {
-   "nct": "NCT07428707",
-   "title": "Immune Profiling of CLL/SLL Treated With First-Line Pirtobrutinib",
-   "phase": "EARLY_Phase 1",
-   "status": "모집 중",
-   "sponsor": "National Heart, Lung, and Blood Institute (NHLBI)",
-   "conditions": [
-    "Chronic Lymphocytic Leukemia (CLL)",
-    "Small Lymphocytic Lymphoma (SLL)"
-   ],
-   "interventions": [
-    "Pirtobrutinib"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2026-03-11",
-   "updated": "2026-11-17",
-   "title_ko": "1차 피르토브루티닙으로 치료한 CLL/SLL의 면역 프로파일링"
-  },
-  {
-   "nct": "NCT07478848",
-   "title": "Radiation, Oral Vancomycin, and CAR-T for B-Cell Lymphomas",
-   "phase": "Phase 1",
-   "status": "모집 중",
-   "sponsor": "Abramson Cancer Center at Penn Medicine",
-   "conditions": [
-    "Large B Cell Lymphoma",
-    "Non Hodgkin Lymphoma (NHL)",
-    "Diffuse Large B Cell Lymphoma (DLBCL)",
-    "Diffuse Large B Cell Lymphoma Refractory"
-   ],
-   "interventions": [
-    "Vancomycin 125mg",
-    "Radiation Therapy",
-    "CAR-T"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2026-05-29",
-   "updated": "2026-11-17",
-   "title_ko": "B세포 림프종에 대한 방사선, 경구 반코마이신 및 CAR-T"
+   "updated": "2026-11-18"
   },
   {
    "nct": "NCT05947851",
@@ -2218,63 +2203,42 @@
    "korea": false,
    "sites": [],
    "start": "2023-08-08",
-   "updated": "2026-11-17",
-   "title_ko": "2차 치료(2L) + 재발성/불응성(R/R) 만성 림프구성 백혈병/소림프구성 림프종(CLL/SLL)에서 Nemtabrutinib + Venetoclax 대 Venetoclax + Rituximab(VR)에 대한 연구(MK-1026-010/BELLWAVE-010)."
+   "updated": "2026-11-17"
   },
   {
-   "nct": "NCT04728893",
-   "title": "Efficacy and Safety of Nemtabrutinib (MK-1026) in Participants With Hematologic Malignancies (MK-1026-003)",
+   "nct": "NCT03190928",
+   "title": "Clonal Evolution in Follicular Lymphoma",
+   "phase": "",
+   "status": "모집 중",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Follicular Lymphoma"
+   ],
+   "interventions": [],
+   "korea": false,
+   "sites": [],
+   "start": "2017-07-27",
+   "updated": "2026-11-17"
+  },
+  {
+   "nct": "NCT05529069",
+   "title": "Phase II Study of Pirtobrutinib With Venetoclax In Relapsed-Refractory MCL (Mantle Cell Lymphoma) Patients",
    "phase": "Phase 2",
    "status": "모집 중",
-   "sponsor": "Merck Sharp & Dohme LLC",
+   "sponsor": "M.D. Anderson Cancer Center",
    "conditions": [
-    "Hematologic Malignancies",
-    "Waldenstroms Macroglobulinaemia",
-    "Non-Hodgkins Lymphoma",
-    "Chronic Lymphocytic Leukaemia"
+    "Mantle Cell Lymphoma",
+    "Non Hodgkin Lymphoma",
+    "Hematologic Malignancy"
    ],
    "interventions": [
-    "Nemtabrutinib"
-   ],
-   "korea": true,
-   "sites": [
-    {
-     "name": "Severance Hospital Yonsei University Health System ( Site 2201)",
-     "city": "Seoul"
-    },
-    {
-     "name": "Samsung Medical Center ( Site 2200)",
-     "city": "Seoul"
-    }
-   ],
-   "start": "2021-04-05",
-   "updated": "2026-11-17",
-   "title_ko": "혈액암(MK-1026-003) 환자에 대한 Nemtabrutinib(MK-1026)의 효능 및 안전성"
-  },
-  {
-   "nct": "NCT06289673",
-   "title": "Identification of Necessary Information for Treatment Induction in Newly Diagnosed Acute Lymphoblastic Leukemia/Lymphoma",
-   "phase": "Phase 4",
-   "status": "모집 중",
-   "sponsor": "St. Jude Children's Research Hospital",
-   "conditions": [
-    "Acute Lymphoblastic Leukemia",
-    "Lymphoblastic Lymphoma",
-    "Mixed Phenotype Acute Leukemia"
-   ],
-   "interventions": [
-    "Dexamethasone",
-    "Vincristine",
-    "Daunorubicin",
-    "Intrathecal triple therapy (methotrexate + hydrocortisone + cytarabine)",
-    "Methotrexate",
-    "Cytarabine"
+    "Pirtobrutinib",
+    "Venetoclax"
    ],
    "korea": false,
    "sites": [],
-   "start": "2024-12-26",
-   "updated": "2026-11-17",
-   "title_ko": "새로 진단된 급성 림프구성 백혈병/림프종의 치료 유도에 필요한 정보 식별"
+   "start": "2023-01-25",
+   "updated": "2026-11-17"
   },
   {
    "nct": "NCT07301138",
@@ -2296,8 +2260,7 @@
    "korea": false,
    "sites": [],
    "start": "2025-12-15",
-   "updated": "2026-11-17",
-   "title_ko": "CR MRD 양성 MEF2D 재배열 및 Pre-B 급성 림프구성 백혈병 환자를 위한 BEBT-908 플러스 화학요법 치료"
+   "updated": "2026-11-17"
   },
   {
    "nct": "NCT05643235",
@@ -2317,29 +2280,69 @@
    "korea": false,
    "sites": [],
    "start": "2023-01-01",
-   "updated": "2026-11-17",
-   "title_ko": "Bruton Tyrosine Kinase 억제제를 사용한 부정맥 검출 및 관리용 이식형 루프 레코더"
+   "updated": "2026-11-17"
   },
   {
-   "nct": "NCT03375619",
-   "title": "Long-term Follow-up Study of Patients Receiving CAR-T Cells",
+   "nct": "NCT07941063",
+   "title": "Multimodal Ultrasound for Lymphoma Classification and Treatment Response Prediction",
    "phase": "",
    "status": "모집 중",
-   "sponsor": "Medical College of Wisconsin",
+   "sponsor": "Chinese PLA General Hospital",
    "conditions": [
-    "Chronic Lymphocytic Leukemia",
-    "Lymphomas Non-Hodgkin's B-Cell",
-    "Lymphoma, Small Lymphocytic",
-    "Mantle Cell Lymphoma"
+    "Lymphoma",
+    "Hodgkin Lymphoma",
+    "Non-Hodgkin Lymphoma"
    ],
    "interventions": [
-    "Long-Term Follow-Up of Participants who Received CAR-T cells"
+    "Multimodal Ultrasound Examination"
    ],
    "korea": false,
    "sites": [],
-   "start": "2017-12-01",
-   "updated": "2026-11-17",
-   "title_ko": "CAR-T 세포를 투여받은 환자에 대한 장기 추적 연구"
+   "start": "2026-01-01",
+   "updated": "2026-11-17"
+  },
+  {
+   "nct": "NCT04002947",
+   "title": "Acalabrutinib With DA-EPOCH-R or R-CHOP for People With Untreated Diffuse Large B-cell Lymphoma",
+   "phase": "Phase 2",
+   "status": "모집 중",
+   "sponsor": "National Cancer Institute (NCI)",
+   "conditions": [
+    "Non-Hodgkin's Lymphoma",
+    "Diffuse Large B-Cell Lymphoma",
+    "DLBCL",
+    "NHL"
+   ],
+   "interventions": [
+    "DA-EPOCH",
+    "Rituximab",
+    "CHOP",
+    "Acalabrutinib"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2019-08-05",
+   "updated": "2026-11-17"
+  },
+  {
+   "nct": "NCT05765812",
+   "title": "A Study of Zedoresertib (Debio 0123) in Combination With Temozolomide in Adult Participants With Recurrent or Progressive Glioblastoma and of Zedoresertib (Debio 0123) in Combination With Temozolomide and Radiotherapy in Adult Participants With Newly Diagnosed Glioblastoma",
+   "phase": "Phase 1/Phase 2",
+   "status": "모집 중",
+   "sponsor": "Debiopharm International SA",
+   "conditions": [
+    "Glioblastoma IDH (Isocitrate Dehydrogenase) Wildtype",
+    "Astrocytoma, Grade III"
+   ],
+   "interventions": [
+    "Zedoresertib",
+    "Temozolomide",
+    "Radiotherapy"
+   ],
+   "korea": false,
+   "sites": [],
+   "start": "2023-05-15",
+   "updated": "2026-11-17"
   },
   {
    "nct": "NCT07853040",
@@ -2357,29 +2360,7 @@
    "korea": false,
    "sites": [],
    "start": "2026-10-27",
-   "updated": "2026-11-17",
-   "title_ko": "간 장애가 있는 참가자에서 INCB161734의 약동학 및 안전성을 평가하기 위한 연구"
-  },
-  {
-   "nct": "NCT05529069",
-   "title": "Phase II Study of Pirtobrutinib With Venetoclax In Relapsed-Refractory MCL (Mantle Cell Lymphoma) Patients",
-   "phase": "Phase 2",
-   "status": "모집 중",
-   "sponsor": "M.D. Anderson Cancer Center",
-   "conditions": [
-    "Mantle Cell Lymphoma",
-    "Non Hodgkin Lymphoma",
-    "Hematologic Malignancy"
-   ],
-   "interventions": [
-    "Pirtobrutinib",
-    "Venetoclax"
-   ],
-   "korea": false,
-   "sites": [],
-   "start": "2023-01-25",
-   "updated": "2026-11-17",
-   "title_ko": "재발성 불응성 MCL(맨틀 세포 림프종) 환자를 대상으로 베네토클락스와 피르토브루티닙을 병용한 제2상 연구"
+   "updated": "2026-11-17"
   }
  ]
 }
